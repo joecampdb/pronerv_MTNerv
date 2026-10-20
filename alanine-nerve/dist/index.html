@@ -4,14 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Alanine — a molecular landscape</title>
 <meta name="description" content="Explore an MD-derived molecular landscape and the categorical nerve of its conformational cover.">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#080e19;color:#e7edf0;font:14px/1.5 system-ui,sans-serif}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #b5ffdb;outline-offset:4px}
-header{height:93px;padding:22px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #23303d}h1{font:30px/1.1 Georgia,serif;margin:0;letter-spacing:-1px}h1 span{color:#a5c5c9;font-style:italic}.eyebrow{font:10px/1.4 monospace;letter-spacing:2px;color:#8badb8;text-transform:uppercase;margin-bottom:8px}.badge{font:10px monospace;letter-spacing:1px;padding:8px 12px;border:1px solid #365b53;border-radius:20px;color:#b3e8ce}
-main{display:grid;grid-template-columns:minmax(0,1fr) 310px;height:calc(100vh - 93px);min-height:650px}.stage{position:relative;overflow:hidden;background:radial-gradient(ellipse at 40% 30%,#122436,#080e19 75%)}#scene{width:100%;height:100%;display:block;touch-action:none}.topline{position:absolute;top:24px;left:28px;pointer-events:none}.topline p{margin:0;color:#8ea4b4;font-size:12px}.topline strong{font-weight:400;font-size:15px}.toolbar{position:absolute;top:24px;right:24px;display:flex;gap:5px}button{border:1px solid #334757;background:#111e2b;color:#c4d3de;border-radius:6px;padding:7px 10px;font-size:12px}button.active,button:hover{background:#24403d;border-color:#73b8a1;color:#d9fff0}.bottom{position:absolute;bottom:25px;left:28px;right:28px;display:flex;align-items:end;justify-content:space-between;gap:20px;pointer-events:none}.legend{width:210px;font:10px monospace;color:#a2b6c4}.gradient{height:5px;border-radius:4px;margin:9px 0;background:linear-gradient(90deg,#4cf1bc,#38b6d9,#7377da,#df8aaa,#ffce83)}.legend div:last-child{display:flex;justify-content:space-between}.hint{font-size:11px;color:#7c94a6;text-align:right}aside{border-left:1px solid #23303d;overflow:auto;padding:24px;background:#0c1420}h2{font-size:15px;font-weight:500;margin:0 0 15px}section{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid #24303e}label.control{display:flex;align-items:center;justify-content:space-between;margin:12px 0;color:#c1ced7;font-size:12px}input[type=checkbox]{accent-color:#8ce9c3;width:15px;height:15px}input[type=range]{width:100%;accent-color:#92d8c2;height:16px}.range-label{display:flex;justify-content:space-between;color:#91a8b9;font-size:11px;margin-top:12px}.small{font-size:11px;color:#8da3b5}.stat{font:25px Georgia,serif;color:#ccebe2}.stats{display:flex;justify-content:space-between;margin-bottom:16px}.stats small{display:block;font:9px monospace;color:#7895a8;letter-spacing:1px;margin-top:4px}#mini{width:100%;height:155px;background:#101c2b;border:1px solid #253749;border-radius:7px}#details{min-height:55px;margin-top:10px;color:#b9cbd5;font-size:12px}a{color:#a0dfcb}details{font-size:11px;color:#91a8b9}summary{cursor:pointer;color:#d0e2e8;margin-bottom:10px}#loading{position:absolute;inset:0;display:grid;place-content:center;text-align:center;background:#0c1420;z-index:5;font:18px Georgia,serif}#loading small{font:11px system-ui;color:#91a8b9;margin-top:12px}.playrow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}#map{width:100%;height:auto;aspect-ratio:1;border:1px solid #233747;border-radius:4px;display:block;margin-top:10px}
-select{background:#142332;color:#d1e4e7;border:1px solid #334757;border-radius:4px;padding:5px;font-size:11px}.playrow>select{min-width:0;flex:1;max-width:50%}
-@media(max-width:900px){main{grid-template-columns:minmax(0,1fr) 260px}aside{padding:16px}header{padding:20px}.toolbar{top:85px;left:28px;right:auto}h1{font-size:25px}}
-@media(max-width:650px){header{height:auto;gap:10px}.badge{display:none}main{display:flex;flex-direction:column;height:auto}.stage{height:65vh;min-height:450px}aside{overflow:visible;border-left:0}.hint{display:none}.topline{left:18px}.bottom{left:18px}.toolbar{left:18px}#mini{height:200px}#map{max-width:300px}}
-</style>
+<link rel="stylesheet" href="./atlas.css">
 <script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
 </head>
 <body>
@@ -28,11 +21,12 @@ select{background:#142332;color:#d1e4e7;border:1px solid #334757;border-radius:4
 <label class="control">MD transition pathways<input id="flow" type="checkbox" checked></label>
 <label class="control">Continuous pathway skins<input id="pathSkins" type="checkbox" checked></label>
 <div class="range-label"><span>MD-driven deformation</span><output id="deformValue">100%</output></div><input id="deformation" type="range" min="0" max="100" value="100" aria-label="MD-driven skin deformation">
+<label class="control">Playback highlight<input id="skinHighlight" type="checkbox"></label>
 <p class="small">Skin vertices now move using local, atom-weighted displacements from the recorded conformations. The traveling time warp is a visual construction, not a new physical trajectory.</p>
 <label class="control">Superimpose simplicial nerve<input id="nerveQuick" type="checkbox" checked></label>
-<p class="small"><a href="./paper.pdf" target="_blank">Read the illustrated exploratory paper ↗</a></p>
+<p class="small"><a href="./paper.pdf" target="_blank">Read the illustrated exploratory paper ↗</a> · <a href="./media/deforming-landscape.mp4" target="_blank">Blender animation ↗</a></p>
 <div class="range-label"><span>Pathway skin opacity</span><output id="skinAlphaValue">58%</output></div><input id="skinAlpha" type="range" min="10" max="90" value="58" aria-label="Pathway skin opacity">
-<p class="small">Molecular envelopes sweep through the sampled passage at the terrain’s height and scale. A traveling highlight marks progress. Skins are interpolated visual unions, not additional MD or measured probability densities.</p>
+<p class="small">Molecular envelopes deform through MD-attached material motion at the terrain’s height and scale. An optional highlight marks playback phase. Skins are interpolated visual unions, not additional MD or measured probability densities.</p>
 <label class="control">Pathway guide lines<input id="guideLines" type="checkbox"></label>
 <details><summary>Optional molecular markers</summary>
 <label class="control">Separate moving molecule<input id="molecules" type="checkbox"></label>
@@ -46,7 +40,7 @@ select{background:#142332;color:#d1e4e7;border:1px solid #334757;border-radius:4
 <select id="route" aria-label="Inspect transition route" style="width:100%;margin:10px 0;padding:7px;background:#142332;color:#d1e4e7;border:1px solid #334757"><option value="-1">All observed routes</option></select>
 <div class="range-label"><span>Scrub conformation</span><span>start → end</span></div><input id="morphPhase" type="range" min="0" max="1000" value="0" aria-label="Molecular passage progress">
 <div id="morphTime" class="small" aria-live="off"></div>
-<p class="small">The highlight follows passage time through a fixed swept envelope. Each loop restarts the excerpt. Optional molecular markers use recorded heavy-atom frames or visual interpolation; no schematic center connectors contribute to the skin.</p>
+<p class="small">Skin geometry follows a bounded material time warp driven by MD coordinates. Playback phase is a visual deformation parameter, not a single MD timestamp. Optional markers replay individual conformations. No schematic center connectors contribute to the skin.</p>
 <div id="flowDetails" class="small" aria-live="polite"></div>
 <div class="range-label"><span>Dynamic nerve · compose two arrows</span></div>
 <select id="pathChain" aria-label="Dynamic nerve composition" style="width:100%;margin:10px 0;padding:7px;background:#142332;color:#d1e4e7;border:1px solid #334757"><option value="-1">Choose a composable pair</option></select>
@@ -63,7 +57,7 @@ select{background:#142332;color:#d1e4e7;border:1px solid #334757;border-radius:4
 </section>
 <section><div class="eyebrow">03 / overlap nerve</div><div class="stats"><div><span class="stat" id="objects">—</span><small>OBJECTS</small></div><div><span class="stat" id="arrows">—</span><small>INCLUSIONS</small></div><div><span class="stat" id="chains">—</span><small>2-SIMPLICES</small></div></div>
 <select id="nodeSelect" aria-label="Select a nerve object" style="width:100%;background:#142332;color:#d1e4e7;border:1px solid #334757;padding:7px;margin-bottom:10px"></select>
-<canvas id="mini" aria-label="Actual heavy-atom conformation associated with selected node"></canvas><div id="details">Select an object in the nerve.</div>
+<canvas id="mini" aria-label="Backbone cartoon and heavy-atom conformation associated with selected node"></canvas><div id="details">Select an object in the nerve.</div>
 <p class="small">Mint: neighborhoods · blue: pair overlaps · amber: triple overlaps. A triangle is a chain σ ⊂ τ ⊂ υ; its long edge is the composite inclusion.</p>
 </section>
 <section><div class="eyebrow">04 / MD trajectory</div><div class="playrow"><button id="play">▶ Play</button><span class="small" id="time">Run 1 · 0.00 ns</span></div>

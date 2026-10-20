@@ -1,0 +1,19 @@
+What if a molecular energy landscape were made from the molecule itself?
+
+This exploratory prototype starts with 750,000 public MD frames of alanine dipeptide. Molecular conformations form translucent pathway skins that deform through an atom-attached displacement field. A simplicial nerve can be superimposed to make two different kinds of composition visible:
+
+• inclusion of overlapping conformational neighborhoods;
+• concatenation of observed transition-route types.
+
+The distinction matters. A categorical composite A → B → C is not automatically an observed direct A → C transition. And composing paths is only a first step toward composing dynamical models with explicit interfaces.
+
+The accompanying illustrated note explains the construction, its LaTeX mathematics, and its limits. The figures were rendered in Blender from the same geometry as the interactive viewer.
+
+This is an experiment in scientific representation, not a new validated kinetic model. The deformation is driven by MD data but is a visual interpolation, not additional simulated dynamics.
+
+I would welcome perspectives from applied category theory, molecular simulation, and structural bioinformatics: what should the interfaces be if we want molecular dynamical models to compose?
+
+#AppliedCategoryTheory #MolecularDynamics #StructuralBioinformatics #ScientificVisualization
+
+Publication notes:
+Attach paper.pdf as a LinkedIn document, or use figures/landscape-nerve.png as the lead image. The current viewer is owner-private; make a deliberate sharing choice before promoting its link to readers. This draft has not been posted.

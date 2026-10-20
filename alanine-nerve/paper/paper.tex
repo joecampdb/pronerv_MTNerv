@@ -1,0 +1,363 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{xcolor,hyperref,fancyhdr}
+\definecolor{ink}{HTML}{163447}
+\definecolor{teal}{HTML}{167E79}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal,citecolor=teal,
+pdftitle={From Molecular Trajectories to Composable Paths},
+pdfauthor={Joseph Campagna, PSM}}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.15}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\textcolor{ink}{MOLECULAR ATLAS / EXPLORATORY NOTE}}
+\fancyhead[R]{\small October 2026}
+\fancyfoot[L]{\small Computational visualization; not peer reviewed}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{15pt}
+\newcommand{\Cat}{\mathcal C}
+\newcommand{\N}{\mathrm N}
+\newcommand{\R}{\mathbb R}
+\newcommand{\T}{\mathbb T}
+\begin{document}
+{\color{ink}\LARGE\bfseries From Molecular Trajectories\\to Composable Paths\par}
+\vspace{4pt}
+{\large Alanine dipeptide and the chignolin variant CLN025\par}
+\textbf{Joseph Campagna, PSM}\hfill October 2026
+
+\textbf{Abstract.}
+Can molecular geometry make the composition of dynamical behavior visible?
+We construct an interactive atlas from 750,000 public molecular dynamics (MD)
+frames of alanine dipeptide and 63,999 frames of the ten-residue chignolin
+variant CLN025. Molecular envelopes form landscapes over torsional or geometric
+observables. Two distinct categorical nerves can be superimposed:
+an overlap face-poset nerve and a free path-category nerve derived from observed
+basin passages. Translucent pathway skins now deform through an atom-attached
+displacement field, rather than merely changing illumination. This construction
+is a visual experiment and a precise vocabulary for discussing composition.
+It is not a claim of recovered configuration-space topology, a validated
+Markov model, or a completed theory of compositional protein dynamics.
+The prototype motivates an experimentally testable route from trajectory
+composition toward composition of open dynamical subsystems.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.78\linewidth]{figures/landscape-nerve.png}
+\caption{\textbf{A molecular landscape with a superimposed nerve.}
+Blender 4.0/Eevee rendering of the viewer's meshes and deformation targets.
+Terrain color follows empirical relative free energy (mint: populated;
+violet/amber: less populated). Pathway skins use source-basin colors.
+Silver nodes and edges show the overlap face-poset nerve. Labels A--D identify
+density modes. Horizontal coordinates encode $\phi,\psi$; vertical placement
+encodes $1.3\,F/k_BT$ plus molecular relief. Scene distances are visual units.}
+\end{figure}
+
+\textbf{Explore the artifact.}
+\href{https://alanine-nerve-landscape.jammy-eft-9823.chatgpt.site}{Interactive molecular atlas}
+(owner-private at preparation time).
+The viewer supports deformation amplitude, transparency, route filtering,
+scrubbing, and independent nerve overlays. All figures are generated from
+the numerical geometry; they are not AI-generated illustrations.
+
+\input{systems.tex}
+\newpage
+\section*{1. Two nerves, two meanings of composition}
+For alanine, let $q_t=(\phi_t,\psi_t)\in\T^2$ describe the backbone angles, and let
+$X_t\in\R^{10\times3}$ contain the aligned heavy-atom coordinates.
+Alanine dipeptide is a capped amino-acid benchmark, not a folded protein.
+Its small conformational chart makes the distinctions below inspectable.
+
+\textbf{Overlap category.}
+Take 18 balls of radius $73^\circ$ in a cut angular chart. A finite sample
+$W$ (every tenth MD frame) witnesses common membership:
+\[
+ K_W=\{\sigma\ne\varnothing:\exists q\in W,\ q\in\bigcap_{i\in\sigma}U_i\}.
+\]
+We retain its 2-skeleton $K_W^{(2)}$ and form the face-poset category
+$\Cat_{\cap}=P(K_W^{(2)})$. Objects are simplices; arrows are inclusions
+of index sets, not reverse inclusions of intersection regions.
+Its nerve has 91 objects, 282 strict inclusions, and 204 nondegenerate
+2-simplices. The realization is a barycentric subdivision:
+\[
+ |\N P(K_W^{(2)})|\cong |K_W^{(2)}|.
+\]
+This categorical statement does not establish equivalence with the protein's
+configuration space. Good-cover hypotheses and sampling guarantees are
+separate issues \cite{may,bauer}. The overlap chart does not glue its periodic seam.
+
+\textbf{Dynamic path category.}
+Let $G$ have four basin objects and ten directed generators, one for each
+observed route type (CLN025 has twelve generators). Set $\Cat_{\rm path}=\mathrm{Free}(G)$.
+Morphisms are finite composable words; identities are empty words.
+For any category,
+\[
+ \N(\Cat)_n=\operatorname{Fun}([n],\Cat)
+ =\{x_0\xrightarrow{f_1}\cdots\xrightarrow{f_n}x_n\}.
+\]
+Inner face maps compose adjacent arrows; degeneracies insert identities.
+For a 2-simplex $(f,g)$, $d_0(f,g)=g$, $d_1(f,g)=g\circ f$,
+and $d_2(f,g)=f$. Thus the long edge is a composite, not a missing
+observation to be filled in.
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[>=Stealth,scale=.92]
+\fill[teal!10] (0,0)--(2,1.5)--(4,0)--cycle;
+\node (s) at (0,0) {$\sigma$};\node (t) at (2,1.5) {$\tau$};\node (u) at (4,0) {$\upsilon$};
+\draw[->,thick] (s)--node[above left] {$\iota$}(t);
+\draw[->,thick] (t)--node[above right] {$\jmath$}(u);
+\draw[->,thick] (s)--node[below] {$\jmath\circ\iota$}(u);
+\node at (2,-.85) {\small $\sigma\subset\tau\subset\upsilon$};
+\fill[orange!12] (7,0)--(9,1.5)--(11,0)--cycle;
+\node (a) at (7,0) {$A$};\node (b) at (9,1.5) {$B$};\node (c) at (11,0) {$C$};
+\draw[->,thick] (a)--node[above left] {$f$}(b);
+\draw[->,thick] (b)--node[above right] {$g$}(c);
+\draw[->,thick,dashed] (a)--node[below] {$g\circ f$}(c);
+\node at (9,-.85) {\small $g\circ f\ne h_{AC}$ in general};
+\end{tikzpicture}
+\caption{\textbf{The two displayed simplicial meanings.}
+Left: composition of inclusions. Right: formal composition of route generators.
+An independently observed $A\to C$ generator $h_{AC}$ remains a different arrow.
+The displayed 25 alanine pairs (36 for CLN025) are only a finite view of
+the infinite path-category nerve. Return paths are not identities.}
+\end{figure}
+The two categories coexist as overlays. No functor identifying them has been
+constructed. Likewise, a composable pair need not occur consecutively in the
+recorded MD trajectory.
+
+\newpage
+\section*{2. Empirical dynamics before categorical interpretation}
+The MDshare benchmark contains three independent 250 ns trajectories at
+300 K, with 1 ps frame spacing, generated using ACEMD, AMBER ff99SB-ILDN,
+and TIP3P water \cite{mdshare}. We use the supplied angles and aligned
+heavy-atom positions. All 750,000 frames contribute to occupancy estimates.
+Equal-area $12^\circ$ angular bins are smoothed periodically with a Gaussian
+of width 0.85 bins:
+\[
+ \widehat F(q)/k_BT=-\log\frac{\widehat p(q)}{\max_{q'}\widehat p(q')}.
+\]
+Pooling is unweighted. This is an empirical occupancy landscape; equilibrium
+convergence and estimator uncertainty have not been established.
+
+Density modes are found separately on a $60\times60$ grid, smoothed at 1.4 bins.
+Disjoint $25^\circ$ cores around four peaks define passage labels.
+The label $\ell_t$ retains the last core visited between core entries.
+Fifteen initial frames, before any core visit, are excluded from labeled counts.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule Basin & $\phi$ & $\psi$ & Last-core occupancy\\\midrule
+A & $-75^\circ$ & $153^\circ$ & 39.57\%\\
+B & $-141^\circ$ & $159^\circ$ & 25.62\%\\
+C & $-75^\circ$ & $-15^\circ$ & 31.82\%\\
+D & $51^\circ$ & $33^\circ$ & 2.99\%\\\bottomrule
+\end{tabular}
+\end{center}
+These are density basins, not demonstrated metastable macrostates.
+In particular, A and B interconvert rapidly.
+Across independent runs, 73,145 core-to-core passages produce ten directed
+route types. Representative counts are A$\to$B: 34,316;
+B$\to$A: 34,323; A$\to$C: 1,176; B$\to$D: 1; and D$\to$C: 2.
+Sparse directions remain visible and explicitly flagged.
+
+\textbf{Lagged probabilities.}
+For lag $\tau\in\{10,50,100\}$ ps, count sliding pairs within each run:
+\[
+ C_{ij}(\tau)=\sum_r\sum_{t\in I_r(\tau)}
+ {\bf1}\{\ell_t^{(r)}=i,\ell_{t+\tau}^{(r)}=j\},
+ \qquad
+ \widehat P_{ij}(\tau)=\frac{C_{ij}(\tau)}{\sum_k C_{ik}(\tau)}.
+\]
+Here $I_r(\tau)$ includes only valid labeled pairs in run $r$.
+Self transitions are included; pairs never cross run boundaries.
+Lagged probabilities may include indirect routes. Sliding observations
+are correlated, so row counts are not independent sample sizes.
+Gross passage frequency $n_{ij}/750\,\mathrm{ns}$ is distinct from net current.
+
+\textbf{What has been checked.}
+Independent counts obtained by removing non-core observations and counting
+changes reproduce the passage counts. Exported atomic frames match the raw
+coordinates after centering. The first 100 raw coordinate frames reproduce
+the supplied torsions to about $2.4\times10^{-7}$ radians.
+Probability rows normalize; periodic-distance invariance, endpoint
+recovery and within-run lag accounting pass automated checks.
+
+\textbf{What remains unvalidated.}
+There is no Chapman--Kolmogorov test, implied-timescale plateau, block-bootstrap
+uncertainty estimate, or detailed-balance assessment. The atlas should not
+be used to infer new rates, free-energy barriers or mechanistic causality.
+
+\newpage
+\input{chignolin.tex}
+\newpage
+\section*{4. From swept molecular skins to deforming geometry}
+For a representative passage, let $u\in[0,1]$ parameterize its recorded time.
+Coordinates are centered and scaled by 3.5 visual units per nm, and translated
+to $(\phi/12,\ 1.3\widehat F/k_BT,\ \psi/12)$.
+Interpolated atomic Gaussians of width 0.36 visual units form a swept envelope:
+\[
+ \rho_u(x)=\sum_a \exp\!\left[-\frac{\|x-Y_a(u)\|^2}{2(0.36)^2}\right],
+ \qquad S=\{x:\max_u\rho_u(x)=0.7\}.
+\]
+The implementation uses at least 96 temporal samples, a 0.22-unit grid, and
+0.45-voxel smoothing before isosurface extraction. Skins share the terrain's
+height and molecular scale; they are translucent intersecting meshes, not
+a remeshed Boolean union. Cut-chart crossings are not bridged.
+
+\textbf{Actual vertex motion.}
+Each skin vertex $v$ receives an approximate nearest-atom phase $u_v$ and
+normalized atom weights $w_{va}\propto
+\exp[-\|v-Y_a(u_v)\|^2/(2(0.7)^2)]$.
+We introduce a bounded material time warp:
+\[
+ \tau_t(u)=u+0.08\sin(2\pi(t-u))\sin(\pi u),\qquad
+ D_v(t)=\sum_a w_{va}\big[Y_a(\tau_t(u_v))-Y_a(u_v)\big].
+\]
+It fixes the passage endpoints and remains within $[0,1]$.
+After two adjacency-averaging steps $L$, the rendered vertex is
+\[
+ v(t)=v+B_{1.5}\!\left(L^2D_v(t)\right),\qquad
+ B_c(z)=c\tanh(\|z\|/c)\frac{z}{\|z\|},\quad B_c(0)=0.
+\]
+Endpoint-attached displacements are reset to zero. Twelve cyclic keyframes
+store both positions and recomputed normals; the browser interpolates between
+neighboring targets. A deformation-amplitude control scales the displacement
+down to zero for direct comparison with the fixed-envelope version.
+
+\begin{figure}[H]\centering
+\includegraphics[width=.325\linewidth]{figures/phase-0.png}\hfill
+\includegraphics[width=.325\linewidth]{figures/phase-1.png}\hfill
+\includegraphics[width=.325\linewidth]{figures/phase-2.png}
+\caption{\textbf{Geometry changes, not only illumination.}
+Blender snapshots of the A$\to$C skin at visual phases $t=0,1/3,2/3$,
+with the same camera and lighting. Other route skins, terrain and the nerve are hidden.
+These phases are material
+deformation phases, not three complete instantaneous MD configurations.}
+\end{figure}
+This is an artistic, MD-attached deformation field. Interpolated Cartesian
+coordinates need not preserve bond lengths; self-overlaps can have ambiguous
+phase assignments. We do not assert injectivity, volume conservation,
+topology preservation, physical forces, or a dynamical semigroup for this animation.
+
+\input{limitations.tex}
+\newpage
+\section*{6. Future directions}
+The current construction makes \emph{path composition} inspectable.
+Composing complete dynamical subsystems is a stronger objective.
+For an autonomous flow, one expects
+$\Phi_{t+s}=\Phi_t\circ\Phi_s$; a Markov approximation would analogously
+require $P(t+s)\approx P(t)P(s)$ under a stated convention.
+Neither property follows from drawing a nerve.
+
+One proposed next step is to define structural interfaces (for example,
+selected contact or torsional observables), attach validated dynamics to
+modules, and specify how compatible interfaces compose.
+Open reaction networks and open Markov processes provide established
+categorical examples: input/output boundaries allow systems to compose,
+and functorial semantics can relate composite models to their behavior
+\cite{baez,pollard}. Applying such ideas to structural bioinformatics would
+require new choices and validation, not just a change in visualization.
+
+The research questions are concrete:
+\begin{enumerate}
+\item Can basin definitions and transition estimates remain stable across
+trajectory blocks, temperatures, and resolutions?
+\item Can experimentally meaningful interfaces support compositional
+models with quantified approximation error?
+\item Can a semantics functor $\mathcal S:\mathcal D\to\mathcal B$ satisfy
+$\mathcal S(g\circ f)=\mathcal S(g)\circ\mathcal S(f)$, where $\mathcal D$
+is a category of specified open models and $\mathcal B$ their behaviors?
+\item For CLN025, can native-contact, hydrogen-bond and backbone-torsion
+features distinguish compact misfolds from the native hairpin? Compare
+the current two-observable chart with time-lagged coordinates before
+interpreting any cluster as a folding state.
+\item Can the timestamp discrepancy be resolved with the depositors and
+the complete adaptive dataset be analyzed with justified statistical weights?
+Then test implied timescales, Chapman--Kolmogorov consistency and held-out
+transition predictions, with uncertainty from independent runs.
+\item Can an explicitly defined projection between atomistic and C$\alpha$
+state categories preserve specified compositions? Such a comparison functor,
+including its approximation error, would connect the two visualization scales.
+\end{enumerate}
+Here $\mathcal D$, $\mathcal B$, and $\mathcal S$ are research targets,
+not artifacts implemented by this prototype.
+Homotopy.io offers a useful reference for higher-categorical diagramming
+\cite{homotopy}; the current viewer is a custom Three.js implementation,
+without a homotopy.io export or proof certificate.
+
+\textbf{Reproducibility.}
+The companion source includes data-download and analysis scripts,
+MD-driven morph targets, the LaTeX source, a Blender scene with shape keys,
+and the figure-generation script. The browser and Blender use the same
+geometry. The underlying source-file SHA-256 hashes are recorded in
+\texttt{dist/data.json}. Regenerate in this order:
+\texttt{download.py}, \texttt{prepare.py}, \texttt{dynamics.py},
+\texttt{build\_skins.py}, \texttt{build\_deformation.py}.
+For CLN025, run \texttt{download\_chignolin.py} then \texttt{build\_chignolin.py}.
+The repository provides a static viewer, runnable tests and both figure pipelines.
+The figures use Blender 4.0/Eevee; the document is compiled from LaTeX.
+
+\textbf{Exploratory proposition.}
+Categorical language may help separate state, transition, composition,
+and interface in molecular modeling. This atlas offers a visible,
+inspectable starting point for that discussion, rather than evidence
+that categorification has already improved a predictive model.
+
+\newpage
+\section*{7. Availability, attribution and references}
+\textbf{Software and paper.}
+\url{https://github.com/joecampdb/pronerv_MTNerv}.
+The molecular atlas lives in \texttt{alanine-nerve/}; its historical directory
+name is retained for compatibility. The repository also retains an independent
+polyethylene screening workflow, documented separately. The compiled paper is
+\texttt{paper/molecular-atlas.pdf} at repository root.
+
+\textbf{Data and transformations.}
+The CLN025 data are attributed to Adri\`a P\'erez Culubret and Gianni De Fabritiis
+under CC BY 4.0 \cite{chignolin}. The subset is streamed in archive order;
+individual PDB/XTC SHA-256 hashes and exact member names are retained.
+Transformations include C$\alpha$ selection, centering, rigid alignment, geometric
+features, clustering, density estimation, subsampling, and visual surface extraction.
+The original archive is approximately 1.41 GB; only the selected members are read.
+The deposit's archive MD5 is recorded as metadata, not asserted to have been
+verified against a complete local download.
+
+\textbf{Interpretation of the two examples.}
+Alanine is a torsional benchmark; CLN025 is a ten-residue mini-protein variant.
+The extension demonstrates that the software can represent a more complicated
+conformational dataset, not that the same two-dimensional representation
+resolves its folding kinetics. No quantitative performance gain from
+categorification has been established.
+
+\textbf{Authorship and preparation.} Joseph Campagna, PSM.
+This exploratory software and manuscript were prepared with AI-assisted coding
+and drafting. Numerical outputs and figure sources are included for inspection;
+the document has not undergone peer review.
+
+\footnotesize
+\begin{thebibliography}{9}\setlength{\itemsep}{1pt}
+\bibitem{mdshare} MDshare. \emph{Alanine dipeptide dataset and simulation metadata}.
+\url{https://markovmodel.github.io/mdshare/ALA2/}.
+\bibitem{may} J. P. May. \emph{Simplicial sets, nerves of categories, Kan complexes, etc.}
+\url{https://math.uchicago.edu/~may/REU2018/sset.pdf}.
+\bibitem{bauer} U. Bauer, M. Kerber, F. Roll, A. Rolle.
+\emph{A Unified View on the Functorial Nerve Theorem and its Variations}.
+\url{https://arxiv.org/abs/2203.03571}.
+\bibitem{baez} J. C. Baez, B. S. Pollard.
+\emph{A Compositional Framework for Reaction Networks} (2017).
+\url{https://arxiv.org/abs/1704.02051}.
+\bibitem{pollard} B. S. Pollard. \emph{Open Markov Processes and Reaction Networks} (2017).
+\url{https://arxiv.org/abs/1709.09743}.
+\bibitem{homotopy} N. Corbyn et al.
+\emph{homotopy.io: a proof assistant for finitely-presented globular $n$-categories} (2024).
+\url{https://arxiv.org/abs/2402.13179}.
+\bibitem{chignolin} A. P\'erez Culubret and G. De Fabritiis.
+\emph{Chignolin Simulations} (2021), Figshare, CC BY 4.0.
+\url{https://doi.org/10.6084/m9.figshare.13858898}.
+\end{thebibliography}
+\end{document}

@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {OrbitControls} from './OrbitControls.js';
 import {createDynamics} from './dynamics.js';
+import {backboneCartoon} from './cartoon.js';
 const $=id=>document.getElementById(id);
 const canvas=$('scene'), renderer=new THREE.WebGLRenderer({canvas,antialias:true,preserveDrawingBuffer:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));
@@ -26,7 +27,7 @@ miniScene.add(new THREE.HemisphereLight(0xffffff,0x26334a,3));const ml=new THREE
 let molecule=new THREE.Group();miniScene.add(molecule);
 const atomGeo=new THREE.SphereGeometry(.065,20,12),bondGeo=new THREE.CylinderGeometry(.018,.018,1,10),elements=['C','C','O','N','C','C','C','O','N','C'],bonds=[[0,1],[1,2],[1,3],[3,4],[4,5],[4,6],[6,7],[6,8],[8,9]];
 const atomMats={C:new THREE.MeshStandardMaterial({color:0xa9ddce}),N:new THREE.MeshStandardMaterial({color:0x708efc}),O:new THREE.MeshStandardMaterial({color:0xf18e92})},bondMat=new THREE.MeshStandardMaterial({color:0x687f94});
-function drawMol(coords){molecule.clear();coords.forEach((p,i)=>{const s=new THREE.Mesh(atomGeo,atomMats[elements[i]]);s.position.set(...p);molecule.add(s);});for(const [i,j]of bonds){const a=new THREE.Vector3(...coords[i]),b=new THREE.Vector3(...coords[j]),d=b.clone().sub(a);const c=new THREE.Mesh(bondGeo,bondMat);c.position.copy(a.add(b).multiplyScalar(.5));c.scale.y=d.length();c.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());molecule.add(c);}}
+function drawMol(coords){for(const o of molecule.children)if(o.userData.cartoon)o.traverse(x=>{x.geometry?.dispose();x.material?.dispose();});molecule.clear();coords.forEach((p,i)=>{const s=new THREE.Mesh(atomGeo,atomMats[elements[i]]);s.position.set(...p);molecule.add(s);});for(const [i,j]of bonds){const a=new THREE.Vector3(...coords[i]),b=new THREE.Vector3(...coords[j]),d=b.clone().sub(a);const c=new THREE.Mesh(bondGeo,bondMat);c.position.copy(a.add(b).multiplyScalar(.5));c.scale.y=d.length();c.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());molecule.add(c);}const cartoon=backboneCartoon(coords,[0,1,3,4,6,8,9],.025);cartoon.userData.cartoon=true;molecule.add(cartoon);}
 function select(i){selected=i;const n=data.nodes[i];$('nodeSelect').value=i;drawMol(n.molecule);$('details').innerHTML=`<strong>{${n.simplex.map(x=>'U'+x).join(' ∩ ')}}</strong> · ${n.count.toLocaleString()} sampled witnesses<br>φ ${n.angles[0].toFixed(0)}° · ψ ${n.angles[1].toFixed(0)}° · ${n.energy.toFixed(2)} kBT<br><span class="small">Associated frame: run ${Math.floor(n.frame/250000)+1}, ${(n.frame%250000/1000).toFixed(3)} ns</span>`;markers.forEach((m,j)=>{m.scale.setScalar(j===i?1.8:1);m.material.emissiveIntensity=j===i?2:.5;});}
 const tracer=new THREE.Mesh(new THREE.SphereGeometry(.28,16,12),new THREE.MeshBasicMaterial({color:0xffffff}));world.add(tracer);
 const map=$('map'),ctx=map.getContext('2d');

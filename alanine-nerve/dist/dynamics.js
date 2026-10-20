@@ -57,8 +57,8 @@ export async function createDynamics(world,freeEnergy){
  }
  function renderMolecules(){
   const phase=frozenPhase??(clock/5%1),smooth=$('interpolation').value==='smooth';
-  skins.forEach((s,i)=>s.update(selected>=0?phase:(phase+i*.137)%1,Number($('skinAlpha').value)/100,Number($('deformation').value)/100));
-  if(selected>=0&&!$('molecules').checked){const rep=d.edges[selected].representative;$('morphTime').textContent=`Run ${rep.run} · ${(rep.startPs+phase*(rep.endPs-rep.startPs)).toFixed(2)} ps · skin highlight`;}
+  skins.forEach((s,i)=>s.update(selected>=0?phase:(phase+i*.137)%1,Number($('skinAlpha').value)/100,Number($('deformation').value)/100,$('skinHighlight').checked?1:0));
+  if(selected>=0&&!$('molecules').checked){$('morphTime').textContent=`Visual deformation phase ${phase.toFixed(2)} · MD-attached material warp`;}
   molecules.forEach((m,i)=>{
    if(!m.root.visible)return;
    const f=selected>=0?phase:(phase+i*.137)%1;
@@ -106,6 +106,7 @@ export async function createDynamics(world,freeEnergy){
  $('pathSkins').onchange=$('guideLines').onchange=$('molecules').onchange=$('particles').onchange=()=>{visibleMotion(activeEdges);renderMolecules();};
  $('skinAlpha').oninput=()=>{$('skinAlphaValue').textContent=$('skinAlpha').value+'%';renderMolecules();};
  $('deformation').oninput=()=>{$('deformValue').textContent=$('deformation').value+'%';renderMolecules();};
+ $('skinHighlight').onchange=renderMolecules;
  $('interpolation').onchange=$('moleculeStyle').onchange=$('moleculeScale').oninput=renderMolecules;
  $('morphPhase').oninput=e=>{paused=true;$('flowPause').textContent='▶ Resume flow';frozenPhase=Number(e.target.value)/1000;clock=frozenPhase*5;renderMolecules();};
  $('flowLegend').innerHTML=d.basins.map(b=>`<span style="color:#${new THREE.Color(COLORS[b.id]).getHexString()}">${b.name}: (${b.angles.join('°, ')}°)</span>`).join(' · ');

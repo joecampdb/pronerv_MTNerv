@@ -1,52 +1,52 @@
 [
   {
     "route": 0,
-    "maxDisplacement": 0.5991474242979632,
-    "rmsDisplacement": 0.26021937663697725
+    "maxDisplacement": 0.561407079529436,
+    "rmsDisplacement": 0.24416369824903242
   },
   {
     "route": 1,
-    "maxDisplacement": 6.490913590313776,
-    "rmsDisplacement": 2.8058014750451936
+    "maxDisplacement": 1.4994756594551175,
+    "rmsDisplacement": 1.0876586781109314
   },
   {
     "route": 2,
-    "maxDisplacement": 4.17154915668695,
-    "rmsDisplacement": 1.6046930497092162
+    "maxDisplacement": 1.488486307256237,
+    "rmsDisplacement": 0.895971055085122
   },
   {
     "route": 3,
-    "maxDisplacement": 0.2966978271475422,
-    "rmsDisplacement": 0.11459161267711343
+    "maxDisplacement": 0.27550778900354156,
+    "rmsDisplacement": 0.10011791005496277
   },
   {
     "route": 4,
-    "maxDisplacement": 1.9154697853948424,
-    "rmsDisplacement": 0.7941535441521183
+    "maxDisplacement": 1.281373405462395,
+    "rmsDisplacement": 0.6397411324108522
   },
   {
     "route": 5,
-    "maxDisplacement": 7.737408304120376,
-    "rmsDisplacement": 3.0144120703178494
+    "maxDisplacement": 1.4998987502863699,
+    "rmsDisplacement": 1.1039859878597658
   },
   {
     "route": 6,
-    "maxDisplacement": 3.275385466582439,
-    "rmsDisplacement": 1.1646343739103413
+    "maxDisplacement": 1.4621424885354817,
+    "rmsDisplacement": 0.7624562698251968
   },
   {
     "route": 7,
-    "maxDisplacement": 2.4214541585917315,
-    "rmsDisplacement": 0.930773905154115
+    "maxDisplacement": 1.3778470116698855,
+    "rmsDisplacement": 0.7098484403480179
   },
   {
     "route": 8,
-    "maxDisplacement": 4.051182689581466,
-    "rmsDisplacement": 1.66431309206643
+    "maxDisplacement": 1.4863614058156969,
+    "rmsDisplacement": 0.9504746117886813
   },
   {
     "route": 9,
-    "maxDisplacement": 11.693925218704008,
-    "rmsDisplacement": 4.46418495372381
+    "maxDisplacement": 1.4999999289883774,
+    "rmsDisplacement": 1.1458194242700044
   }
 ]

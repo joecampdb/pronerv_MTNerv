@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chignolin CLN025 — Molecular Atlas</title>
+<meta name="description" content="MD-driven molecular skins, backbone cartoons and categorical nerves for the chignolin variant CLN025.">
+<link rel="stylesheet" href="./atlas.css">
+<script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
+</head><body>
+<header><div><div class="eyebrow">MOLECULAR ATLAS / CASE 002</div><h1>Chignolin <span>as landscape</span></h1></div>
+<nav aria-label="Molecular system"><a href="./index.html">← Alanine</a> · <a href="./chignolin.html" aria-current="page">Chignolin CLN025</a></nav>
+<div class="badge">PUBLIC MD · CLN025 · 350 K</div></header>
+<main><div class="stage">
+<canvas id="scene" aria-label="Interactive chignolin molecular landscape with deforming pathway skins and nerve overlays"></canvas>
+<div class="topline"><strong>Ten residues. A richer conformational chart.</strong><p>YYDPETGTWY · Cα geometry · empirical occupancy</p></div>
+<div class="toolbar"><button id="reset">Orbit view</button><button id="top">Top view</button><button id="capture">↓ PNG</button></div>
+<div class="bottom"><div class="legend">−log P / Pmax · POOLED OCCUPANCY<div class="gradient"></div><div><span>populated</span><span>rare</span></div></div>
+<div class="hint">Horizontal: CA radius of gyration · depth: end-to-end distance<br>Vertical: occupancy score + molecular relief</div></div>
+<div id="loading">Reconstructing the chignolin landscape…</div></div>
+<aside>
+<section><div class="eyebrow">01 / MD-DRIVEN SKINS</div><h2>Flow through molecular geometry</h2>
+<p id="stats" class="small"></p>
+<label class="control">Continuous pathway skins<input id="pathSkins" type="checkbox" checked></label>
+<div class="range-label"><span>Deformation amplitude</span><output id="deformValue">100%</output></div>
+<input id="deformation" aria-label="MD-driven skin deformation" type="range" min="0" max="100" value="100">
+<label class="small" for="skinAlpha">Pathway skin opacity</label><input id="skinAlpha" type="range" min="0" max="100" value="65">
+<button id="pause">Ⅱ Pause</button>
+<label class="small" for="phase">Visual deformation phase</label><input id="phase" type="range" min="0" max="1000" value="0">
+<select id="route" aria-label="Inspect transition route"><option value="-1">All observed routes</option></select>
+<p class="small">Actual vertices move using Cα displacements from recorded MD. The periodic material warp is a visual interpolation, not a new physical trajectory.</p>
+</section>
+<section><div class="eyebrow">02 / SUPERIMPOSE NERVES</div>
+<label class="control">Overlap simplicial nerve<input id="nerve" type="checkbox" checked></label>
+<p class="small" id="nerveStats"></p>
+<select id="nodeSelect" aria-label="Inspect overlap object"></select>
+<label class="small" for="pathChain">Dynamic nerve · compose two arrows</label>
+<select id="pathChain"><option value="">Choose a composable pair</option></select>
+<p class="small" id="composition">Select two composable generators to superimpose a path-nerve 2-simplex.</p>
+<p class="small">Triangles encode composition. A direct observed arrow and a two-step composite remain distinct. Repeated objects may be offset visually.</p>
+</section>
+<section><div class="eyebrow">03 / MOLECULAR CARTOON</div><h2>Recorded backbone geometry</h2>
+<canvas id="mini" aria-label="Chignolin C-alpha backbone trace cartoon"></canvas>
+<select id="cartoonChoice" aria-label="Representative cartoon"><option value="0">Compact representative</option><option value="1">Extended representative</option></select>
+<p class="small" id="details"></p>
+<p class="small">Blue → gold traces the N → C direction. Smooth Cα cartoons retain recorded sites; no secondary-structure assignment is implied. Select a route to animate its representative conformation.</p>
+</section>
+<section><div class="eyebrow">04 / INTERPRETATION</div>
+<label class="small" for="opacity">Terrain opacity</label><input id="opacity" type="range" min="0" max="100" value="55">
+<p class="small" id="bounds"></p><p class="small" id="basins"></p>
+<p class="small">A–D are geometric clusters, ordered by radius of gyration. They are not established folded/unfolded macrostates.</p>
+<p class="small">128 runs selected in archive order from an adaptive-sampling dataset. Pooled occupancy is not an equilibrium free energy. XTC timestamps conflict with the depositor’s 50 ns run duration; analyses use frame indices. Nominal aggregate duration: 6.4 μs.</p>
+<p class="small">Source: Pérez Culubret &amp; De Fabritiis, <a href="https://doi.org/10.6084/m9.figshare.13858898">Chignolin Simulations</a>, CC BY 4.0. CLN025 differs from original chignolin.</p>
+<p><a href="./paper.pdf">Read the illustrated paper ↗</a></p>
+<p class="small">Joseph Campagna, PSM · Exploratory molecular atlas</p>
+</section></aside></main><script type="module" src="./chignolin.js"></script></body></html>

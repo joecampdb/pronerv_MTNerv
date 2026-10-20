@@ -1,0 +1,106 @@
+\newpage
+\section*{5. Limitations and obstacles encountered}
+This section records the substantive scientific and practical obstacles
+encountered during construction, the response taken, and the remaining
+limits on interpretation. Successful rendering or passing numerical checks
+does not resolve these scientific limitations.
+
+\textbf{Dataset scale and selection.}
+The CLN025 archive is approximately 1.41 GB and contains thousands of runs.
+We streamed the first 128 trajectory members to keep the example reproducible
+on ordinary hardware. Archive order is deterministic but not random or
+statistically representative. Only per-member hashes were verified; the full
+archive checksum was not independently verified. One selected run contains
+499 frames rather than 500, so all code uses actual lengths and resets at
+run boundaries. Expanding or randomizing the selection may change every
+reported cluster, passage count and occupancy.
+
+\textbf{Timing conflict.}
+The first selected XTC encodes a 100,000 ps interval and a final time of
+50,000,000 ps, whereas the deposit describes 50 ns production runs.
+This is a factor-1,000 discrepancy relative to a nominal 100 ps frame interval.
+We preserve raw per-file times, analyze passages in frame indices, and label
+6.4 $\mu$s only as the nominal aggregate from deposit metadata. We do not
+silently repair the files, infer rates from their timestamps, or claim that
+the discrepancy has been resolved.
+
+\textbf{Adaptive sampling and comparability.}
+CLN025 trajectories were adaptively initialized, and no equilibrium weighting
+is available in this prototype. Pooled occupancy is therefore not a justified
+Boltzmann probability. Alanine also lacks a convergence and uncertainty study.
+The systems have different temperatures, force fields, atom selections and
+sampling procedures. Their plotted heights and transition counts must not
+be compared as quantitative thermodynamic or kinetic measurements.
+
+\textbf{Chemical identity and cartoons.}
+The available deposit is CLN025 (YYDPETGTWY), not original chignolin.
+Its topology includes non-protein entries that trigger element/mass warnings
+in the trajectory parser. We select C$\alpha$ atoms by name, verify the ten-residue
+sequence, and use no guessed masses or solvent atoms in the geometric features.
+Alanine cannot support a conventional protein secondary-structure cartoon;
+its backbone trace includes atomic context. CLN025 ribbons interpolate C$\alpha$
+sites without assigning helices, sheets, native state or hydrogen bonds.
+
+\textbf{Projection and state definitions.}
+$(R_g,d_{\rm ee})$ can merge folded, misfolded and otherwise distinct structures.
+Alignment to one reference is a rendering gauge, not a dynamical reduction.
+Core radii, smoothing widths, cover size and chart scaling are selected
+parameters, without a robustness study. The two-dimensional state labels
+do not establish metastability, sufficient statistics, memorylessness,
+or a reaction coordinate.
+
+\newpage
+\section*{Limitations: topology, deformation and implementation}
+\textbf{Categorical claims.}
+The identity between the realization of a face-poset nerve and the barycentric
+subdivision of its simplicial complex is exact. Recovering the homotopy type
+of molecular configuration space would require additional cover and sampling
+hypotheses, which are not established. Witnessing intersections in a finite
+projection may miss or merge features. The alanine seam is unglued.
+The overlap complex is truncated, while the free path category has an infinite
+nerve; the viewer shows only selected finite parts. No comparison functor
+between the two categories, proof-assistant export, or compositional
+semantics for molecular dynamics has been implemented.
+
+\textbf{Statistical and dynamical validation.}
+Some alanine directions have one or two passages. Temporal correlations,
+core recrossings and arbitrary clustering affect counts in both systems.
+The chignolin display provides passage counts, not a validated Markov model.
+No implied-timescale convergence, Chapman--Kolmogorov test, bootstrap
+uncertainty, detailed-balance analysis or experimental validation is supplied.
+Matching categorical endpoints permits a formal composition even when
+its constituent passages were never recorded consecutively.
+
+\textbf{Deformation and geometry.}
+Fixed swept skins initially communicated motion only through a highlight.
+The revision adds actual position/normal morph targets, but this remains
+a visualization construction. Local attachment can be ambiguous at
+self-overlaps. Cartesian interpolation can distort molecular geometry;
+adjacency smoothing and a 1.5-unit displacement bound reduce extreme
+excursions without guaranteeing injectivity, collision freedom, conserved
+volume or preserved topology. Envelopes intersect the terrain as separate
+transparent meshes rather than forming a Boolean union. Transparency ordering
+can hide surfaces. Disconnected islands are possible consequences of sparse
+sampling and thresholded densities, not newly discovered physical states.
+
+\textbf{Rendering and software constraints.}
+Initial figure framing clipped isolated pathway skins; cameras were refitted
+to all deformation targets before final rendering. Twelve targets and bounded
+representative samples keep assets manageable, at the cost of temporal and
+spatial detail. GPU limits and transparency behavior vary between browsers.
+Blender figures use 4.0/Eevee; other releases may change material APIs or output.
+A trial MDTraj installation required a source build and subsequently lacked
+an import dependency. The pipeline instead uses the functioning MDAnalysis
+parser, with a documented Python environment. The static viewer requires HTTP serving, not direct
+\texttt{file://} loading.
+
+\textbf{Publication and reproducibility scope.}
+The repository originally mixed this atlas with a separate polyethylene
+simulation project. Documentation now separates them; generated raw simulations
+are not required to run the atlas. Large upstream MD inputs are downloaded on
+demand and have separate attribution. The hosted Sites viewer has its own
+access policy; public GitHub source does not automatically make that hosted
+instance public. A local server or the public repository's documented viewer
+deployment is the reproducible entry point. This paper is exploratory and
+not peer reviewed; implementation tests establish consistency, not scientific
+validity.

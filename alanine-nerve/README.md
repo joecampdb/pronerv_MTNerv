@@ -110,7 +110,7 @@ Validation: `python validate_dynamics.py` compares every exported molecular fram
 against the original coordinates and checks its matching angles. `node test-morph.mjs`
 checks frame recovery, endpoint recovery, discrete sampling and seam interpolation.
 
-## Continuous pathway skins
+## Continuous pathway skins (original fixed-envelope construction)
 
 Run `python build_skins.py` after `dynamics.py`. Each passage contributes a swept
 Gaussian atomic-density envelope at exactly the terrain's molecular magnification
@@ -135,3 +135,28 @@ Cut-chart seam crossings remain separated; no straight surface is intentionally
 drawn across the chart. Generated meshes are checked for finite values, bounded
 phase attributes and local triangle edges. The separate skins do not change
 the estimated kinetics, overlap nerve or path category.
+
+## MD-driven skin deformation and exploratory paper
+
+The current viewer supersedes the fixed playback above. Run
+`python build_deformation.py` after `build_skins.py` to generate 12 cyclic
+position/normal morph targets for each route. A bounded material time warp
+samples the recorded heavy-atom conformations; atom-weighted displacement is
+smoothed over mesh adjacency and capped at 1.5 world units. Endpoint-attached
+vertices remain fixed. GPU interpolation moves the actual surface vertices.
+The deformation slider controls amplitude; highlights default to off.
+Playback phase is a visualization parameter, not a shared physical MD time.
+This deformation is not a new simulation and has no injectivity guarantee.
+
+The overlap nerve is visible by default and can be superimposed independently.
+The paper distinguishes its face-poset nerve from the free path-category nerve,
+and distinguishes path composition from composition of complete open systems.
+
+`paper/paper.tex` is the five-page exploratory LaTeX paper. Its figures are
+rendered from the same meshes and morph targets using Blender 4.0/Eevee:
+`blender --background --python paper/render_blender.py`, followed by
+`blender --background --python paper/render_animation.py` for the six-second loop.
+Compile with `tectonic paper/paper.tex --outdir output/pdf`.
+The editable scene is `paper/molecular-landscape.blend`; the post draft is
+`paper/linkedin-post.txt`. The viewer remains owner-private; no social post
+has been published.

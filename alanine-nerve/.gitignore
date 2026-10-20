@@ -1,3 +1,9 @@
 data/
 __pycache__/
 *.tar.gz
+*.blend1
+paper/*.aux
+paper/*.log
+paper/*.out
+output/pdf/*.png
+output/*.zip
