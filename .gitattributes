@@ -1,0 +1,12 @@
+*.bin binary
+*.blend binary
+*.pdf binary
+*.png binary
+*.mp4 binary
+alanine-nerve/dist/three.module.js linguist-vendored
+alanine-nerve/dist/OrbitControls.js linguist-vendored
+alanine-nerve/dist/data.json linguist-generated
+alanine-nerve/dist/dynamics.json linguist-generated
+alanine-nerve/dist/chignolin/*.json linguist-generated
+alanine-nerve/dist/skins/*.json linguist-generated
+alanine-nerve/dist/chignolin/skins/*.json linguist-generated

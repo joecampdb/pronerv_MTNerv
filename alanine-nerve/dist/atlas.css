@@ -5,3 +5,5 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 310px;height:calc(100vh - 
 select{background:#142332;color:#d1e4e7;border:1px solid #334757;border-radius:4px;padding:5px;font-size:11px}.playrow>select{min-width:0;flex:1;max-width:50%}
 @media(max-width:900px){main{grid-template-columns:minmax(0,1fr) 260px}aside{padding:16px}header{padding:20px}.toolbar{top:85px;left:28px;right:auto}h1{font-size:25px}}
 @media(max-width:650px){header{height:auto;gap:10px}.badge{display:none}main{display:flex;flex-direction:column;height:auto}.stage{height:65vh;min-height:450px}aside{overflow:visible;border-left:0}.hint{display:none}.topline{left:18px}.bottom{left:18px}.toolbar{left:18px}#mini{height:200px}#map{max-width:300px}}
+nav{font-size:12px;margin:0 16px}nav a{white-space:nowrap}aside select{width:100%;margin-top:8px}.toolbar{top:85px;left:28px;right:auto}
+@media(max-width:650px){header{flex-wrap:wrap}header nav{flex-basis:100%;margin:0}.toolbar{left:18px}}

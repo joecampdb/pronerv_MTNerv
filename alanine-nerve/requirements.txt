@@ -1,3 +1,4 @@
 numpy==1.26.4
 scipy>=1.11,<1.15
 scikit-image==0.24.0
+MDAnalysis==2.7.0

@@ -8,3 +8,9 @@ smoke_fixed/
 sources/
 reports/
 *.log
+.venv/
+*.tar.gz
+*.o
+a.out
+*-preview.png
+output/

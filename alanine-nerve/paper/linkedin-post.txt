@@ -1,19 +1,29 @@
-What if a molecular energy landscape were made from the molecule itself?
+What if a molecular landscape were made from the molecule itself—and composition were something we could see?
 
-This exploratory prototype starts with 750,000 public MD frames of alanine dipeptide. Molecular conformations form translucent pathway skins that deform through an atom-attached displacement field. A simplicial nerve can be superimposed to make two different kinds of composition visible:
+I have been exploring this with two MD benchmarks: alanine dipeptide and the ten-residue chignolin variant CLN025.
+
+Recorded conformations form translucent pathway skins that actually deform. Backbone cartoons keep the molecular identity visible. Superimposed simplicial nerves expose two distinct constructions:
 
 • inclusion of overlapping conformational neighborhoods;
-• concatenation of observed transition-route types.
+• formal composition of observed transition-route types.
 
-The distinction matters. A categorical composite A → B → C is not automatically an observed direct A → C transition. And composing paths is only a first step toward composing dynamical models with explicit interfaces.
+That distinction is central. A → B → C is not automatically an observed direct A → C transition. Composing paths is also not yet the same as composing complete dynamical systems.
 
-The accompanying illustrated note explains the construction, its LaTeX mathematics, and its limits. The figures were rendered in Blender from the same geometry as the interactive viewer.
+The public prototype includes 750,000 alanine frames and a reproducible 63,999-frame CLN025 subset, an illustrated paper with mathematical definitions, Blender figures and animations, and runnable source code.
 
-This is an experiment in scientific representation, not a new validated kinetic model. The deformation is driven by MD data but is a visual interpolation, not additional simulated dynamics.
+The limitations are part of the work: adaptive-sampling bias, projection loss, unresolved chignolin timing metadata, unvalidated kinetics, and the difference between MD-driven visual deformation and physical simulation. The paper lays out future directions toward explicit interfaces and compositional semantics for structural bioinformatics.
 
-I would welcome perspectives from applied category theory, molecular simulation, and structural bioinformatics: what should the interfaces be if we want molecular dynamical models to compose?
+I would welcome perspectives from applied category theory, molecular simulation and structural bioinformatics: which experimentally meaningful interfaces would let molecular dynamical models compose?
+
+Viewer: https://joecampdb.github.io/pronerv_MTNerv/
+Paper and source: https://github.com/joecampdb/pronerv_MTNerv
+
+Joseph Campagna, PSM
 
 #AppliedCategoryTheory #MolecularDynamics #StructuralBioinformatics #ScientificVisualization
 
-Publication notes:
-Attach paper.pdf as a LinkedIn document, or use figures/landscape-nerve.png as the lead image. The current viewer is owner-private; make a deliberate sharing choice before promoting its link to readers. This draft has not been posted.
+Publication notes (remove before posting):
+This draft has not been posted. Attach paper/molecular-atlas.pdf as a document, or
+use the CLN025 landscape and molecular cartoons as an image sequence. Both
+six-second Blender MP4s are in alanine-nerve/paper/figures/. The Sites-hosted copy
+has a separate access policy; the links above use public GitHub and Pages.

@@ -6,7 +6,7 @@ const $=id=>document.getElementById(id), canvas=$('scene');
 const renderer=new THREE.WebGLRenderer({canvas,antialias:true,preserveDrawingBuffer:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setClearColor(0x080e19,0);
 const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(42,1,.1,200);
-camera.position.set(38,33,43);
+camera.position.set(38,33,-43);
 const controls=new OrbitControls(camera,canvas);controls.target.set(0,3,0);controls.enableDamping=true;
 scene.add(new THREE.HemisphereLight(0xd5ffff,0x172032,2.4));
 for(const [p,c] of [[[20,30,10],0xd5ffff],[[-20,15,-20],0xffb89a]]){
@@ -71,7 +71,7 @@ async function init(){
  $('basins').textContent=d.basins.map(b=>`${b.name}: Rg ${b.features[0].toFixed(2)} nm, end-to-end ${b.features[1].toFixed(2)} nm`).join(' · ');
  showCartoon(d.cartoons[0].molecule);routeFilter();$('loading').remove();
 }
-$('route').onchange=e=>{selected=+e.target.value;pair=null;$('pathChain').value='';compose();};
+$('route').onchange=e=>{selected=+e.target.value;pair=null;$('pathChain').value='';compose();update();};
 $('pathChain').onchange=compose;
 $('nodeSelect').onchange=e=>{const n=data.nodes[+e.target.value];paused=true;$('pause').textContent='▶ Play';showCartoon(n.molecule);$('details').textContent=`Overlap object: ${n.count} sampled witnesses; recorded global frame ${n.frame}.`;};
 $('cartoonChoice').onchange=e=>{paused=true;$('pause').textContent='▶ Play';const c=data.cartoons[+e.target.value];showCartoon(c.molecule);$('details').textContent=`Recorded run ${c.run+1}, frame ${c.localFrame}; Rg ${c.features[0].toFixed(2)} nm.`;};
@@ -82,7 +82,7 @@ $('deformation').oninput=e=>$('deformValue').textContent=e.target.value+'%';
 $('pause').onclick=()=>{paused=!paused;$('pause').textContent=paused?'▶ Play':'Ⅱ Pause';};
 $('phase').oninput=e=>{phase=e.target.value/1000;paused=true;$('pause').textContent='▶ Play';update();};
 $('top').onclick=()=>{camera.position.set(0,65,.01);controls.target.set(0,3,0);};
-$('reset').onclick=()=>{camera.position.set(38,33,43);controls.target.set(0,3,0);};
+$('reset').onclick=()=>{camera.position.set(38,33,-43);controls.target.set(0,3,0);};
 $('capture').onclick=()=>{renderer.render(scene,camera);const a=document.createElement('a');a.href=canvas.toDataURL();a.download='chignolin-atlas.png';a.click();};
 function update(){
  skins.forEach(s=>s.update(phase,$('skinAlpha').value/100,$('deformation').value/100,0));

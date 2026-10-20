@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this exploratory software and its underlying data sources."
+title: "From Molecular Trajectories to Composable Paths"
+authors:
+  - family-names: Campagna
+    given-names: Joseph
+type: software
+version: 0.2.0
+date-released: 2026-10-20
+repository-code: "https://github.com/joecampdb/pronerv_MTNerv"
+abstract: "An exploratory molecular atlas of alanine dipeptide and chignolin CLN025 with MD-driven deforming skins, backbone cartoons, and categorical nerve overlays."

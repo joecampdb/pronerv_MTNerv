@@ -97,7 +97,10 @@ parser, with a documented Python environment. The static viewer requires HTTP se
 \textbf{Publication and reproducibility scope.}
 The repository originally mixed this atlas with a separate polyethylene
 simulation project. Documentation now separates them; generated raw simulations
-are not required to run the atlas. Large upstream MD inputs are downloaded on
+are not required to run the atlas. Previously tracked inputs, build binaries and
+smoke-run artifacts were removed from the current source index while preserving
+local files and Git history; older commits still contain those artifacts.
+Large upstream MD inputs are downloaded on
 demand and have separate attribution. The hosted Sites viewer has its own
 access policy; public GitHub source does not automatically make that hosted
 instance public. A local server or the public repository's documented viewer

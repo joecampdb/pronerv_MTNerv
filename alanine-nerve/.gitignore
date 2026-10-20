@@ -7,3 +7,5 @@ paper/*.log
 paper/*.out
 output/pdf/*.png
 output/*.zip
+.venv/
+output/
