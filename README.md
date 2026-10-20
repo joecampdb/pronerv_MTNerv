@@ -14,6 +14,15 @@ ten-residue chignolin variant **CLN025**.
 **[Open the public viewer](https://joecampdb.github.io/pronerv_MTNerv/)** ·
 [Reproduce the analysis](alanine-nerve/README.md) · [Data attribution](DATA_SOURCES.md)
 
+**[LinkedIn carousel (10-slide PDF)](paper/molecular-atlas-linkedin-carousel.pdf)** ·
+[Alanine annotated nerve](alanine-nerve/paper/figures/alanine-nerve-annotated-both.png) ·
+[CLN025 annotated nerve](alanine-nerve/paper/figures/chignolin-nerve-annotated-both.png)
+
+[Download all annotated viewpoints (PNG + SVG)](paper/annotated-nerve-views.zip).
+The monochrome nerve plates show oblique and overhead views with vertex markers,
+inclusion-edge legends, and a labeled example simplex. They show the complete
+exported overlap 2-skeleton; kinetic transitions belong to the separate path nerve.
+
 ![CLN025 molecular landscape with nerve](alanine-nerve/paper/figures/chignolin-landscape-nerve.png)
 
 ## Run in one command

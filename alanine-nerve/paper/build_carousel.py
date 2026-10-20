@@ -1,4 +1,4 @@
-"""Create an eight-page, portrait LinkedIn document carousel from project renders."""
+"""Create a ten-page, portrait LinkedIn document carousel from project renders."""
 from pathlib import Path
 from math import atan2, cos, sin, pi
 from reportlab.pdfgen import canvas
@@ -57,7 +57,7 @@ def base(n,kicker):
     c.setStrokeColor(HexColor("#2C4352"));c.setLineWidth(1)
     c.line(72,100,1008,100)
     text("Joseph Campagna, PSM",72,1268,23,WHITE,"Bold")
-    text(f"{n:02d} / 08",914,1270,20,MUTED)
+    text(f"{n:02d} / 10",914,1270,20,MUTED)
 
 
 def title(lines):
@@ -155,8 +155,36 @@ para("An inclusion chain is a 2-simplex in the face-poset nerve.",72,1146,930,31
 text("Schematic cover. No configuration-space homotopy recovery is claimed.",72,1200,23,MUTED)
 c.showPage()
 
-# 6. Formal composition, not a shortcut.
-base(6,"Nerve 2 / transitions and composition")
+# 6-7. Full overlap nerves, with two annotated views per system.
+for page,slug,label,counts,chain in [
+    (6,"alanine","Alanine dipeptide","91 vertices · 282 edges · 204 faces",
+     "v0 = {0} → v18 = {0,8} → v57 = {0,8,9}"),
+    (7,"chignolin","Chignolin CLN025","97 vertices · 342 edges · 264 faces",
+     "v0 = {0} → v14 = {0,5} → v53 = {0,5,7}"),
+]:
+    base(page,"The full overlap nerve / two viewpoints")
+    title([label,"The shape of overlap."])
+    text(counts,72,335,29,MINT,"Bold")
+    # Preserve both complete plotted views and their vertex callouts;
+    # retypeset the source plate's legend below for phone-sized reading.
+    im=Image.open(FIG/f"{slug}-nerve-annotated-both.png")
+    iw,ih=im.size
+    im=im.crop((0,int(.105*ih),iw,int(.65*ih)))
+    display_height=936*im.height/im.width
+    c.drawImage(ImageReader(im),72,H-440-display_height,936,display_height,mask="auto")
+    text("LEGEND",72,849,22,MINT,"Bold")
+    para("Vertex markers: circle = one region; square = pair overlap; triangle = triple overlap.",72,889,936,28,WHITE)
+    para("Edges = index-set inclusions. Shaded faces = composable inclusion chains.",72,980,936,28,WHITE)
+    text(chain,72,1082,26,MINT,"Bold")
+    para("The same 2-skeleton in oblique and overhead views. Bold edges mark the labeled simplex.",72,1132,936,25,MUTED)
+    if slug=="chignolin":
+        text("Height: pooled occupancy, not equilibrium free energy.",72,1210,23,MUTED)
+    else:
+        text("Chart: backbone angles φ, ψ. Height: scaled free energy.",72,1210,23,MUTED)
+    c.showPage()
+
+# 8. Formal composition, not a shortcut.
+base(8,"Nerve 2 / transitions and composition")
 title(["A path can compose.", "A shortcut is different."])
 para("Observed route types generate a category of paths.",72,346,930,32)
 node("A",205,865);node("B",540,520);node("C",875,865)
@@ -173,7 +201,7 @@ text("Matching endpoints permits formal composition, not a spliced MD trajectory
 c.showPage()
 
 # 7. Positive scope and concrete limits without drowning the story.
-base(7,"What the prototype establishes")
+base(9,"What the prototype establishes")
 title(["A visual experiment.", "A precise distinction."])
 items=[
     ("IMPLEMENTED",MINT,"MD-derived molecular geometry, deforming surfaces, and inspectable overlap/path nerves."),
@@ -189,7 +217,7 @@ text("The paper documents the methods, obstacles and future directions.",72,1200
 c.showPage()
 
 # 8. Shareable public links, clickable in the PDF.
-base(8,"An invitation to discuss")
+base(10,"An invitation to discuss")
 title(["How should molecular", "dynamical models", "compose?"])
 para("What should the interfaces be?",72,435,930,39,MINT,"Bold")
 para("Contacts? Torsions? Boundary conditions?",72,501,930,32,WHITE)

@@ -82,6 +82,8 @@ blender --background --python paper/render_cartoons.py
 blender --background --python paper/render_animation.py
 blender --background --python paper/render_animation.py -- --chignolin
 python -c "from pathlib import Path; Path('output/pdf').mkdir(parents=True, exist_ok=True)"
+python -m pip install matplotlib
+python paper/render_annotated_nerve.py
 tectonic paper/paper.tex --outdir output/pdf
 python publish_paper.py
 ```
@@ -89,6 +91,18 @@ python publish_paper.py
 `publish_paper.py` copies the compiled PDF to `dist/paper.pdf` and repository-root
 `paper/molecular-atlas.pdf`. Blender scenes retain actual morph targets. PNGs and
 MP4 loops use the browser's geometry. `paper/linkedin-post.txt` is an unposted draft.
+
+The annotated nerve renderer reads the checked-in numerical data and needs no
+Blender installation or raw MD trajectories. It exports paired and individual
+oblique/overhead views, with PNG and SVG versions, under the repository-root
+`output/nerve-diagrams/annotated/` directory. Paired PNG plates are also saved to
+`paper/figures/` for LaTeX and the carousel.
+
+The ten-slide carousel is checked in at repository-root
+`paper/molecular-atlas-linkedin-carousel.pdf`. To regenerate it on Windows, install
+`reportlab` and `Pillow`, then run `python paper/build_carousel.py`. It uses Windows
+Segoe UI and Georgia font files; adjust the font paths for another operating system.
+The generated PDF is written to repository-root `output/pdf/`.
 
 ## Implementation map
 
