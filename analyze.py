@@ -198,9 +198,13 @@ def plot(folder,rows,labels):
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     fig,axes=plt.subplots(4,1,figsize=(10,8),sharex=True)
+    manifest=json.loads((folder.parent.parent/'manifest.json').read_text())
+    label='SMOKE TEST — no physical inference' if manifest['smoke'] else 'Screening trajectory'
+    fig.suptitle(f'{folder.parent.name}/{folder.name}: {label}')
     t=np.array([r['time_ps'] for r in rows])/1000
-    for ax,key in zip(axes,['rg_nm','contacts_per_carbon','nematic_order','hydration_waters']):
-        ax.plot(t,[r[key] for r in rows],lw=.6); ax.set_ylabel(key)
+    for ax,key,title in zip(axes,['rg_nm','contacts_per_carbon','nematic_order','hydration_waters'],
+                            ['Backbone Rg (nm)','Contacts / carbon','Nematic order','Hydration waters']):
+        ax.plot(t,[r[key] for r in rows],lw=.6); ax.set_ylabel(title)
     axes[-1].set_xlabel('Production time (ns)')
     fig.tight_layout(); fig.savefig(folder/'screening.png',dpi=140); plt.close(fig)
 

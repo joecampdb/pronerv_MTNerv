@@ -4,6 +4,7 @@ vendor/
 runs/
 smoke/
 smoke_gpu/
+smoke_fixed/
 sources/
 reports/
 *.log

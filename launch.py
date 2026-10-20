@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import hashlib
 
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('root',type=Path)
@@ -23,7 +24,16 @@ if pidfile.exists():
         pass
     else:
         p.error('Recorded queue PID is still active; inspect it before launching another queue')
-command=[sys.executable,str(Path(__file__).with_name('run_screen.py')),str(root),
+snapshot=root/'workflow_code'; snapshot.mkdir(exist_ok=True)
+hashes={}
+for name in ['pilot.py','run_screen.py','analyze.py']:
+    source=Path(__file__).with_name(name); target=snapshot/name
+    if target.exists() and target.read_bytes()!=source.read_bytes():
+        p.error('Workflow code differs from existing snapshot; use a fresh run tree')
+    if not target.exists(): shutil.copy2(source,target)
+    hashes[name]=hashlib.sha256(target.read_bytes()).hexdigest()
+(snapshot/'sha256.json').write_text(json.dumps(hashes,indent=2))
+command=[sys.executable,str(snapshot/'run_screen.py'),str(root),
          '--gmx',str(Path(gmx).resolve()),'--threads',str(a.threads)]
 with (root/'queue.log').open('a') as log:
     proc=subprocess.Popen(command,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,

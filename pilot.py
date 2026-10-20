@@ -181,8 +181,33 @@ def mdp(stage, seed, production_ns, smoke=False):
     return '\n'.join(f'{k.replace("_", "-")} = {v}' for k,v in common.items()) + '\n'
 
 
+def check_equilibration(folder, gmx):
+    """Numerical pre-production gate; not a claim of conformational equilibration."""
+    import numpy as np
+    report={}
+    for stage,terms in [('npt',['Temperature','Density']),('relax',['Temperature'])]:
+        filename=f'{stage}.gate.xvg'
+        call([gmx,'energy','-f',f'{stage}.edr','-o',filename],folder,
+             'equilibration-check.log','\n'.join(terms)+'\n0\n')
+        rows=[l for l in (folder/filename).read_text().splitlines() if l and l[0] not in '#@']
+        values=np.loadtxt(rows,ndmin=2)
+        if len(values)<20: raise RuntimeError('Not enough equilibration energy samples')
+        tail=values[len(values)//2:]
+        temp=float(tail[:,1].mean())
+        report[stage+'_temperature_K']=temp
+        if abs(temp-300)>5: raise RuntimeError('Equilibration temperature gate failed')
+        if stage=='npt':
+            density=[float(b.mean()) for b in np.array_split(tail[:,2],2)]
+            drift=abs(density[1]-density[0])/np.mean(density)
+            report['npt_density_quarter_means']=density
+            report['npt_density_relative_difference']=float(drift)
+            if drift>.01: raise RuntimeError('NPT density is not stable within 1%; review before production')
+    save_json(folder/'equilibration-check.json',report)
+
+
 def build(args):
     import numpy as np
+    import rdkit
     cfg = config(); ff = ROOT / cfg['forcefield']
     if cfg['temperature_K'] != 300:
         raise ValueError('This pilot is fixed at 300 K; change the protocol and tests before varying temperature')
@@ -193,7 +218,9 @@ def build(args):
     out.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ff, out / ff.name, dirs_exist_ok=True)
     manifest = dict(config=cfg, smoke=args.smoke, forcefield_sha256=hashes,
-                    generator_sha256=digest(__file__), replicates=[])
+                    generator_sha256=digest(__file__), candidate_count=args.candidates,
+                    python_version=sys.version, numpy_version=np.__version__,
+                    rdkit_version=rdkit.__version__, replicates=[])
     for system, spec in cfg['systems'].items():
         n = 2*spec['repeat_units']
         mol = molecule(n); itp, names = topology(mol)
@@ -289,6 +316,8 @@ def run(args):
                 previous=stage
                 if stage==args.until: break
                 continue
+            if stage=='prod' and not manifest['smoke']:
+                check_equilibration(folder,gmx)
             command = [gmx,'grompp','-f',f'{stage}.mdp','-c',f'{previous}.gro',
                        '-p','topol.top','-o',f'{stage}.tpr','-po',f'{stage}.resolved.mdp',
                        '-pp',f'{stage}.processed.top']

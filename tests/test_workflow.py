@@ -4,6 +4,8 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import numpy as np
 from pilot import molecule, topology, mdp, config, verify_ff, ROOT
 from analyze import unwrap_chain, metrics, committed_labels
+import pytest
+import pilot
 
 
 def test_budget_and_formula():
@@ -63,3 +65,21 @@ def test_topology_pairs_are_exact_graph_distance_three():
 def test_recurrence_counts_both_directions_once():
     events=committed_labels([0]*4+[1]*4+[0]*4,np.arange(12)*10,20)
     assert events==[(20.,0),(60.,1),(100.,0)]
+
+
+@pytest.mark.parametrize('drift,should_pass',[(0.,True),(.05,False)])
+def test_equilibration_gate_rejects_density_drift(tmp_path,monkeypatch,drift,should_pass):
+    def fake_call(args,cwd,log,stdin=None):
+        name=args[args.index('-o')+1]
+        rows=[]
+        for i in range(100):
+            density=1000*(1+drift*(i>=75))
+            rows.append(f'{i} 300 {density}' if name.startswith('npt') else f'{i} 300')
+        (tmp_path/name).write_text('\n'.join(rows))
+    monkeypatch.setattr(pilot,'call',fake_call)
+    if should_pass:
+        pilot.check_equilibration(tmp_path,'unused')
+        assert (tmp_path/'equilibration-check.json').exists()
+    else:
+        with pytest.raises(RuntimeError,match='density'):
+            pilot.check_equilibration(tmp_path,'unused')

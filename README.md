@@ -15,19 +15,22 @@ Then:
 ```bash
 cd /mnt/d/pronerv_MTNerv
 bash bootstrap_wsl.sh
-python3 pilot.py build --output smoke --smoke --candidates 16
-python3 pilot.py run smoke/PE25/rep01 --threads 4
-python3 pilot.py run smoke/PE50/rep01 --threads 4
-python3 analyze.py smoke --discard-ns 0 --stride 1
+python3 pilot.py build --output smoke_fixed --smoke --candidates 16
+python3 pilot.py run smoke_fixed/PE25/rep01 --threads 4
+python3 pilot.py run smoke_fixed/PE50/rep01 --threads 4
+python3 analyze.py smoke_fixed --discard-ns 0 --stride 1
 
 # The scientific run: do not reuse smoke outputs.
 python3 pilot.py build --output runs
+python3 preflight.py runs
 python3 run_screen.py runs --threads 8
 # On completion, or for provisional progress (missing runs are flagged):
 python3 analyze.py runs
 ```
 
 Builders refuse to overwrite an existing manifest. If the directories already exist, skip their build commands. A short smoke uses full minimization but only 1 ps each of NVT, NPT, and relaxation, and 2 ps production. It tests plumbing, never physics or equilibration.
+
+In this workspace, `smoke/` retains the initial diagnostic run that exposed constrained-minimization warnings. `smoke_fixed/` is the corrected CPU verification. `smoke_gpu/` is separate GPU verification; its PE25/rep01 production was extended to 100 ps solely for throughput measurement, recorded in its manifest. None contributes to the 2 μs scientific screen.
 
 Use `--gmx /absolute/path/to/gmx` on run and analysis commands to select a CUDA-enabled build. Ubuntu's packaged GROMACS 2021.4 is CPU-only on this installation. An optional local CUDA build is described in `build_gpu.sh`. Do not switch GROMACS versions in the middle of a scientific replica; record and retain the executable/version. Analysis uses GRO/XTC to avoid coupling to a particular MDAnalysis TPR parser version.
 
@@ -55,13 +58,15 @@ All times below are per replica:
 
 2 fs timestep, normal masses, hydrogen-bond constraints, rigid water, global v-rescale at 300 K with tau_t=2 ps. PME, 1.2 nm electrostatic cutoff; LJ force switch 1.0–1.2 nm and no dispersion correction. No hydrogen-mass repartitioning, accelerated dynamics or bias potential. NVT uses the final NPT volume, not an asserted exact equilibrium mean; review density stability and extend NPT if needed.
 
+Before scientific production, the runner checks the last-half NPT/relaxation temperature (300 ± 5 K) and successive NPT quarter-block density means (within 1%). Failure stops the queue for review rather than spending 100–200 ns on an evidently unready system. These checks establish numerical readiness only, not conformational equilibrium; smoke runs intentionally skip them.
+
 The initial cubic box is at least 8 nm and enlarged to fit selected coils with 3 nm total Cartesian padding. All replicas of a chain length use the same initial box size. The analyzer checks periodic-image separation throughout production, using a conservative bounding-box lower bound or exact 26-neighbor image calculation when necessary. This does not replace a larger-box sensitivity study.
 
 Production saves the full-system compressed trajectory every 1 ps and energies every 1 ps. It does not save a training-grade force/velocity dataset. About two million full-system frames may require hundreds of GB; check storage before launching the complete queue. High-frequency dynamics/force collection belongs in the subsequent learning study.
 
 ## Execution and recovery
 
-`pilot.py run` logs all commands, stops on GROMACS warnings/errors, and resumes existing checkpoints. Stage completion is checked against the requested step count, so a clean `-maxh` exit is not mistaken for a finished trajectory. The serial queue runs one replica at a time, PE25 first. It never creates a paid remote job.
+`pilot.py run` logs all commands, stops on preprocessing warnings and numerical runtime warnings/errors, and resumes existing checkpoints. Stage completion is checked against the requested step count, so a clean `-maxh` exit is not mistaken for a finished trajectory. The serial queue runs one replica at a time, PE25 first, and automatically runs screening analysis when all replicas complete. It never creates a paid remote job. It stops before another invocation when free space falls below 60 GiB.
 
 ```bash
 # Bounded execution; rerun the same command to continue from a checkpoint.
@@ -81,6 +86,7 @@ python3 launch.py runs --gmx "$PWD/vendor/gromacs-install/bin/gmx" --threads 8
 ```
 
 The runner checks force-field hashes, input hashes and the GROMACS executable hash on resumption and rejects changed inputs. Library/build provenance is additionally recorded in the GROMACS version log.
+The detached launcher snapshots the three execution/analysis scripts into `runs/workflow_code/` and executes that snapshot, so subsequent edits to the development scripts cannot silently change a running queue.
 
 ## Analysis and decision
 

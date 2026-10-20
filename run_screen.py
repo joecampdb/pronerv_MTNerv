@@ -37,4 +37,11 @@ for entry in entries:
             (root/'queue_status.json').write_text(json.dumps(status,indent=2))
             sys.exit(result.returncode)
         if a.once: break
-(root/'queue_status.json').write_text(json.dumps(dict(state='pass_finished',updated=time.time()),indent=2))
+if all((root/e['relative_path']/'prod.done.json').exists() for e in entries):
+    (root/'queue_status.json').write_text(json.dumps(dict(state='analyzing',updated=time.time()),indent=2))
+    result=subprocess.run([sys.executable,str(Path(__file__).with_name('analyze.py')),str(root),'--gmx',a.gmx])
+    state='complete' if result.returncode==0 else 'analysis_failed'
+    (root/'queue_status.json').write_text(json.dumps(dict(state=state,updated=time.time()),indent=2))
+    sys.exit(result.returncode)
+else:
+    (root/'queue_status.json').write_text(json.dumps(dict(state='pass_finished',updated=time.time()),indent=2))
