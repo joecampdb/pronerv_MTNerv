@@ -1,0 +1,1 @@
+{"name":"alanine-nerve-landscape","private":true,"type":"module","scripts":{"check":"node --check dist/app.js"}}

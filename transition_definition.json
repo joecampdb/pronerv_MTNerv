@@ -1,0 +1,17 @@
+{
+  "version": "PE25-expansion-v1",
+  "calibration_replica": "PE25/rep01",
+  "status": "Frozen exploratory definition; prospective validation required",
+  "sampling_ps": 10,
+  "discard_ns": 20,
+  "smoothing_ps": 100,
+  "commitment_ps": 200,
+  "compact": {"rg_max_nm": 0.65, "contacts_min": 1.8, "hydration_max": 90},
+  "expanded": {"rg_min_nm": 0.85, "contacts_max": 1.4, "hydration_min": 95},
+  "contact_definition": "Unique C-C pairs within 0.50 nm, separated by at least four bonds, divided by 50 carbons",
+  "hydration_definition": "Unique water oxygens within 0.45 nm of any backbone carbon",
+  "state_rule": "All three conditions must hold simultaneously on trailing-median observables; otherwise undecided",
+  "event_rule": "Commit after uninterrupted core occupancy for commitment_ps. Undecided frames reset the candidate dwell, not the last committed state. Count C-E-C cycles only after an observed compact commitment.",
+  "robust_cycle_rule": "A primary cycle must overlap a complete cycle under each of strict thresholds, 500 ps commitment, 50 ps smoothing and 200 ps smoothing. Matching uses expanded core entry to compact core return intervals.",
+  "recurrence_rule": "Prospective support requires at least two robust complete cycles per replica in at least two of PE25 replicas 2-4. This is a screening heuristic, not a statistical significance test or rate-validation criterion."
+}
