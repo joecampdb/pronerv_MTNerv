@@ -119,12 +119,14 @@ def energy_checks(folder, gmx):
     return diagnostics,warnings
 
 
-def analyze(root, stride, discard_ns, gmx='gmx'):
+def analyze(root, stride, discard_ns, gmx='gmx', system_filter=None):
     manifest=json.loads((root/'manifest.json').read_text())
     ac=manifest['config']['analysis']
     report=dict(smoke=manifest['smoke'],notice='Discovery screening only. No equilibrium populations or validated rates inferred.',systems={})
     features=['rg_nm','anisotropy','contacts_per_carbon','nematic_order','trans_fraction']
     for system,spec in manifest['config']['systems'].items():
+        if system_filter and system != system_filter:
+            continue
         entries=[x for x in manifest['replicates'] if x['system']==system]
         data=[]; missing=[]; quality=[]
         for entry in entries:
@@ -189,7 +191,8 @@ def analyze(root, stride, discard_ns, gmx='gmx'):
                     else: result['decision']='EXTEND_OR_REVISE_STATE_DEFINITION'
         if manifest['smoke']: result['decision']='SMOKE_ONLY_NO_SCIENTIFIC_DECISION'
         report['systems'][system]=result
-    save=root/'screening_report.json'; save.write_text(json.dumps(report,indent=2)+'\n')
+    filename=f'screening_report_{system_filter}.json' if system_filter else 'screening_report.json'
+    save=root/filename; save.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))
 
 
@@ -213,6 +216,7 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__); p.add_argument('root',type=Path)
     p.add_argument('--stride',type=int,default=10); p.add_argument('--discard-ns',type=float,default=20)
     p.add_argument('--gmx',default='gmx')
+    p.add_argument('--system',choices=['PE25','PE50'],help='Analyze only this system, without reading other active trajectories')
     a=p.parse_args()
     if a.stride<1 or a.discard_ns<0: p.error('stride must be positive and discard nonnegative')
-    analyze(a.root.resolve(),a.stride,a.discard_ns,a.gmx)
+    analyze(a.root.resolve(),a.stride,a.discard_ns,a.gmx,a.system)
