@@ -1,0 +1,95 @@
+COMPACT DYNAMICS DEVELOPMENT BENCHMARK, version 1
+
+Scope
+Two completed PE25 trajectories have already been inspected. This is a
+development comparison, not an untouched scientific test or a rate benchmark.
+The frozen compact/expanded definition is read, hashed and never retuned.
+No production simulation or force-field input is changed.
+
+Inputs and targets
+Ordered 50-carbon coordinates, centered but not rotationally fitted; one previous
+100 ps frame; per-carbon hydration counts within 0.45 nm. The graph contains
+backbone bonds plus distance-weighted interactions with a smooth 0.9 nm cutoff.
+Current/previous geometry and hydration are identical between model arms.
+Per-carbon hydration counts are not the global unique-water observable in the
+frozen state definition; frozen state labels come from the existing analysis.
+
+The output distribution is a shared four-component mixture of products of
+von Mises distributions for the 47 next-frame backbone torsions. Each sample
+selects one mixture component for the entire chain. This allows limited
+coordination but is not a fully expressive joint molecular transition model.
+The objective is normalized torsion negative log likelihood per angle plus
+0.1 times local log-hydration prediction MSE. Local hydration is propagated
+using its predicted mean during rollouts, without future solvent information.
+Hydration predictions are clipped to the physical working range [0,100];
+the clipping fraction is reported.
+
+Architecture comparison
+Matrix GNN: learned endpoint-conditioned 4x4 matrix messages.
+Sheaf: the SAME map networks/width/layers and shared stochastic output heads,
+but messages use -R_i^T(R_i h_i - R_j h_j).
+The other incidence map is computed by reversing endpoints through the same
+network. Scalar stalks have width 24, grouped into six 4-dimensional channels.
+All trainable parameters contribute to computation; no unused padding parameters.
+Model parameter counts are asserted equal in every paired run.
+
+The network is an invariant message-passing encoder plus an SE(3)-equivariant
+internal-coordinate reconstruction. It is not a reproduction of the original
+EGNN architecture and does not claim reflection equivariance for signed
+torsion features. The decoder preserves initial bond lengths/angles and the
+first-three-carbon pose, removing irrelevant rigid-body motion from the target.
+Fast bond/angle dynamics, forces, momentum and detailed balance are not modeled.
+This is a stochastic fixed-lag internal-dynamics surrogate, not a force field.
+
+Splits
+Two folds: train on replica 1, test on replica 2; then reverse.
+Source training: 20–60 ns; source validation: 65–75 ns.
+History and target must both lie within the assigned interval.
+Target replica evaluation: 20–100 ns. No target-replica training/normalization.
+Sample inclusion uses only CURRENT frozen compact labels. Future noncompact
+targets are retained. No random-frame train/test split or temporal compression.
+Feature standardization is fitted on source training pairs only.
+Best epoch is chosen only by source validation objective. The config specifies
+35 epochs and three seeds per arm/fold before results are inspected.
+Do not tune this config against the resulting target-replica results.
+
+Validation
+Tests check reconstruction, proper rotations/translations, exact parameter
+matching, learned-map gradients and split endpoint/history handling.
+Evaluate held-out torsion likelihood and local hydration error.
+Generate 5 ns continuations at 100 ps steps from predeclared held-out initial
+times, provided the current initial state is compact. Use four stochastic
+continuations per initial condition. No true future hydration is supplied.
+
+Contact memory is evaluated against MATCHED MD continuations, without selecting
+future endpoints by compact labels or deleting intervening frames. Center both
+generated and reference binary contact vectors on the reference evaluation mean.
+Reference means are evaluation statistics only, never model inputs. Report
+memory at 0.1, 0.2, 0.5, 1 and 2 ns, plus RMS error across these lags.
+
+Memory is not enough: an independent sampler can forget quickly while being
+physically wrong. Report Rg, contacts and nonlocal clashes (carbon pairs with
+sequence separation >=3 and distance <0.25 nm) for every generated frame.
+Never conceal invalid frames with rejection or projection. Matching bond
+geometry alone does not ensure excluded volume or realistic dynamics.
+Require structural validity before interpreting any kinetic score improvement.
+Seed variability does not replace independent-trajectory uncertainty.
+The reporting screen flags an arm/fold if its mean generated clash fraction
+exceeds reference by 0.05, or its mean Rg or contact count differs by over 10%.
+These are development screening tolerances, not a physical validation theorem.
+Any flagged arm/fold prevents claiming a validated dynamics advantage.
+
+Execution (WSL, from repository root)
+bash compact_benchmark/bootstrap.sh
+python3 compact_benchmark/prepare.py
+OPENBLAS_NUM_THREADS=1 vendor/compact-venv/bin/python -m pytest compact_benchmark -q
+OPENBLAS_NUM_THREADS=1 vendor/compact-venv/bin/python compact_benchmark/run.py --smoke
+OPENBLAS_NUM_THREADS=1 vendor/compact-venv/bin/python compact_benchmark/run.py
+OPENBLAS_NUM_THREADS=1 vendor/compact-venv/bin/python compact_benchmark/summarize.py
+OPENBLAS_NUM_THREADS=1 vendor/compact-venv/bin/python compact_benchmark/plot_memory.py
+
+CPU-only with two Torch threads, leaving the simulation GPU available.
+Smoke outputs are separate and cannot be used for scientific conclusions.
+Full outputs: reports/compact_benchmark/, including config/code/data hashes,
+exact splits, selected checkpoints, validation curves, generated backbones,
+per-seed held-out scores and a completion sentinel.

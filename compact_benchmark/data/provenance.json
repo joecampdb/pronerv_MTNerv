@@ -1,0 +1,24 @@
+{
+  "definition_sha256": "e3035aca01df53cebe59ce931a83092f27ed43727ac4c89bd8a265682d83345f",
+  "sampling_ps": 100,
+  "coordinates": "Ordered, unwrapped backbone; translation removed; no per-frame rotational fit.",
+  "hydration": "Per-carbon count of water oxygens within 0.45 nm (not a sum of unique waters).",
+  "sources": {
+    "rep01": {
+      "completion": {
+        "finished": 1792488999.6727815,
+        "tpr_sha256": "ef61a77664f17c4dfec4f8c8f1511fba3c6a96c9e18437b13a79d6b07e782168"
+      },
+      "xtc_size": 18505835080,
+      "data_sha256": "bde448441314d6fbd0fa9be1c875ace2fbd267118b40eca3529c7ef7b621f360"
+    },
+    "rep02": {
+      "completion": {
+        "finished": 1792514840.4336953,
+        "tpr_sha256": "e210b35f4002ce4fca6ecc5322cd844860505d1f49275c927a8c6822a7af2c52"
+      },
+      "xtc_size": 18508154380,
+      "data_sha256": "665b706e1acb9a419fb42c0a9060ef72f66200841abe94ea59954bb052eff08e"
+    }
+  }
+}
