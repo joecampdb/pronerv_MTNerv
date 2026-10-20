@@ -22,13 +22,15 @@ python3 analyze.py smoke_fixed --discard-ns 0 --stride 1
 
 # The scientific run: do not reuse smoke outputs.
 python3 pilot.py build --output runs
-python3 preflight.py runs
-python3 run_screen.py runs --threads 8
+GMX="$PWD/vendor/gromacs-install/bin/gmx"  # CUDA build already installed in this workspace
+python3 preflight.py runs --gmx "$GMX"
+python3 run_screen.py runs --gmx "$GMX" --threads 8
 # On completion, or for provisional progress (missing runs are flagged):
-python3 analyze.py runs
+python3 analyze.py runs --gmx "$GMX"
 ```
 
 Builders refuse to overwrite an existing manifest. If the directories already exist, skip their build commands. A short smoke uses full minimization but only 1 ps each of NVT, NPT, and relaxation, and 2 ps production. It tests plumbing, never physics or equilibration.
+Use `python3 status.py runs` first when reusing an existing run tree; the current workspace has a detached scientific queue. On another machine, build the GPU executable with `build_gpu.sh`, or consistently select `gmx` for a CPU-only workflow before the first preflight.
 
 In this workspace, `smoke/` retains the initial diagnostic run that exposed constrained-minimization warnings. `smoke_fixed/` is the corrected CPU verification. `smoke_gpu/` is separate GPU verification; its PE25/rep01 production was extended to 100 ps solely for throughput measurement, recorded in its manifest. None contributes to the 2 μs scientific screen.
 

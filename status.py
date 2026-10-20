@@ -10,7 +10,7 @@ manifest=json.loads((root/'manifest.json').read_text())
 print('SMOKE ONLY' if manifest['smoke'] else 'SCIENTIFIC SCREEN: 2000 ns target production')
 print(f'{"Replica":18} {"Stage":10} {"Stage ns":>10} {"ns/day":>10}')
 for entry in manifest['replicates']:
-    folder=root/entry['relative_path']; stage='not started'; ns=0.; speed='—'
+    folder=root/entry['relative_path']; stage='not started'; ns=0.; speed='-'
     for s in ['em','nvt','npt','relax','prod']:
         log=folder/f'{s}.log'
         if log.exists():
