@@ -1,0 +1,52 @@
+[
+  {
+    "route": 0,
+    "maxDisplacement": 0.561407079529436,
+    "rmsDisplacement": 0.24416369824903242
+  },
+  {
+    "route": 1,
+    "maxDisplacement": 1.4994756594551175,
+    "rmsDisplacement": 1.0876586781109314
+  },
+  {
+    "route": 2,
+    "maxDisplacement": 1.488486307256237,
+    "rmsDisplacement": 0.895971055085122
+  },
+  {
+    "route": 3,
+    "maxDisplacement": 0.27550778900354156,
+    "rmsDisplacement": 0.10011791005496277
+  },
+  {
+    "route": 4,
+    "maxDisplacement": 1.281373405462395,
+    "rmsDisplacement": 0.6397411324108522
+  },
+  {
+    "route": 5,
+    "maxDisplacement": 1.4998987502863699,
+    "rmsDisplacement": 1.1039859878597658
+  },
+  {
+    "route": 6,
+    "maxDisplacement": 1.4621424885354817,
+    "rmsDisplacement": 0.7624562698251968
+  },
+  {
+    "route": 7,
+    "maxDisplacement": 1.3778470116698855,
+    "rmsDisplacement": 0.7098484403480179
+  },
+  {
+    "route": 8,
+    "maxDisplacement": 1.4863614058156969,
+    "rmsDisplacement": 0.9504746117886813
+  },
+  {
+    "route": 9,
+    "maxDisplacement": 1.4999999289883774,
+    "rmsDisplacement": 1.1458194242700044
+  }
+]

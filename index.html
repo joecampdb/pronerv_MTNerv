@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alanine — a molecular landscape</title>
+<meta name="description" content="Explore an MD-derived molecular landscape and the categorical nerve of its conformational cover.">
+<link rel="stylesheet" href="./atlas.css">
+<script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
+</head>
+<body>
+<header><div><div class="eyebrow">Molecular atlas / experiment 001</div><h1>Alanine <span>as landscape</span></h1></div><nav aria-label="Molecular system"><a href="./index.html" aria-current="page">Alanine</a> · <a href="./chignolin.html">Chignolin CLN025 →</a></nav><span class="badge">PUBLIC MD · 300 K · 750 ns</span></header>
+<main><div class="stage">
+<canvas id="scene" aria-label="Interactive 3D molecular energy landscape. Drag to orbit, scroll to zoom; use the controls to inspect its nerve."></canvas>
+<div class="topline"><strong>A landscape made of conformations.</strong><p>MD passages · animated flow · overlap & path nerves</p></div>
+<div class="toolbar"><button id="perspective" class="active">Orbit view</button><button id="top">Top view</button><button id="reset">Reset</button><button id="capture" title="Save the current view as a PNG">↓ PNG</button></div>
+<div class="bottom"><div class="legend">RELATIVE FREE ENERGY / kBT<div class="gradient"></div><div><span>0 · populated</span><span>8+ · rare</span></div></div><div class="hint">Drag to orbit · scroll to zoom · click a nerve node<br>φ, ψ: −180° to +180° · vertical scale is illustrative</div></div>
+<div id="loading">Reconstructing the molecular landscape…<small>Loading MD-derived geometry and the nerve</small></div>
+</div>
+<aside>
+<section><div class="eyebrow">01 / dynamics</div><h2>Flow between basins</h2>
+<label class="control">MD transition pathways<input id="flow" type="checkbox" checked></label>
+<label class="control">Continuous pathway skins<input id="pathSkins" type="checkbox" checked></label>
+<div class="range-label"><span>MD-driven deformation</span><output id="deformValue">100%</output></div><input id="deformation" type="range" min="0" max="100" value="100" aria-label="MD-driven skin deformation">
+<label class="control">Playback highlight<input id="skinHighlight" type="checkbox"></label>
+<p class="small">Skin vertices now move using local, atom-weighted displacements from the recorded conformations. The traveling time warp is a visual construction, not a new physical trajectory.</p>
+<label class="control">Superimpose simplicial nerve<input id="nerveQuick" type="checkbox" checked></label>
+<p class="small"><a href="./paper.pdf" target="_blank">Read the illustrated exploratory paper ↗</a> · <a href="./media/deforming-landscape.mp4" target="_blank">Blender animation ↗</a></p>
+<div class="range-label"><span>Pathway skin opacity</span><output id="skinAlphaValue">58%</output></div><input id="skinAlpha" type="range" min="10" max="90" value="58" aria-label="Pathway skin opacity">
+<p class="small">Molecular envelopes deform through MD-attached material motion at the terrain’s height and scale. An optional highlight marks playback phase. Skins are interpolated visual unions, not additional MD or measured probability densities.</p>
+<label class="control">Pathway guide lines<input id="guideLines" type="checkbox"></label>
+<details><summary>Optional molecular markers</summary>
+<label class="control">Separate moving molecule<input id="molecules" type="checkbox"></label>
+<label class="control">Flowing particles<input id="particles" type="checkbox"></label>
+<div class="playrow"><select id="moleculeStyle" aria-label="Moving molecule representation"><option value="spacefill">Space-filling atoms</option><option value="bonds">Ball and stick</option></select><select id="interpolation" aria-label="Conformation interpolation"><option value="smooth">Smooth morph</option><option value="frames">Recorded frames</option></select></div>
+<div class="range-label"><span>Molecule magnification</span><span>visual scale</span></div><input id="moleculeScale" aria-label="Moving molecule magnification" type="range" min="2" max="10" step=".5" value="6">
+</details>
+<div id="flowLegend" class="small"></div>
+<div class="playrow"><button id="flowPause">Ⅱ Pause flow</button><label class="small">Lag <select id="lag" aria-label="Transition probability lag"><option value="10">10 ps</option><option value="50">50 ps</option><option value="100">100 ps</option></select></label></div>
+<div class="range-label"><span>Flow animation speed</span><span>illustrative</span></div><input id="flowSpeed" type="range" min="20" max="250" value="100" aria-label="Flow animation speed">
+<select id="route" aria-label="Inspect transition route" style="width:100%;margin:10px 0;padding:7px;background:#142332;color:#d1e4e7;border:1px solid #334757"><option value="-1">All observed routes</option></select>
+<div class="range-label"><span>Scrub conformation</span><span>start → end</span></div><input id="morphPhase" type="range" min="0" max="1000" value="0" aria-label="Molecular passage progress">
+<div id="morphTime" class="small" aria-live="off"></div>
+<p class="small">Skin geometry follows a bounded material time warp driven by MD coordinates. Playback phase is a visual deformation parameter, not a single MD timestamp. Optional markers replay individual conformations. No schematic center connectors contribute to the skin.</p>
+<div id="flowDetails" class="small" aria-live="polite"></div>
+<div class="range-label"><span>Dynamic nerve · compose two arrows</span></div>
+<select id="pathChain" aria-label="Dynamic nerve composition" style="width:100%;margin:10px 0;padding:7px;background:#142332;color:#d1e4e7;border:1px solid #334757"><option value="-1">Choose a composable pair</option></select>
+<div id="chainDetails" class="small" aria-live="polite">Select a two-step chain to see a dynamic nerve 2-simplex.</div>
+<details style="margin-top:15px"><summary>How transitions are estimated</summary><p>Four periodic density modes define 25° basin cores. Each frame keeps the last core visited; entry into a different core counts as a passage. Frames before the first core visit are excluded. Runs are analyzed independently.</p><p>Lagged probabilities use sliding pairs at 10, 50 or 100 ps, including self transitions and indirect paths through other basins. Counts are correlated; these estimates are not a validated Markov model. A and B interconvert rapidly and need not be separate metastable states.</p><p>Lines follow one observed passage per direction, selected near the median passage duration. Display connectors join cores to labeled centers. Chart seam crossings are split. Counts describe gross traffic, not net current. Rare routes retain their observed counts.</p><p>The path category has basins as objects and observed route types as generators; morphisms are formal finite paths. The displayed two-step compositions are a finite view of its nerve. It remains distinct from the overlap face-poset nerve.</p><a href="./dynamics.json" download>Download dynamics, per-run counts & routes</a></details>
+</section>
+<section><div class="eyebrow">02 / representation</div><h2>Molecular topography</h2>
+<label class="control">Molecular skin<input id="skin" type="checkbox" checked></label>
+<label class="control">Overlap nerve<input id="nerve" type="checkbox" checked></label>
+<label class="control">Overlap membranes<input id="membranes" type="checkbox" checked></label>
+<label class="control">Rotate slowly<input id="rotate" type="checkbox"></label>
+<div class="range-label"><span>Terrain opacity</span><output id="opacityValue">60%</output></div><input id="opacity" type="range" min="10" max="100" value="60" aria-label="Skin opacity">
+<div class="range-label"><span>Energy height + molecular relief</span><output id="heightValue">1.0×</output></div><input id="height" type="range" min="20" max="180" value="100" aria-label="Vertical exaggeration">
+</section>
+<section><div class="eyebrow">03 / overlap nerve</div><div class="stats"><div><span class="stat" id="objects">—</span><small>OBJECTS</small></div><div><span class="stat" id="arrows">—</span><small>INCLUSIONS</small></div><div><span class="stat" id="chains">—</span><small>2-SIMPLICES</small></div></div>
+<select id="nodeSelect" aria-label="Select a nerve object" style="width:100%;background:#142332;color:#d1e4e7;border:1px solid #334757;padding:7px;margin-bottom:10px"></select>
+<canvas id="mini" aria-label="Backbone cartoon and heavy-atom conformation associated with selected node"></canvas><div id="details">Select an object in the nerve.</div>
+<p class="small">Mint: neighborhoods · blue: pair overlaps · amber: triple overlaps. A triangle is a chain σ ⊂ τ ⊂ υ; its long edge is the composite inclusion.</p>
+</section>
+<section><div class="eyebrow">04 / MD trajectory</div><div class="playrow"><button id="play">▶ Play</button><span class="small" id="time">Run 1 · 0.00 ns</span></div>
+<input id="scrub" type="range" min="0" max="4999" value="0" aria-label="Trajectory time">
+<canvas id="map" width="260" height="260" aria-label="Ramachandran occupancy map with the current trajectory position"></canvas>
+<p class="small">Actual frames, 50 ps apart. The moving marker follows sampled conformations, not an interpolated kinetic model.</p>
+</section>
+<details><summary>Data, construction & limits</summary>
+<p>Three 250 ns ACEMD runs; AMBER ff99SB-ILDN, TIP3P water, 300 K, 1 ps frame spacing. Ten heavy atoms per frame.</p>
+<p>Equal-area 12° bins; periodic Gaussian smoothing (σ = 0.85 bins). F/kBT = −log(p/pmax), pooled without reweighting. This is an empirical occupancy landscape, not a validated equilibrium estimate.</p>
+<p>The skin is a Gaussian density isosurface of actual conformers selected from bins with ≥25 frames. Each is centered, magnified and translated to (φ, F, ψ). Blending is an artistic embedding, not a solvent-accessible molecular surface or an energy barrier estimate.</p>
+<p>The cover uses 18 balls of radius 73° in the cut angular chart. Common membership is witnessed every tenth frame. The displayed category is the face poset of its 2-skeleton; objects, strict inclusions and composition triangles form its nondegenerate nerve. Identities and degenerate simplices are implicit.</p>
+<p>Opposite chart edges are physically identified, but the cover overlay does not glue them. No good-cover or homotopy-recovery claim is made. This overlap nerve does not yet encode directed transition pathways.</p>
+<p><a href="https://markovmodel.github.io/mdshare/ALA2/" target="_blank" rel="noreferrer">MDshare dataset & simulation provenance ↗</a></p><p><a href="./data.json" download>Download derived data + source SHA-256 hashes</a></p>
+</details>
+</aside></main>
+<script type="module" src="./app.js"></script>
+</body></html>
