@@ -1,0 +1,5 @@
+numpy>=1.21
+scipy>=1.8
+rdkit>=2022.9
+MDAnalysis>=2.0
+pytest>=6

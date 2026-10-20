@@ -1,0 +1,7 @@
+#include "../../charmm36-jul2022.ff/forcefield.itp"
+#include "pe.itp"
+#include "../../charmm36-jul2022.ff/tip3p.itp"
+[ system ]
+PE50 in water
+[ molecules ]
+PE 1
