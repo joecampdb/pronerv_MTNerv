@@ -7,6 +7,7 @@ from close_limitations import minimum_image,DEST
 from build_validated_atlas import periodic_delta,maximal_masks,masks_to_faces
 from export_recorded import align
 from composition_contract import kernel,compose,independent_product
+from empirical_path_semantics import compose_relation,visits
 from robustness import height,initial_cohort_groups
 
 class RevisionInvariants(unittest.TestCase):
@@ -35,6 +36,12 @@ class RevisionInvariants(unittest.TestCase):
   np.testing.assert_allclose(compose(a,np.eye(3)),a)
   with self.assertRaises(ValueError):compose(a,a)
   with self.assertRaises(ValueError):kernel([[np.nan,0]])
+ def test_path_semantics_cannot_splice_equal_basin_labels_across_runs(self):
+  # Both intermediate occurrences have label B but are distinct observations.
+  first={('run0:A','run0:B')};other={('run1:B','run1:C')}
+  self.assertEqual(compose_relation(first,other),set())
+  self.assertEqual(compose_relation(first,{('run0:B','run0:C')}),{('run0:A','run0:C')})
+  np.testing.assert_array_equal(visits([-1,-1,0,0,1,1,0]),[2,4,6])
  def test_product_semantics_requires_joint_observation_check(self):
   p=np.array([[.9,.1],[.2,.8]]);q=np.array([[.7,.3],[.4,.6]])
   np.testing.assert_allclose(independent_product(p,q).sum(1),1)

@@ -163,7 +163,9 @@ Training-only partitions are checked at 5-, 10- and 50-frame lags, with
 held-out two- and four-step Chapman--Kolmogorov comparisons. Each state row
 retains counts, predicted/observed probabilities, total-variation discrepancy
 and conditional group-resampling spread. Rows below 100 pairs are flagged;
-unsupported rows remain missing, not absorbing. Weighted averages do not
+unsupported rows remain missing, not absorbing. Folds with fewer than three
+held-out groups have no reported resampling interval, avoiding artificial
+zero-width certainty from a one-group bootstrap. Weighted averages do not
 replace worst-row reporting. In initial-cohort holdouts, ten-frame weighted
 discrepancies span approximately 0.055--0.270 across tested configurations;
 the maximum single-row discrepancy across configurations is approximately
@@ -188,6 +190,18 @@ be declared independent compositional modules. Boundary variables, admissible
 couplings, behavior semantics and composed-versus-joint predictive agreement
 remain research requirements. Evidence: \texttt{07-kinetic-validation*.json},
 \texttt{07-synthetic-coverage.json} and \texttt{composition-contract.json}.
+
+There is now an explicit observational functor
+$\mathcal F:\mathrm{Free}(G)\to\mathbf{Rel}$: each basin maps to its finite
+set of recorded core-entry occurrences, and each generator maps to consecutive
+visits within a run. Relational composition matches the exact intermediate
+occurrence, not merely a basin label; it therefore cannot splice unrelated
+trajectories. Identities and associativity are checked against recorded
+two- and three-step words. An unobserved formal word can map to an empty
+relation, so the functor need not be faithful. This is semantics for observations,
+not for independently coupled molecular subsystems, and it does not identify
+the path and overlap categories. Evidence: \texttt{empirical-path-semantics.json}
+and the compact visit-occurrence tables.
 
 \textbf{8. Deformation and geometry --- unsupported interpretation removed; continuous repair incomplete.}
 The legacy audit identified disconnected components. The new screen evaluates

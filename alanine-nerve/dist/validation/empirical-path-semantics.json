@@ -1,0 +1,2676 @@
+{
+  "functor": "Free(G) -> Rel: objects map to visit-occurrence fibers; generators to consecutive-visit relations; identities to diagonal relations; words to relational composites.",
+  "warning": "A formal path may map to an empty relation. Different formal words may have the same relation. This functor need not be faithful, and does not identify the path category with the overlap face-poset category or compose full dynamical subsystems.",
+  "systems": [
+    {
+      "system": "alanine",
+      "visits": 73148,
+      "route_generators": [
+        {
+          "source": 0,
+          "target": 1,
+          "observations": 34316
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "observations": 1176
+        },
+        {
+          "source": 0,
+          "target": 3,
+          "observations": 14
+        },
+        {
+          "source": 1,
+          "target": 0,
+          "observations": 34323
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "observations": 1060
+        },
+        {
+          "source": 1,
+          "target": 3,
+          "observations": 1
+        },
+        {
+          "source": 2,
+          "target": 0,
+          "observations": 1172
+        },
+        {
+          "source": 2,
+          "target": 1,
+          "observations": 1068
+        },
+        {
+          "source": 3,
+          "target": 0,
+          "observations": 13
+        },
+        {
+          "source": 3,
+          "target": 2,
+          "observations": 2
+        }
+      ],
+      "two_step_words": [
+        {
+          "word": [
+            0,
+            1,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 33298,
+          "example": {
+            "run": 0,
+            "frames": [
+              65,
+              81,
+              89
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            1,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1017,
+          "example": {
+            "run": 0,
+            "frames": [
+              2267,
+              2279,
+              2283
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            1,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1,
+          "example": {
+            "run": 0,
+            "frames": [
+              177587,
+              177600,
+              177608
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            2,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 634,
+          "example": {
+            "run": 0,
+            "frames": [
+              964,
+              982,
+              1004
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            2,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 542,
+          "example": {
+            "run": 0,
+            "frames": [
+              460,
+              466,
+              580
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            3,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 12,
+          "example": {
+            "run": 0,
+            "frames": [
+              20952,
+              20955,
+              21906
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            3,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 2,
+          "example": {
+            "run": 0,
+            "frames": [
+              219092,
+              219105,
+              219418
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            0,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 33170,
+          "example": {
+            "run": 0,
+            "frames": [
+              55,
+              65,
+              81
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            0,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1137,
+          "example": {
+            "run": 0,
+            "frames": [
+              456,
+              460,
+              466
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            0,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 14,
+          "example": {
+            "run": 0,
+            "frames": [
+              20940,
+              20952,
+              20955
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            2,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 535,
+          "example": {
+            "run": 0,
+            "frames": [
+              4746,
+              4754,
+              4761
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            2,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 524,
+          "example": {
+            "run": 0,
+            "frames": [
+              2279,
+              2283,
+              2488
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            3,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1,
+          "example": {
+            "run": 0,
+            "frames": [
+              177600,
+              177608,
+              179256
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            3,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 0,
+          "example": null
+        },
+        {
+          "word": [
+            2,
+            0,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1133,
+          "example": {
+            "run": 0,
+            "frames": [
+              982,
+              1004,
+              1030
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            0,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 39,
+          "example": {
+            "run": 0,
+            "frames": [
+              4842,
+              4849,
+              4853
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            0,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 0,
+          "example": null
+        },
+        {
+          "word": [
+            2,
+            1,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1025,
+          "example": {
+            "run": 0,
+            "frames": [
+              9,
+              55,
+              65
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            1,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 43,
+          "example": {
+            "run": 0,
+            "frames": [
+              4853,
+              4887,
+              4895
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            1,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 0,
+          "example": null
+        },
+        {
+          "word": [
+            3,
+            0,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 13,
+          "example": {
+            "run": 0,
+            "frames": [
+              20955,
+              21906,
+              21912
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            0,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 0,
+          "example": null
+        },
+        {
+          "word": [
+            3,
+            0,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 0,
+          "example": null
+        },
+        {
+          "word": [
+            3,
+            2,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 2,
+          "example": {
+            "run": 0,
+            "frames": [
+              219105,
+              219418,
+              219427
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            2,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 0,
+          "example": null
+        }
+      ],
+      "three_step_words": [
+        {
+          "word": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 32177
+        },
+        {
+          "word": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 1106
+        },
+        {
+          "word": [
+            0,
+            1,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 13
+        },
+        {
+          "word": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 513
+        },
+        {
+          "word": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 503
+        },
+        {
+          "word": [
+            0,
+            1,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 616
+        },
+        {
+          "word": [
+            0,
+            2,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 18
+        },
+        {
+          "word": [
+            0,
+            2,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 516
+        },
+        {
+          "word": [
+            0,
+            2,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 26
+        },
+        {
+          "word": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            0,
+            3,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 12
+        },
+        {
+          "word": [
+            0,
+            3,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            0,
+            3,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            0,
+            3,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 2
+        },
+        {
+          "word": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 32196
+        },
+        {
+          "word": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 973
+        },
+        {
+          "word": [
+            1,
+            0,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 614
+        },
+        {
+          "word": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 523
+        },
+        {
+          "word": [
+            1,
+            0,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 12
+        },
+        {
+          "word": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 2
+        },
+        {
+          "word": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 514
+        },
+        {
+          "word": [
+            1,
+            2,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 21
+        },
+        {
+          "word": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 507
+        },
+        {
+          "word": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 17
+        },
+        {
+          "word": [
+            1,
+            2,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            1,
+            3,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            1,
+            3,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            1,
+            3,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 1089
+        },
+        {
+          "word": [
+            2,
+            0,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 44
+        },
+        {
+          "word": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 20
+        },
+        {
+          "word": [
+            2,
+            0,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 19
+        },
+        {
+          "word": [
+            2,
+            0,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            2,
+            0,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 993
+        },
+        {
+          "word": [
+            2,
+            1,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 31
+        },
+        {
+          "word": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            2,
+            1,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 22
+        },
+        {
+          "word": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 21
+        },
+        {
+          "word": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            2,
+            1,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 13
+        },
+        {
+          "word": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            0,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            0,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            0,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 2
+        },
+        {
+          "word": [
+            3,
+            2,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            2,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            2,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            3,
+            2,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        }
+      ],
+      "identity_and_associativity_checked": true,
+      "state_definition": "Frozen legacy last-core labeling, descriptive only; visit-to-visit intervals include residence time. These are not newly validated metastable states.",
+      "scope": "Exact finite observation semantics: basin fibers are recorded visit occurrences; generator relations link consecutive occurrences within a run. Equality of basin labels alone does not permit splicing trajectories. No rates or physical clock are required."
+    },
+    {
+      "system": "chignolin",
+      "visits": 178959,
+      "route_generators": [
+        {
+          "source": 0,
+          "target": 1,
+          "observations": 17688
+        },
+        {
+          "source": 0,
+          "target": 2,
+          "observations": 1919
+        },
+        {
+          "source": 0,
+          "target": 3,
+          "observations": 305
+        },
+        {
+          "source": 1,
+          "target": 0,
+          "observations": 17650
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "observations": 35658
+        },
+        {
+          "source": 1,
+          "target": 3,
+          "observations": 3753
+        },
+        {
+          "source": 2,
+          "target": 0,
+          "observations": 1928
+        },
+        {
+          "source": 2,
+          "target": 1,
+          "observations": 35090
+        },
+        {
+          "source": 2,
+          "target": 3,
+          "observations": 28770
+        },
+        {
+          "source": 3,
+          "target": 0,
+          "observations": 258
+        },
+        {
+          "source": 3,
+          "target": 1,
+          "observations": 3536
+        },
+        {
+          "source": 3,
+          "target": 2,
+          "observations": 28660
+        }
+      ],
+      "two_step_words": [
+        {
+          "word": [
+            0,
+            1,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 10035,
+          "example": {
+            "run": 2,
+            "frames": [
+              83,
+              85,
+              90
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            1,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 6697,
+          "example": {
+            "run": 0,
+            "frames": [
+              235,
+              236,
+              238
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            1,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 674,
+          "example": {
+            "run": 1,
+            "frames": [
+              348,
+              350,
+              367
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            2,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 122,
+          "example": {
+            "run": 11,
+            "frames": [
+              327,
+              342,
+              351
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            2,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1211,
+          "example": {
+            "run": 0,
+            "frames": [
+              378,
+              384,
+              387
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            2,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 568,
+          "example": {
+            "run": 0,
+            "frames": [
+              242,
+              244,
+              246
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            3,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 5,
+          "example": {
+            "run": 1186,
+            "frames": [
+              147,
+              179,
+              184
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            3,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 45,
+          "example": {
+            "run": 55,
+            "frames": [
+              71,
+              75,
+              87
+            ]
+          }
+        },
+        {
+          "word": [
+            0,
+            3,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 254,
+          "example": {
+            "run": 6,
+            "frames": [
+              442,
+              448,
+              455
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            0,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 14859,
+          "example": {
+            "run": 0,
+            "frames": [
+              233,
+              235,
+              236
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            0,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1453,
+          "example": {
+            "run": 0,
+            "frames": [
+              240,
+              242,
+              244
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            0,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 200,
+          "example": {
+            "run": 6,
+            "frames": [
+              421,
+              442,
+              448
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            2,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1210,
+          "example": {
+            "run": 6,
+            "frames": [
+              362,
+              365,
+              367
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            2,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 24020,
+          "example": {
+            "run": 0,
+            "frames": [
+              16,
+              24,
+              25
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            2,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 10003,
+          "example": {
+            "run": 0,
+            "frames": [
+              49,
+              56,
+              57
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            3,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 29,
+          "example": {
+            "run": 26,
+            "frames": [
+              318,
+              320,
+              340
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            3,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 478,
+          "example": {
+            "run": 1,
+            "frames": [
+              94,
+              107,
+              113
+            ]
+          }
+        },
+        {
+          "word": [
+            1,
+            3,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 3202,
+          "example": {
+            "run": 0,
+            "frames": [
+              443,
+              450,
+              454
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            0,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 1451,
+          "example": {
+            "run": 2,
+            "frames": [
+              76,
+              83,
+              85
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            0,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 342,
+          "example": {
+            "run": 7,
+            "frames": [
+              378,
+              384,
+              390
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            0,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 73,
+          "example": {
+            "run": 61,
+            "frames": [
+              446,
+              457,
+              475
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            1,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 6217,
+          "example": {
+            "run": 0,
+            "frames": [
+              232,
+              233,
+              235
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            1,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 25837,
+          "example": {
+            "run": 0,
+            "frames": [
+              2,
+              16,
+              24
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            1,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 2518,
+          "example": {
+            "run": 0,
+            "frames": [
+              439,
+              443,
+              450
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            3,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 223,
+          "example": {
+            "run": 9,
+            "frames": [
+              269,
+              272,
+              281
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            3,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 3001,
+          "example": {
+            "run": 1,
+            "frames": [
+              12,
+              14,
+              23
+            ]
+          }
+        },
+        {
+          "word": [
+            2,
+            3,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 25135,
+          "example": {
+            "run": 0,
+            "frames": [
+              56,
+              57,
+              59
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            0,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 169,
+          "example": {
+            "run": 11,
+            "frames": [
+              1,
+              21,
+              29
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            0,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 54,
+          "example": {
+            "run": 11,
+            "frames": [
+              323,
+              327,
+              342
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            0,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 25,
+          "example": {
+            "run": 9,
+            "frames": [
+              272,
+              281,
+              287
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            1,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 568,
+          "example": {
+            "run": 2,
+            "frames": [
+              150,
+              154,
+              156
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            1,
+            2
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 2420,
+          "example": {
+            "run": 1,
+            "frames": [
+              14,
+              23,
+              25
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            1,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 486,
+          "example": {
+            "run": 3,
+            "frames": [
+              311,
+              314,
+              316
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            2,
+            0
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 580,
+          "example": {
+            "run": 2,
+            "frames": [
+              66,
+              76,
+              83
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            2,
+            1
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 9599,
+          "example": {
+            "run": 0,
+            "frames": [
+              121,
+              123,
+              127
+            ]
+          }
+        },
+        {
+          "word": [
+            3,
+            2,
+            3
+          ],
+          "formal": true,
+          "observed_consecutive_occurrences": 18090,
+          "example": {
+            "run": 0,
+            "frames": [
+              57,
+              59,
+              65
+            ]
+          }
+        }
+      ],
+      "three_step_words": [
+        {
+          "word": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 8523
+        },
+        {
+          "word": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 627
+        },
+        {
+          "word": [
+            0,
+            1,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 70
+        },
+        {
+          "word": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 323
+        },
+        {
+          "word": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 4719
+        },
+        {
+          "word": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 1595
+        },
+        {
+          "word": [
+            0,
+            1,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 3
+        },
+        {
+          "word": [
+            0,
+            1,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 106
+        },
+        {
+          "word": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 560
+        },
+        {
+          "word": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 99
+        },
+        {
+          "word": [
+            0,
+            2,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 16
+        },
+        {
+          "word": [
+            0,
+            2,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 347
+        },
+        {
+          "word": [
+            0,
+            2,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 757
+        },
+        {
+          "word": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 87
+        },
+        {
+          "word": [
+            0,
+            2,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 6
+        },
+        {
+          "word": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 67
+        },
+        {
+          "word": [
+            0,
+            2,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 485
+        },
+        {
+          "word": [
+            0,
+            3,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 4
+        },
+        {
+          "word": [
+            0,
+            3,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            0,
+            3,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 0
+        },
+        {
+          "word": [
+            0,
+            3,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 13
+        },
+        {
+          "word": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 24
+        },
+        {
+          "word": [
+            0,
+            3,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 7
+        },
+        {
+          "word": [
+            0,
+            3,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 11
+        },
+        {
+          "word": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 88
+        },
+        {
+          "word": [
+            0,
+            3,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 152
+        },
+        {
+          "word": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 8438
+        },
+        {
+          "word": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 5636
+        },
+        {
+          "word": [
+            1,
+            0,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 533
+        },
+        {
+          "word": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 91
+        },
+        {
+          "word": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 948
+        },
+        {
+          "word": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 402
+        },
+        {
+          "word": [
+            1,
+            0,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 3
+        },
+        {
+          "word": [
+            1,
+            0,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 31
+        },
+        {
+          "word": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 165
+        },
+        {
+          "word": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 942
+        },
+        {
+          "word": [
+            1,
+            2,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 195
+        },
+        {
+          "word": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 36
+        },
+        {
+          "word": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 4488
+        },
+        {
+          "word": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 17671
+        },
+        {
+          "word": [
+            1,
+            2,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 1472
+        },
+        {
+          "word": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 85
+        },
+        {
+          "word": [
+            1,
+            2,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 1158
+        },
+        {
+          "word": [
+            1,
+            2,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 8626
+        },
+        {
+          "word": [
+            1,
+            3,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 19
+        },
+        {
+          "word": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 6
+        },
+        {
+          "word": [
+            1,
+            3,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 91
+        },
+        {
+          "word": [
+            1,
+            3,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 308
+        },
+        {
+          "word": [
+            1,
+            3,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 69
+        },
+        {
+          "word": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 62
+        },
+        {
+          "word": [
+            1,
+            3,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 1169
+        },
+        {
+          "word": [
+            1,
+            3,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 1924
+        },
+        {
+          "word": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 606
+        },
+        {
+          "word": [
+            2,
+            0,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 722
+        },
+        {
+          "word": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 101
+        },
+        {
+          "word": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 20
+        },
+        {
+          "word": [
+            2,
+            0,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 188
+        },
+        {
+          "word": [
+            2,
+            0,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 129
+        },
+        {
+          "word": [
+            2,
+            0,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 10
+        },
+        {
+          "word": [
+            2,
+            0,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 62
+        },
+        {
+          "word": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 5177
+        },
+        {
+          "word": [
+            2,
+            1,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 702
+        },
+        {
+          "word": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 104
+        },
+        {
+          "word": [
+            2,
+            1,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 772
+        },
+        {
+          "word": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 17393
+        },
+        {
+          "word": [
+            2,
+            1,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 7337
+        },
+        {
+          "word": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 21
+        },
+        {
+          "word": [
+            2,
+            1,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 295
+        },
+        {
+          "word": [
+            2,
+            1,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 2173
+        },
+        {
+          "word": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 145
+        },
+        {
+          "word": [
+            2,
+            3,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 47
+        },
+        {
+          "word": [
+            2,
+            3,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 24
+        },
+        {
+          "word": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 463
+        },
+        {
+          "word": [
+            2,
+            3,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 2078
+        },
+        {
+          "word": [
+            2,
+            3,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 409
+        },
+        {
+          "word": [
+            2,
+            3,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 507
+        },
+        {
+          "word": [
+            2,
+            3,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 8321
+        },
+        {
+          "word": [
+            2,
+            3,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 15966
+        },
+        {
+          "word": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 64
+        },
+        {
+          "word": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 87
+        },
+        {
+          "word": [
+            3,
+            0,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 14
+        },
+        {
+          "word": [
+            3,
+            0,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 6
+        },
+        {
+          "word": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 25
+        },
+        {
+          "word": [
+            3,
+            0,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 22
+        },
+        {
+          "word": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 1
+        },
+        {
+          "word": [
+            3,
+            0,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 3
+        },
+        {
+          "word": [
+            3,
+            0,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 21
+        },
+        {
+          "word": [
+            3,
+            1,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 461
+        },
+        {
+          "word": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 67
+        },
+        {
+          "word": [
+            3,
+            1,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 21
+        },
+        {
+          "word": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "observed_consecutive_occurrences": 76
+        },
+        {
+          "word": [
+            3,
+            1,
+            2,
+            1
+          ],
+          "observed_consecutive_occurrences": 1401
+        },
+        {
+          "word": [
+            3,
+            1,
+            2,
+            3
+          ],
+          "observed_consecutive_occurrences": 913
+        },
+        {
+          "word": [
+            3,
+            1,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 5
+        },
+        {
+          "word": [
+            3,
+            1,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 67
+        },
+        {
+          "word": [
+            3,
+            1,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 404
+        },
+        {
+          "word": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "observed_consecutive_occurrences": 396
+        },
+        {
+          "word": [
+            3,
+            2,
+            0,
+            2
+          ],
+          "observed_consecutive_occurrences": 130
+        },
+        {
+          "word": [
+            3,
+            2,
+            0,
+            3
+          ],
+          "observed_consecutive_occurrences": 35
+        },
+        {
+          "word": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "observed_consecutive_occurrences": 1315
+        },
+        {
+          "word": [
+            3,
+            2,
+            1,
+            2
+          ],
+          "observed_consecutive_occurrences": 7233
+        },
+        {
+          "word": [
+            3,
+            2,
+            1,
+            3
+          ],
+          "observed_consecutive_occurrences": 942
+        },
+        {
+          "word": [
+            3,
+            2,
+            3,
+            0
+          ],
+          "observed_consecutive_occurrences": 129
+        },
+        {
+          "word": [
+            3,
+            2,
+            3,
+            1
+          ],
+          "observed_consecutive_occurrences": 1762
+        },
+        {
+          "word": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "observed_consecutive_occurrences": 15932
+        }
+      ],
+      "identity_and_associativity_checked": true,
+      "state_definition": "Frozen legacy last-core labeling, descriptive only; visit-to-visit intervals include residence time. These are not newly validated metastable states.",
+      "scope": "Exact finite observation semantics: basin fibers are recorded visit occurrences; generator relations link consecutive occurrences within a run. Equality of basin labels alone does not permit splicing trajectories. No rates or physical clock are required."
+    }
+  ]
+}

@@ -95,6 +95,7 @@ python validate_models.py --kinetics-only
 python validate_models.py --kinetics-only --initial-cohorts
 python calibrate_resampling.py
 python composition_contract.py
+python empirical_path_semantics.py
 # 8: use Blender 4.0 executable in place of 'blender' if not on PATH:
 blender -b --python validate_geometry_blender.py
 python export_recorded.py
@@ -141,3 +142,12 @@ BLEND scenes for the measured figures are generated under ignored
    molecular deformation dynamics.
 6. Explicit coupling interfaces and predictive comparison of composed and
    jointly modeled dynamics. Finite stochastic matrix laws alone are insufficient.
+
+The empirical path semantics is now explicit: a basin maps to its finite set
+of recorded visit occurrences, and a route maps to the relation of consecutive
+visits in the same run. Relational composition matches the **exact intermediate
+occurrence**, not just its basin label. This gives a functor from the free path
+category to finite relations. It may send an unobserved formal word to the
+empty relation, and it need not be faithful. Compact occurrence tables are
+included for independent inspection; no physical rates or independent coupling
+assumptions are needed for this observational construction.
