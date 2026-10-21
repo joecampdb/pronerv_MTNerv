@@ -1,4 +1,5 @@
 \documentclass[11pt]{article}
+\def\AtlasMain{1}
 \usepackage[margin=0.85in]{geometry}
 \usepackage{amsmath,amssymb,graphicx,booktabs,array,float}
 \usepackage{tikz}
@@ -34,13 +35,17 @@ pdfauthor={Joseph Campagna, PSM}}
 \textbf{Abstract.}
 Can molecular geometry make the composition of dynamical behavior visible?
 We construct an interactive atlas from 750,000 public molecular dynamics (MD)
-frames of alanine dipeptide and 63,999 frames of the ten-residue chignolin
-variant CLN025. Molecular envelopes form landscapes over torsional or geometric
-observables. Two distinct categorical nerves can be superimposed:
+frames of alanine dipeptide and 1,868,861 frames from the complete public
+deposit of the ten-residue chignolin variant CLN025. The revised landscape
+uses supported structural mobility in nm, recorded molecular relief, and
+an explicitly root-balanced descriptive estimator for CLN025. Two distinct
+categorical constructions remain distinguished:
 an overlap face-poset nerve and a free path-category nerve derived from observed
-basin passages. Translucent pathway skins now deform through an atom-attached
-displacement field, rather than merely changing illumination. This construction
-is a visual experiment and a precise vocabulary for discussing composition.
+basin passages. Legacy translucent morphing skins are retained as illustrative
+baselines; the measured viewer steps through recorded conformers without
+synthetic molecular interpolation. Train-only grouped prediction, kinetic
+diagnostics, chemical mapping and higher-simplex audits constrain interpretation.
+This construction remains an exploratory vocabulary for discussing composition.
 It is not a claim of recovered configuration-space topology, a validated
 Markov model, or a completed theory of compositional protein dynamics.
 The prototype motivates an experimentally testable route from trajectory
@@ -48,21 +53,23 @@ composition toward composition of open dynamical subsystems.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.78\linewidth]{figures/landscape-nerve.png}
-\caption{\textbf{A molecular landscape with a superimposed nerve.}
-Blender 4.0/Eevee rendering of the viewer's meshes and deformation targets.
-Terrain color follows empirical relative free energy (mint: populated;
-violet/amber: less populated). Pathway skins use source-basin colors.
-Silver nodes and edges show the overlap face-poset nerve. Labels A--D identify
-density modes. Horizontal coordinates encode $\phi,\psi$; vertical placement
-encodes $1.3\,F/k_BT$ plus molecular relief. Scene distances are visual units.}
+\includegraphics[width=.78\linewidth]{figures/alanine-measured-landscape.png}
+\caption{\textbf{Alanine: measured mobility with recorded molecular relief.}
+Blender 4.0/Cycles rendering. Tile height encodes the conditional RMS change
+in internal pair distances at a 100 ps lag; absent tiles have insufficient
+support. Recorded molecules are rigidly aligned and separately magnified.
+The lifted nerve shows inclusions and triangular chains; its display offset
+is not a physical coordinate. Gloss and lighting are optical aids, not additional
+observables. Numerical scales and uncertainty are supplied in Figure 9.}
 \end{figure}
 
 \textbf{Explore the artifact.}
 \href{https://joecampdb.github.io/pronerv_MTNerv/}{Interactive molecular atlas}
 and \href{https://github.com/joecampdb/pronerv_MTNerv}{public source repository}.
-The viewer supports deformation amplitude, transparency, route filtering,
-scrubbing, and independent nerve overlays. All figures are generated from
+The public viewer is the historical illustrative baseline. The local revised
+\texttt{measured.html} supports recorded frames, supported mobility, uncertainty,
+periodic viewing and independent nerve overlays. Its deployment and a revised
+full-paper PDF are separate release steps. All figures are generated from
 the numerical geometry; they are not AI-generated illustrations.
 
 \input{systems.tex}
@@ -74,22 +81,24 @@ Alanine dipeptide is a capped amino-acid benchmark, not a folded protein.
 Its small conformational chart makes the distinctions below inspectable.
 
 \textbf{Overlap category.}
-Take 18 balls of radius $73^\circ$ in a cut angular chart. A finite sample
-$W$ (every tenth MD frame) witnesses common membership:
+Take 18 balls of radius $55^\circ$ in the periodic angular metric. The finite
+sample $W$ contains all 750,000 available frames and witnesses membership:
 \[
  K_W=\{\sigma\ne\varnothing:\exists q\in W,\ q\in\bigcap_{i\in\sigma}U_i\}.
 \]
-We retain its 2-skeleton $K_W^{(2)}$ and form the face-poset category
+We store maximal simplices of the full witnessed complex, and draw the
+face-poset category of its 2-skeleton,
 $\Cat_{\cap}=P(K_W^{(2)})$. Objects are simplices; arrows are inclusions
 of index sets, not reverse inclusions of intersection regions.
-Its nerve has 91 objects, 282 strict inclusions, and 204 nondegenerate
+Its nerve has 78 objects, 212 strict inclusions, and 138 nondegenerate
 2-simplices. The realization is a barycentric subdivision:
 \[
  |\N P(K_W^{(2)})|\cong |K_W^{(2)}|.
 \]
 This categorical statement does not establish equivalence with the protein's
 configuration space. Good-cover hypotheses and sampling guarantees are
-separate issues \cite{may,bauer}. The overlap chart does not glue its periodic seam.
+separate issues \cite{may,bauer}. The measured viewer includes a torus view;
+flat-view seam-crossing geometry is omitted without deleting categorical data.
 
 \textbf{Dynamic path category.}
 Let $G$ have four basin objects and ten directed generators, one for each
@@ -133,7 +142,9 @@ recorded MD trajectory.
 \input{nerve-views.tex}
 
 \newpage
-\section*{2. Empirical dynamics before categorical interpretation}
+\section*{2. Historical passage construction and revised validation}
+The following passage counts describe the original illustrative construction.
+They are not promoted to validated kinetics by the new measurement viewer.
 The MDshare benchmark contains three independent 250 ns trajectories at
 300 K, with 1 ps frame spacing, generated using ACEMD, AMBER ff99SB-ILDN,
 and TIP3P water \cite{mdshare}. We use the supplied angles and aligned
@@ -141,7 +152,7 @@ heavy-atom positions. All 750,000 frames contribute to occupancy estimates.
 Equal-area $12^\circ$ angular bins are smoothed periodically with a Gaussian
 of width 0.85 bins:
 \[
- \widehat F(q)/k_BT=-\log\frac{\widehat p(q)}{\max_{q'}\widehat p(q')}.
+\widehat E_{\rm occ}(q)=-\log\frac{\widehat p(q)}{\max_{q'}\widehat p(q')}.
 \]
 Pooling is unweighted. This is an empirical occupancy landscape; equilibrium
 convergence and estimator uncertainty have not been established.
@@ -189,18 +200,28 @@ the supplied torsions to about $2.4\times10^{-7}$ radians.
 Probability rows normalize; periodic-distance invariance, endpoint
 recovery and within-run lag accounting pass automated checks.
 
-\textbf{What remains unvalidated.}
-There is no Chapman--Kolmogorov test, implied-timescale plateau, block-bootstrap
-uncertainty estimate, or detailed-balance assessment. The atlas should not
-be used to infer new rates, free-energy barriers or mechanistic causality.
+\textbf{Revised validation.}
+Implied-timescale, held-out Chapman--Kolmogorov, resampling and stationary-flux
+diagnostics are now implemented; the revised CLN025 partitions are fitted
+on training groups only. These diagnostics do not establish validated kinetics.
+The atlas should not be used to infer new rates, barriers or causal mechanisms.
+Section 5 gives the evidence, failed assumptions and outstanding requirements.
 
 \newpage
 \input{chignolin.tex}
 \newpage
-\section*{4. From swept molecular skins to deforming geometry}
+\section*{4. Measured landscapes and the status of continuous skins}
+The revised quantitative surface is the supported structural-mobility field
+defined in Section 5. Alanine uses a pair-weighted mean; CLN025 uses an equal
+mean of root-conditional means with cohort resampling. These are different
+descriptive estimands, not comparable free-energy estimates. Molecular relief
+uses recorded coordinates under rigid alignment. Playback inserts no synthetic
+conformers. Figure 9 replaces the earlier illustrative deformation triptych.
+
+\textbf{Historical skin construction, retained for reproducibility.}
 For a representative passage, let $u\in[0,1]$ parameterize its recorded time.
 Coordinates are centered and scaled by 3.5 visual units per nm, and translated
-to $(\phi/12,\ 1.3\widehat F/k_BT,\ \psi/12)$.
+to $(\phi/12,\ 1.3\widehat E_{\rm occ},\ \psi/12)$ in the legacy viewer.
 Interpolated atomic Gaussians of width 0.36 visual units form a swept envelope:
 \[
  \rho_u(x)=\sum_a \exp\!\left[-\frac{\|x-Y_a(u)\|^2}{2(0.36)^2}\right],
@@ -232,16 +253,17 @@ neighboring targets. A deformation-amplitude control scales the displacement
 down to zero for direct comparison with the fixed-envelope version.
 
 \begin{figure}[H]\centering
-\includegraphics[width=.325\linewidth]{figures/phase-0.png}\hfill
-\includegraphics[width=.325\linewidth]{figures/phase-1.png}\hfill
-\includegraphics[width=.325\linewidth]{figures/phase-2.png}
-\caption{\textbf{Geometry changes, not only illumination.}
-Blender snapshots of the A$\to$C skin at visual phases $t=0,1/3,2/3$,
-with the same camera and lighting. Other route skins, terrain and the nerve are hidden.
-These phases are material
-deformation phases, not three complete instantaneous MD configurations.}
+\includegraphics[width=\linewidth]{figures/measured-height-revision.png}
+\caption{\textbf{A measured observable replaces illustrative occupancy height.}
+Left: supported mean structural mobility; white regions lack reporting support.
+Right: the same field supplies heights to the revised overlap-nerve embedding;
+bars indicate conditional resampling spread. Alanine uses ten heavy atoms and
+a 100 ps lag; CLN025 uses ten C$\alpha$ sites and a ten-frame lag. Averaging,
+site selection and lag differ, so the two scales are not thermodynamically
+comparable. Heights are in nm, not energy. The flat alanine view omits
+seam-crossing geometry; the interactive torus view retains periodic identification.}
 \end{figure}
-This is an artistic, MD-attached deformation field. Interpolated Cartesian
+The historical warp is an artistic, MD-attached deformation field. Interpolated Cartesian
 coordinates need not preserve bond lengths; self-overlaps can have ambiguous
 phase assignments. We do not assert injectivity, volume conservation,
 topology preservation, physical forces, or a dynamical semigroup for this animation.
@@ -274,14 +296,14 @@ models with quantified approximation error?
 \item Can a semantics functor $\mathcal S:\mathcal D\to\mathcal B$ satisfy
 $\mathcal S(g\circ f)=\mathcal S(g)\circ\mathcal S(f)$, where $\mathcal D$
 is a category of specified open models and $\mathcal B$ their behaviors?
-\item For CLN025, can native-contact, hydrogen-bond and backbone-torsion
-features distinguish compact misfolds from the native hairpin? Compare
-the current two-observable chart with time-lagged coordinates before
-interpreting any cluster as a folding state.
-\item Can the timestamp discrepancy be resolved with the depositors and
-the complete adaptive dataset be analyzed with justified statistical weights?
-Then test implied timescales, Chapman--Kolmogorov consistency and held-out
-transition predictions, with uncertainty from independent runs.
+\item Extend the completed distance/phi/psi/omega/history comparisons with
+native-contact and hydrogen-bond observables, nonlinear predictive models
+and experimentally interpretable targets. The NMR-distance reference is
+not yet a native-state definition or a folding validation.
+\item Resolve the timestamp discrepancy and verify restart/cohort provenance.
+The full archive and grouped kinetic diagnostics are now analyzed; the
+remaining tasks are justified equilibrium estimation, calibrated uncertainty
+and genuinely independent predictive checks, not merely more pooled frames.
 \item Can an explicitly defined projection between atomistic and C$\alpha$
 state categories preserve specified compositions? Such a comparison functor,
 including its approximation error, would connect the two visualization scales.

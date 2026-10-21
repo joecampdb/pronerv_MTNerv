@@ -1,0 +1,14 @@
+{
+  "files_verified": 3745,
+  "runs": 3744,
+  "frames": 1868861,
+  "archive_sha256": "77130b214ea945ed28583a25143d263d0c59a3536f1a31dbb69db372ad72de2f",
+  "archive_matches_manifest": true,
+  "psf_sha256": "b3afa661c28cfb374642d66f1b4d141fed39fc9707bd9e747422f57ff4355595",
+  "configuration_members": [],
+  "nontrajectory_member_count": 3746,
+  "clock_status": "UNRESOLVED: XTC interval 100000 ps conflicts with depositor nominal 100 ps; no production configuration in archive.",
+  "physical_time_enabled": false,
+  "equilibrium_free_energy_enabled": false,
+  "source": "https://doi.org/10.6084/m9.figshare.13858898"
+}

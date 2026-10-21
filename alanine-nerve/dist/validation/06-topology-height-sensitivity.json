@@ -1,0 +1,245 @@
+{
+  "interpretation": "Conditional resampling spread only; not calibrated confidence. Block-length, lag, bin and cover-scale sensitivities retained. Missing support is not filled.",
+  "results": [
+    {
+      "system": "alanine",
+      "lag_frames": 50,
+      "block_length": 2500,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.036404628971624664,
+      "median_change_from_baseline_nm": 0.00217002961141677,
+      "median_interval_width_nm": 0.0015813646722204096
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 50,
+      "block_length": 5000,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.03647988521071679,
+      "median_change_from_baseline_nm": 0.002118227853342994,
+      "median_interval_width_nm": 0.0015403585279875447
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 50,
+      "block_length": 10000,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.036508295923722164,
+      "median_change_from_baseline_nm": 0.0020972792106847375,
+      "median_interval_width_nm": 0.0015594184312568322
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 100,
+      "block_length": 2500,
+      "bins": 16,
+      "supported_bins": 99,
+      "common_bins": 99,
+      "median_height_nm": 0.03860199566670629,
+      "median_change_from_baseline_nm": 2.8269088028852474e-05,
+      "median_interval_width_nm": 0.0016910463318548993
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 100,
+      "block_length": 5000,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.03865207391555944,
+      "median_change_from_baseline_nm": 0.0,
+      "median_interval_width_nm": 0.001664525132870416
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 100,
+      "block_length": 10000,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.03868438963162668,
+      "median_change_from_baseline_nm": 2.416190479977154e-05,
+      "median_interval_width_nm": 0.001660378466780927
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 250,
+      "block_length": 2500,
+      "bins": 16,
+      "supported_bins": 98,
+      "common_bins": 98,
+      "median_height_nm": 0.04081768567389418,
+      "median_change_from_baseline_nm": 0.002081163951653652,
+      "median_interval_width_nm": 0.0017244619622016621
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 250,
+      "block_length": 5000,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.04115843896232836,
+      "median_change_from_baseline_nm": 0.002033963262380596,
+      "median_interval_width_nm": 0.0016319779725042227
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 250,
+      "block_length": 10000,
+      "bins": 16,
+      "supported_bins": 100,
+      "common_bins": 100,
+      "median_height_nm": 0.04113766134329401,
+      "median_change_from_baseline_nm": 0.0020359152748244073,
+      "median_interval_width_nm": 0.0015495361370653528
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 100,
+      "block_length": 5000,
+      "bins": 8,
+      "supported_bins": 33
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 100,
+      "block_length": 5000,
+      "bins": 12,
+      "supported_bins": 63
+    },
+    {
+      "system": "alanine",
+      "lag_frames": 100,
+      "block_length": 5000,
+      "bins": 24,
+      "supported_bins": 178
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 5,
+      "block_length": 100,
+      "bins": 16,
+      "supported_bins": 77,
+      "common_bins": 77,
+      "median_height_nm": 0.17153311943627456,
+      "median_change_from_baseline_nm": 0.02444841778283613,
+      "median_interval_width_nm": 0.010820592516826405
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 5,
+      "block_length": 250,
+      "bins": 16,
+      "supported_bins": 77,
+      "common_bins": 77,
+      "median_height_nm": 0.1717413756005921,
+      "median_change_from_baseline_nm": 0.02482494504650698,
+      "median_interval_width_nm": 0.010835445406107702
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 5,
+      "block_length": 500,
+      "bins": 16,
+      "supported_bins": 78,
+      "common_bins": 78,
+      "median_height_nm": 0.17134625782402785,
+      "median_change_from_baseline_nm": 0.025197606200874745,
+      "median_interval_width_nm": 0.011507783891365538
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 10,
+      "block_length": 100,
+      "bins": 16,
+      "supported_bins": 77,
+      "common_bins": 76,
+      "median_height_nm": 0.19590357346599002,
+      "median_change_from_baseline_nm": 0.000953782648270729,
+      "median_interval_width_nm": 0.013957241500209994
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 10,
+      "block_length": 250,
+      "bins": 16,
+      "supported_bins": 77,
+      "common_bins": 77,
+      "median_height_nm": 0.1968824996776779,
+      "median_change_from_baseline_nm": 0.0003240029441273079,
+      "median_interval_width_nm": 0.012956536340332253
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 10,
+      "block_length": 500,
+      "bins": 16,
+      "supported_bins": 78,
+      "common_bins": 78,
+      "median_height_nm": 0.19612164278578156,
+      "median_change_from_baseline_nm": 0.0,
+      "median_interval_width_nm": 0.013665495130508395
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 20,
+      "block_length": 100,
+      "bins": 16,
+      "supported_bins": 76,
+      "common_bins": 76,
+      "median_height_nm": 0.2189273810027546,
+      "median_change_from_baseline_nm": 0.027157619295517757,
+      "median_interval_width_nm": 0.015677918375000308
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 20,
+      "block_length": 250,
+      "bins": 16,
+      "supported_bins": 77,
+      "common_bins": 77,
+      "median_height_nm": 0.21830974926179356,
+      "median_change_from_baseline_nm": 0.026829067703905057,
+      "median_interval_width_nm": 0.01556734833666057
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 20,
+      "block_length": 500,
+      "bins": 16,
+      "supported_bins": 78,
+      "common_bins": 78,
+      "median_height_nm": 0.21814992638172775,
+      "median_change_from_baseline_nm": 0.02732014704299343,
+      "median_interval_width_nm": 0.014716039988662125
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 10,
+      "block_length": 500,
+      "bins": 8,
+      "supported_bins": 28
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 10,
+      "block_length": 500,
+      "bins": 12,
+      "supported_bins": 50
+    },
+    {
+      "system": "chignolin",
+      "lag_frames": 10,
+      "block_length": 500,
+      "bins": 24,
+      "supported_bins": 156
+    }
+  ]
+}

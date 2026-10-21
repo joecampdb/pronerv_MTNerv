@@ -1,0 +1,22 @@
+{
+  "inferred_initial_cohorts": 10,
+  "cohort_run_counts": {
+    "0": 15,
+    "1": 559,
+    "2": 33,
+    "3": 2562,
+    "4": 34,
+    "5": 92,
+    "6": 76,
+    "7": 41,
+    "8": 249,
+    "9": 83
+  },
+  "fold_run_counts": [
+    2562,
+    559,
+    305,
+    318
+  ],
+  "warning": "Conservative grouping of inferred roots by initial-directory suffix; not a verified independent preparation certificate."
+}

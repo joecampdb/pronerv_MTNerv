@@ -78,6 +78,24 @@ def lineage_groups(timing):
         missing_parents=sorted(missing),fold_run_counts=loads.tolist(),
         warning='Filename-derived genealogy, not verified restart metadata or independent initial conditions.')
 
+def initial_cohort_groups(timing,records):
+    """Coarsen root splits using the ten initial-conformation labels in filenames.
+
+    The deposit describes ten preparations, and root directory suffixes are
+    0..9. This is a conservative provenance grouping, not verified independence.
+    """
+    roots,_,_=lineage_groups(timing);mapping={}
+    for record in records:
+        directory=Path(record['member']).parent.name
+        match=re.fullmatch(r'(e1s\d+)_chignolin_50ns_(\d+)',directory)
+        if match:mapping[match[1]]=match[2]
+    if any(root not in mapping for root in roots):raise ValueError('Missing initial-cohort filename for inferred root')
+    cohorts=[mapping[root] for root in roots]
+    names,counts=np.unique(cohorts,return_counts=True);loads=np.zeros(4,int);foldmap={}
+    for i in np.argsort(-counts,kind='stable'):
+        fold=int(loads.argmin());foldmap[names[i]]=fold;loads[fold]+=counts[i]
+    return cohorts,[foldmap[x] for x in cohorts],dict(inferred_initial_cohorts=len(names),cohort_run_counts=dict(zip(names.tolist(),counts.tolist())),fold_run_counts=loads.tolist(),warning='Conservative grouping of inferred roots by initial-directory suffix; not a verified independent preparation certificate.')
+
 def load_chignolin(full):
     import MDAnalysis as mda
     warnings.filterwarnings('ignore',category=UserWarning,module='MDAnalysis')
@@ -157,7 +175,7 @@ def kinetics(labels,lags,groups):
         models.append(record)
     return models
 
-def height(qs,distances,lag,bins,limits,block_length,seed=42,cluster_ids=None):
+def height(qs,distances,lag,bins,limits,block_length,seed=42,cluster_ids=None,estimator='pooled',bootstrap_groups=None):
     """Conditional structural displacement, with cluster/bootstrap spread.
 
     No smoothing, no fabricated heights in unsupported bins, no physical clock
@@ -186,6 +204,37 @@ def height(qs,distances,lag,bins,limits,block_length,seed=42,cluster_ids=None):
         bs=np.array([bs[blockgroups==g].sum(0) for g in names])
         cluster_support=(bc>0).sum(0)
     else:cluster_support=support
+    # Root imbalance is visible even when several tiny lineages touch a bin.
+    # This is a contribution diagnostic, not proof of statistical independence.
+    total=bc.sum(0)
+    effective=np.divide(total.astype(float)**2,(bc.astype(float)**2).sum(0),out=np.zeros(B),where=(bc.astype(float)**2).sum(0)>0)
+    dominant=np.divide(bc.max(0),total,out=np.zeros(B),where=total>0)
+    raw_effective=effective.copy();raw_dominant=dominant.copy();raw_bc=bc.copy()
+    if estimator=='root-balanced':
+        if cluster_ids is None:raise ValueError('Root-balanced height requires declared cluster IDs')
+        # A different descriptive estimand: equal contribution of each root
+        # with >=20 pairs in the bin. This is NOT equilibrium reweighting.
+        eligible=bc>=20
+        rootmeans=np.divide(bs,bc,out=np.zeros_like(bs),where=eligible)
+        bc=eligible.astype(int);bs=rootmeans
+        total=bc.sum(0);cluster_support=total
+        mean=np.divide(bs.sum(0),total,out=np.full(B,np.nan),where=total>0)
+        effective=total.astype(float);dominant=np.divide(1.,total,out=np.zeros(B),where=total>0)
+    elif estimator!='pooled':raise ValueError('Unknown height estimator')
+    if bootstrap_groups is not None:
+        if cluster_ids is None:raise ValueError('Hierarchical bootstrap requires cluster IDs')
+        mapping={}
+        for root,group in zip(cluster_ids,bootstrap_groups):
+            if root in mapping and mapping[root]!=group:raise ValueError('Root split between bootstrap groups')
+            mapping[root]=group
+        group_names=sorted(set(bootstrap_groups));rootgroups=np.array([mapping[root] for root in names])
+        bc=np.array([bc[rootgroups==g].sum(0) for g in group_names]);bs=np.array([bs[rootgroups==g].sum(0) for g in group_names])
+        raw_group_counts=np.array([raw_bc[rootgroups==g].sum(0) for g in group_names]);raw_total=raw_group_counts.sum(0)
+        raw_effective=np.divide(raw_total.astype(float)**2,(raw_group_counts.astype(float)**2).sum(0),out=np.zeros(B),where=(raw_group_counts.astype(float)**2).sum(0)>0)
+        raw_dominant=np.divide(raw_group_counts.max(0),raw_total,out=np.zeros(B),where=raw_total>0)
+        cluster_support=(bc>0).sum(0);total=bc.sum(0)
+        effective=np.divide(total.astype(float)**2,(bc.astype(float)**2).sum(0),out=np.zeros(B),where=(bc.astype(float)**2).sum(0)>0)
+        dominant=np.divide(bc.max(0),total,out=np.zeros(B),where=total>0)
     rng=np.random.default_rng(seed);boot=[]
     for _ in range(200):
         chosen=rng.integers(0,len(bc),len(bc));den=bc[chosen].sum(0)
@@ -193,13 +242,19 @@ def height(qs,distances,lag,bins,limits,block_length,seed=42,cluster_ids=None):
     with warnings.catch_warnings():
         warnings.simplefilter('ignore',RuntimeWarning)
         ci=np.nanpercentile(boot,[2.5,97.5],axis=0)
-    shown=(count>=100)&(support>=5)&(runsupport>=min(3,len(qs)))&(cluster_support>=3)
+    shown=(count>=100)&(support>=5)&(runsupport>=min(3,len(qs)))&(cluster_support>=3)&(effective>=3)
     return dict(lag_frames=lag,block_length=block_length,bins=bins,limits=[low.tolist(),high.tolist()],
                 height_nm=mean.reshape(bins,bins).tolist(),count=count.reshape(bins,bins).tolist(),
                 supported=shown.reshape(bins,bins).tolist(),block_support=support.reshape(bins,bins).tolist(),
                 run_support=runsupport.reshape(bins,bins).tolist(),
                 cluster_support=cluster_support.reshape(bins,bins).tolist(),
-                resampling_unit='inferred ancestral root' if cluster_ids is not None else 'within-run blocks',
+                effective_resampling_units=effective.reshape(bins,bins).tolist(),
+                largest_unit_fraction=dominant.reshape(bins,bins).tolist(),
+                raw_effective_resampling_units=raw_effective.reshape(bins,bins).tolist(),
+                raw_largest_unit_fraction=raw_dominant.reshape(bins,bins).tolist(),
+                estimator=estimator,
+                estimand='Equal mean of root-conditional mobility means; only roots with >=20 retained pairs/bin; not equilibrium weights.' if estimator=='root-balanced' else 'Pair-weighted conditional mobility of the sampled ensemble.',
+                resampling_unit='inferred initial-conformation cohort' if bootstrap_groups is not None else ('inferred ancestral root' if cluster_ids is not None else 'within-run blocks'),
                 conditional_resampling_interval_nm=ci.reshape(2,bins,bins).tolist(),
                 uncertainty_caution='Conditional block/run-resampling spread; not a calibrated confidence interval. Adaptive lineage and three-run alanine limits remain.')
 
@@ -298,7 +353,16 @@ def main():
                            topology=topology(np.concatenate(coords)),mesh=mesh_audit(ROOT/'dist'))
     cq,cd,audit=load_chignolin(args.full)
     # Freeze legacy chart scaling and centers to isolate dataset-selection effects.
-    sq,_,_=load_chignolin(False) if args.full else (cq,cd,audit)
+    if args.full:
+        # Reuse the exact legacy members from the verified full deposit; a fresh
+        # full-data reproduction must not require downloading the subset again.
+        full_records=[r for r in json.loads((ROOT/'data/chignolin-full/manifest.json').read_text())['files'] if r['file'].endswith('.xtc')]
+        legacy_records=[r for r in json.loads((ROOT/'dist/chignolin/provenance.json').read_text())['files'] if r['file'].endswith('.xtc')]
+        index={r['member']:i for i,r in enumerate(full_records)}
+        for r in legacy_records:
+            if full_records[index[r['member']]]['sha256']!=r['sha256']:raise ValueError('Legacy/full source mismatch')
+        sq=[cq[index[r['member']]] for r in legacy_records]
+    else:sq=cq
     std=np.concatenate(sq).std(0)
     old=json.loads((ROOT/'dist/chignolin/data.json').read_text())
     cc=np.array([b['features'] for b in old['basins']])

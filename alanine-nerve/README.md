@@ -3,6 +3,31 @@
 Alanine dipeptide and chignolin CLN025 share a static Three.js viewer and
 MD-derived deforming-skin construction. The directory name is historical.
 
+## Measured revision (October 21, 2026)
+
+Start with **`measured.html`**, served by the command below. It uses the full
+CLN025 deposit and a supported structural-mobility height in nm. The original
+`index.html` and `chignolin.html` remain explicitly labeled illustrative baselines.
+This local revision has not automatically been deployed to GitHub Pages.
+
+CLN025 height is the equal mean of root-conditional means (roots need at least
+20 lag pairs per bin), with entire filename-inferred initial-conformation cohorts
+resampled together. This is a different descriptive estimand from pooled
+occupancy, **not an equilibrium correction**. Alanine uses pair-weighted means
+and within-run block resampling. Their heights are not interchangeable physical
+measurements. Unsupported bins are absent; intervals are conditional spread,
+not calibrated confidence intervals. The raw pooled comparison is retained.
+
+The full witnessed complexes are stored by maximal simplices. Only the nerve
+of the face poset of their 2-skeletons is drawn. Alanine uses a periodic metric
+and offers a torus view; cut-view seam-crossing edges are omitted, not joined
+across the page. Molecular playback uses actual recorded frames with rigid
+alignment only. No validated folding rates or smooth physical deformation law
+are claimed.
+
+See [VALIDATION.md](VALIDATION.md) for the ordered evidence register, reproduction,
+scientific scope and outstanding provenance/research requirements.
+
 ## View without scientific dependencies
 
 From this directory:

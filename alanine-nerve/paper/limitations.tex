@@ -1,112 +1,255 @@
-\newpage
+% This file remains an input of paper.tex and also compiles in the open editor.
+\ifdefined\AtlasMain
+  \let\AtlasSectionEnd\relax
+\else
+  \documentclass[11pt]{article}
+  \usepackage[margin=0.85in]{geometry}
+  \usepackage{amsmath,amssymb,booktabs,hyperref}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{6pt}
+  \setlength{\emergencystretch}{2em}
+  \hypersetup{colorlinks=true,urlcolor=blue,pdftitle={Molecular Atlas: Revised Limitations},pdfauthor={Joseph Campagna, PSM}}
+  \def\AtlasSectionEnd{\end{document}}
+  \begin{document}
+  {\large\bfseries Molecular Atlas: evidence and remaining limitations}\par
+  Joseph Campagna, PSM\hfill Revised October 21, 2026
+\fi
+
 \section*{5. Limitations and obstacles encountered}
-This section records the substantive scientific and practical obstacles
-encountered during construction, the response taken, and the remaining
-limits on interpretation. Successful rendering or passing numerical checks
-does not resolve these scientific limitations.
+This revision treats the original limitations in their original order.
+Implemented diagnostics are distinguished from successful validation.
+The measurement viewer uses supported structural mobility, recorded conformations
+and explicitly scoped categorical constructions. Earlier occupancy sculptures
+and continuous morphs remain illustrative baselines, not evidence of
+thermodynamic or dynamical validity. Evidence is in \texttt{dist/validation/}.
 
-\textbf{Dataset scale and selection.}
-The CLN025 archive is approximately 1.41 GB and contains thousands of runs.
-We streamed the first 128 trajectory members to keep the example reproducible
-on ordinary hardware. Archive order is deterministic but not random or
-statistically representative. Only per-member hashes were verified; the full
-archive checksum was not independently verified. One selected run contains
-499 frames rather than 500, so all code uses actual lengths and resets at
-run boundaries. Expanding or randomizing the selection may change every
-reported cluster, passage count and occupancy.
+\textbf{1. Dataset scale and selection --- acquisition resolved; sampling scope remains.}
+The complete CLN025 archive was checked against its published size
+(1,408,223,063 bytes) and MD5, with a retained SHA-256 manifest.
+All 3,744 trajectories, containing 1,868,861 frames, are now analyzed.
+Extracted member hashes were rechecked; the archive PSF topology was also
+recovered and hashed. Actual run lengths determine valid frame pairs;
+calculations never join separate runs. The original 128-run, 63,999-frame
+selection is retained only as a labeled legacy baseline.
+Complete deposit coverage is not complete configuration-space coverage or
+statistical representativeness. Evidence: \texttt{01-provenance.json}.
 
-\textbf{Timing conflict.}
-The first selected XTC encodes a 100,000 ps interval and a final time of
-50,000,000 ps, whereas the deposit describes 50 ns production runs.
-This is a factor-1,000 discrepancy relative to a nominal 100 ps frame interval.
-We preserve raw per-file times, analyze passages in frame indices, and label
-6.4 $\mu$s only as the nominal aggregate from deposit metadata. We do not
-silently repair the files, infer rates from their timestamps, or claim that
-the discrepancy has been resolved.
+\textbf{2. Timing conflict --- investigated; physical-time claims disabled.}
+The XTC interval of 100,000 ps conflicts with the nominal 50 ns production
+duration and approximately 500 frames per run. This factor-1,000 discrepancy
+persists across the deposit. Archive inventory found topology and frame-count
+sidecars, but no production configuration establishing the output stride.
+The stated 4 fs integration step does not determine the saved-frame interval.
+Raw timestamps are preserved; CLN025 analyses and playback use frame indices,
+and the revised export sets its physical frame interval to null.
+No physical rate, ns clock, passage time or rate-derived barrier is inferred.
+Authoritative output-stride information or corrected files are required;
+an inferred rescaling would not resolve the limitation. Alanine retains
+its supplied 1 ps frame spacing.
 
-\textbf{Adaptive sampling and comparability.}
-CLN025 trajectories were adaptively initialized, and no equilibrium weighting
-is available in this prototype. Pooled occupancy is therefore not a justified
-Boltzmann probability. Alanine also lacks a convergence and uncertainty study.
-The systems have different temperatures, force fields, atom selections and
-sampling procedures. Their plotted heights and transition counts must not
-be compared as quantitative thermodynamic or kinetic measurements.
+\textbf{3. Adaptive sampling and comparability --- estimands changed; equilibrium unestablished.}
+Filename ancestry identifies 100 roots; the largest has 2,505 descendant runs.
+Root-directory suffixes identify ten initial-conformation cohorts, consistent
+with the deposit's description of ten starting preparations. All descendants
+of a cohort stay together in the stronger holdout and resampling analysis.
+The four holdout folds contain 2,562, 559, 305 and 318 trajectories.
+These conservative filename-derived groupings are not verified restart logs
+or certificates of independence.
 
-\textbf{Chemical identity and cartoons.}
-The available deposit is CLN025 (YYDPETGTWY), not original chignolin.
-Its topology includes non-protein entries that trigger element/mass warnings
-in the trajectory parser. We select C$\alpha$ atoms by name, verify the ten-residue
-sequence, and use no guessed masses or solvent atoms in the geometric features.
-Alanine cannot support a conventional protein secondary-structure cartoon;
-its backbone trace includes atomic context. CLN025 ribbons interpolate C$\alpha$
-sites without assigning helices, sheets, native state or hydrogen bonds.
+No pooled CLN025 mobility bin meets the revised threshold of three effective
+cohort contributions. That failed-support result is retained. The displayed
+CLN025 height is therefore a \emph{different descriptive estimand}: an equal
+average of root-conditional means. For chart bin $B$,
+\[
+ m_\ell(t)=\left[\frac{1}{45}\sum_{a<b}
+ \big(d_{ab}(X_{t+\ell})-d_{ab}(X_t)\big)^2\right]^{1/2},
+ \qquad
+ h_B=\frac{1}{|\mathcal R_B|}\sum_{r\in\mathcal R_B}\overline m_{r,B}.
+\]
+Roots in $\mathcal R_B$ must have at least 20 retained within-run lag pairs
+in $B$. Entire initial-conformation cohorts are resampled together.
+Equal root averaging is not Boltzmann weighting or an equilibrium correction;
+the contributing-root mixture can vary between bins. Alanine instead uses
+a pair-weighted conditional mean and within-run block resampling.
+Lags are 100 ps for alanine and ten frames for CLN025. Different sites, lags,
+temperatures, force fields and averaging conventions prevent thermodynamic
+comparison of the two height scales.
 
-\textbf{Projection and state definitions.}
-$(R_g,d_{\rm ee})$ can merge folded, misfolded and otherwise distinct structures.
-Alignment to one reference is a rendering gauge, not a dynamical reduction.
-Core radii, smoothing widths, cover size and chart scaling are selected
-parameters, without a robustness study. The two-dimensional state labels
-do not establish metastability, sufficient statistics, memorylessness,
-or a reaction coordinate.
+Support requires 100 retained pairs, five blocks, three runs, three resampling
+units and three effective unit contributions. The last diagnostic is
+$(\sum_c w_c)^2/\sum_c w_c^2$; it is not an effective sample size corrected
+for all temporal dependence. The fields retain 100 alanine bins and 78 CLN025
+bins. Missing support is not filled or assigned zero. Lag, block-length and
+bin-resolution sensitivities are exported. Percentile intervals remain
+conditional resampling spread, not calibrated confidence intervals.
+Evidence: the atlas, pooled-height and initial-cohort JSON files, and
+\texttt{06-topology-height-sensitivity.json}.
 
-\newpage
-\section*{Limitations: topology, deformation and implementation}
-\textbf{Categorical claims.}
-The identity between the realization of a face-poset nerve and the barycentric
-subdivision of its simplicial complex is exact. Recovering the homotopy type
-of molecular configuration space would require additional cover and sampling
-hypotheses, which are not established. Witnessing intersections in a finite
-projection may miss or merge features. The alanine seam is unglued.
-The overlap complex is truncated, while the free path category has an infinite
-nerve; the viewer shows only selected finite parts. No comparison functor
-between the two categories, proof-assistant export, or compositional
-semantics for molecular dynamics has been implemented.
+\textbf{4. Chemical identity and cartoons --- mapping and geometry checks strengthened.}
+The dataset is capped CLN025, YYDPETGTWY, not original chignolin.
+The recovered PSF contains 177 atoms and 180 bonds: 175 peptide/cap atoms
+and two sodium ions. PSF and PDB atom names agree. CAY/CY/OY and NT/CAT
+identify the deposited acetyl and methylamide caps. The PSF stores nominal
+masses, whereas the deposit describes hydrogen mass repartitioning; it does
+not establish the integrator's actual masses.
 
-\textbf{Statistical and dynamical validation.}
-Some alanine directions have one or two passages. Temporal correlations,
-core recrossings and arbitrary clustering affect counts in both systems.
-The chignolin display provides passage counts, not a validated Markov model.
-No implied-timescale convergence, Chapman--Kolmogorov test, bootstrap
-uncertainty, detailed-balance analysis or experimental validation is supplied.
-Matching categorical endpoints permits a formal composition even when
-its constituent passages were never recorded consecutively.
+Every CLN025 frame was screened using PSF heavy-atom bonds and orthorhombic
+minimum-image reconstruction of the ordered backbone. No backbone reconstruction
+changed a frame. Heavy-bond distances ranged from 0.10889 to 0.17719 nm;
+none failed the broad 0.10--0.20 nm anomaly screen. This is not an energy
+or steric-clash certificate. All peptide omega angles were extracted:
+66 observations have cis Asp3--Pro4 geometry and are retained. The old universal
+0.3 nm minimum C$\alpha$ spacing is withdrawn as a validity criterion.
+All 750,000 alanine coordinate frames reproduce the supplied torsions within
+$3.49\times10^{-7}$ radians and pass the broad bond screen. Its supplied
+aligned coordinates lack per-frame periodic cells; those cells are not invented.
 
-\textbf{Deformation and geometry.}
-Fixed swept skins initially communicated motion only through a highlight.
-The revision adds actual position/normal morph targets, but this remains
-a visualization construction. Local attachment can be ambiguous at
-self-overlaps. Cartesian interpolation can distort molecular geometry;
-adjacency smoothing and a 1.5-unit displacement bound reduce extreme
-excursions without guaranteeing injectivity, collision freedom, conserved
-volume or preserved topology. Envelopes intersect the terrain as separate
-transparent meshes rather than forming a Boolean union. Transparency ordering
-can hide surfaces. Disconnected islands are possible consequences of sparse
-sampling and thresholded densities, not newly discovered physical states.
+The 20-member \href{https://www.rcsb.org/structure/2RVD}{2RVD NMR ensemble}
+supplies an explicit sequence-matched structural reference. Minimum RMS
+discrepancy in nonlocal C$\alpha$ pair distances is a continuous similarity
+observable, not a native-state assignment. Caps and experimental conditions
+differ. No folding threshold, hydrogen-bond network or secondary structure
+is inferred from a smooth cartoon. Recorded sites and straight connection
+guides are available without Cartesian interpolation.
+Evidence: \texttt{04-chemistry.json}, \texttt{04-alanine-chemistry.json}
+and recorded-conformation exports.
 
-\textbf{Rendering and software constraints.}
-Initial figure framing clipped isolated pathway skins; cameras were refitted
-to all deformation targets before final rendering. Twelve targets and bounded
-representative samples keep assets manageable, at the cost of temporal and
-spatial detail. GPU limits and transparency behavior vary between browsers.
-Blender figures use 4.0/Eevee; other releases may change material APIs or output.
-A trial MDTraj installation required a source build and subsequently lacked
-an import dependency. The pipeline instead uses the functioning MDAnalysis
-parser, with a documented Python environment. The static viewer requires HTTP serving, not direct
-\texttt{file://} loading.
+\textbf{5. Projection and state definitions --- alternatives tested; no preferred interface declared.}
+The $(R_g,d_{\rm ee})$ chart remains a visualization coordinate system,
+not a sufficient dynamical state. Nested grouped validation compares the chart,
+45 C$\alpha$ distances, periodic phi/psi/omega features, their combination,
+and a combination with 20-frame history. Future targets are distances,
+periodic omega and NMR-distance deviation at ten- and 50-frame lags.
+Scaling and ridge-parameter selection use training groups only; persistence
+is the baseline. Both root and initial-cohort holdouts are retained.
+This reduces the earlier bias from evaluating distance inputs against only
+a distance target, but does not exhaust nonlinear models, memory or solvent
+variables. Partitions with 4, 8 and 16 clusters are separately fitted on
+training data for kinetic checks. No best torsion/contact interface,
+metastability, reaction coordinate or Markov closure is inferred.
+Evidence: \texttt{05-predictive-validation*.json}.
 
-\textbf{Publication and reproducibility scope.}
-The repository originally mixed this atlas with a separate polyethylene
-simulation project. Documentation now separates them; generated raw simulations
-are not required to run the atlas. Previously tracked inputs, build binaries and
-smoke-run artifacts were removed from the current source index while preserving
-local files and Git history; older commits still contain those artifacts.
-Large upstream MD inputs are downloaded on
-demand and have separate attribution. The hosted Sites viewer has its own
-access policy; public GitHub source does not automatically make that hosted
-instance public. The GitHub credential rejected Actions workflow creation
-because it lacked the workflow scope. Tests were run locally; optional workflow
-templates are provided, while GitHub Pages uses a dedicated publication branch.
-A local server or the public repository's documented viewer
-deployment is the reproducible entry point. This paper is exploratory and
-not peer reviewed; implementation tests establish consistency, not scientific
-validity.
+\textbf{6. Categorical claims --- finite constructions corrected; space-recovery theorem not claimed.}
+Both witnessed covers are rebuilt from all available frames. Alanine uses
+the periodic angular metric with displayed radius $55^\circ$; CLN025 uses
+radius 0.8 in standardized chart coordinates. Maximal simplices retain the
+complete finite witnessed complexes, of maximal dimensions three and five.
+Tetrahedral boundaries are included in computing $H_2$ over $\mathbb F_2$;
+discarding them can manufacture apparent cavities. Cover-scale and
+witness-stride sensitivities are retained. Alanine's Betti numbers vary
+with radius, so stable configuration-space topology has not been established.
+
+The drawing is the 2-skeleton of $N(P(K_W^{(2)}))$, not every simplex of $K_W$.
+It has 78 objects, 212 inclusions and 138 triangular chains for alanine;
+CLN025 has 131 objects, 466 inclusions and 360 chains. Two alanine objects
+lack supported heights and are omitted only from the embedding. Their
+categorical records remain. The interactive torus view respects angular
+identifications; the flat cut view omits seam-crossing geometry rather than
+joining it by false long chords. Drawing intersections create no new incidences.
+
+For $\sigma\subset\tau$, witness sets satisfy $W_\tau\subset W_\sigma$:
+witness inclusion is a contravariant finite-set interpretation, not an
+identification with the free path category. Closure, inclusion composition
+and simplex preservation have executable tests. Good-cover assumptions,
+unseen intersections, projection-induced merging, a comparison functor to
+molecular path dynamics and a proof-assistant export remain unestablished.
+The exact barycentric-subdivision statement does not establish recovery
+of molecular configuration-space homotopy.
+
+\textbf{7. Statistical and dynamical validation --- diagnostics expanded; kinetic claims withheld.}
+Training-only partitions are checked at 5-, 10- and 50-frame lags, with
+held-out two- and four-step Chapman--Kolmogorov comparisons. Each state row
+retains counts, predicted/observed probabilities, total-variation discrepancy
+and conditional group-resampling spread. Rows below 100 pairs are flagged;
+unsupported rows remain missing, not absorbing. Weighted averages do not
+replace worst-row reporting. In initial-cohort holdouts, ten-frame weighted
+discrepancies span approximately 0.055--0.270 across tested configurations;
+the maximum single-row discrepancy across configurations is approximately
+0.460. These results do not establish validated kinetics. Last-core labels
+remain explicitly distinguished from instantaneous states.
+
+A known-process experiment illustrates the dependence problem. Across 200
+synthetic trials, nominal 95\% percentile intervals covered the known transition
+probability in 90\% of trials when ten independent cohorts were resampled,
+but only 40.5\% when duplicated descendants were incorrectly treated as
+independent roots. This synthetic result neither calibrates MD uncertainty
+nor validates molecular dynamics. Independent preparations, experimental
+checks, model-selection uncertainty and rare-event coverage remain necessary.
+
+An executable finite-stochastic-kernel contract specifies finite state sets,
+identity matrices and row-convention composition $P;Q=PQ$. Identity and
+associativity are tested; algebraic composition does not imply
+$P_{\rm observed}(2\ell)=P(\ell)^2$. A naive independent-product model of
+median-split $R_g$ and end-to-end distance has a ten-frame worst-row discrepancy
+near 0.497 against the observed joint kernel. These observables cannot simply
+be declared independent compositional modules. Boundary variables, admissible
+couplings, behavior semantics and composed-versus-joint predictive agreement
+remain research requirements. Evidence: \texttt{07-kinetic-validation*.json},
+\texttt{07-synthetic-coverage.json} and \texttt{composition-contract.json}.
+
+\textbf{8. Deformation and geometry --- unsupported interpretation removed; continuous repair incomplete.}
+The legacy audit identified disconnected components. The new screen evaluates
+48 phases per route, including intermediate positions between stored targets.
+All 22 route skins have nonadjacent BVH overlap candidates at some sampled
+phase. These are candidates, not an exact continuous-time intersection
+certificate; adjacent-face crossings and inter-object collisions are not
+exhaustively certified. Bounded displacement does not imply injectivity,
+conserved volume, topology preservation, valid bonds or a physical law.
+Boolean union would not repair these scientific limitations.
+
+The measurement viewer therefore uses recorded conformers under proper rigid
+alignment only. Playback steps through actual frames without synthetic
+molecular intermediates. Pair-distance invariance is checked. Measured tile
+heights, magnified molecular relief and the lifted nerve have separate visual
+roles. Figure 9 is replaced by mobility fields and measured-height nerves.
+Continuous glossy skins remain separately labeled artistic assets.
+A physical smooth field requires a validated correspondence, chemical
+constraints and collision checks throughout interpolation; realistic materials
+supply none of these. Evidence: \texttt{08-geometry.json} and recorded exports.
+
+\textbf{9. Rendering and software constraints --- reproducibility and checks strengthened.}
+The measurement viewer provides local vendored dependencies, missing-support
+masks, recorded-frame controls, separate nerve plates and conditional spread
+bars. Quantitative tile colors use unlit materials; molecular relief uses
+fixed lighting. Revised Blender figures use measured heights, recorded sites
+and geometric normals, with optical appearance separate from the numerical field.
+Scientific dependencies are pinned for the tested Python environment;
+browser-test dependencies have a package lock. Tests cover run boundaries,
+missing rows, rigid invariance, periodic distance, higher simplices, cohort
+grouping, root-balanced averaging and stochastic composition.
+Headless Chrome and Edge checks exercise both systems, playback, torus view,
+layer controls and mobile layout, followed by screenshot review.
+Both use Chromium and the available NVIDIA stack; this is not cross-engine
+or universal hardware certification. MDAnalysis remains the working parser;
+no unused MDTraj dependency is introduced. HTTP serving remains required.
+Evidence: \texttt{09-browser-checks.json}, tests, environment record and locks.
+
+\textbf{10. Publication and reproducibility scope --- coherent local revision; publication separate.}
+Ordered remediation scripts, compact validation data and revised figure/manuscript
+sources accompany the preserved illustrative baseline. Raw trajectories remain
+separately downloadable and attributed; source/output hashes provide traceability.
+No new GitHub publication, workflow authorization, external message or Instagram
+upload is implied by local validation. The existing public viewer and previously
+published PDF remain historical until a coordinated release.
+This pass updates the open limitations source and its compiler preview; it
+does not silently replace the published manuscript PDF. Older Git history
+can still contain previously tracked artifacts. A release should version source,
+manifests, figures and the complete manuscript together.
+The work remains exploratory and not peer reviewed.
+
+\subsection*{Remaining acceptance gates and future directions}
+Recover authoritative CLN025 timing and restart provenance first.
+Test uncertainty and predictive closure with independent preparations,
+rare states and experimental observables. Validate equilibrium estimation
+before introducing $-k_BT\log\pi$ as a height; committor and passage-time
+heights additionally require justified boundary sets and kinetics.
+Refine cover/projection sensitivity before any configuration-space theorem.
+For smooth surfaces, validate $\Phi_\theta$ and its tangent map before
+interpreting $(D\Phi_\theta)^{\mathsf T}D\Phi_\theta$ as a molecular
+deformation metric. Then select and test interfaces and coupling laws for
+composed dynamics. Synthetic differential geometry is an optional framework
+for smooth infinitesimal semantics, not a substitute for these prerequisites.
+
+\AtlasSectionEnd

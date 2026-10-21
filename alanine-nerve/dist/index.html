@@ -11,9 +11,9 @@
 <header><div><div class="eyebrow">Molecular atlas / experiment 001</div><h1>Alanine <span>as landscape</span></h1></div><nav aria-label="Molecular system"><a href="./index.html" aria-current="page">Alanine</a> · <a href="./chignolin.html">Chignolin CLN025 →</a></nav><span class="badge">PUBLIC MD · 300 K · 750 ns</span></header>
 <main><div class="stage">
 <canvas id="scene" aria-label="Interactive 3D molecular energy landscape. Drag to orbit, scroll to zoom; use the controls to inspect its nerve."></canvas>
-<div class="topline"><strong>A landscape made of conformations.</strong><p>MD passages · animated flow · overlap & path nerves</p></div>
+<div class="topline"><strong>Illustrative legacy landscape.</strong><p><a href="./measured.html">Open the measured mobility landscape and validation evidence →</a></p></div>
 <div class="toolbar"><button id="perspective" class="active">Orbit view</button><button id="top">Top view</button><button id="reset">Reset</button><button id="capture" title="Save the current view as a PNG">↓ PNG</button></div>
-<div class="bottom"><div class="legend">RELATIVE FREE ENERGY / kBT<div class="gradient"></div><div><span>0 · populated</span><span>8+ · rare</span></div></div><div class="hint">Drag to orbit · scroll to zoom · click a nerve node<br>φ, ψ: −180° to +180° · vertical scale is illustrative</div></div>
+<div class="bottom"><div class="legend">EMPIRICAL NEGATIVE LOG OCCUPANCY<div class="gradient"></div><div><span>0 · populated</span><span>8+ · rare</span></div></div><div class="hint">Drag to orbit · scroll to zoom · click a nerve node<br>φ, ψ: −180° to +180° · not a validated free-energy estimate</div></div>
 <div id="loading">Reconstructing the molecular landscape…<small>Loading MD-derived geometry and the nerve</small></div>
 </div>
 <aside>
@@ -53,7 +53,7 @@
 <label class="control">Overlap membranes<input id="membranes" type="checkbox" checked></label>
 <label class="control">Rotate slowly<input id="rotate" type="checkbox"></label>
 <div class="range-label"><span>Terrain opacity</span><output id="opacityValue">60%</output></div><input id="opacity" type="range" min="10" max="100" value="60" aria-label="Skin opacity">
-<div class="range-label"><span>Energy height + molecular relief</span><output id="heightValue">1.0×</output></div><input id="height" type="range" min="20" max="180" value="100" aria-label="Vertical exaggeration">
+<div class="range-label"><span>Occupancy score + molecular relief</span><output id="heightValue">1.0×</output></div><input id="height" type="range" min="20" max="180" value="100" aria-label="Vertical exaggeration">
 </section>
 <section><div class="eyebrow">03 / overlap nerve</div><div class="stats"><div><span class="stat" id="objects">—</span><small>OBJECTS</small></div><div><span class="stat" id="arrows">—</span><small>INCLUSIONS</small></div><div><span class="stat" id="chains">—</span><small>2-SIMPLICES</small></div></div>
 <select id="nodeSelect" aria-label="Select a nerve object" style="width:100%;background:#142332;color:#d1e4e7;border:1px solid #334757;padding:7px;margin-bottom:10px"></select>

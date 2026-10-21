@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "replicates": 200,
+  "bootstrap_replicates": 200,
+  "known_P": [
+    [
+      0.95,
+      0.05
+    ],
+    [
+      0.12,
+      0.88
+    ]
+  ],
+  "design": "10 independent synthetic Markov paths, 800 frames each; each path duplicated tenfold to model a deliberately extreme lineage dependence. Estimate P01.",
+  "results": {
+    "cohort": {
+      "empirical_coverage": 0.9,
+      "mean_interval_width": 0.010226939281321686
+    },
+    "false_independent_roots": {
+      "empirical_coverage": 0.405,
+      "mean_interval_width": 0.003245187433411982
+    }
+  },
+  "scope": "Monte Carlo diagnostic of this known process; no claim that actual MD obeys it or that empirical intervals have calibrated coverage."
+}

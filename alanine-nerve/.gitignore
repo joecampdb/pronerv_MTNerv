@@ -8,4 +8,5 @@ paper/*.out
 output/pdf/*.png
 output/*.zip
 .venv/
+node_modules/
 output/

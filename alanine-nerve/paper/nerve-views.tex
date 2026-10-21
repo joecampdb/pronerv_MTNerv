@@ -1,57 +1,51 @@
 \newpage
-\section*{Geometric atlas of the overlap nerve}
-The following plates show the complete exported overlap-nerve 2-skeletons,
-with identical connectivity in oblique and overhead views.
-Each vertex represents an object of the face poset: a witnessed index set
-$\sigma\in K_W^{(2)}$. Circles, squares and triangles distinguish
-$|\sigma|=1,2,3$; all three marker types are vertices of the categorical nerve.
-An edge represents a strict inclusion $\sigma\subset\tau$.
-A filled triangular face represents a composable chain
-$\sigma\subset\tau\subset\upsilon$ and includes the composite edge
-$\sigma\subset\upsilon$. Line direction is suppressed for visual clarity;
-inclusion always points from the smaller to the larger index set.
+\section*{Measured embedding of the overlap nerves}
+These revised plates use the full-data witnessed covers and supported mobility
+heights. Each vertex is an object of $P(K_W^{(2)})$: a witnessed index set.
+Circles, squares and triangles distinguish sets of size one, two and three.
+Edges are strict inclusions; a plate is a chain
+$\sigma\subset\tau\subset\upsilon$, including the composite inclusion.
+Edge direction is suppressed; inclusion points from smaller to larger sets.
+Bars show conditional resampling spread, not calibrated confidence intervals.
 
 \begin{figure}[H]\centering
-\includegraphics[width=\linewidth]{figures/alanine-nerve-annotated-both.png}
-\caption{\textbf{Alanine: the full exported overlap nerve in two views.}
-All 91 vertices, 282 strict inclusion edges and 204 triangular faces are
-displayed. The labeled example is
-$v_0=\{0\}\subset v_{18}=\{0,8\}\subset v_{57}=\{0,8,9\}$.
-Vertex IDs are zero-based indices in the exported node array.
-Horizontal coordinates follow the viewer's cut $(\phi,\psi)$ chart;
-height follows its scaled empirical free-energy coordinate.
-The shape is an embedding of the exported combinatorics, not a reconstructed
-physical molecular surface.}
+\includegraphics[width=\linewidth]{figures/alanine-measured-nerve.png}
+\caption{\textbf{Alanine: the revised measured-height nerve in two views.}
+The category contains 78 objects, 212 inclusions and 138 triangular chains.
+The embedding includes 76 objects with supported heights. Missing-height
+objects and seam-crossing geometry remain in the categorical metadata but
+are omitted from this flat drawing. The interactive torus view respects
+angular identifications. Vertical position is structural mobility at 100 ps,
+in nm; it is not empirical free energy. Example labels refer to the revised
+node array.}
 \end{figure}
-The vertex positions are recorded representatives of the corresponding overlaps,
-not necessarily geometric barycenters. Thus the displayed linear triangles
-can cross or overlap in projection. These crossings do not create new vertices
-or alter the abstract nerve. The categorical realization statement above
-concerns the abstract complex, not an injective embedding in this chart.
+The full underlying complex is preserved by maximal simplices, with maximal
+dimension three. These plates depict the face-poset nerve of its 2-skeleton;
+they do not claim to display every higher-dimensional simplex. Linear
+triangles may intersect in the embedding without creating new incidences.
 
 \newpage
-\section*{Geometric atlas of the CLN025 overlap nerve}
+\section*{Measured embedding of the CLN025 overlap nerve}
 \begin{figure}[H]\centering
-\includegraphics[width=\linewidth]{figures/chignolin-nerve-annotated-both.png}
-\caption{\textbf{CLN025: the full exported overlap nerve in two views.}
-All 97 vertices, 342 strict inclusion edges and 264 triangular faces are
-displayed. The labeled example is
-$v_0=\{0\}\subset v_{14}=\{0,5\}\subset v_{53}=\{0,5,7\}$.
-The horizontal chart uses C$\alpha$ radius of gyration and end-to-end
-distance. Vertical placement follows the viewer's pooled-occupancy score;
-it is not an equilibrium free-energy estimate. Marker and edge conventions
-match the alanine plate.}
+\includegraphics[width=\linewidth]{figures/chignolin-measured-nerve.png}
+\caption{\textbf{CLN025: revised full-deposit nerve in two views.}
+All 131 display objects have supported heights; the category has 466
+inclusions and 360 triangular chains. Horizontal axes are C$\alpha$ radius
+of gyration and end-to-end distance. Height is the equal mean of
+root-conditional structural mobilities at ten frames, in nm; entire inferred
+initial-conformation cohorts are resampled together. The clock is unresolved.
+Marker and edge conventions match the alanine plate.}
 \end{figure}
-The elongated geometry reflects the chosen observables and sampled
-conformations. It does not establish a folding reaction coordinate or a
-topological equivalence with configuration space. The displayed edges are
-overlap inclusions, not kinetic pathways; the free path-category overlay
-remains a separate construction.
+The full witnessed base complex has maximal dimension five. Its higher
+simplices are preserved in metadata and included through tetrahedra in
+the $H_2$ calculation, even though only a finite categorical substructure
+is drawn. Neither the elongated shape nor the measured height establishes
+a folding coordinate or a configuration-space homotopy equivalence.
+These edges are overlap inclusions, not kinetic transitions.
 
-\textbf{Reproducing the plates.}
-Run \texttt{python paper/render\_annotated\_nerve.py} from
-\texttt{alanine-nerve/}. The script reads the exported node positions,
-inclusion edges and chains directly, writes the paired plates into
-\texttt{paper/figures/}, and also exports individual viewpoints and SVG
-versions into the repository's \texttt{output/nerve-diagrams/annotated/}
-directory. No connectivity is inferred from the rendered image.
+\textbf{Reproduction.}
+Run \texttt{python build\_validated\_atlas.py}, then
+\texttt{python render\_revision\_figures.py} from \texttt{alanine-nerve/}.
+The scripts use numerical witnesses, supported heights and exported chains;
+no connectivity is inferred from pixels. Earlier monochrome occupancy-height
+plates remain historical assets rather than being overwritten.

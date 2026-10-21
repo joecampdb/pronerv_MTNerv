@@ -17,12 +17,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: python -m pip install numpy==1.26.4
+      - run: python -m pip install numpy==1.26.4 scipy==1.13.1
       - run: python -m unittest discover -s tests -v
         working-directory: alanine-nerve
       - run: |
           node test-morph.mjs
-          for file in dist/app.js dist/dynamics.js dist/chignolin.js dist/cartoon.js dist/path-skins.js; do
+          for file in dist/app.js dist/dynamics.js dist/chignolin.js dist/cartoon.js dist/path-skins.js dist/measured.js; do
             node --check "$file"
           done
+        working-directory: alanine-nerve
+      - run: npm ci && npx playwright install --with-deps chromium
+        working-directory: alanine-nerve
+      - run: |
+          python -m http.server 8765 --directory dist &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          node test-measured.mjs
         working-directory: alanine-nerve

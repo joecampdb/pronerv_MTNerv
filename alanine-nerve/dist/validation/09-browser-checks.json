@@ -1,0 +1,43 @@
+{
+  "scope": "Headless installed Chrome and Edge smoke checks; not all hardware or browser engines.",
+  "reports": [
+    {
+      "browser": "chrome",
+      "version": "155.0.8059.41",
+      "errors": [],
+      "failed": [],
+      "mobileOverflow": false,
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 (0x00002786) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "finalState": {
+        "system": "alanine",
+        "tiles": 100,
+        "frame": 0,
+        "run": 0,
+        "physicalClock": 1,
+        "finite": true
+      }
+    },
+    {
+      "browser": "edge",
+      "version": "155.0.4283.62",
+      "errors": [],
+      "failed": [],
+      "mobileOverflow": false,
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 (0x00002786) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "finalState": {
+        "system": "alanine",
+        "tiles": 100,
+        "frame": 0,
+        "run": 0,
+        "physicalClock": 1,
+        "finite": true
+      }
+    }
+  ]
+}

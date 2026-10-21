@@ -65,7 +65,7 @@ async function init(){
  skins=await loadPathSkins(world,d.routes.map(r=>basinColors[r.source]),'./chignolin/skins/');
  for(const r of d.routes){const o=document.createElement('option');o.value=r.id;o.textContent=`${d.basins[r.source].name} → ${d.basins[r.target].name} · ${r.count} passages`;$('route').append(o);}
  for(const pair of d.pairs){const a=d.routes[pair[0]],b=d.routes[pair[1]],o=document.createElement('option');o.value=pair.join(',');o.textContent=`${d.basins[a.source].name} → ${d.basins[a.target].name} → ${d.basins[b.target].name}`;$('pathChain').append(o);}
- $('stats').textContent=`${d.frames.toLocaleString()} frames · ${d.runs} independent runs · ${d.totalPassages.toLocaleString()} passages`;
+ $('stats').textContent=`Legacy subset: ${d.frames.toLocaleString()} frames · ${d.runs} adaptive trajectories · ${d.totalPassages.toLocaleString()} passages`;
  $('nerveStats').textContent=`${d.nodes.length} objects · ${d.edges.length} inclusions · ${d.chains.length} 2-simplices`;
  $('bounds').textContent=`Rg: ${d.chart.min[0].toFixed(2)}–${d.chart.max[0].toFixed(2)} nm; end-to-end: ${d.chart.min[1].toFixed(2)}–${d.chart.max[1].toFixed(2)} nm`;
  $('basins').textContent=d.basins.map(b=>`${b.name}: Rg ${b.features[0].toFixed(2)} nm, end-to-end ${b.features[1].toFixed(2)} nm`).join(' · ');

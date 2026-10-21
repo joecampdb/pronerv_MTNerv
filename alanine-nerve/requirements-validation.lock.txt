@@ -1,0 +1,12 @@
+# Tested on CPython 3.12.3, Windows x64. Direct scientific dependencies pinned.
+# This is not a cross-platform binary lock; transitive versions are also recorded
+# in dist/validation/environment.json after reproduction.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.6.1
+scikit-image==0.26.0
+MDAnalysis==2.7.0
+matplotlib==3.8.4
+threadpoolctl==3.5.0
+requests==2.32.3
+Pillow==10.3.0

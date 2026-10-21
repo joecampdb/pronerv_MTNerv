@@ -2,16 +2,22 @@
 
 **Joseph Campagna, PSM**
 
-An exploratory visualization of molecular dynamics: conformations form a landscape,
-translucent pathway skins deform with recorded geometry, and simplicial nerves make
-overlap and path composition visible. Includes **alanine dipeptide** and the
-ten-residue chignolin variant **CLN025**.
+An exploratory molecular atlas with measured structural-mobility heights,
+recorded conformations, and categorical overlap nerves. Includes **alanine
+dipeptide** and the ten-residue chignolin variant **CLN025**. The earlier
+continuous molecular-skin artwork remains a labeled illustrative baseline.
+
+**Measured revision:** [Evidence and reproduction](alanine-nerve/VALIDATION.md) ·
+[Revised limitations source](alanine-nerve/paper/limitations.tex) ·
+[Revised Figure 9](alanine-nerve/paper/figures/measured-height-revision.png).
+This revision is local and has not automatically replaced the public viewer,
+previously published PDF, or social-media artifacts.
 
 > This is a scientific visualization prototype, not a validated kinetic model.
 > The paper explains the mathematical construction, limitations, and future directions.
 
-**[Read the illustrated paper (PDF)](paper/molecular-atlas.pdf)** ·
-**[Open the public viewer](https://joecampdb.github.io/pronerv_MTNerv/)** ·
+**[Previously published paper (PDF)](paper/molecular-atlas.pdf)** ·
+**[Public illustrative viewer](https://joecampdb.github.io/pronerv_MTNerv/)** ·
 [Reproduce the analysis](alanine-nerve/README.md) · [Data attribution](DATA_SOURCES.md)
 
 **[LinkedIn carousel (10-slide PDF)](paper/molecular-atlas-linkedin-carousel.pdf)** ·
@@ -19,11 +25,11 @@ ten-residue chignolin variant **CLN025**.
 [CLN025 annotated nerve](alanine-nerve/paper/figures/chignolin-nerve-annotated-both.png)
 
 [Download all annotated viewpoints (PNG + SVG)](paper/annotated-nerve-views.zip).
-The monochrome nerve plates show oblique and overhead views with vertex markers,
+These earlier monochrome plates show oblique and overhead views with vertex markers,
 inclusion-edge legends, and a labeled example simplex. They show the complete
 exported overlap 2-skeleton; kinetic transitions belong to the separate path nerve.
 
-![CLN025 molecular landscape with nerve](alanine-nerve/paper/figures/chignolin-landscape-nerve.png)
+![CLN025 measured mobility with recorded molecular relief and nerve](alanine-nerve/paper/figures/chignolin-measured-landscape.png)
 
 ## Run in one command
 
@@ -36,17 +42,17 @@ cd pronerv_MTNerv
 python -m http.server 8765 --directory alanine-nerve/dist
 ```
 
-Open **http://localhost:8765/** and switch between Alanine and Chignolin in the
-header. Use an HTTP server; opening HTML directly from the filesystem will not work.
+Open **http://localhost:8765/measured.html** and switch between Alanine and CLN025.
+Use an HTTP server; opening HTML directly from the filesystem will not work.
 
-1. Turn on the overlap nerve and select a witnessed overlap object.
-2. Choose a transition route to isolate its molecular skin.
-3. Scrub the visual phase or adjust deformation amplitude to see actual mesh motion.
-4. Select a composable pair to inspect a dynamic nerve 2-simplex.
-5. Inspect the backbone cartoon; export the landscape as a PNG.
+1. Inspect supported mobility tiles; absent tiles have insufficient support.
+2. Toggle the overlap nerve, triangular plates and conditional spread bars.
+3. Compare mobility, resampling spread and raw-data dominance colors.
+4. Step through actual recorded frames without synthetic interpolation.
+5. Use the alanine torus view to inspect periodic identifications.
 
-The Sites-hosted instance is separately access-controlled. The public GitHub Pages
-viewer and a local server use the same static assets.
+The Sites-hosted instance is separately access-controlled. Public GitHub Pages
+still serves the earlier release; local measured assets are a newer revision.
 
 ## Two examples, one construction
 
@@ -54,17 +60,22 @@ viewer and a local server use the same static assets.
 |---|---|---|
 | Molecular representation | 10 heavy atoms | 10 Cα backbone sites |
 | Chart | Backbone φ, ψ | Cα radius of gyration, end-to-end distance |
-| Recorded frames | 750,000 | 63,999 |
-| Independent runs | 3 | 128 selected from 3,744 |
+| Recorded frames | 750,000 | 1,868,861 |
+| Trajectory files | 3 | 3,744 adaptive trajectories |
 | Temperature | 300 K | 350 K |
-| Observed route types | 10 | 12 |
-| Overlap nerve objects / arrows / 2-simplices | 91 / 282 / 204 | 97 / 342 / 264 |
-| Composable generator pairs | 25 | 36 |
+| Mobility lag | 100 ps | 10 frames; physical clock unresolved |
+| Height averaging | Pair-weighted | Equal root-conditional means |
+| Supported height bins | 100 | 78 |
+| Display-category objects / inclusions / triangles | 78 / 212 / 138 | 131 / 466 / 360 |
+| Full witnessed complex maximum dimension | 3 | 5 |
 
 CLN025 is **YYDPETGTWY**, not original chignolin. Its trajectories were adaptively
-sampled. The chart displays negative log pooled occupancy, **not equilibrium free
-energy**. A timestamp discrepancy is preserved in provenance and discussed in the
-paper; chignolin passage analysis uses frame indices.
+sampled. The revised chart displays descriptive structural mobility in nm,
+**not equilibrium free energy**. Root balancing is not an equilibrium correction.
+Intervals are conditional spread, not calibrated confidence intervals. A timestamp
+discrepancy is preserved; CLN025 analyses use frame indices. Legacy passage
+demonstrations retain 10 alanine and 12 CLN025 route types, with 25 and 36 formal
+generator pairs; these do not validate composition of molecular dynamics.
 
 The overlap category is a face poset of a witnessed simplicial complex. The
 dynamic category is the free category on observed route types. A composite

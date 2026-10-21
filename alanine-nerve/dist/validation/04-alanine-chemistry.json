@@ -1,0 +1,94 @@
+{
+  "atom_order": [
+    "ACE:CH3",
+    "ACE:C",
+    "ACE:O",
+    "ALA:N",
+    "ALA:CA",
+    "ALA:CB",
+    "ALA:C",
+    "ALA:O",
+    "NME:N",
+    "NME:CH3"
+  ],
+  "bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "mapping": "PDB heavy-atom order; phi=(1,3,4,6), psi=(3,4,6,8), zero-based. Capped ACE-ALA-NME.",
+  "source_sha256": {
+    "alanine-dipeptide-3x250ns-heavy-atom-positions.npz": "23441b08ad99cc04c364b7408f730f74948cdc354547d971e50f8b0be9f1bd66",
+    "alanine-dipeptide-3x250ns-backbone-dihedrals.npz": "f5ad30768a7cf3451b3061cb2ecb7f7d1de8c13044534376d26a6653d4cd5717",
+    "alanine-dipeptide-nowater.pdb": "20d4ff8f96df706d42f2efa334ab7facf256d16d5f8ba80175b407c3885bf9f5"
+  },
+  "runs": [
+    {
+      "coordinate_key": "arr_0",
+      "angle_key": "arr_0",
+      "frames": 250000,
+      "max_torsion_discrepancy_rad": 3.2597481514073934e-07,
+      "bond_range_nm": [
+        0.11157611012458801,
+        0.16794390976428986
+      ],
+      "bond_screen_failures": 0
+    },
+    {
+      "coordinate_key": "arr_1",
+      "angle_key": "arr_1",
+      "frames": 250000,
+      "max_torsion_discrepancy_rad": 3.3702865742668564e-07,
+      "bond_range_nm": [
+        0.11136085540056229,
+        0.16896282136440277
+      ],
+      "bond_screen_failures": 0
+    },
+    {
+      "coordinate_key": "arr_2",
+      "angle_key": "arr_2",
+      "frames": 250000,
+      "max_torsion_discrepancy_rad": 3.480067269912013e-07,
+      "bond_range_nm": [
+        0.11243055015802383,
+        0.16784757375717163
+      ],
+      "bond_screen_failures": 0
+    }
+  ],
+  "scope": "All supplied frames; bond screening and torsion identity are not force-field or experimental validation. Supplied aligned coordinates lack per-frame periodic cells; no unsupported PBC reconstruction performed."
+}

@@ -1,1 +1,13 @@
-{"name":"alanine-nerve-landscape","private":true,"type":"module","scripts":{"check":"node --check dist/app.js"}}
+{
+  "name": "alanine-nerve-landscape",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check dist/app.js && node --check dist/chignolin.js && node --check dist/measured.js",
+    "test": "node test-morph.mjs",
+    "test:browser": "node test-measured.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}

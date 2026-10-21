@@ -1,0 +1,32 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+const out=new URL('./output/browser-validation/',import.meta.url);fs.mkdirSync(out,{recursive:true});
+const reports=[];
+const targets=process.platform==='win32'?[['chrome','C:/Program Files/Google/Chrome/Application/chrome.exe'],['edge','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe']]:[['chromium',undefined]];
+for(const [name,executablePath] of targets){
+ const browser=await chromium.launch({executablePath,headless:true,args:['--enable-unsafe-swiftshader']});
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[],failed=[];
+ page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push([r.status(),r.url()]);});
+ await page.goto((process.env.ATLAS_BASE_URL||'http://127.0.0.1:8765')+'/measured.html');
+ await page.waitForFunction(()=>window.atlasState?.system==='chignolin',{},{timeout:60000});
+ await page.locator('#loading').waitFor({state:'hidden'});
+ await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+ let state=await page.evaluate(()=>window.atlasState);assert(state.tiles>0);assert(state.finite);assert.equal(state.physicalClock,null);
+ await page.screenshot({path:fileURLToPath(new URL(`${name}-chignolin.png`,out)),fullPage:true});
+ await page.locator('#play').click();await page.waitForFunction(()=>window.atlasState.frame>0);await page.locator('#play').click();
+ await page.locator('#color').selectOption('spread');await page.locator('#intervals').check();
+ await page.locator('#relief').uncheck();await page.locator('#relief').check();
+ await page.locator('#system').selectOption('alanine');await page.waitForFunction(()=>window.atlasState?.system==='alanine');
+ state=await page.evaluate(()=>window.atlasState);assert.equal(state.physicalClock,1);assert(state.tiles>0&&state.finite);
+ await page.locator('#torus').check();await page.screenshot({path:fileURLToPath(new URL(`${name}-alanine-torus.png`,out)),fullPage:true});
+ await page.locator('#nerve').uncheck();await page.locator('#nerve').check();await page.locator('#plates').uncheck();await page.locator('#plates').check();
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:fileURLToPath(new URL(`${name}-mobile.png`,out)),fullPage:true});
+ const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2);
+ const gl=await page.evaluate(()=>{const c=document.querySelector('#scene'),g=c.getContext('webgl2')||c.getContext('webgl');const ext=g.getExtension('WEBGL_debug_renderer_info');return {version:g.getParameter(g.VERSION),renderer:ext?g.getParameter(ext.UNMASKED_RENDERER_WEBGL):'unavailable'};});
+ assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);assert.equal(overflow,false,'Mobile layout overflows');
+ reports.push({browser:name,version:browser.version(),errors,failed,mobileOverflow:overflow,webgl:gl,finalState:state});await browser.close();
+}
+fs.writeFileSync(new URL('./dist/validation/09-browser-checks.json',import.meta.url),JSON.stringify({scope:'Headless browser smoke checks on the reported engines and graphics stack; not all hardware or browser engines.',reports},null,2));
+console.log(`PASS: ${reports.length} browser(s), both systems, recorded playback, torus, masks, controls, no page/network errors, mobile layout.`);

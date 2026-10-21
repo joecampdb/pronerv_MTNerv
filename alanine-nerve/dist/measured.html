@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Molecular Atlas | Measured landscapes</title>
+<link rel="stylesheet" href="./atlas.css"><script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
+<style>.status{padding:12px;background:#142a35;border-left:3px solid #6edbb7}.stage{min-height:650px}select{max-width:100%;padding:8px;background:#142332;color:#e0edf2;border:1px solid #526775}a{color:#82dcca}#inspector{white-space:pre-line}.legend{max-width:280px}#mini{width:100%;height:220px}#evidence{font-size:13px}button:focus-visible,select:focus-visible{outline:2px solid #ffd273}.bottom{pointer-events:none}#loading[hidden]{display:none}</style></head>
+<body><header><div><div class="eyebrow">MOLECULAR ATLAS / MEASUREMENTS</div><h1>Geometry with <span>evidence</span></h1></div><nav><a href="./index.html">Illustrative alanine</a> · <a href="./chignolin.html">Illustrative CLN025</a></nav></header>
+<main><div class="stage"><canvas id="scene" aria-label="Supported structural mobility field with recorded molecular geometry and overlap nerve"></canvas>
+<div class="topline"><strong id="title">Loading measured landscape…</strong><p id="subtitle"></p></div>
+<div class="toolbar"><button id="reset">Orbit view</button><button id="top">Top view</button><button id="capture">Save PNG</button></div>
+<div class="bottom"><div class="legend"><strong id="legend"></strong><div class="gradient"></div><div id="range"></div></div><div class="hint" id="axes"></div></div><div id="loading">Loading supported measurements…</div></div>
+<aside><section><div class="eyebrow">01 / OBSERVABLE</div><h2>A measured vertical dimension</h2>
+<select id="system" aria-label="Molecular system"><option value="chignolin">Chignolin variant CLN025</option><option value="alanine">Alanine dipeptide</option></select>
+<p id="summary" class="small"></p><p class="status">Height: mean RMS change of internal pair distances at a declared lag, in nm. This is structural mobility, not free energy.</p>
+<label for="color">Surface color</label><select id="color"><option value="height">Mean mobility (nm)</option><option value="spread">Conditional interval width (nm)</option><option value="dominance">Largest raw-data unit fraction</option></select>
+<p class="small">Missing tiles mean insufficient support. Resampling intervals describe conditional spread; they are not calibrated confidence intervals. An inferred ancestral root need not be an independent preparation.</p>
+<label class="control">Show recorded molecular relief<input type="checkbox" id="relief" checked></label><p class="small">Each tile has a recorded representative, magnified independently of the quantitative height. Its geometry is not a probability density or a continuous molecular surface.</p>
+</section><section><div class="eyebrow">02 / OVERLAP CATEGORY</div>
+<label class="control">Show nerve edges and vertices<input id="nerve" type="checkbox" checked></label>
+<label class="control">Show triangular plates<input id="plates" type="checkbox" checked></label>
+<label class="control">Show conditional spread bars<input id="intervals" type="checkbox"></label>
+<label class="control">Periodic torus view (alanine)<input id="torus" type="checkbox"></label>
+<p id="nerveInfo" class="small"></p><p class="small">Mint: cover sets; blue: pair intersections; amber: triple intersections. Edges are strict inclusions; triangular plates are chains of two inclusions. The full witnessed complex is stored as maximal simplices; this display is a finite subcategory.</p>
+<p class="small">The nerve is lifted for visibility. Its vertical offset has no physical meaning. Unsupported vertices remain in the data but are omitted from this embedding.</p>
+</section><section><div class="eyebrow">03 / RECORDED DYNAMICS</div><h2>Observed conformations</h2>
+<canvas id="mini" aria-label="Recorded molecular sites with straight bond or C-alpha guides"></canvas>
+<select id="excerpt" aria-label="Recorded trajectory excerpt"></select><button id="play">Play recorded frames</button>
+<input id="frame" aria-label="Recorded frame" type="range" min="0" max="99" value="0"><p id="frameInfo" class="small"></p>
+<p class="small">Playback steps through actual frames. Camera and illumination stay fixed. No synthetic intermediate conformers or continuous deformation law are inserted.</p>
+</section><section><div class="eyebrow">04 / INSPECT AND VERIFY</div><p id="inspector" class="small">Click a supported tile to inspect its measurement and recorded representative.</p>
+<div id="evidence"><p><a id="download" download>Download this field and nerve</a></p><p><a href="./validation/01-provenance.json">Archive and clock evidence</a> · <a href="./validation/04-chemistry.json">Chemistry</a></p><p><a href="./validation/05-predictive-validation.json">Nested prediction</a> · <a href="./validation/07-kinetic-validation.json">Kinetic diagnostics</a></p><p><a href="./validation/06-topology-height-sensitivity.json">Height sensitivity</a> · <a href="./validation/08-geometry.json">Envelope audit</a></p><p><a href="./validation/composition-contract.json">Composition contract</a></p></div>
+<p class="small">Joseph Campagna, PSM · Exploratory, not peer reviewed. CLN025: full Figshare deposit; alanine: three MDshare trajectories. The earlier artistic viewer remains available for comparison.</p>
+</section></aside></main><script type="module" src="./measured.js"></script></body></html>
