@@ -147,7 +147,7 @@ All numbers are produced by \texttt{compare\_all.py} from the per-system summari
 \subsection{Within and between groups}
 \input{generated/group_table}
 
-Figure~\ref{fig:embedding} embeds the primary systems by their z-scored invariants (classical MDS) and Figure~\ref{fig:invariants} shows the group distributions of six of them. The between/within distance ratio is \sepRatio{} (permutation $p=\sepP$, 2000 label permutations). Figure~\ref{fig:scaling} shows the mobility ladders and Figure~\ref{fig:betti} the fluid-filtration component curves normalised by each system's connection time.
+Figure~\ref{fig:embedding} embeds the primary systems by their z-scored invariants (classical MDS) and Figure~\ref{fig:invariants} shows the group distributions of six of them. The between/within distance ratio is \sepRatio{} (permutation $p=\sepP$, 2000 label permutations). Figure~\ref{fig:scaling} shows the mobility ladders and Figure~\ref{fig:betti} the fluid-filtration Betti curves.
 
 \begin{figure}[H]\centering\includegraphics[width=.72\linewidth]{figures/fig_embedding.png}
 \caption{Systems embedded by nerve and deformation-field invariants. Blue: atom-based; orange: backbone-based.}\label{fig:embedding}\end{figure}
@@ -156,7 +156,7 @@ Figure~\ref{fig:embedding} embeds the primary systems by their z-scored invarian
 \begin{figure}[H]\centering\includegraphics[width=.72\linewidth]{figures/fig_scaling.png}
 \caption{Median mobility against ambient lag. Ab initio trajectories sampled every femtosecond show the ballistic regime; picosecond- and nanosecond-sampled systems are saturated.}\label{fig:scaling}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{figures/fig_betti_curves.png}
-\caption{Fluid filtration: $\beta_0(N_\tau)/\beta_0(N_0)$ against $\tau/\tau_{\mathrm c}$.}\label{fig:betti}\end{figure}
+\caption{Fluid filtration: Betti numbers of the $\tau$-thickened cover nerve against ambient time in frames, one line per system. Most backbone systems are connected at $\tau=0$; the atom-based small molecules carry isolated fringe balls that attach within a few frames.}\label{fig:betti}\end{figure}
 
 \subsection{Rigidity test}
 \input{generated/rigidity}

@@ -1951,5 +1951,5 @@
   "meaning": "Sublevel sets of smoothed -log occupancy on the chart grid; cubical GF(2) Betti numbers; 0-dim pairs are exact basin merge levels (elder rule). Not a free energy."
  },
  "temperature_ladder": null,
- "seconds": 3.6
+ "seconds": 2.5
 }

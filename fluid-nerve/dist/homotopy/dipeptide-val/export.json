@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-val",
+ "label": "Ace-VAL-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 80,
+   "triangles": 182,
+   "tetrahedra": 266,
+   "generators": 546,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-val\\base.hom (3963267 bytes); generators by dimension: [(0, 18), (1, 80), (2, 182), (3, 266)]"
+  },
+  "poset": {
+   "vertices": 546,
+   "edges": 4976,
+   "triangles": 10668,
+   "tetrahedra": 6384,
+   "generators": 22574,
+   "status": "skipped: 22574 generators exceed --max-generators 4000"
+  }
+ }
+}

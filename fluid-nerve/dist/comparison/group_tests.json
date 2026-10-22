@@ -1,115 +1,115 @@
 {
  "objects": {
   "label": "nerve objects",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 75.0,
+  "median_atom": 171.0,
   "median_backbone": 82.5,
   "iqr_atom": [
-   38.5,
-   95.5
+   78.5,
+   257.0
   ],
   "iqr_backbone": [
    76.0,
    93.75
   ],
-  "mannwhitney_U": 215.0,
-  "p_value": 0.15039351862186776,
-  "cliffs_delta": -0.2534722222222222
+  "mannwhitney_U": 903.0,
+  "p_value": 0.0017204253046392102,
+  "cliffs_delta": 0.43333333333333335
  },
  "inclusions": {
   "label": "inclusions",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 199.0,
+  "median_atom": 682.0,
   "median_backbone": 223.0,
   "iqr_atom": [
-   52.0,
-   289.0
+   211.0,
+   1130.0
   ],
   "iqr_backbone": [
    196.0,
    283.5
   ],
-  "mannwhitney_U": 219.0,
-  "p_value": 0.17428451322072935,
-  "cliffs_delta": -0.23958333333333334
+  "mannwhitney_U": 906.0,
+  "p_value": 0.0015293499766823536,
+  "cliffs_delta": 0.4380952380952381
  },
  "triangles": {
   "label": "triangles",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 126.0,
+  "median_atom": 564.0,
   "median_backbone": 141.0,
   "iqr_atom": [
-   16.5,
-   201.0
+   135.0,
+   978.0
   ],
   "iqr_backbone": [
    120.0,
    198.0
   ],
-  "mannwhitney_U": 225.0,
-  "p_value": 0.21434115919156316,
-  "cliffs_delta": -0.21875
+  "mannwhitney_U": 911.5,
+  "p_value": 0.0012176632518600314,
+  "cliffs_delta": 0.44682539682539685
  },
  "max_dimension": {
   "label": "max simplex dim",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 3.0,
+  "median_atom": 6.0,
   "median_backbone": 3.0,
   "iqr_atom": [
-   2.0,
-   3.25
+   3.0,
+   7.0
   ],
   "iqr_backbone": [
    3.0,
    3.0
   ],
-  "mannwhitney_U": 258.5,
-  "p_value": 0.5038756667010686,
-  "cliffs_delta": -0.10243055555555555
+  "mannwhitney_U": 942.0,
+  "p_value": 0.00015397483309217706,
+  "cliffs_delta": 0.49523809523809526
  },
  "beta0": {
   "label": "\u03b20 (cover)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
   "median_atom": 1.0,
   "median_backbone": 1.0,
   "iqr_atom": [
    1.0,
-   4.25
+   1.5
   ],
   "iqr_backbone": [
    1.0,
    1.0
   ],
-  "mannwhitney_U": 379.5,
-  "p_value": 0.006181965888060811,
-  "cliffs_delta": 0.3177083333333333
+  "mannwhitney_U": 747.0,
+  "p_value": 0.03991871257015726,
+  "cliffs_delta": 0.18571428571428572
  },
  "beta1": {
   "label": "\u03b21 (cover)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 1.0,
   "iqr_atom": [
    0.0,
-   1.0
+   0.0
   ],
   "iqr_backbone": [
    0.0,
    2.25
   ],
-  "mannwhitney_U": 202.0,
-  "p_value": 0.07568067389797137,
-  "cliffs_delta": -0.2986111111111111
+  "mannwhitney_U": 326.0,
+  "p_value": 0.00011015996256655477,
+  "cliffs_delta": -0.48253968253968255
  },
  "beta2": {
   "label": "\u03b22 (cover)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 0.0,
@@ -121,175 +121,175 @@
    0.0,
    0.0
   ],
-  "mannwhitney_U": 288.0,
+  "mannwhitney_U": 630.0,
   "p_value": 1.0,
   "cliffs_delta": 0.0
  },
  "uncovered_fraction": {
   "label": "uncovered fraction",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 0.0002453350333503335,
+  "median_atom": 0.00015,
   "median_backbone": 0.021386292531736108,
   "iqr_atom": [
    0.0,
-   0.21064025231161052
+   0.00295
   ],
   "iqr_backbone": [
    0.01729278314310799,
    0.031283143107989464
   ],
-  "mannwhitney_U": 185.0,
-  "p_value": 0.04198038847232059,
-  "cliffs_delta": -0.3576388888888889
+  "mannwhitney_U": 194.0,
+  "p_value": 5.056254838795098e-07,
+  "cliffs_delta": -0.692063492063492
  },
  "median_h_ref": {
   "label": "median h at \u03c4_ref (nm)",
-  "n_atom": 13,
+  "n_atom": 32,
   "n_backbone": 36,
-  "median_atom": 0.014906736614273818,
+  "median_atom": 0.03928273139594086,
   "median_backbone": 0.6018647350421051,
   "iqr_atom": [
-   0.008519050525163935,
-   0.027607601391916446
+   0.019556801941169207,
+   0.05006172026746411
   ],
   "iqr_backbone": [
    0.3465073064512727,
    0.7670029538520624
   ],
   "mannwhitney_U": 0.0,
-  "p_value": 1.2384105631885927e-07,
+  "p_value": 1.5374302225762123e-12,
   "cliffs_delta": -1.0
  },
  "drift_ratio_ref": {
   "label": "drift/spread at \u03c4_ref",
-  "n_atom": 13,
+  "n_atom": 32,
   "n_backbone": 36,
-  "median_atom": 0.4976468705262286,
+  "median_atom": 0.520175485759105,
   "median_backbone": 0.4246647277311618,
   "iqr_atom": [
-   0.39004397620302106,
-   1.8133295238403362
+   0.4579701898351999,
+   0.5658743104018186
   ],
   "iqr_backbone": [
    0.32960136743924473,
    0.48221156571883017
   ],
-  "mannwhitney_U": 323.0,
-  "p_value": 0.0450560990200837,
-  "cliffs_delta": 0.3803418803418803
+  "mannwhitney_U": 849.0,
+  "p_value": 0.0008134971157809113,
+  "cliffs_delta": 0.4739583333333333
  },
  "h_slope": {
   "label": "mobility exponent",
-  "n_atom": 14,
+  "n_atom": 33,
   "n_backbone": 36,
-  "median_atom": 0.3629235338522581,
+  "median_atom": 0.1288821634441522,
   "median_backbone": 0.20645606205245665,
   "iqr_atom": [
-   0.3155564773411559,
-   0.5327132795841285
+   0.10067873890069504,
+   0.3561682706210117
   ],
   "iqr_backbone": [
    0.1494027745777333,
    0.21936493585373912
   ],
-  "mannwhitney_U": 442.0,
-  "p_value": 4.231044184278442e-05,
-  "cliffs_delta": 0.753968253968254
+  "mannwhitney_U": 523.0,
+  "p_value": 0.3970613340067476,
+  "cliffs_delta": -0.11952861952861953
  },
  "h_slope_early": {
   "label": "early mobility exponent",
-  "n_atom": 14,
+  "n_atom": 33,
   "n_backbone": 36,
-  "median_atom": 0.8214683996780594,
+  "median_atom": 0.14115918696073598,
   "median_backbone": 0.24131679353173996,
   "iqr_atom": [
-   0.7279409962641985,
-   0.8547311639872628
+   0.10990454236481832,
+   0.7655321689172829
   ],
   "iqr_backbone": [
    0.18875223235598126,
    0.25935329038447025
   ],
-  "mannwhitney_U": 442.0,
-  "p_value": 4.231044184278442e-05,
-  "cliffs_delta": 0.753968253968254
+  "mannwhitney_U": 484.0,
+  "p_value": 0.18838602104430702,
+  "cliffs_delta": -0.18518518518518517
  },
  "first_connected_frames": {
   "label": "\u03c4_connect (frames)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 0.0,
   "iqr_atom": [
    0.0,
-   1.5
+   0.5
   ],
   "iqr_backbone": [
    0.0,
    0.0
   ],
-  "mannwhitney_U": 378.0,
-  "p_value": 0.0070537466045258535,
-  "cliffs_delta": 0.3125
+  "mannwhitney_U": 745.5,
+  "p_value": 0.0424281950303169,
+  "cliffs_delta": 0.18333333333333332
  },
  "beta1_total_lifetime_frames": {
   "label": "\u03b21 total lifetime (frames)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 107.0,
+  "median_atom": 0.0,
   "median_backbone": 2.0,
   "iqr_atom": [
    0.0,
-   260.75
+   57.0
   ],
   "iqr_backbone": [
    0.75,
    3.0
   ],
-  "mannwhitney_U": 386.5,
-  "p_value": 0.04830533159184671,
-  "cliffs_delta": 0.3420138888888889
+  "mannwhitney_U": 489.0,
+  "p_value": 0.08922485605808536,
+  "cliffs_delta": -0.22380952380952382
  },
  "beta1_classes": {
   "label": "\u03b21 classes born (fluid)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 3.0,
+  "median_atom": 0.0,
   "median_backbone": 1.5,
   "iqr_atom": [
    0.0,
-   7.75
+   2.0
   ],
   "iqr_backbone": [
    0.75,
    3.0
   ],
-  "mannwhitney_U": 341.5,
-  "p_value": 0.28405859321019356,
-  "cliffs_delta": 0.1857638888888889
+  "mannwhitney_U": 445.0,
+  "p_value": 0.02538693588017678,
+  "cliffs_delta": -0.29365079365079366
  },
  "flood_basins": {
   "label": "flooding basins (persistence \u2265 1)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 2.5,
+  "median_atom": 4.0,
   "median_backbone": 18.5,
   "iqr_atom": [
-   1.0,
-   4.0
+   3.0,
+   6.0
   ],
   "iqr_backbone": [
    14.75,
    25.5
   ],
-  "mannwhitney_U": 17.5,
-  "p_value": 8.281544187978607e-08,
-  "cliffs_delta": -0.9392361111111112
+  "mannwhitney_U": 56.0,
+  "p_value": 3.927231861980032e-11,
+  "cliffs_delta": -0.9111111111111111
  },
  "flood_connect_level": {
   "label": "flooding connection level",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 0.0,
@@ -301,62 +301,62 @@
    0.0,
    0.0
   ],
-  "mannwhitney_U": 288.0,
+  "mannwhitney_U": 630.0,
   "p_value": 1.0,
   "cliffs_delta": 0.0
  },
  "entropy_bits": {
   "label": "occupancy entropy (bits)",
-  "n_atom": 16,
+  "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 7.8688410407018266,
+  "median_atom": 6.640140393877558,
   "median_backbone": 7.453847965930465,
   "iqr_atom": [
-   7.013795774841874,
-   8.231926187545271
+   6.453392142578556,
+   7.680954700609231
   ],
   "iqr_backbone": [
    6.687636409134684,
    7.916122850983217
   ],
-  "mannwhitney_U": 361.0,
-  "p_value": 0.15060266518241652,
-  "cliffs_delta": 0.2534722222222222
+  "mannwhitney_U": 524.0,
+  "p_value": 0.22499019644628437,
+  "cliffs_delta": -0.16825396825396827
  },
  "connect_radius_factor": {
   "label": "cover-radius factor at which \u03b20 = 1",
-  "n_atom": 16,
+  "n_atom": 34,
   "n_backbone": 34,
-  "median_atom": 1.0,
+  "median_atom": 0.75,
   "median_backbone": 1.0,
   "iqr_atom": [
    0.75,
-   1.25
+   1.0
   ],
   "iqr_backbone": [
    0.75,
    1.0
   ],
-  "mannwhitney_U": 307.0,
-  "p_value": 0.4303807662483423,
-  "cliffs_delta": 0.12867647058823528
+  "mannwhitney_U": 478.5,
+  "p_value": 0.18237259470407652,
+  "cliffs_delta": -0.17214532871972318
  },
  "flip_rate_1": {
   "label": "membership flip rate at \u03c4 = 1 frame",
-  "n_atom": 5,
-  "n_backbone": 15,
-  "median_atom": 0.004510285651424591,
-  "median_backbone": 0.5852900867976245,
+  "n_atom": 35,
+  "n_backbone": 36,
+  "median_atom": 0.8250825082508251,
+  "median_backbone": 0.6412469398586379,
   "iqr_atom": [
-   0.00447299002179149,
-   0.006866231270158339
+   0.02130221719176962,
+   0.8644614461446145
   ],
   "iqr_backbone": [
-   0.4891569573115284,
-   0.6844755388869577
+   0.5764007639102656,
+   0.6930667700297278
   ],
-  "mannwhitney_U": 15.0,
-  "p_value": 0.05263157894736842,
-  "cliffs_delta": -0.6
+  "mannwhitney_U": 725.0,
+  "p_value": 0.2771016672693848,
+  "cliffs_delta": 0.15079365079365079
  }
 }

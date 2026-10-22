@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-ala",
+ "label": "Ace-ALA-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 73,
+   "triangles": 130,
+   "tetrahedra": 120,
+   "generators": 341,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ala\\base.hom (1923137 bytes); generators by dimension: [(0, 18), (1, 73), (2, 130), (3, 120)]"
+  },
+  "poset": {
+   "vertices": 341,
+   "edges": 2606,
+   "triangles": 5100,
+   "tetrahedra": 2880,
+   "generators": 10927,
+   "status": "skipped: 10927 generators exceed --max-generators 4000"
+  }
+ }
+}

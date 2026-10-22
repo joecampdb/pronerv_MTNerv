@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-phe",
+ "label": "Ace-PHE-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 83,
+   "triangles": 193,
+   "tetrahedra": 290,
+   "generators": 584,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-phe\\base.hom (4305468 bytes); generators by dimension: [(0, 18), (1, 83), (2, 193), (3, 290)]"
+  },
+  "poset": {
+   "vertices": 584,
+   "edges": 5384,
+   "triangles": 11598,
+   "tetrahedra": 6960,
+   "generators": 24526,
+   "status": "skipped: 24526 generators exceed --max-generators 4000"
+  }
+ }
+}

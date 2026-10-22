@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-tyr",
+ "label": "Ace-TYR-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 93,
+   "triangles": 282,
+   "tetrahedra": 578,
+   "generators": 971,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-tyr\\base.hom (8287685 bytes); generators by dimension: [(0, 18), (1, 93), (2, 282), (3, 578)]"
+  },
+  "poset": {
+   "vertices": 971,
+   "edges": 9970,
+   "triangles": 22500,
+   "tetrahedra": 13872,
+   "generators": 47313,
+   "status": "skipped: 47313 generators exceed --max-generators 4000"
+  }
+ }
+}

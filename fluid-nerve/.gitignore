@@ -8,3 +8,4 @@ output/scratch/
 *.dcd
 *.npz
 !dist/**/*.npz
+dist/homotopy/*/poset.hom

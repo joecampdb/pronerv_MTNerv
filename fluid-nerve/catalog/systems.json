@@ -1,6 +1,6 @@
 {
  "groups": {
-  "atom": 16,
+  "atom": 35,
   "backbone": 36,
   "paired": 35
  },
@@ -17,12 +17,278 @@
    "family": "mdshare"
   },
   {
+   "id": "dipeptide-ala",
+   "group": "atom",
+   "label": "Ace-ALA-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "ALA"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
+   "id": "dipeptide-arg",
+   "group": "atom",
+   "label": "Ace-ARG-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "ARG"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-asn",
+   "group": "atom",
+   "label": "Ace-ASN-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "ASN"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
+   "id": "dipeptide-asp",
+   "group": "atom",
+   "label": "Ace-ASP-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "ASP"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
+   "id": "dipeptide-cys",
+   "group": "atom",
+   "label": "Ace-CYS-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "CYS"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
+   "id": "dipeptide-gln",
+   "group": "atom",
+   "label": "Ace-GLN-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "GLN"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
+   "id": "dipeptide-glu",
+   "group": "atom",
+   "label": "Ace-GLU-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "GLU"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
    "id": "dipeptide-gly",
    "group": "atom",
    "label": "Ace-GLY-NMe dipeptide (OpenMM)",
    "loader": "dipeptide",
    "args": {
     "aa": "GLY"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 2
+  },
+  {
+   "id": "dipeptide-his",
+   "group": "atom",
+   "label": "Ace-HIS-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "HIS"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-ile",
+   "group": "atom",
+   "label": "Ace-ILE-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "ILE"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-leu",
+   "group": "atom",
+   "label": "Ace-LEU-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "LEU"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-lys",
+   "group": "atom",
+   "label": "Ace-LYS-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "LYS"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-met",
+   "group": "atom",
+   "label": "Ace-MET-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "MET"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-phe",
+   "group": "atom",
+   "label": "Ace-PHE-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "PHE"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-pro",
+   "group": "atom",
+   "label": "Ace-PRO-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "PRO"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-ser",
+   "group": "atom",
+   "label": "Ace-SER-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "SER"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-thr",
+   "group": "atom",
+   "label": "Ace-THR-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "THR"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-trp",
+   "group": "atom",
+   "label": "Ace-TRP-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "TRP"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-tyr",
+   "group": "atom",
+   "label": "Ace-TYR-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "TYR"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
+  },
+  {
+   "id": "dipeptide-val",
+   "group": "atom",
+   "label": "Ace-VAL-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "VAL"
    },
    "representation": "heavy atoms",
    "chart": "phi/psi",

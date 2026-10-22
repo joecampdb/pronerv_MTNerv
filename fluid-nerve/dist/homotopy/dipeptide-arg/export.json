@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-arg",
+ "label": "Ace-ARG-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 59,
+   "triangles": 94,
+   "tetrahedra": 81,
+   "generators": 252,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-arg\\base.hom (1316493 bytes); generators by dimension: [(0, 18), (1, 59), (2, 94), (3, 81)]"
+  },
+  "poset": {
+   "vertices": 252,
+   "edges": 1816,
+   "triangles": 3480,
+   "tetrahedra": 1944,
+   "generators": 7492,
+   "status": "skipped: 7492 generators exceed --max-generators 4000"
+  }
+ }
+}

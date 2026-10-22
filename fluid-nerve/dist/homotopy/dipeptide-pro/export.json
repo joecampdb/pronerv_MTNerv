@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-pro",
+ "label": "Ace-PRO-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 72,
+   "triangles": 168,
+   "tetrahedra": 252,
+   "generators": 510,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-pro\\base.hom (3742069 bytes); generators by dimension: [(0, 18), (1, 72), (2, 168), (3, 252)]"
+  },
+  "poset": {
+   "vertices": 510,
+   "edges": 4680,
+   "triangles": 10080,
+   "tetrahedra": 6048,
+   "generators": 21318,
+   "status": "skipped: 21318 generators exceed --max-generators 4000"
+  }
+ }
+}

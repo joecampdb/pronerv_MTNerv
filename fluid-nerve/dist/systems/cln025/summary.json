@@ -1356,6 +1356,15 @@
    "max_dimension": 5
   }
  ],
+ "membership_flip_rate": {
+  "1": 0.6373471528549733,
+  "2": 0.6617981582291389,
+  "4": 0.6890544520925543,
+  "6": 0.7009536461545761,
+  "9": 0.715244959982179,
+  "10": 0.7190165659529011,
+  "14": 0.7301911360457827
+ },
  "fluid_filtration": {
   "ladder_frames": [
    0,
@@ -4666,5 +4675,5 @@
   "meaning": "Sublevel sets of smoothed -log occupancy on the chart grid; cubical GF(2) Betti numbers; 0-dim pairs are exact basin merge levels (elder rule). Not a free energy."
  },
  "temperature_ladder": null,
- "seconds": 7.6
+ "seconds": 5.8
 }

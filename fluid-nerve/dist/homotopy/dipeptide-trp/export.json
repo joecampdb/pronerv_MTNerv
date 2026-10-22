@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-trp",
+ "label": "Ace-TRP-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 81,
+   "triangles": 183,
+   "tetrahedra": 250,
+   "generators": 532,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-trp\\base.hom (3756629 bytes); generators by dimension: [(0, 18), (1, 81), (2, 183), (3, 250)]"
+  },
+  "poset": {
+   "vertices": 532,
+   "edges": 4760,
+   "triangles": 10098,
+   "tetrahedra": 6000,
+   "generators": 21390,
+   "status": "skipped: 21390 generators exceed --max-generators 4000"
+  }
+ }
+}

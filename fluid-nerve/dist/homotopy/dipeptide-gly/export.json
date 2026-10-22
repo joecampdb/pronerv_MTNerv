@@ -4,21 +4,21 @@
  "encodings": {
   "base": {
    "vertices": 18,
-   "edges": 38,
-   "triangles": 25,
+   "edges": 41,
+   "triangles": 27,
    "tetrahedra": 4,
-   "generators": 85,
+   "generators": 90,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\base.hom (135390 bytes); generators by dimension: [(0, 18), (1, 38), (2, 25), (3, 4)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\base.hom (141703 bytes); generators by dimension: [(0, 18), (1, 41), (2, 27), (3, 4)]"
   },
   "poset": {
-   "vertices": 85,
-   "edges": 282,
-   "triangles": 294,
+   "vertices": 90,
+   "edges": 300,
+   "triangles": 306,
    "tetrahedra": 96,
-   "generators": 757,
+   "generators": 792,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\poset.hom (2135491 bytes); generators by dimension: [(0, 85), (1, 282), (2, 294), (3, 96)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\poset.hom (2175397 bytes); generators by dimension: [(0, 90), (1, 300), (2, 306), (3, 96)]"
   }
  }
 }

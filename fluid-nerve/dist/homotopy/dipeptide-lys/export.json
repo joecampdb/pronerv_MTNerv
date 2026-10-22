@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-lys",
+ "label": "Ace-LYS-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 53,
+   "triangles": 77,
+   "tetrahedra": 63,
+   "generators": 211,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-lys\\base.hom (1038141 bytes); generators by dimension: [(0, 18), (1, 53), (2, 77), (3, 63)]"
+  },
+  "poset": {
+   "vertices": 211,
+   "edges": 1450,
+   "triangles": 2730,
+   "tetrahedra": 1512,
+   "generators": 5903,
+   "status": "skipped: 5903 generators exceed --max-generators 4000"
+  }
+ }
+}

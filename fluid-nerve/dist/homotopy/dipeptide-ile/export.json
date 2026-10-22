@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-ile",
+ "label": "Ace-ILE-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 84,
+   "triangles": 247,
+   "tetrahedra": 503,
+   "generators": 852,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ile\\base.hom (7218667 bytes); generators by dimension: [(0, 18), (1, 84), (2, 247), (3, 503)]"
+  },
+  "poset": {
+   "vertices": 852,
+   "edges": 8692,
+   "triangles": 19590,
+   "tetrahedra": 12072,
+   "generators": 41206,
+   "status": "skipped: 41206 generators exceed --max-generators 4000"
+  }
+ }
+}

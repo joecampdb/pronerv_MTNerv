@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-asn",
+ "label": "Ace-ASN-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 80,
+   "triangles": 158,
+   "tetrahedra": 170,
+   "generators": 426,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asn\\base.hom (2650598 bytes); generators by dimension: [(0, 18), (1, 80), (2, 158), (3, 170)]"
+  },
+  "poset": {
+   "vertices": 426,
+   "edges": 3488,
+   "triangles": 7068,
+   "tetrahedra": 4080,
+   "generators": 15062,
+   "status": "skipped: 15062 generators exceed --max-generators 4000"
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": "dipeptide-thr",
+ "label": "Ace-THR-NMe dipeptide (OpenMM)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 90,
+   "triangles": 214,
+   "tetrahedra": 287,
+   "generators": 609,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-thr\\base.hom (4320187 bytes); generators by dimension: [(0, 18), (1, 90), (2, 214), (3, 287)]"
+  },
+  "poset": {
+   "vertices": 609,
+   "edges": 5482,
+   "triangles": 11616,
+   "tetrahedra": 6888,
+   "generators": 24595,
+   "status": "skipped: 24595 generators exceed --max-generators 4000"
+  }
+ }
+}
