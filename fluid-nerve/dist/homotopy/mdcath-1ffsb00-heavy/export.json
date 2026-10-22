@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-1ffsb00-heavy",
+ "label": "CATH domain 1ffsB00 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 51,
+   "triangles": 59,
+   "tetrahedra": 30,
+   "generators": 158,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1ffsb00-heavy\\base.hom (563195 bytes); generators by dimension: [(0, 18), (1, 51), (2, 59), (3, 30)]"
+  },
+  "poset": {
+   "vertices": 158,
+   "edges": 876,
+   "triangles": 1434,
+   "tetrahedra": 720,
+   "generators": 3188,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1ffsb00-heavy\\poset.hom (13431592 bytes); generators by dimension: [(0, 158), (1, 876), (2, 1434), (3, 720)]"
+  }
+ }
+}

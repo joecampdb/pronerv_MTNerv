@@ -1,0 +1,104 @@
+{
+ "systems": 74,
+ "groups": {
+  "atom": 11,
+  "backbone": 32,
+  "paired": 31
+ },
+ "separation": {
+  "ratio": 1.9851813589634189,
+  "permutation_p": 0.0004997501249375312
+ },
+ "functor_summary": {
+  "heavy_to_ca.inclusion_preserved_lax": {
+   "median": 0.6590909090909091,
+   "min": 0.4411764705882353,
+   "max": 0.7674418604651163,
+   "n": 31
+  },
+  "heavy_to_ca.inclusion_preserved_strict": {
+   "median": 0.45054945054945056,
+   "min": 0.24705882352941178,
+   "max": 0.5846774193548387,
+   "n": 31
+  },
+  "heavy_to_ca.composition_preserved_lax": {
+   "median": 0.45726495726495725,
+   "min": 0.15833333333333333,
+   "max": 0.6463414634146342,
+   "n": 31
+  },
+  "heavy_to_ca.median_best_jaccard": {
+   "median": 0.23236514522821577,
+   "min": 0.06949648634502409,
+   "max": 0.374644134431648,
+   "n": 31
+  },
+  "ca_to_heavy.inclusion_preserved_lax": {
+   "median": 0.6801242236024845,
+   "min": 0.4806201550387597,
+   "max": 0.8051948051948052,
+   "n": 31
+  },
+  "ca_to_heavy.inclusion_preserved_strict": {
+   "median": 0.4645390070921986,
+   "min": 0.24031007751937986,
+   "max": 0.6911764705882353,
+   "n": 31
+  },
+  "ca_to_heavy.composition_preserved_lax": {
+   "median": 0.4827586206896552,
+   "min": 0.23958333333333334,
+   "max": 0.6843971631205674,
+   "n": 31
+  },
+  "ca_to_heavy.median_best_jaccard": {
+   "median": 0.2411764705882353,
+   "min": 0.07453416149068323,
+   "max": 0.44566190876014555,
+   "n": 31
+  }
+ },
+ "correlations": {
+  "median_h_ref~first_connected_frames": {
+   "n": 42,
+   "spearman_rho": -0.5580265202095667,
+   "p": 0.00012314902345417832
+  },
+  "drift_ratio_ref~first_connected_frames": {
+   "n": 42,
+   "spearman_rho": 0.38286655204198267,
+   "p": 0.012330270528598173
+  },
+  "objects~entropy_bits": {
+   "n": 43,
+   "spearman_rho": -0.37739420725024403,
+   "p": 0.012601501275127798
+  },
+  "h_slope~first_connected_ps": {
+   "n": 41,
+   "spearman_rho": 0.026568509050928148,
+   "p": 0.8690310523980256
+  },
+  "beta1~flood_basins": {
+   "n": 43,
+   "spearman_rho": 0.1559275876894046,
+   "p": 0.31804657438922534
+  },
+  "sites~objects": {
+   "n": 43,
+   "spearman_rho": 0.43231275242326783,
+   "p": 0.003790313509829503
+  },
+  "h_slope_early~flip_rate_1": {
+   "n": 11,
+   "spearman_rho": -0.009090909090909092,
+   "p": 0.9788365001441937
+  },
+  "h_slope~flip_rate_1": {
+   "n": 11,
+   "spearman_rho": 0.33636363636363636,
+   "p": 0.31182431390038623
+  }
+ }
+}

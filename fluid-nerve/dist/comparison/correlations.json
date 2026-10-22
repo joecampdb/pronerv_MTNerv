@@ -1,0 +1,42 @@
+{
+ "median_h_ref~first_connected_frames": {
+  "n": 42,
+  "spearman_rho": -0.5580265202095667,
+  "p": 0.00012314902345417832
+ },
+ "drift_ratio_ref~first_connected_frames": {
+  "n": 42,
+  "spearman_rho": 0.38286655204198267,
+  "p": 0.012330270528598173
+ },
+ "objects~entropy_bits": {
+  "n": 43,
+  "spearman_rho": -0.37739420725024403,
+  "p": 0.012601501275127798
+ },
+ "h_slope~first_connected_ps": {
+  "n": 41,
+  "spearman_rho": 0.026568509050928148,
+  "p": 0.8690310523980256
+ },
+ "beta1~flood_basins": {
+  "n": 43,
+  "spearman_rho": 0.1559275876894046,
+  "p": 0.31804657438922534
+ },
+ "sites~objects": {
+  "n": 43,
+  "spearman_rho": 0.43231275242326783,
+  "p": 0.003790313509829503
+ },
+ "h_slope_early~flip_rate_1": {
+  "n": 11,
+  "spearman_rho": -0.009090909090909092,
+  "p": 0.9788365001441937
+ },
+ "h_slope~flip_rate_1": {
+  "n": 11,
+  "spearman_rho": 0.33636363636363636,
+  "p": 0.31182431390038623
+ }
+}

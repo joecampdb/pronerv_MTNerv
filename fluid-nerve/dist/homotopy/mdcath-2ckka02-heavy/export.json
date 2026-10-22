@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2ckka02-heavy",
+ "label": "CATH domain 2ckkA02 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 64,
+   "triangles": 72,
+   "tetrahedra": 27,
+   "generators": 181,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2ckka02-heavy\\base.hom (561930 bytes); generators by dimension: [(0, 18), (1, 64), (2, 72), (3, 27)]"
+  },
+  "poset": {
+   "vertices": 181,
+   "edges": 938,
+   "triangles": 1404,
+   "tetrahedra": 648,
+   "generators": 3171,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2ckka02-heavy\\poset.hom (12452196 bytes); generators by dimension: [(0, 181), (1, 938), (2, 1404), (3, 648)]"
+  }
+ }
+}

@@ -1,0 +1,1112 @@
+{
+ "groups": {
+  "atom": 15,
+  "backbone": 32,
+  "paired": 31
+ },
+ "systems": [
+  {
+   "id": "ala2",
+   "group": "atom",
+   "label": "Alanine dipeptide (mdshare)",
+   "loader": "ala2",
+   "args": {},
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "mdshare"
+  },
+  {
+   "id": "sgdml-md22-ac-ala3-nhme",
+   "group": "atom",
+   "label": "Ac-Ala3-NHMe (MD22 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md22_Ac-Ala3-NHMe"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 100,
+   "family": "md22"
+  },
+  {
+   "id": "sgdml-md22-dha",
+   "group": "atom",
+   "label": "DHA (MD22 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md22_DHA"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 100,
+   "family": "md22"
+  },
+  {
+   "id": "sgdml-md22-stachyose",
+   "group": "atom",
+   "label": "stachyose (MD22 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md22_stachyose"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 100,
+   "family": "md22"
+  },
+  {
+   "id": "sgdml-md22-at-at",
+   "group": "atom",
+   "label": "AT-AT (MD22 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md22_AT-AT"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 100,
+   "family": "md22"
+  },
+  {
+   "id": "sgdml-md22-at-at-cg-cg",
+   "group": "atom",
+   "label": "AT-AT-CG-CG (MD22 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md22_AT-AT-CG-CG"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 100,
+   "family": "md22"
+  },
+  {
+   "id": "sgdml-md17-ethanol",
+   "group": "atom",
+   "label": "ethanol (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_ethanol"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-malonaldehyde",
+   "group": "atom",
+   "label": "malonaldehyde (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_malonaldehyde"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-aspirin",
+   "group": "atom",
+   "label": "aspirin (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_aspirin"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-uracil",
+   "group": "atom",
+   "label": "uracil (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_uracil"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-salicylic",
+   "group": "atom",
+   "label": "salicylic (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_salicylic"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-toluene",
+   "group": "atom",
+   "label": "toluene (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_toluene"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-naphthalene",
+   "group": "atom",
+   "label": "naphthalene (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_naphthalene"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-paracetamol",
+   "group": "atom",
+   "label": "paracetamol (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_paracetamol"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "sgdml-md17-azobenzene",
+   "group": "atom",
+   "label": "azobenzene (MD17 ab initio MD)",
+   "loader": "sgdml",
+   "args": {
+    "name": "md17_azobenzene"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 200,
+   "family": "md17"
+  },
+  {
+   "id": "cln025",
+   "group": "backbone",
+   "label": "Chignolin CLN025 (128-run subset)",
+   "loader": "cln025",
+   "args": {},
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "cln025"
+  },
+  {
+   "id": "mdcath-1ha8a00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1ha8A00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1ha8A00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1ha8a00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1ha8A00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1ha8A00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1ha8a00-ca"
+  },
+  {
+   "id": "mdcath-3pmqa02-ca",
+   "group": "backbone",
+   "label": "CATH domain 3pmqA02 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "3pmqA02",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-3pmqa02-heavy",
+   "group": "paired",
+   "label": "CATH domain 3pmqA02 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "3pmqA02",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-3pmqa02-ca"
+  },
+  {
+   "id": "mdcath-1s6la01-ca",
+   "group": "backbone",
+   "label": "CATH domain 1s6lA01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1s6lA01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1s6la01-heavy",
+   "group": "paired",
+   "label": "CATH domain 1s6lA01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1s6lA01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1s6la01-ca"
+  },
+  {
+   "id": "mdcath-2yila02-ca",
+   "group": "backbone",
+   "label": "CATH domain 2yilA02 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2yilA02",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2yila02-heavy",
+   "group": "paired",
+   "label": "CATH domain 2yilA02 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2yilA02",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2yila02-ca"
+  },
+  {
+   "id": "mdcath-2xepa03-ca",
+   "group": "backbone",
+   "label": "CATH domain 2xepA03 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2xepA03",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2xepa03-heavy",
+   "group": "paired",
+   "label": "CATH domain 2xepA03 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2xepA03",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2xepa03-ca"
+  },
+  {
+   "id": "mdcath-4dcza00-ca",
+   "group": "backbone",
+   "label": "CATH domain 4dczA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "4dczA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-4dcza00-heavy",
+   "group": "paired",
+   "label": "CATH domain 4dczA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "4dczA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-4dcza00-ca"
+  },
+  {
+   "id": "mdcath-1hcra00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1hcrA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1hcrA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1hcra00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1hcrA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1hcrA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1hcra00-ca"
+  },
+  {
+   "id": "mdcath-5daea00-ca",
+   "group": "backbone",
+   "label": "CATH domain 5daeA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "5daeA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-5daea00-heavy",
+   "group": "paired",
+   "label": "CATH domain 5daeA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "5daeA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-5daea00-ca"
+  },
+  {
+   "id": "mdcath-1wpbg01-ca",
+   "group": "backbone",
+   "label": "CATH domain 1wpbG01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1wpbG01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1wpbg01-heavy",
+   "group": "paired",
+   "label": "CATH domain 1wpbG01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1wpbG01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1wpbg01-ca"
+  },
+  {
+   "id": "mdcath-1bdha01-ca",
+   "group": "backbone",
+   "label": "CATH domain 1bdhA01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1bdhA01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1bdha01-heavy",
+   "group": "paired",
+   "label": "CATH domain 1bdhA01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1bdhA01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1bdha01-ca"
+  },
+  {
+   "id": "mdcath-3g5ca02-ca",
+   "group": "backbone",
+   "label": "CATH domain 3g5cA02 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "3g5cA02",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-3g5ca02-heavy",
+   "group": "paired",
+   "label": "CATH domain 3g5cA02 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "3g5cA02",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-3g5ca02-ca"
+  },
+  {
+   "id": "mdcath-1klil00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1kliL00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1kliL00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1klil00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1kliL00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1kliL00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1klil00-ca"
+  },
+  {
+   "id": "mdcath-2jrra01-ca",
+   "group": "backbone",
+   "label": "CATH domain 2jrrA01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2jrrA01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2jrra01-heavy",
+   "group": "paired",
+   "label": "CATH domain 2jrrA01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2jrrA01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2jrra01-ca"
+  },
+  {
+   "id": "mdcath-2lrda00-ca",
+   "group": "backbone",
+   "label": "CATH domain 2lrdA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2lrdA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2lrda00-heavy",
+   "group": "paired",
+   "label": "CATH domain 2lrdA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2lrdA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2lrda00-ca"
+  },
+  {
+   "id": "mdcath-1zbqa02-ca",
+   "group": "backbone",
+   "label": "CATH domain 1zbqA02 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1zbqA02",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1zbqa02-heavy",
+   "group": "paired",
+   "label": "CATH domain 1zbqA02 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1zbqA02",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1zbqa02-ca"
+  },
+  {
+   "id": "mdcath-1b33n01-ca",
+   "group": "backbone",
+   "label": "CATH domain 1b33N01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1b33N01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1b33n01-heavy",
+   "group": "paired",
+   "label": "CATH domain 1b33N01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1b33N01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1b33n01-ca"
+  },
+  {
+   "id": "mdcath-2d46a00-ca",
+   "group": "backbone",
+   "label": "CATH domain 2d46A00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2d46A00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2d46a00-heavy",
+   "group": "paired",
+   "label": "CATH domain 2d46A00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2d46A00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2d46a00-ca"
+  },
+  {
+   "id": "mdcath-1l6ha00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1l6hA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1l6hA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1l6ha00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1l6hA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1l6hA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1l6ha00-ca"
+  },
+  {
+   "id": "mdcath-4a0ta01-ca",
+   "group": "backbone",
+   "label": "CATH domain 4a0tA01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "4a0tA01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-4a0ta01-heavy",
+   "group": "paired",
+   "label": "CATH domain 4a0tA01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "4a0tA01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-4a0ta01-ca"
+  },
+  {
+   "id": "mdcath-1e5wa04-ca",
+   "group": "backbone",
+   "label": "CATH domain 1e5wA04 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1e5wA04",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1e5wa04-heavy",
+   "group": "paired",
+   "label": "CATH domain 1e5wA04 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1e5wA04",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1e5wa04-ca"
+  },
+  {
+   "id": "mdcath-1i5xa00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1i5xA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1i5xA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1i5xa00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1i5xA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1i5xA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1i5xa00-ca"
+  },
+  {
+   "id": "mdcath-2ckka02-ca",
+   "group": "backbone",
+   "label": "CATH domain 2ckkA02 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2ckkA02",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2ckka02-heavy",
+   "group": "paired",
+   "label": "CATH domain 2ckkA02 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2ckkA02",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2ckka02-ca"
+  },
+  {
+   "id": "mdcath-2j8ga03-ca",
+   "group": "backbone",
+   "label": "CATH domain 2j8gA03 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2j8gA03",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2j8ga03-heavy",
+   "group": "paired",
+   "label": "CATH domain 2j8gA03 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2j8gA03",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2j8ga03-ca"
+  },
+  {
+   "id": "mdcath-5b1aj00-ca",
+   "group": "backbone",
+   "label": "CATH domain 5b1aJ00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "5b1aJ00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-5b1aj00-heavy",
+   "group": "paired",
+   "label": "CATH domain 5b1aJ00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "5b1aJ00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-5b1aj00-ca"
+  },
+  {
+   "id": "mdcath-1gjsa00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1gjsA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1gjsA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1gjsa00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1gjsA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1gjsA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1gjsa00-ca"
+  },
+  {
+   "id": "mdcath-2e3tb03-ca",
+   "group": "backbone",
+   "label": "CATH domain 2e3tB03 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2e3tB03",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2e3tb03-heavy",
+   "group": "paired",
+   "label": "CATH domain 2e3tB03 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2e3tB03",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2e3tb03-ca"
+  },
+  {
+   "id": "mdcath-1x4pa00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1x4pA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1x4pA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1x4pa00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1x4pA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1x4pA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1x4pa00-ca"
+  },
+  {
+   "id": "mdcath-1ffsb00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1ffsB00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1ffsB00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1ffsb00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1ffsB00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1ffsB00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1ffsb00-ca"
+  },
+  {
+   "id": "mdcath-2dmpa01-ca",
+   "group": "backbone",
+   "label": "CATH domain 2dmpA01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2dmpA01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2dmpa01-heavy",
+   "group": "paired",
+   "label": "CATH domain 2dmpA01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2dmpA01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2dmpa01-ca"
+  },
+  {
+   "id": "mdcath-1r8ob01-ca",
+   "group": "backbone",
+   "label": "CATH domain 1r8oB01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1r8oB01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1r8ob01-heavy",
+   "group": "paired",
+   "label": "CATH domain 1r8oB01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1r8oB01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1r8ob01-ca"
+  },
+  {
+   "id": "mdcath-1a92a00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1a92A00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1a92A00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1a92a00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1a92A00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1a92A00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1a92a00-ca"
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlength{\parskip}{3pt}
+\captionsetup{font=small,labelfont=bf}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{conjecture}[definition]{Conjecture}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\Lie}{\mathcal{L}}
+\newcommand{\cat}[1]{\mathbf{#1}}
+\input{generated/macros}
+
+\title{Fluid nerve theory: deformation fields, ambient-time filtrations and\\synthetic differential geometry for a molecular atlas of \nSystems{} systems}
+\author{Joseph Campagna, PSM\\[2pt]\small with the pronerv fluid-nerve pipeline (code and data provenance in the repository)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The pronerv molecular atlas drew categorical overlap nerves for two systems, alanine dipeptide (heavy atoms) and chignolin CLN025 (C$\alpha$ sites). This document extends the construction to \nSystems{} systems, half atom-based and half backbone-based (\nAtom{} heavy-atom systems, \nBackbone{} C$\alpha$ systems, plus \nPaired{} paired heavy-atom representations of the backbone proteins), builds for each a \emph{deformation field} and a \emph{witnessed cover nerve}, runs an \emph{ambient-time filtration} that thickens the cover along the recorded dynamics, and compares the resulting invariants within and between the two groups. Every nerve is also exported as a three-dimensional categorical complex for the proof assistant homotopy.io through Street's orientals. The theoretical part recruits synthetic differential geometry (Kock--Lawvere) to say precisely what a deformation field is at an infinitesimal scale, proves that the nerve of a formally open cover is rigid under every infinitesimal transformation, and hence identifies the measured ambient-time persistence as a finite-time, finite-witness phenomenon whose onset is diagnosed by the mobility exponent. The empirical constructions are descriptive: no equilibrium free energy, validated kinetics or configuration-space nerve theorem is claimed.
+\end{abstract}
+
+\tableofcontents
+
+\section{Why ``fluid'' nerves}
+A nerve is a static object: given a cover $\U=\{U_i\}$ of a space, its simplices record which cover sets meet. Molecular dynamics (MD) data are not static. A recorded trajectory visits the chart, and the overlap pattern that a finite set of frames \emph{witnesses} changes with the time scale at which we look. The earlier atlas treated this by declaring a single cover and a single lag for the structural-mobility height. Here we make the time dependence explicit in two ways:
+\begin{enumerate}[nosep]
+\item the \textbf{deformation field}, a family of conditional statistics of the lag-$\tau$ displacement, indexed by the chart position and by the ambient lag $\tau$;
+\item the \textbf{fluid filtration}, the nested family of nerves of the covers $\{W_i^{\tau}\}$ obtained by thickening every cover set along the recorded runs by $\pm\tau$ frames.
+\end{enumerate}
+``Fluid nerve'' names the pair (nerve, deformation field) together with its evolution in ambient time. The synthetic differential geometry (SDG) of Section~\ref{sec:sdg} explains what survives of this evolution at an infinitesimal scale, which is less than one might hope and exactly what the data show.
+
+The research questions of the published atlas that this document addresses are: stability of basin and transition descriptions across blocks, temperatures and resolutions (Section~\ref{sec:results}); an explicit comparison between atomistic and C$\alpha$ state categories (Section~\ref{sec:functor}); and higher-categorical diagramming of the nerves (Section~\ref{sec:homotopy}).
+
+\section{Data and representations}\label{sec:data}
+Table~\ref{tab:systems} lists every system. The \textbf{atom-based group} uses all heavy atoms as sites: the mdshare alanine dipeptide (3$\times$250\,ns, 300\,K, 1\,ps frames), twenty capped dipeptides Ace-X-NMe generated here with OpenMM (amber14/ff14SB with GBn2 implicit solvent, 300\,K, 1\,ps frames; see \texttt{generate\_dipeptides.py}; these are small new simulations for descriptive geometry, not converged thermodynamics), the MD22 ab initio trajectories (Ac-Ala$_3$-NHMe, docosahexaenoic acid, stachyose, the AT-AT and AT-AT-CG-CG base pairs; DFT MD at 400--500\,K, nominal 1\,fs frames) and nine MD17 ab initio trajectories of small organic molecules (DFT MD at 500\,K, nominal 0.5\,fs frames). The \textbf{backbone group} uses C$\alpha$ sites: the CLN025 subset already in the repository (128 adaptive runs, 350\,K, physical clock unresolved) and \nMdcath{} CATH domains from mdCATH (five temperatures 320--450\,K $\times$ five replicas, frames every 1\,ns, CC BY 4.0). Each mdCATH domain is additionally analysed with all heavy atoms on the very same frames; these paired representations are used only for the comparison of Section~\ref{sec:functor}.
+
+Coordinates are in nm. Frames are centred and rigidly aligned to an iterated mean structure (Kabsch). The chart is $(\phi,\psi)$ on the torus for the dipeptide family and the two leading principal components of the aligned site coordinates (fitted on all runs pooled, deterministic sign) otherwise; CLN025 therefore receives a PCA chart here rather than the earlier radius-of-gyration chart. Pair distances use all site pairs, or a fixed random subset of 4000 pairs when a system has more than 100 sites. Provenance (URLs, SHA-256, selection rules, licences) is recorded in every \texttt{summary.json}.
+
+\input{generated/systems_table}
+
+\section{Constructions}\label{sec:constructions}
+
+\subsection{Witnessed cover nerve}
+Let $q_t\in C$ be the chart coordinate of frame $t$ and $S$ the finite set of all frames. Eighteen centres are chosen by farthest-point traversal among occupied grid cells (30$\times$30 bins), and the cover $\U=\{U_i\}$ consists of balls of a fixed radius in the declared chart metric (55$^\circ$ on the torus; 0.8 standard deviations per axis otherwise), exactly as in the measured revision of the atlas. The membership matrix $M_{ti}=[q_t\in U_i]$ gives the \emph{witnessed complex}
+\[
+K(\U;S)=\{\sigma\subseteq\{1,\dots,18\}:\ \exists t\in S\ \ \forall i\in\sigma,\ q_t\in U_i\},
+\]
+stored by maximal simplices without dimension truncation. The drawing of the atlas is the nerve of the face poset of the 2-skeleton: objects are faces of dimension $\le2$, morphisms are strict inclusions, and composable pairs are its triangles. We report GF(2) Betti numbers $\beta_0,\beta_1,\beta_2$ of $K$, counts of simplices by dimension, the maximal dimension, and a radius sensitivity ladder (0.75, 1, 1.25, 1.5 times the base radius). Candidate centres are occupied cells with at least $\max(10,\lfloor|S|/30000ceil)$ frames (25 for alanine, as in the atlas). Farthest-point traversal deliberately reaches the fringe of the occupied chart; for a unimodal vibrational chart (small MD17 molecules) several fringe balls contain only their own few frames and stay isolated at the base radius, so $eta_0$ at the base radius counts isolated witnessed balls as well as genuine components. The \emph{connection radius factor}, the smallest ladder multiple at which $eta_0=1$, is reported alongside. For alanine dipeptide this reproduces the published measured atlas exactly (same centres, 17 maximal simplices, 78 objects, 212 inclusions, 138 triangles, $\beta=(3,3,0)$, 113 uncovered frames).
+
+\subsection{Deformation field}\label{sec:field}
+Fix a lag $\tau$ in frames. For every within-run pair $(t,t+\tau)$ we record
+\begin{align*}
+h_\tau(t)&=\Big(\tfrac1P\sum_{p}\big(d_p(x_{t+\tau})-d_p(x_t)\big)^2\Big)^{1/2} &&\text{(mobility, nm; $d_p$ = site pair distances)}\\
+\Delta q_\tau(t)&=q_{t+\tau}-q_t &&\text{(chart displacement; periodic difference on the torus)}\\
+u_\tau(t)&=R_t\,x_{t+\tau}-x_t &&\text{(site displacement after Kabsch alignment $R_t$ of frame $t+\tau$ onto $t$)}
+\end{align*}
+and bin them by $q_t$. The \textbf{deformation field at scale $\tau$} is the collection of conditional means and covariances per bin: $h_\tau(b)$, $v_\tau(b)=\mathbb{E}[\Delta q_\tau\mid b]$, $\Sigma_\tau(b)=\mathrm{Cov}[\Delta q_\tau\mid b]$ and $u_\tau(b)\in(\R^3)^K$. Pairs are kept only inside contiguous blocks (about ten per run, never across run boundaries); a bin is supported when it has at least 100 pairs, 5 blocks and 2 runs. The field grid has $\min(30,\max(10,\lfloor\sqrt{|S|/150}floor))$ bins per axis so that the support rule is attainable for small deposits (10$	imes$10 for an 11\,000-frame mdCATH domain, 30$	imes$30 for alanine); the cover candidate grid and the flooding grid stay at 30$	imes$30. Block resampling (200 draws) gives a conditional spread for $h$, which is not a calibrated confidence interval. The lag ladder is geometric; the atlas height uses the reference lag of each family (100\,ps for the dipeptides, 10 frames for CLN025 and mdCATH, 100\,fs for MD22, 100\,fs for MD17). The \textbf{mobility exponent} is the log--log slope of the median supported $h_\tau$ against $\tau$ (physical time when a clock exists).
+
+\subsection{Fluid filtration (ambient time)}\label{sec:fluid}
+For $\tau\ge0$ let $W_i^{\tau}=\{t\in S:\ \exists s\text{ in the same run},\ |s-t|\le\tau,\ q_s\in U_i\}$: the frames within ambient time $\tau$ of a visit to $U_i$. Since $W_i^{0}=\{t:q_t\in U_i\}$ and $W_i^{\tau}\subseteq W_i^{\tau'}$ for $\tau\le\tau'$, the witnessed nerves $N_\tau=K(\{W^\tau_i\};S)$ form a filtration of simplicial complexes starting at the ordinary overlap nerve. We compute Betti curves $\tau\mapsto\beta_k(N_\tau)$ over the lag ladder and the persistence pairs (birth $\tau$, death $\tau$) over GF(2) by column reduction. The \emph{connection time} $\tau_{\mathrm{c}}$ is the first ladder value at which $\beta_0(N_\tau)=1$. Nothing here is a rate: $\tau_{\mathrm{c}}$ is the ambient time at which the recorded runs tie every cover set to every other through actual visits.
+
+\subsection{Flooding filtration (the metadynamics analogue)}\label{sec:flood}
+Let $F=-\log(p/p_{\max})$ be the smoothed negative log occupancy on the chart grid (never-visited bins are never flooded). The sublevel sets $\{F\le c\}$ form a cubical filtration (periodic on the torus); we compute its Betti curves and the exact 0-dimensional persistence pairs (basin birth level, merge level) by union--find with the elder rule. In metadynamics a history-dependent bias fills basins in the order of their depth, and in the ideal limit the bias converges to $-F$; the flooding filtration is thus the geometry that a metadynamics run of this chart would trace out, computed from the recorded occupancy without any biased simulation. The merge levels are reported in units of $\log$-occupancy, not free energy.
+
+\section{Synthetic differential geometry of deformation fields}\label{sec:sdg}
+We now say what a deformation field is at an infinitesimal scale and what that implies for nerves. The setting is a well-adapted model of SDG (a smooth topos $\mathcal{E}$ containing the category of manifolds) with the Kock--Lawvere axiom: for the line $R$ and $\D=\{d\in R: d^2=0\}$, every map $f:\D\to R$ is uniquely of the form $f(d)=f(0)+d\,f'(0)$ \cite{kock2006,lavendhomme}. Objects such as the shape space $M$ of $K$ sites modulo rigid motions are microlinear, and $M^{\D}$ is the tangent bundle.
+
+\begin{definition}[infinitesimal deformation field]
+A \emph{deformation field} on $M$ is a vector field in the synthetic sense: a map $X:M\times\D\to M$ with $X(x,0)=x$, equivalently a family of \emph{infinitesimal transformations} $X_d=X(-,d):M\to M$, $d\in\D$.
+\end{definition}
+
+\begin{proposition}[infinitesimal transformations are invertible]\label{prop:inv}
+For a vector field $X$ on a microlinear object, $X_d$ is a bijection with inverse $X_{-d}$ for every $d\in\D$.
+\end{proposition}
+\begin{proof}
+For $(d_1,d_2)\in\D(2)=\{d_1^2=d_2^2=d_1d_2=0\}$ microlinearity gives the flow law $X(X(x,d_1),d_2)=X(x,d_1+d_2)$ (Kock \cite[I.8]{kock2006}). Since $(d,-d)\in\D(2)$, $X_{-d}\circ X_d=X_0=\mathrm{id}$ and symmetrically.
+\end{proof}
+
+\begin{definition}[first-order mobility]
+For an observable $f:M\to R$ (for us a pair distance $d_p$) and a deformation field $X$, the Kock--Lawvere axiom applied to $d\mapsto f(X_d(x))$ gives a unique $(\Lie_X f)(x)$ with
+\[
+f(X_d(x))=f(x)+d\,(\Lie_X f)(x)\qquad(d\in\D),
+\]
+the Lie derivative. The \emph{first-order mobility} of $X$ at $x$ is $\|\Lie_X d\|_{\mathrm{rms}}(x)=\big(\tfrac1P\sum_p(\Lie_X d_p)^2(x)\big)^{1/2}$.
+\end{definition}
+
+\begin{remark}[what the measured $h_\tau$ estimates]
+If the recorded dynamics were the flow of a classical vector field $X$ sampled at an interval $\tau$ small compared with the curvature of the trajectories, then $h_\tau(t)=\tau\,\|\Lie_X d\|_{\mathrm{rms}}(x_t)+O(\tau^2)$, so $h_\tau/\tau$ estimates the first-order mobility and the mobility exponent is $1$ (ballistic regime). If the dynamics is diffusive at the resolved scale, the appropriate synthetic object is a second-order one (a map on $\D_2=\{d^3=0\}$ or an It\^o-type calculus) and $h_\tau\propto\tau^{1/2}$. If $\tau$ exceeds the decorrelation time of the internal geometry inside a chart bin, $h_\tau$ saturates at the conditional diameter and the exponent is $0$. Thus the mobility exponent, which we measure for every system, tells which synthetic description applies at the resolved sampling interval. The chart bin is a fibre; the conditional expectation over the fibre is unavoidable and is why the field is a \emph{conditional} object.
+\end{remark}
+
+\begin{theorem}[rigidity of nerves under infinitesimal transformations]\label{thm:rigid}
+Let $\U=\{U_i\}$ be a finite cover of $M$ by Penon-open subobjects and $X$ a vector field. For every $d\in\D$ and every $i$, $X_d(U_i)=U_i$. Consequently the thickened cover $U_i^{d}:=U_i\cup X_d(U_i)\cup X_{-d}(U_i)$ equals $\U$ and its nerve is unchanged: $\N(\U^{d})=\N(\U)$.
+\end{theorem}
+\begin{proof}
+Penon-open subobjects are infinitesimally stable: if $x\in U$ and $y$ is a first-order neighbour of $x$ (in a chart, $y-x\in\D(n)$), then $y\in U$ \cite{penon,kock2006}. For a vector field, $X_d(x)$ is a first-order neighbour of $x$, so $X_d(U_i)\subseteq U_i$; applying the same to $X_{-d}$ and Proposition~\ref{prop:inv} gives equality.
+\end{proof}
+
+\begin{remark}[what this says about the fluid filtration]
+Theorem~\ref{thm:rigid} is a no-go result for a naive ``infinitesimal fluid nerve'': in the smooth, open, infinitely sampled idealisation, the ambient-time filtration has no first-order term at $\tau=0$; nerve changes are finite-time effects. On recorded data two things break the idealisation. First, the witness set is finite, so $N_\tau$ is the nerve of a cover of a finite set, whose combinatorics changes as soon as a single new frame enters a new intersection. Second, the saved frames are rarely infinitesimally close: at 1\,ps (dipeptides) or 1\,ns (mdCATH) the internal geometry has already decorrelated (saturated exponent), while at 0.5--1\,fs (MD17/MD22) consecutive frames are genuinely close (ballistic exponent). The theorem therefore predicts, and the measurements can test, that the initial part of the Betti curves is flat when and only when the mobility exponent is close to one.
+\end{remark}
+
+\begin{proposition}[the deformation field is a cosheaf of measures on the cover]
+Let $\mu_\tau$ be the joint law of $(x_t,x_{t+\tau})$ on $M\times M$ (empirically, the counting measure on recorded pairs). The assignment $U\mapsto\mu_\tau|_{U\times M}$ on the face poset of $\N(\U)$ (with $U_\sigma=\bigcap_{i\in\sigma}U_i$ and inclusions $U_{\sigma'}\subseteq U_\sigma$ for $\sigma\subseteq\sigma'$) is a cosheaf: for finite unions, $\mu|_{U\cup V}=\mu|_U+\mu|_V-\mu|_{U\cap V}$. The derived statistics $v_\tau,\Sigma_\tau,h_\tau,u_\tau$ are ratios of such measures and form only a presheaf of conditional laws (they restrict, but do not glue additively).
+\end{proposition}
+\begin{proof}
+Restriction of a measure to measurable subsets satisfies inclusion--exclusion; conditional means are ratios and are not additive.
+\end{proof}
+
+\begin{definition}[fluid nerve]
+The \emph{fluid nerve} of a system at scale $\tau$ is the triple $(\N(\U), \mu_\tau|_{(-)}, \tau\mapsto N_\tau)$: the face-poset nerve, the cosheaf of lag-$\tau$ pair measures over it (from which the deformation field is derived), and the ambient-time filtration of thickened nerves. Its invariants used below are the counts of the drawn nerve, the Betti numbers of $K$, the per-bin field at the reference lag, the mobility exponent, the connection time and the $\beta_1$ persistence, and the flooding basin structure.
+\end{definition}
+
+\begin{remark}[Kock's infinitesimal simplices and the cover nerve]
+Kock's combinatorial differential forms live on the simplicial object of infinitesimal simplices $(x_0,\dots,x_k)$ of mutually first-order neighbours \cite{kock2010}. The \v{C}ech nerve of the cover of $M$ by first-order monads $\mathfrak{M}(x)=\{y: y\sim x\}$ has as 1-simplices the pairs $(x,x')$ with a common neighbour, i.e.\ \emph{second}-order neighbours. Thickening a cover by a flow, as in Section~\ref{sec:fluid}, composes neighbour relations in the same way: $N_\tau$ records chains of visits of total length $\le2\tau$ around an overlap. The finite-scale ladder of $N_\tau$ is thus the data analogue of the tower of $k$-th order neighbour complexes; the rigidity theorem says the tower starts flat.
+\end{remark}
+
+\begin{conjecture}[finite-time fluidity]
+For an ergodic smooth flow with bounded speed $s$ on a compact $M$ and a cover by balls of radius $r$ in a Lipschitz chart, the connection time of the fluid filtration of the idealised (infinite-witness) cover satisfies $\tau_{\mathrm{c}}\le \mathrm{diam}(\text{chart})/s$, and $\beta_1(N_\tau)$ is eventually zero. The empirical connection times of Section~\ref{sec:results} are finite-sample lower bounds for this ideal quantity; we do not prove the conjecture here.
+\end{conjecture}
+
+\section{Three-dimensional categorical complexes in homotopy.io}\label{sec:homotopy}
+Street's orientals turn an ordered simplicial complex into a free $\omega$-category. We use them up to dimension three and present each nerve to homotopy.io \cite{homotopyio}: 0-cells are vertices, 1-cells $i\to j$ ($i<j$) are edges, a triangle $[i,j,k]$ is a 2-cell $(ij;jk)\Rightarrow ik$, and a tetrahedron $[i,j,k,l]$ is a 3-cell from the pasting ``$[i,j,k]$ then $[i,k,l]$'' to the pasting ``$[j,k,l]$ then $[i,j,l]$'', both running from $i\to j\to k\to l$ to $i\to l$. Two encodings are exported for every system: the witnessed cover complex itself (at most 18 objects) and the order complex of its face poset restricted to faces of dimension $\le3$ (the categorical object the atlas draws, with length-three chains as 3-cells). The files are produced by replaying the construction through the tool's own proof model (its globularity and deep diagram checks are run on every cell) and serialising with its native format; the companion document \texttt{docs/homotopy-io-instructions.md} gives the import steps, the manual click script and how to read the 3D rendering. Table~\ref{tab:homotopy} lists the exported signature sizes. No cell is marked invertible: witnessing an overlap is a directed fact, and nothing in the presentation asserts that overlaps compose dynamically.
+
+\input{generated/homotopy_table}
+
+\section{Results}\label{sec:results}
+All numbers are produced by \texttt{compare\_all.py} from the per-system summaries; the tables below are generated, not transcribed.
+
+\subsection{Within and between groups}
+\input{generated/group_table}
+
+Figure~\ref{fig:embedding} embeds the primary systems by their z-scored invariants (classical MDS) and Figure~\ref{fig:invariants} shows the group distributions of six of them. The between/within distance ratio is \sepRatio{} (permutation $p=\sepP$, 2000 label permutations). Figure~\ref{fig:scaling} shows the mobility ladders and Figure~\ref{fig:betti} the fluid-filtration component curves normalised by each system's connection time.
+
+\begin{figure}[H]\centering\includegraphics[width=.72\linewidth]{figures/fig_embedding.png}
+\caption{Systems embedded by nerve and deformation-field invariants. Blue: atom-based; orange: backbone-based.}\label{fig:embedding}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{figures/fig_invariants.png}
+\caption{Invariant distributions by group. Bars mark medians; tests are descriptive because systems are not independent samples (the dipeptide family shares a protocol, the mdCATH domains share a dataset).}\label{fig:invariants}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.72\linewidth]{figures/fig_scaling.png}
+\caption{Median mobility against ambient lag. Ab initio trajectories sampled every femtosecond show the ballistic regime; picosecond- and nanosecond-sampled systems are saturated.}\label{fig:scaling}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{figures/fig_betti_curves.png}
+\caption{Fluid filtration: $\beta_0(N_\tau)/\beta_0(N_0)$ against $\tau/\tau_{\mathrm c}$.}\label{fig:betti}\end{figure}
+
+\subsection{Rigidity test}
+\input{generated/rigidity}
+
+\subsection{Comparison between atomistic and C$\alpha$ state categories}\label{sec:functor}
+For each mdCATH domain the heavy-atom and C$\alpha$ covers are built on identical frames. Mapping every heavy-atom face $\sigma$ to the C$\alpha$ face with the largest witness-set Jaccard index, $f(\sigma)$, we ask whether strict inclusions and composable pairs are preserved (laxly, allowing equal images). Table~\ref{tab:functor} and Figure~\ref{fig:functor} report the rates. A rate of one in both directions would make $f$ a functor between the face posets; the measured shortfall quantifies the approximation error asked for in the atlas's sixth research question.
+
+\input{generated/functor_table}
+\begin{figure}[H]\centering\includegraphics[width=.9\linewidth]{figures/fig_functor.png}
+\caption{Heavy-atom $\to$ C$\alpha$ comparison per domain.}\label{fig:functor}\end{figure}
+
+\subsection{Temperature ladder}
+\input{generated/temperature}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{figures/fig_temperature.png}
+\caption{mdCATH temperature ladder: per-temperature witnessed cover and field in the shared chart and cover of each domain.}\label{fig:temperature}\end{figure}
+
+\subsection{Exemplars}
+\input{generated/exemplars}
+
+\section{Limitations}
+Charts are two-dimensional projections (PCA or two dihedrals); the fibre over a chart bin is averaged, and nothing about the full configuration space is asserted. Covers use a single declared radius with a sensitivity ladder, not an optimised scale. Homology is over GF(2). The MD17/MD22 systems are single ab initio trajectories at elevated temperature with nominal time steps taken from the dataset papers; the dipeptide family comes from short new implicit-solvent simulations; mdCATH frames are 1\,ns apart, which makes every per-frame quantity saturated; CLN025 has no physical clock. Support thresholds leave bins empty rather than filling them. The comparison functor is an empirical best-match map, not a proved functor. The SDG results concern an idealisation (formally open covers, smooth flows) and are used to interpret, not to validate, the measurements. The flooding filtration is a geometric analogue of metadynamics computed from occupancy; no biased simulation was run. None of the constructions is a kinetic model, and the pooled occupancy is not an equilibrium free energy.
+
+\section{Reproduction}
+From \texttt{fluid-nerve/}: \texttt{python acquire\_sgdml.py}, \texttt{python acquire\_mdcath.py}, \texttt{python generate\_dipeptides.py}, \texttt{python build\_all.py}, \texttt{python render.py}, \texttt{python export\_homotopy.py}, \texttt{python compare\_all.py}, \texttt{python theory/make\_results.py}, \texttt{tectonic theory/fluid-nerve-theory.tex}. Unit tests on synthetic data: \texttt{python -m unittest discover -s tests}. Raw data are not committed; manifests with SHA-256 hashes are.
+
+\begin{thebibliography}{9}
+\bibitem{kock2006} A.~Kock, \emph{Synthetic Differential Geometry}, 2nd ed., LMS Lecture Note Series 333, Cambridge University Press, 2006.
+\bibitem{kock2010} A.~Kock, \emph{Synthetic Geometry of Manifolds}, Cambridge Tracts in Mathematics 180, Cambridge University Press, 2010.
+\bibitem{lavendhomme} R.~Lavendhomme, \emph{Basic Concepts of Synthetic Differential Geometry}, Kluwer, 1996.
+\bibitem{penon} J.~Penon, Infinit\'esimaux et intuitionnisme, \emph{Cahiers Topologie G\'eom.\ Diff\'erentielle} 22 (1981) 67--72.
+\bibitem{street} R.~Street, The algebra of oriented simplexes, \emph{J.\ Pure Appl.\ Algebra} 49 (1987) 283--335.
+\bibitem{homotopyio} N.~Corbyn, L.~Heidemann, N.~Hu, C.~Sarti, C.~Tataru, J.~Vicary, homotopy.io: a proof assistant for finitely-presented globular $n$-categories, FSCD 2024; arXiv:2402.13179.
+\bibitem{mdcath} A.~Mirarchi, T.~Giorgino, G.~De Fabritiis, mdCATH: a large-scale MD dataset for data-driven computational biophysics, \emph{Sci.\ Data} 11 (2024) 1299.
+\bibitem{md17} S.~Chmiela et al., Machine learning of accurate energy-conserving molecular force fields, \emph{Sci.\ Adv.} 3 (2017) e1603015; S.~Chmiela et al., Accurate global machine learning force fields for molecules with hundreds of atoms, \emph{Sci.\ Adv.} 9 (2023) eadf0873.
+\bibitem{cln} A.~P\'erez Culubret, G.~De Fabritiis, Chignolin simulations, figshare (2021), doi:10.6084/m9.figshare.13858898.
+\bibitem{metad} A.~Laio, M.~Parrinello, Escaping free-energy minima, \emph{PNAS} 99 (2002) 12562--12566.
+\end{thebibliography}
+\end{document}

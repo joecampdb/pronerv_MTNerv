@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2yila02-heavy",
+ "label": "CATH domain 2yilA02 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 35,
+   "triangles": 20,
+   "tetrahedra": 2,
+   "generators": 75,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2yila02-heavy\\base.hom (95821 bytes); generators by dimension: [(0, 18), (1, 35), (2, 20), (3, 2)]"
+  },
+  "poset": {
+   "vertices": 75,
+   "edges": 218,
+   "triangles": 192,
+   "tetrahedra": 48,
+   "generators": 533,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2yila02-heavy\\poset.hom (1223066 bytes); generators by dimension: [(0, 75), (1, 218), (2, 192), (3, 48)]"
+  }
+ }
+}

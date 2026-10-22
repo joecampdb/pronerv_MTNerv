@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-1a92a00-heavy",
+ "label": "CATH domain 1a92A00 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 47,
+   "triangles": 37,
+   "tetrahedra": 8,
+   "generators": 110,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1a92a00-heavy\\base.hom (220419 bytes); generators by dimension: [(0, 18), (1, 47), (2, 37), (3, 8)]"
+  },
+  "poset": {
+   "vertices": 110,
+   "edges": 428,
+   "triangles": 510,
+   "tetrahedra": 192,
+   "generators": 1240,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1a92a00-heavy\\poset.hom (4001582 bytes); generators by dimension: [(0, 110), (1, 428), (2, 510), (3, 192)]"
+  }
+ }
+}

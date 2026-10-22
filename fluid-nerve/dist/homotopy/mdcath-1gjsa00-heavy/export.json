@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-1gjsa00-heavy",
+ "label": "CATH domain 1gjsA00 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 46,
+   "triangles": 35,
+   "tetrahedra": 7,
+   "generators": 106,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1gjsa00-heavy\\base.hom (202563 bytes); generators by dimension: [(0, 18), (1, 46), (2, 35), (3, 7)]"
+  },
+  "poset": {
+   "vertices": 106,
+   "edges": 400,
+   "triangles": 462,
+   "tetrahedra": 168,
+   "generators": 1136,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1gjsa00-heavy\\poset.hom (3554882 bytes); generators by dimension: [(0, 106), (1, 400), (2, 462), (3, 168)]"
+  }
+ }
+}

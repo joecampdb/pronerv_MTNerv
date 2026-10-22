@@ -97,6 +97,22 @@ or a compositional model of full dynamical systems.
 
 The historical `alanine-nerve` directory name is retained for compatibility.
 
+## Fluid nerve atlas (many systems)
+
+[`fluid-nerve/`](fluid-nerve/README.md) extends the two-system construction to a catalog of systems,
+half atom-based (heavy-atom sites: alanine dipeptide, a locally generated family of twenty capped
+dipeptides, MD17/MD22 ab initio trajectories) and half backbone-based (C-alpha sites: CLN025 and mdCATH
+domains). For every system it builds a **deformation field** (lag-ladder conditional mobility, drift,
+spread and site displacement), the **witnessed cover nerve** of the measured revision, an **ambient-time
+(fluid) filtration** of nerves and the **flooding filtration** of the occupancy landscape; it exports every
+nerve to [homotopy.io](https://homotopy.io) as a 3-dimensional categorical complex
+([instructions](fluid-nerve/docs/homotopy-io-instructions.md)); and it compares the two groups,
+including an empirical atomistic-to-C-alpha comparison functor. The accompanying paper,
+*Fluid nerve theory* (`fluid-nerve/dist/fluid-nerve-theory.pdf`), recruits synthetic differential geometry
+to state what a deformation field is at an infinitesimal scale and proves that nerves of formally open
+covers are rigid under infinitesimal transformations. The alanine build reproduces the measured atlas of
+this repository exactly. All constructions remain descriptive.
+
 ## Independent polyethylene workflow
 
 This repository also preserves an earlier PE25/PE50 simulation-screening project.

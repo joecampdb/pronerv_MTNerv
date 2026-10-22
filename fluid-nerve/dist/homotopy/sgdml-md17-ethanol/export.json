@@ -1,0 +1,24 @@
+{
+ "id": "sgdml-md17-ethanol",
+ "label": "ethanol (MD17 ab initio MD)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 6,
+   "triangles": 0,
+   "tetrahedra": 0,
+   "generators": 24,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md17-ethanol\\base.hom (7299 bytes); generators by dimension: [(0, 18), (1, 6)]"
+  },
+  "poset": {
+   "vertices": 24,
+   "edges": 12,
+   "triangles": 0,
+   "tetrahedra": 0,
+   "generators": 36,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md17-ethanol\\poset.hom (11741 bytes); generators by dimension: [(0, 24), (1, 12)]"
+  }
+ }
+}

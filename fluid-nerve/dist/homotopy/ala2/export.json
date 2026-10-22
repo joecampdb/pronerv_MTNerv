@@ -1,0 +1,24 @@
+{
+ "id": "ala2",
+ "label": "Alanine dipeptide (mdshare)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 37,
+   "triangles": 23,
+   "tetrahedra": 4,
+   "generators": 82,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\ala2\\base.hom (130132 bytes); generators by dimension: [(0, 18), (1, 37), (2, 23), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 82,
+   "edges": 268,
+   "triangles": 282,
+   "tetrahedra": 96,
+   "generators": 728,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\ala2\\poset.hom (2098736 bytes); generators by dimension: [(0, 82), (1, 268), (2, 282), (3, 96)]"
+  }
+ }
+}

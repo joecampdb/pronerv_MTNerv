@@ -1,0 +1,4670 @@
+{
+ "id": "cln025",
+ "group": "backbone",
+ "label": "Chignolin CLN025 (128-run subset)",
+ "representation": "C-alpha",
+ "family": "cln025",
+ "paired_with": null,
+ "provenance": {
+  "source": "https://ndownloader.figshare.com/files/26424614",
+  "doi": "10.6084/m9.figshare.13858898",
+  "license": "CC BY 4.0",
+  "variant": "CLN025",
+  "sequence": "YYDPETGTWY",
+  "temperatureK": 350,
+  "selection": "First 128 non-hidden XTC members in archive order",
+  "note": "Frame indices only; XTC timing metadata conflicts with nominal run lengths (see alanine-nerve/VALIDATION.md)."
+ },
+ "run_meta": [
+  {
+   "file": "run-000.xtc",
+   "member": "filtered/e1s1_chignolin_50ns_0/e1s1_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3469_9.filtered.xtc",
+   "sha256": "1bfc3aea971b2d7a54bf263acddfa25af0511955daf0f49ce30a5efd35940633",
+   "frames": 500
+  },
+  {
+   "file": "run-001.xtc",
+   "member": "filtered/e1s4_chignolin_50ns_0/e1s4_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2437_9.filtered.xtc",
+   "sha256": "5a2856b08d58d61e24488a101be303726c2fa636854f94a88e12b8cbcdb551b4",
+   "frames": 500
+  },
+  {
+   "file": "run-002.xtc",
+   "member": "filtered/e1s6_chignolin_50ns_0/e1s6_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1267_9.filtered.xtc",
+   "sha256": "1acc89c4da57791e25ec3edfc927fedb2b826c05e5a7e45b835892872ea64a35",
+   "frames": 500
+  },
+  {
+   "file": "run-003.xtc",
+   "member": "filtered/e1s8_chignolin_50ns_0/e1s8_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0724_9.filtered.xtc",
+   "sha256": "452a0006bc31b37ba2dfa41dddd733b2b09ad4d1604334f46c870f1a788eac61",
+   "frames": 500
+  },
+  {
+   "file": "run-004.xtc",
+   "member": "filtered/e1s9_chignolin_50ns_0/e1s9_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5121_9.filtered.xtc",
+   "sha256": "eb67a838f9c75c62407841ea5873a5563433b71434c5d9a37db543a4ea4881e8",
+   "frames": 500
+  },
+  {
+   "file": "run-005.xtc",
+   "member": "filtered/e1s12_chignolin_50ns_1/e1s12_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3019_9.filtered.xtc",
+   "sha256": "9a9a9658532165d32865848edf10de6547cbbec61328a8433fbc6802953afee6",
+   "frames": 500
+  },
+  {
+   "file": "run-006.xtc",
+   "member": "filtered/e1s15_chignolin_50ns_1/e1s15_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3184_9.filtered.xtc",
+   "sha256": "8385e1b7b8752a6edc0660933d1347391051329bac702d7852bfc025b7c9dab4",
+   "frames": 500
+  },
+  {
+   "file": "run-007.xtc",
+   "member": "filtered/e1s13_chignolin_50ns_1/e1s13_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1722_9.filtered.xtc",
+   "sha256": "0dae7d1c910f000f028e0f414e1dfc85204fd9215fb977d672e9087f51232032",
+   "frames": 500
+  },
+  {
+   "file": "run-008.xtc",
+   "member": "filtered/e1s20_chignolin_50ns_1/e1s20_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5721_9.filtered.xtc",
+   "sha256": "7c6384d5d10217e565f1a6a2a7b7576a240b1389ee1aab73b1f15fa4719d0a3c",
+   "frames": 500
+  },
+  {
+   "file": "run-009.xtc",
+   "member": "filtered/e1s16_chignolin_50ns_1/e1s16_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3614_9.filtered.xtc",
+   "sha256": "ee1a13d808cecd7e0b3fab6c2af694b480fc280c30c319542e59c4ba8d3380d7",
+   "frames": 500
+  },
+  {
+   "file": "run-010.xtc",
+   "member": "filtered/e1s24_chignolin_50ns_2/e1s24_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6903_9.filtered.xtc",
+   "sha256": "b326e624afedc22ebdbb46dc3f7454f41b1c4e8628e1315f22ed97f055598992",
+   "frames": 500
+  },
+  {
+   "file": "run-011.xtc",
+   "member": "filtered/e1s25_chignolin_50ns_2/e1s25_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6769_9.filtered.xtc",
+   "sha256": "cf6817cf419f485fb53092bc87b6cd462618c35278c248783a949937a2a693da",
+   "frames": 500
+  },
+  {
+   "file": "run-012.xtc",
+   "member": "filtered/e1s29_chignolin_50ns_2/e1s29_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4888_9.filtered.xtc",
+   "sha256": "627e7595622280f825b40386073009343ba22b64a9bd21845e5e317a229fd2d7",
+   "frames": 500
+  },
+  {
+   "file": "run-013.xtc",
+   "member": "filtered/e1s27_chignolin_50ns_2/e1s27_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0470_9.filtered.xtc",
+   "sha256": "f84d2315df59ab59c7f760ee84b6aa305655bfe132dff344aa0c28beb88c7afc",
+   "frames": 500
+  },
+  {
+   "file": "run-014.xtc",
+   "member": "filtered/e1s32_chignolin_50ns_3/e1s32_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7482_9.filtered.xtc",
+   "sha256": "f38956fe768b532aa10f00cb3a6b0e33b629b46d75742dce33d431f2a6ba7c48",
+   "frames": 500
+  },
+  {
+   "file": "run-015.xtc",
+   "member": "filtered/e1s33_chignolin_50ns_3/e1s33_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2482_9.filtered.xtc",
+   "sha256": "ce84eb89d3dd4e70ce09ca5125ac8f9be082c4853cafb5d7fedf27392ca014b8",
+   "frames": 500
+  },
+  {
+   "file": "run-016.xtc",
+   "member": "filtered/e1s35_chignolin_50ns_3/e1s35_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1018_9.filtered.xtc",
+   "sha256": "5e2a71c846145aae85770361bb8df563f001dbf6b18d98a723519af1b94d6d2c",
+   "frames": 500
+  },
+  {
+   "file": "run-017.xtc",
+   "member": "filtered/e1s37_chignolin_50ns_3/e1s37_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5531_9.filtered.xtc",
+   "sha256": "385f1c124b367421fd9a462c891858a5a65499b42dad66aaf137d80d7eed2d3f",
+   "frames": 500
+  },
+  {
+   "file": "run-018.xtc",
+   "member": "filtered/e1s38_chignolin_50ns_3/e1s38_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6821_9.filtered.xtc",
+   "sha256": "e7602178efe62ee1509187512e94479e76245b13b3f6ae9d306980b39678fb56",
+   "frames": 500
+  },
+  {
+   "file": "run-019.xtc",
+   "member": "filtered/e1s40_chignolin_50ns_3/e1s40_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7506_9.filtered.xtc",
+   "sha256": "938835dafb25bba2f192de37415b7f4276e7fa5641f754046491ba4a60af5554",
+   "frames": 500
+  },
+  {
+   "file": "run-020.xtc",
+   "member": "filtered/e1s42_chignolin_50ns_4/e1s42_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7300_9.filtered.xtc",
+   "sha256": "f73ef70705e2a6f3a80659d9dbff8df417d8097c2ef76a62a26d283d0dfc9bcb",
+   "frames": 500
+  },
+  {
+   "file": "run-021.xtc",
+   "member": "filtered/e1s43_chignolin_50ns_4/e1s43_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6911_9.filtered.xtc",
+   "sha256": "e573c6566f03c3cab21547622cb341e3c11283556385a5031990c5cb4cedabea",
+   "frames": 500
+  },
+  {
+   "file": "run-022.xtc",
+   "member": "filtered/e1s45_chignolin_50ns_4/e1s45_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8635_9.filtered.xtc",
+   "sha256": "434ff3e89026a638b7b4567bd8023be76d801152d215c6553b1b59d2715cf7ec",
+   "frames": 500
+  },
+  {
+   "file": "run-023.xtc",
+   "member": "filtered/e1s47_chignolin_50ns_4/e1s47_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3979_9.filtered.xtc",
+   "sha256": "a4c9988868df9ddc6cdc162b30f5ab191b5a3168c4102fda11af4c5674bdd444",
+   "frames": 500
+  },
+  {
+   "file": "run-024.xtc",
+   "member": "filtered/e1s48_chignolin_50ns_4/e1s48_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2694_9.filtered.xtc",
+   "sha256": "783cda6f96b5ac63af4b85ecd3496886a2bea01201f1c7aad559ccf9307d610d",
+   "frames": 500
+  },
+  {
+   "file": "run-025.xtc",
+   "member": "filtered/e1s49_chignolin_50ns_4/e1s49_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6828_9.filtered.xtc",
+   "sha256": "6d6756d49530b10e1889924acc0c1bdf48e6628ef54df8fa9023c0119c1f842d",
+   "frames": 500
+  },
+  {
+   "file": "run-026.xtc",
+   "member": "filtered/e1s52_chignolin_50ns_5/e1s52_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4177_9.filtered.xtc",
+   "sha256": "abc71f1a78ee80ddc6e705b45ee921ffb3007905f31d8943f49694c7cebb08a3",
+   "frames": 500
+  },
+  {
+   "file": "run-027.xtc",
+   "member": "filtered/e1s54_chignolin_50ns_5/e1s54_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9026_9.filtered.xtc",
+   "sha256": "a2d3f0bd834f8de0b6ceff6c419e30163f8153188c59fe274469a7b1a8098993",
+   "frames": 500
+  },
+  {
+   "file": "run-028.xtc",
+   "member": "filtered/e1s56_chignolin_50ns_5/e1s56_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0216_9.filtered.xtc",
+   "sha256": "35e6e7fdb4ac96e4965af2eec7335cc507c157acfb01f9150b481a9210a1ef43",
+   "frames": 500
+  },
+  {
+   "file": "run-029.xtc",
+   "member": "filtered/e1s60_chignolin_50ns_5/e1s60_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1774_9.filtered.xtc",
+   "sha256": "dc78618711567d9107782c25b2f630ab9aed44f3f919e4d8bff44891c658ad6f",
+   "frames": 500
+  },
+  {
+   "file": "run-030.xtc",
+   "member": "filtered/e1s58_chignolin_50ns_5/e1s58_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4051_9.filtered.xtc",
+   "sha256": "42cd36a7c0d1875bb5bca1f6d93db3d92ce4f4215f262457a54476e02e5327a2",
+   "frames": 500
+  },
+  {
+   "file": "run-031.xtc",
+   "member": "filtered/e1s65_chignolin_50ns_6/e1s65_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4359_9.filtered.xtc",
+   "sha256": "23f2c79d347fa7eb646f0a2e95849422a7698224891f452f8d3ebf0e173a9be6",
+   "frames": 500
+  },
+  {
+   "file": "run-032.xtc",
+   "member": "filtered/e1s61_chignolin_50ns_6/e1s61_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2711_9.filtered.xtc",
+   "sha256": "b4cf1eaaefcc04f80de2e6d987a0477493e88646f4b4f91957859b90f86a4802",
+   "frames": 500
+  },
+  {
+   "file": "run-033.xtc",
+   "member": "filtered/e1s66_chignolin_50ns_6/e1s66_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3745_9.filtered.xtc",
+   "sha256": "160d25f5dac9b76245bc47623a7064ac9b873662727f5e034776797bab11955f",
+   "frames": 500
+  },
+  {
+   "file": "run-034.xtc",
+   "member": "filtered/e1s67_chignolin_50ns_6/e1s67_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7580_9.filtered.xtc",
+   "sha256": "4a7e59e79140f682518f27f1bb059cc46cb928b53555f00cc7e3aa8041e33132",
+   "frames": 500
+  },
+  {
+   "file": "run-035.xtc",
+   "member": "filtered/e1s70_chignolin_50ns_6/e1s70_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2197_9.filtered.xtc",
+   "sha256": "cf833556fe54089f6c7fe0e8f7bd9be5c5eb6171b7060017fec2d6bf9651d83f",
+   "frames": 500
+  },
+  {
+   "file": "run-036.xtc",
+   "member": "filtered/e1s72_chignolin_50ns_7/e1s72_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6243_9.filtered.xtc",
+   "sha256": "cb319f699d05c869647479f37ff2006e5985983c89dfb7c4b1867d9d608a022e",
+   "frames": 500
+  },
+  {
+   "file": "run-037.xtc",
+   "member": "filtered/e1s73_chignolin_50ns_7/e1s73_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9855_9.filtered.xtc",
+   "sha256": "2972f61727bc4542d65edf7cb46787fb3c71d4af6c26317c09efb2d39f4c05cc",
+   "frames": 500
+  },
+  {
+   "file": "run-038.xtc",
+   "member": "filtered/e1s75_chignolin_50ns_7/e1s75_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8700_9.filtered.xtc",
+   "sha256": "7e31388361a2f4044977fff383aeaec7e00075f38c301ec4d95ff62f3d195118",
+   "frames": 500
+  },
+  {
+   "file": "run-039.xtc",
+   "member": "filtered/e1s76_chignolin_50ns_7/e1s76_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6294_9.filtered.xtc",
+   "sha256": "96d1605856eb808d08f3e9c38762e521590192bf17695450e6e6c7507a1df8d3",
+   "frames": 500
+  },
+  {
+   "file": "run-040.xtc",
+   "member": "filtered/e1s79_chignolin_50ns_7/e1s79_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2070_9.filtered.xtc",
+   "sha256": "47ddd07cb33615ca4a9a276b2f196c975c047bdbeef9822cf2b3332e807be743",
+   "frames": 500
+  },
+  {
+   "file": "run-041.xtc",
+   "member": "filtered/e1s87_chignolin_50ns_8/e1s87_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7098_9.filtered.xtc",
+   "sha256": "66d9baacc61040288fde107b6761480887ed8df56559732da531474bbdfb6e21",
+   "frames": 500
+  },
+  {
+   "file": "run-042.xtc",
+   "member": "filtered/e1s89_chignolin_50ns_8/e1s89_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1376_9.filtered.xtc",
+   "sha256": "b693e11da9747098efd9421dca252ae22e16697d99bb64181addc535d1f6aae1",
+   "frames": 500
+  },
+  {
+   "file": "run-043.xtc",
+   "member": "filtered/e1s90_chignolin_50ns_8/e1s90_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5507_9.filtered.xtc",
+   "sha256": "254c31c84916cfab6ae54bd92c16d222e2d948b5ef4e3ab4268f96263a27e7f5",
+   "frames": 500
+  },
+  {
+   "file": "run-044.xtc",
+   "member": "filtered/e1s91_chignolin_50ns_9/e1s91_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5297_9.filtered.xtc",
+   "sha256": "1035095f97ef24dbc43c3e04ed3145882405b3643344b29a5fa848e7a252882c",
+   "frames": 500
+  },
+  {
+   "file": "run-045.xtc",
+   "member": "filtered/e1s92_chignolin_50ns_9/e1s92_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1941_9.filtered.xtc",
+   "sha256": "f59b607fa73619a393705c23885cda4302b2cb24bcc7b505d45abe09e49fbcc9",
+   "frames": 500
+  },
+  {
+   "file": "run-046.xtc",
+   "member": "filtered/e1s93_chignolin_50ns_9/e1s93_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3938_9.filtered.xtc",
+   "sha256": "b66027104cd3f0789c54fb6a5690c2a51114e13d5edb387e2cf740a5e22782f2",
+   "frames": 500
+  },
+  {
+   "file": "run-047.xtc",
+   "member": "filtered/e1s95_chignolin_50ns_9/e1s95_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5509_9.filtered.xtc",
+   "sha256": "4ac2cc86fc667bc2314269bba2105b3a8b39c074e86cd0530a50705506febe9f",
+   "frames": 500
+  },
+  {
+   "file": "run-048.xtc",
+   "member": "filtered/e1s96_chignolin_50ns_9/e1s96_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6377_9.filtered.xtc",
+   "sha256": "2d5f7919128e10acf7b694ceaf348fa9a6c94ab67a0d800563f3ea354ce78983",
+   "frames": 500
+  },
+  {
+   "file": "run-049.xtc",
+   "member": "filtered/e1s98_chignolin_50ns_9/e1s98_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3799_9.filtered.xtc",
+   "sha256": "8e919cc6dd5fd6b78624b134c0ce43daf73bc97eb779669a800bc2a47de5ec61",
+   "frames": 500
+  },
+  {
+   "file": "run-050.xtc",
+   "member": "filtered/e1s3_chignolin_50ns_0/e1s3_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2368_9.filtered.xtc",
+   "sha256": "55a4d3b3013670c17a01e9471fa93d917f1a9c0000c0483bbbfc6857ac36ac11",
+   "frames": 500
+  },
+  {
+   "file": "run-051.xtc",
+   "member": "filtered/e1s11_chignolin_50ns_1/e1s11_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2259_9.filtered.xtc",
+   "sha256": "b831b680996a99de45e8bd67f4df089ee1e0a45b9613f86270858700522ce4cd",
+   "frames": 500
+  },
+  {
+   "file": "run-052.xtc",
+   "member": "filtered/e1s17_chignolin_50ns_1/e1s17_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8578_9.filtered.xtc",
+   "sha256": "14efe2efe2796dd02445a66bef658b0d9e962fc177e43f9f730ed8b69e2ee8bf",
+   "frames": 500
+  },
+  {
+   "file": "run-053.xtc",
+   "member": "filtered/e1s18_chignolin_50ns_1/e1s18_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5180_9.filtered.xtc",
+   "sha256": "06ab875e2005aa51496475c1cc13d674d63ad6e8310febd05d42ba94b11c604e",
+   "frames": 500
+  },
+  {
+   "file": "run-054.xtc",
+   "member": "filtered/e1s19_chignolin_50ns_1/e1s19_chignolin_50ns_1-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4029_9.filtered.xtc",
+   "sha256": "0eb78e4587711378a3e0790cca785aa9b2f756677f771df33d2b3ba4534497a4",
+   "frames": 500
+  },
+  {
+   "file": "run-055.xtc",
+   "member": "filtered/e1s22_chignolin_50ns_2/e1s22_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7508_9.filtered.xtc",
+   "sha256": "61909fe282fd7093dd6c0184bc52b7e215ee6e9f3742a968c6f27bd34e3c46f5",
+   "frames": 500
+  },
+  {
+   "file": "run-056.xtc",
+   "member": "filtered/e1s23_chignolin_50ns_2/e1s23_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9906_9.filtered.xtc",
+   "sha256": "68c9b971d01e2ae94f30f56792361de534f5adb30ac6b42041cb5ff202664cd3",
+   "frames": 500
+  },
+  {
+   "file": "run-057.xtc",
+   "member": "filtered/e1s28_chignolin_50ns_2/e1s28_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6757_9.filtered.xtc",
+   "sha256": "f2fa5c3bf0e95318238dc579e18b72dcf01ca050c4dae3ecfa5aa49d5e136f63",
+   "frames": 500
+  },
+  {
+   "file": "run-058.xtc",
+   "member": "filtered/e1s30_chignolin_50ns_2/e1s30_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8635_9.filtered.xtc",
+   "sha256": "55bbb3d72c78d299f3d0bdeb669891eb210fa525d41e5339c6a055cf9f37803a",
+   "frames": 500
+  },
+  {
+   "file": "run-059.xtc",
+   "member": "filtered/e1s31_chignolin_50ns_3/e1s31_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2791_9.filtered.xtc",
+   "sha256": "52b37234faba14ae72c3d58b3ad6e145f042c2796574c4811972ac68507c5c7d",
+   "frames": 500
+  },
+  {
+   "file": "run-060.xtc",
+   "member": "filtered/e1s34_chignolin_50ns_3/e1s34_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7288_9.filtered.xtc",
+   "sha256": "500f56268db72992b17a141f52e7abefbd1c0c5abc0c77adcfe08aed3098c843",
+   "frames": 500
+  },
+  {
+   "file": "run-061.xtc",
+   "member": "filtered/e1s21_chignolin_50ns_2/e1s21_chignolin_50ns_2-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0923_9.filtered.xtc",
+   "sha256": "fea024fe03b3bda1d51df63e03570fe1d8fd7376b3f158bda028e3e776a57046",
+   "frames": 500
+  },
+  {
+   "file": "run-062.xtc",
+   "member": "filtered/e1s36_chignolin_50ns_3/e1s36_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6493_9.filtered.xtc",
+   "sha256": "7bdadad6c06fc0646a8c5eca8aaacd26e63640d639d9c40e9ad5822f56421801",
+   "frames": 500
+  },
+  {
+   "file": "run-063.xtc",
+   "member": "filtered/e2s35_e1s87p0f319/e2s35_e1s87p0f319-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2243_9.filtered.xtc",
+   "sha256": "2c401d95c7ae36fe9341ac68cece44077a533d43a92cd574a314166b7a7e28e7",
+   "frames": 500
+  },
+  {
+   "file": "run-064.xtc",
+   "member": "filtered/e1s39_chignolin_50ns_3/e1s39_chignolin_50ns_3-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6813_9.filtered.xtc",
+   "sha256": "e49968465b7c3334a3ac32463385edd0de36fa12813172f416d950325639cab2",
+   "frames": 500
+  },
+  {
+   "file": "run-065.xtc",
+   "member": "filtered/e2s38_e1s87p0f316/e2s38_e1s87p0f316-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6726_9.filtered.xtc",
+   "sha256": "ffbbfb7c785cb81d35f0635511a8001f0bce24c53405ece3e4fde4f22895aa74",
+   "frames": 500
+  },
+  {
+   "file": "run-066.xtc",
+   "member": "filtered/e1s44_chignolin_50ns_4/e1s44_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0373_9.filtered.xtc",
+   "sha256": "a2fa573dd9ca1b73622df24e491d0482384e32ec2b63ea621d52c21f5f88aa30",
+   "frames": 500
+  },
+  {
+   "file": "run-067.xtc",
+   "member": "filtered/e2s40_e1s87p0f156/e2s40_e1s87p0f156-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1661_9.filtered.xtc",
+   "sha256": "9c7d9299a7860ace83950ee1679c1354296efa8d2593855d9081a830485c3573",
+   "frames": 500
+  },
+  {
+   "file": "run-068.xtc",
+   "member": "filtered/e1s46_chignolin_50ns_4/e1s46_chignolin_50ns_4-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1223_9.filtered.xtc",
+   "sha256": "bdbc9febe18eac39b565840204c4da2521709a3e2480391999924cedc6990ff2",
+   "frames": 500
+  },
+  {
+   "file": "run-069.xtc",
+   "member": "filtered/e1s51_chignolin_50ns_5/e1s51_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9044_9.filtered.xtc",
+   "sha256": "2a8aa32273cd78a186fc55655989181a99510c54390034a18e72e62ab1e594fb",
+   "frames": 500
+  },
+  {
+   "file": "run-070.xtc",
+   "member": "filtered/e2s41_e1s87p0f189/e2s41_e1s87p0f189-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3782_9.filtered.xtc",
+   "sha256": "acc4cfb374f42c564c4687292134470bc65ccaa642d40a768cace8dabe271413",
+   "frames": 500
+  },
+  {
+   "file": "run-071.xtc",
+   "member": "filtered/e1s53_chignolin_50ns_5/e1s53_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2040_9.filtered.xtc",
+   "sha256": "c6023f120cd1bec9b77d206ccef281dbd2e81db5396d500f39f7050843db15cd",
+   "frames": 500
+  },
+  {
+   "file": "run-072.xtc",
+   "member": "filtered/e2s42_e1s67p0f323/e2s42_e1s67p0f323-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5412_9.filtered.xtc",
+   "sha256": "33015ee12fc8740e76879a17d1b3d93f752677a372e873dc536d8218518e8f75",
+   "frames": 500
+  },
+  {
+   "file": "run-073.xtc",
+   "member": "filtered/e1s57_chignolin_50ns_5/e1s57_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2086_9.filtered.xtc",
+   "sha256": "1be56f4390366830b26594be12c820512d301e021830af894c29ae2160ae25ee",
+   "frames": 500
+  },
+  {
+   "file": "run-074.xtc",
+   "member": "filtered/e2s44_e1s24p0f455/e2s44_e1s24p0f455-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0404_9.filtered.xtc",
+   "sha256": "a604f5f1bbfb7666da36910143009337cfbe153979a03ff4fea04e8c9f1d4f7b",
+   "frames": 500
+  },
+  {
+   "file": "run-075.xtc",
+   "member": "filtered/e1s59_chignolin_50ns_5/e1s59_chignolin_50ns_5-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0800_9.filtered.xtc",
+   "sha256": "0212a2341d739e50e941ebe28f4785f57404d82d864ec51a44ea50ac5e67f491",
+   "frames": 500
+  },
+  {
+   "file": "run-076.xtc",
+   "member": "filtered/e2s47_e1s67p0f329/e2s47_e1s67p0f329-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6468_9.filtered.xtc",
+   "sha256": "468254b49120668969ecf806831bb0e281178cf25b6377e8372ae906b44400ac",
+   "frames": 500
+  },
+  {
+   "file": "run-077.xtc",
+   "member": "filtered/e1s62_chignolin_50ns_6/e1s62_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4250_9.filtered.xtc",
+   "sha256": "fbf137a19b7ab1b4671aecb5fd1781fcc90a0e1f658dd965a8ba47de037e51be",
+   "frames": 500
+  },
+  {
+   "file": "run-078.xtc",
+   "member": "filtered/e2s50_e1s15p0f473/e2s50_e1s15p0f473-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1088_9.filtered.xtc",
+   "sha256": "50afc1cec8c7068146f206c3267ff21b13ec958c961aa0a12da9692ba9c61035",
+   "frames": 500
+  },
+  {
+   "file": "run-079.xtc",
+   "member": "filtered/e1s64_chignolin_50ns_6/e1s64_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3545_9.filtered.xtc",
+   "sha256": "2701833a5f5030d8729f2db7fd830836ad83d38b7d732d169fe0e086d6a32724",
+   "frames": 500
+  },
+  {
+   "file": "run-080.xtc",
+   "member": "filtered/e1s68_chignolin_50ns_6/e1s68_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9998_9.filtered.xtc",
+   "sha256": "eb28e1b9c51e9577d5120d9e537cd94f77b5f2783f5085dddb9f397be0db2c62",
+   "frames": 500
+  },
+  {
+   "file": "run-081.xtc",
+   "member": "filtered/e1s69_chignolin_50ns_6/e1s69_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9615_9.filtered.xtc",
+   "sha256": "6042631cf331b42b2edcdaf9aeee521a90eaca3bba8c1dc5580348e22c9fa796",
+   "frames": 500
+  },
+  {
+   "file": "run-082.xtc",
+   "member": "filtered/e1s71_chignolin_50ns_7/e1s71_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7460_9.filtered.xtc",
+   "sha256": "b66dcfbec5e53e69c7030f862258f26da11626ceff8985ada88b1b2378ecc46b",
+   "frames": 500
+  },
+  {
+   "file": "run-083.xtc",
+   "member": "filtered/e1s77_chignolin_50ns_7/e1s77_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1847_9.filtered.xtc",
+   "sha256": "52f2724960d7cc2b19b4222576580a556ad29654fbc116fdaa53592634e0d6c3",
+   "frames": 500
+  },
+  {
+   "file": "run-084.xtc",
+   "member": "filtered/e1s80_chignolin_50ns_7/e1s80_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0262_9.filtered.xtc",
+   "sha256": "65c35360549cdf33f88d0586ed95bfbf6e9d80bb9fb2569f2637a2510f8f6d9c",
+   "frames": 500
+  },
+  {
+   "file": "run-085.xtc",
+   "member": "filtered/e1s81_chignolin_50ns_8/e1s81_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9317_9.filtered.xtc",
+   "sha256": "fd95ec19f67714987f98f8761901ccdecce2e8dc13b446cdba0470097df40166",
+   "frames": 500
+  },
+  {
+   "file": "run-086.xtc",
+   "member": "filtered/e1s84_chignolin_50ns_8/e1s84_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6730_9.filtered.xtc",
+   "sha256": "ca8f2080938dc4387e84575ce3ed71d2f2b53913ed7e964980fc7f48277c2b26",
+   "frames": 500
+  },
+  {
+   "file": "run-087.xtc",
+   "member": "filtered/e1s86_chignolin_50ns_8/e1s86_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0247_9.filtered.xtc",
+   "sha256": "5e7186741e29f4013305f46515c768f19891f901717be148194a69faa94e6537",
+   "frames": 500
+  },
+  {
+   "file": "run-088.xtc",
+   "member": "filtered/e1s94_chignolin_50ns_9/e1s94_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0660_9.filtered.xtc",
+   "sha256": "64bf0c2d00b1f0221a0627f8e9839cbc176e5dcca229542389ba422c85d70001",
+   "frames": 500
+  },
+  {
+   "file": "run-089.xtc",
+   "member": "filtered/e2s1_e1s67p0f365/e2s1_e1s67p0f365-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6850_9.filtered.xtc",
+   "sha256": "f5d5790b46b94b07632772bfccdd75e3b685b7268781aa1d6ac4dd6c1ddd77a4",
+   "frames": 500
+  },
+  {
+   "file": "run-090.xtc",
+   "member": "filtered/e2s6_e1s87p0f280/e2s6_e1s87p0f280-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1595_9.filtered.xtc",
+   "sha256": "8c4c73a97d88b9cbfae724c4b933183cae726edab533c1325eeeb9bd0b909b9c",
+   "frames": 500
+  },
+  {
+   "file": "run-091.xtc",
+   "member": "filtered/e2s7_e1s87p0f280/e2s7_e1s87p0f280-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0650_9.filtered.xtc",
+   "sha256": "7082f40b3e1d5d0e586d69bf4b203d2223ab9126b6e2a219df8005a93a5d4a9e",
+   "frames": 500
+  },
+  {
+   "file": "run-092.xtc",
+   "member": "filtered/e2s9_e1s87p0f412/e2s9_e1s87p0f412-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8253_9.filtered.xtc",
+   "sha256": "030d58cd1e75d0b616e54363b9c81b9318a324f7a7c4b0d2f7e89a5a4438ae3e",
+   "frames": 500
+  },
+  {
+   "file": "run-093.xtc",
+   "member": "filtered/e2s11_e1s87p0f295/e2s11_e1s87p0f295-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0452_9.filtered.xtc",
+   "sha256": "396ab391871afbd2c4afdd9bd375d21f3dd03de77e80e90099c527d57b603a3c",
+   "frames": 500
+  },
+  {
+   "file": "run-094.xtc",
+   "member": "filtered/e2s15_e1s24p0f476/e2s15_e1s24p0f476-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0605_9.filtered.xtc",
+   "sha256": "fcaf52341c22012a918f66f455198b4ec5db8a6dee4d3e3054e00365c479bd68",
+   "frames": 500
+  },
+  {
+   "file": "run-095.xtc",
+   "member": "filtered/e2s20_e1s24p0f473/e2s20_e1s24p0f473-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8192_9.filtered.xtc",
+   "sha256": "37d07e5e6e8f9e3d790585875f0d8034be9ee1e1c35b1fe92e25a944c503bfe6",
+   "frames": 500
+  },
+  {
+   "file": "run-096.xtc",
+   "member": "filtered/e2s25_e1s67p0f325/e2s25_e1s67p0f325-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3432_9.filtered.xtc",
+   "sha256": "3aff118dd7c9bb5182d17e652489c461a0927f9e8e5ed291cc7c556af448cd5d",
+   "frames": 500
+  },
+  {
+   "file": "run-097.xtc",
+   "member": "filtered/e2s30_e1s76p0f56/e2s30_e1s76p0f56-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5945_9.filtered.xtc",
+   "sha256": "1d5070135b691f431b3939c81b581cb463bfff265b67e3458fcd79214c885f6c",
+   "frames": 500
+  },
+  {
+   "file": "run-098.xtc",
+   "member": "filtered/e2s31_e1s37p0f121/e2s31_e1s37p0f121-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5499_9.filtered.xtc",
+   "sha256": "7deb0a13dbd918fa8d87c1cb0aff6a056a5eeb471c8c4d148619914a8d80ad19",
+   "frames": 500
+  },
+  {
+   "file": "run-099.xtc",
+   "member": "filtered/e2s33_e1s87p0f300/e2s33_e1s87p0f300-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4598_9.filtered.xtc",
+   "sha256": "2f3e6cd8d6306afe62b48fa505b6e46e0fe43e0868ead830cfa936530baaeae3",
+   "frames": 500
+  },
+  {
+   "file": "run-100.xtc",
+   "member": "filtered/e1s7_chignolin_50ns_0/e1s7_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0430_9.filtered.xtc",
+   "sha256": "d2d039fea336aa66fbf34b01a9c57f62d68a9bf46ec557c339ebda618ffe7573",
+   "frames": 500
+  },
+  {
+   "file": "run-101.xtc",
+   "member": "filtered/e1s5_chignolin_50ns_0/e1s5_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND1336_9.filtered.xtc",
+   "sha256": "4680c47953e1a501ba48382b8dacf6fba9700818bf8689cb84b0f81421b773f4",
+   "frames": 500
+  },
+  {
+   "file": "run-102.xtc",
+   "member": "filtered/e1s10_chignolin_50ns_0/e1s10_chignolin_50ns_0-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2889_9.filtered.xtc",
+   "sha256": "2a656129c9ce740244a893ba39fa19db1a49a65dfa36ad021cddaebfd0a76e18",
+   "frames": 499
+  },
+  {
+   "file": "run-103.xtc",
+   "member": "filtered/e2s28_e1s87p0f369/e2s28_e1s87p0f369-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3338_9.filtered.xtc",
+   "sha256": "20528f79623a662a95e0469bdaa57c42eda329ae909a04783188a82829313f99",
+   "frames": 500
+  },
+  {
+   "file": "run-104.xtc",
+   "member": "filtered/e1s74_chignolin_50ns_7/e1s74_chignolin_50ns_7-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5566_9.filtered.xtc",
+   "sha256": "9ce2c1ff5b09c93bab5e080d91dd88c14ff5039350c1508ed15925b657392967",
+   "frames": 500
+  },
+  {
+   "file": "run-105.xtc",
+   "member": "filtered/e1s63_chignolin_50ns_6/e1s63_chignolin_50ns_6-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3910_9.filtered.xtc",
+   "sha256": "f782042b576d7ff44a6b35ff2a205453deb947dfcdf0cd70a275f51f96eb5115",
+   "frames": 500
+  },
+  {
+   "file": "run-106.xtc",
+   "member": "filtered/e2s29_e1s87p0f339/e2s29_e1s87p0f339-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7028_9.filtered.xtc",
+   "sha256": "c326851baa75ea100ce71cc9643403e187c80ed3e95134b2b79b4eae68947684",
+   "frames": 500
+  },
+  {
+   "file": "run-107.xtc",
+   "member": "filtered/e1s83_chignolin_50ns_8/e1s83_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9774_9.filtered.xtc",
+   "sha256": "d30b41658cd3a9f5dd1fd1ecbe2ded67a7cb828b901e63f25477fd9d00b60174",
+   "frames": 500
+  },
+  {
+   "file": "run-108.xtc",
+   "member": "filtered/e2s43_e1s87p0f488/e2s43_e1s87p0f488-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7953_9.filtered.xtc",
+   "sha256": "fa49372ac7c64b5b5a7205a26cbe164d5e6c024f8ba3adee11a063f9162aaeb4",
+   "frames": 500
+  },
+  {
+   "file": "run-109.xtc",
+   "member": "filtered/e1s97_chignolin_50ns_9/e1s97_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7505_9.filtered.xtc",
+   "sha256": "ecf0f33c170cea4242b7691c670caa6cd84515518eacca4436a4146a664e408e",
+   "frames": 500
+  },
+  {
+   "file": "run-110.xtc",
+   "member": "filtered/e2s46_e1s87p0f238/e2s46_e1s87p0f238-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND3216_9.filtered.xtc",
+   "sha256": "85c334467237a1f043e71d02cd8c9ffc980ff4cd9c61c0458270bb4aff3cb560",
+   "frames": 500
+  },
+  {
+   "file": "run-111.xtc",
+   "member": "filtered/e1s99_chignolin_50ns_9/e1s99_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5556_9.filtered.xtc",
+   "sha256": "c756b0ddbf304135e4ac32b8cdc6e8f8d0da3201b2cb0b1cc59a0401651c4477",
+   "frames": 500
+  },
+  {
+   "file": "run-112.xtc",
+   "member": "filtered/e3s5_e1s11p0f183/e3s5_e1s11p0f183-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8842_9.filtered.xtc",
+   "sha256": "cd90414a23a6bdd8aea1ffcf0d2bf5750e7591ee7b29b65bb6d4e245692bef5c",
+   "frames": 500
+  },
+  {
+   "file": "run-113.xtc",
+   "member": "filtered/e1s100_chignolin_50ns_9/e1s100_chignolin_50ns_9-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0622_9.filtered.xtc",
+   "sha256": "2cb7fc6f02010e530b2cae2eb01ac4d250c55839cd65ae09a372529541447702",
+   "frames": 500
+  },
+  {
+   "file": "run-114.xtc",
+   "member": "filtered/e3s21_e1s35p0f382/e3s21_e1s35p0f382-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND5870_9.filtered.xtc",
+   "sha256": "bfe2481dda8f85df1d6d5e90dc1b84b83853793ac51f0aadbfd3ddf450a702b5",
+   "frames": 500
+  },
+  {
+   "file": "run-115.xtc",
+   "member": "filtered/e3s24_e1s89p0f134/e3s24_e1s89p0f134-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6057_9.filtered.xtc",
+   "sha256": "62baab732694754619b5138049007f35c0c9d87c01afd45fce831a450964559a",
+   "frames": 500
+  },
+  {
+   "file": "run-116.xtc",
+   "member": "filtered/e2s8_e1s67p0f293/e2s8_e1s67p0f293-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6854_9.filtered.xtc",
+   "sha256": "f538cf530d98735b4b1fc1394dc7671150cf1afd09a5d95222b22bdc28490419",
+   "frames": 500
+  },
+  {
+   "file": "run-117.xtc",
+   "member": "filtered/e3s44_e1s89p0f135/e3s44_e1s89p0f135-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4276_9.filtered.xtc",
+   "sha256": "0dbf7251e1e73b0fec21b181e79c5e53491b3f76d2f3c0aef9b10657ebd37341",
+   "frames": 500
+  },
+  {
+   "file": "run-118.xtc",
+   "member": "filtered/e2s18_e1s87p0f415/e2s18_e1s87p0f415-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7519_9.filtered.xtc",
+   "sha256": "6a86696e4abac5c410a9772c05bce58132393a327caa804b6107194de39a4eaa",
+   "frames": 500
+  },
+  {
+   "file": "run-119.xtc",
+   "member": "filtered/e3s48_e1s89p0f135/e3s48_e1s89p0f135-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND0693_9.filtered.xtc",
+   "sha256": "91c0385dec06ea5d539dd528853e50e2792642d3c1a861a58d330b9e32e67413",
+   "frames": 500
+  },
+  {
+   "file": "run-120.xtc",
+   "member": "filtered/e2s24_e1s24p0f445/e2s24_e1s24p0f445-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND8288_9.filtered.xtc",
+   "sha256": "114c95b545e5e1c632da6f0b9da68963030fb843d398b481daa029311561a6dc",
+   "frames": 500
+  },
+  {
+   "file": "run-121.xtc",
+   "member": "filtered/e1s85_chignolin_50ns_8/e1s85_chignolin_50ns_8-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2225_9.filtered.xtc",
+   "sha256": "74bcf157db93d8ff38506c099e0bb1d11d78ba61f29879c3e82649bc5c480d7e",
+   "frames": 500
+  },
+  {
+   "file": "run-122.xtc",
+   "member": "filtered/e2s27_e1s67p0f325/e2s27_e1s67p0f325-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4227_9.filtered.xtc",
+   "sha256": "33ca86871df781bd69d32b50fc626a675338a8fcdca5c78145c457417cb8026a",
+   "frames": 500
+  },
+  {
+   "file": "run-123.xtc",
+   "member": "filtered/e2s39_e1s87p0f399/e2s39_e1s87p0f399-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND6566_9.filtered.xtc",
+   "sha256": "4719a894f8da7b6758f29322ffb3c3927b1e2bdf39cef8efb5f91b58a15f7634",
+   "frames": 500
+  },
+  {
+   "file": "run-124.xtc",
+   "member": "filtered/e3s10_e1s35p0f380/e3s10_e1s35p0f380-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND9267_9.filtered.xtc",
+   "sha256": "e2b93bb02a7c1da1920084e717d5118cbf8d416dfb34ac27c68aa81fe3d5f219",
+   "frames": 500
+  },
+  {
+   "file": "run-125.xtc",
+   "member": "filtered/e3s13_e1s35p0f382/e3s13_e1s35p0f382-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND2611_9.filtered.xtc",
+   "sha256": "02d6f8a885d9cb722ab9eb010a09d2fafeba5922a66bda26972bec1f6319e34a",
+   "frames": 500
+  },
+  {
+   "file": "run-126.xtc",
+   "member": "filtered/e3s14_e1s35p0f382/e3s14_e1s35p0f382-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND4181_9.filtered.xtc",
+   "sha256": "18ae8ad91ea92be498bf541905a1406db8a29bc59531170fc363cf41a75f0eed",
+   "frames": 500
+  },
+  {
+   "file": "run-127.xtc",
+   "member": "filtered/e3s15_e1s35p0f380/e3s15_e1s35p0f380-ADRIA_CHIG_ADAPTIVE_crystal_ss_contacts_50_chignolin_0-0-1-RND7932_9.filtered.xtc",
+   "sha256": "db8343b1349eed7cc428945cdf7949a9b8322164388cd9b03d9ce1c67de69ff7",
+   "frames": 500
+  }
+ ],
+ "quick": false,
+ "frames": 63999,
+ "runs": 128,
+ "run_lengths": [
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  499,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500,
+  500
+ ],
+ "sites": 10,
+ "site_labels": [
+  "TYR1_CA",
+  "TYR2_CA",
+  "ASP3_CA",
+  "PRO4_CA",
+  "GLU5_CA",
+  "THR6_CA",
+  "GLY7_CA",
+  "THR8_CA",
+  "TRP9_CA",
+  "TYR10_CA"
+ ],
+ "pairs_used": 45,
+ "pair_subsampled": false,
+ "clock_ps_per_frame": null,
+ "chart": {
+  "kind": "PCA-2 of aligned site coordinates (nm)",
+  "periodic": false,
+  "explained_variance": [
+   0.5330316568022618,
+   0.09844013051733308
+  ],
+  "total_variance_nm2": 0.8773661082392108
+ },
+ "limits": [
+  [
+   -1.7141119729006298,
+   -0.9949985562113547
+  ],
+  [
+   1.0402291726600368,
+   0.8568004182513479
+  ]
+ ],
+ "bins": 30,
+ "field_bins": 20,
+ "lag_ladder_frames": [
+  1,
+  2,
+  4,
+  6,
+  9,
+  14,
+  21,
+  33,
+  52,
+  80,
+  124
+ ],
+ "field_lags_frames": [
+  1,
+  2,
+  4,
+  6,
+  9,
+  10
+ ],
+ "tau_ref_frames": 10,
+ "block_length_frames": 50,
+ "field": {
+  "summaries": [
+   {
+    "tau_frames": 1,
+    "supported_bins": 173,
+    "pairs": 62719,
+    "blocks": 1280,
+    "median_h": 0.1205837767048363,
+    "weighted_mean_h": 0.09806463565278041,
+    "median_interval_width": 0.013853378554932363,
+    "median_speed": 0.10790712191098374,
+    "median_spread": 0.3674050506089097,
+    "median_drift_ratio": 0.3427804977086092,
+    "median_site_displacement": null
+   },
+   {
+    "tau_frames": 2,
+    "supported_bins": 169,
+    "pairs": 61439,
+    "blocks": 1280,
+    "median_h": 0.1405692067787503,
+    "weighted_mean_h": 0.11258655603393238,
+    "median_interval_width": 0.0175099026173981,
+    "median_speed": 0.14900469669726027,
+    "median_spread": 0.4159229336247402,
+    "median_drift_ratio": 0.4037546431404841,
+    "median_site_displacement": null
+   },
+   {
+    "tau_frames": 4,
+    "supported_bins": 166,
+    "pairs": 58879,
+    "blocks": 1280,
+    "median_h": 0.1625676904279013,
+    "weighted_mean_h": 0.12939327463124312,
+    "median_interval_width": 0.021112576433284597,
+    "median_speed": 0.20178479018676904,
+    "median_spread": 0.45960965270949294,
+    "median_drift_ratio": 0.4680527506703529,
+    "median_site_displacement": null
+   },
+   {
+    "tau_frames": 6,
+    "supported_bins": 166,
+    "pairs": 56319,
+    "blocks": 1280,
+    "median_h": 0.1754949069265829,
+    "weighted_mean_h": 0.14037686079164058,
+    "median_interval_width": 0.02340605539419688,
+    "median_speed": 0.23657341489260425,
+    "median_spread": 0.49005984456005264,
+    "median_drift_ratio": 0.4988187665514528,
+    "median_site_displacement": null
+   },
+   {
+    "tau_frames": 9,
+    "supported_bins": 160,
+    "pairs": 52479,
+    "blocks": 1280,
+    "median_h": 0.19250830626988247,
+    "weighted_mean_h": 0.15197189072711842,
+    "median_interval_width": 0.02648737727724023,
+    "median_speed": 0.2857687766905727,
+    "median_spread": 0.5140134967371568,
+    "median_drift_ratio": 0.5711099948378673,
+    "median_site_displacement": null
+   },
+   {
+    "tau_frames": 10,
+    "supported_bins": 158,
+    "pairs": 51199,
+    "blocks": 1280,
+    "median_h": 0.19684377963593389,
+    "weighted_mean_h": 0.155109383134139,
+    "median_interval_width": 0.026896882917239365,
+    "median_speed": 0.29826385686491363,
+    "median_spread": 0.5217420466780407,
+    "median_drift_ratio": 0.5798389107423625,
+    "median_site_displacement": 0.06818065047264099
+   }
+  ],
+  "mobility_scaling": {
+   "slope": 0.2112541761928381,
+   "early_slope": 0.21550236815995993,
+   "late_slope": 0.22570252052129125,
+   "units": "frames",
+   "n": 6
+  },
+  "meaning": "h: RMS change of site pair distances over the lag (nm); v: mean chart displacement; cov: conditional covariance of chart displacement; u: mean rigid-aligned site displacement."
+ },
+ "nerve": {
+  "centers": [
+   [
+    0.9025121153820037,
+    0.08521751222522178
+   ],
+   [
+    -1.3927721725852187,
+    0.5173039395998523
+   ],
+   [
+    -0.7500925719543965,
+    -0.6555020775598592
+   ],
+   [
+    0.7188893723446257,
+    -0.5937754450777691
+   ],
+   [
+    -0.5664698289170185,
+    -0.038235752738958295
+   ],
+   [
+    -0.015601599804885069,
+    0.5790305720819425
+   ],
+   [
+    -1.4845835441039075,
+    0.08521751222522178
+   ],
+   [
+    0.2598325147511815,
+    -0.22341565018522858
+   ],
+   [
+    -1.2091494295478409,
+    -0.28514228266731867
+   ],
+   [
+    0.07620977171380372,
+    -0.8406819750061295
+   ],
+   [
+    0.07620977171380372,
+    0.20867077718940197
+   ],
+   [
+    -0.6582812004357075,
+    0.33212404215358216
+   ],
+   [
+    0.7188893723446257,
+    0.45557730711776234
+   ],
+   [
+    -0.7500925719543965,
+    0.7024838370461227
+   ],
+   [
+    -0.4746584573983297,
+    -0.3468689151494089
+   ],
+   [
+    0.9025121153820037,
+    -0.28514228266731867
+   ],
+   [
+    0.07620977171380372,
+    -0.532048812595679
+   ],
+   [
+    -1.2091494295478409,
+    0.2703974096714922
+   ]
+  ],
+  "metric_scale": [
+   0.683854226377321,
+   0.293882093168217
+  ],
+  "radius": 0.8,
+  "period": null,
+  "bins": 30,
+  "candidate_info": {
+   "min_count": 10,
+   "candidates": 543
+  },
+  "witness_stride": 1,
+  "maximal_simplices": [
+   [
+    3,
+    7,
+    15,
+    16
+   ],
+   [
+    4,
+    6,
+    8
+   ],
+   [
+    4,
+    10,
+    11
+   ],
+   [
+    5,
+    10,
+    11
+   ],
+   [
+    0,
+    10,
+    12
+   ],
+   [
+    5,
+    10,
+    12
+   ],
+   [
+    1,
+    11,
+    13
+   ],
+   [
+    5,
+    11,
+    13
+   ],
+   [
+    4,
+    7,
+    14
+   ],
+   [
+    2,
+    8,
+    14
+   ],
+   [
+    4,
+    8,
+    14
+   ],
+   [
+    0,
+    7,
+    15
+   ],
+   [
+    2,
+    9,
+    16
+   ],
+   [
+    3,
+    9,
+    16
+   ],
+   [
+    2,
+    14,
+    16
+   ],
+   [
+    7,
+    14,
+    16
+   ],
+   [
+    1,
+    6,
+    17
+   ],
+   [
+    4,
+    6,
+    17
+   ],
+   [
+    1,
+    11,
+    17
+   ],
+   [
+    4,
+    11,
+    17
+   ],
+   [
+    6,
+    11,
+    17
+   ],
+   [
+    7,
+    10
+   ]
+  ],
+  "max_dimension": 3,
+  "simplex_counts": {
+   "0": 18,
+   "1": 42,
+   "2": 24,
+   "3": 1
+  },
+  "betti_0_1_2": [
+   1,
+   2,
+   0
+  ],
+  "uncovered_frames": 4,
+  "witnessed_frames": 63999,
+  "chains3": 0,
+  "display": {
+   "objects": 84,
+   "inclusions": 228,
+   "triangles": 144
+  },
+  "scope": "Full-data witnessed complex in a projected 2D chart; maximal simplices preserved; the drawing is the nerve of the face poset of the 2-skeleton. No configuration-space homotopy claim."
+ },
+ "nerve_display_counts": {
+  "objects": 84,
+  "inclusions": 228,
+  "triangles": 144,
+  "length3_chains": 0,
+  "base_tetrahedra": 1
+ },
+ "radius_sensitivity": [
+  {
+   "radius": 0.6000000000000001,
+   "betti_0_1_2": [
+    3,
+    2,
+    0
+   ],
+   "simplices": {
+    "0": 18,
+    "1": 17
+   },
+   "max_dimension": 1
+  },
+  {
+   "radius": 0.8,
+   "betti_0_1_2": [
+    1,
+    2,
+    0
+   ],
+   "simplices": {
+    "0": 18,
+    "1": 42,
+    "2": 24,
+    "3": 1
+   },
+   "max_dimension": 3
+  },
+  {
+   "radius": 1.0,
+   "betti_0_1_2": [
+    1,
+    0,
+    0
+   ],
+   "simplices": {
+    "0": 18,
+    "1": 48,
+    "2": 40,
+    "3": 9
+   },
+   "max_dimension": 3
+  },
+  {
+   "radius": 1.2000000000000002,
+   "betti_0_1_2": [
+    1,
+    0,
+    0
+   ],
+   "simplices": {
+    "0": 18,
+    "1": 77,
+    "2": 130,
+    "3": 102
+   },
+   "max_dimension": 5
+  }
+ ],
+ "fluid_filtration": {
+  "ladder_frames": [
+   0,
+   1,
+   2,
+   4,
+   6,
+   9,
+   14,
+   21,
+   33,
+   52,
+   80,
+   124
+  ],
+  "rows": [
+   {
+    "index": 0,
+    "tau_frames": 0,
+    "betti": [
+     1,
+     2,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 42,
+     "2": 24,
+     "3": 1
+    },
+    "max_dimension": 3,
+    "maximal": 22,
+    "uncovered": 4
+   },
+   {
+    "index": 1,
+    "tau_frames": 1,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 150,
+     "2": 602,
+     "3": 1166
+    },
+    "max_dimension": 7,
+    "maximal": 219,
+    "uncovered": 0
+   },
+   {
+    "index": 2,
+    "tau_frames": 2,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 750,
+     "3": 2090
+    },
+    "max_dimension": 9,
+    "maximal": 241,
+    "uncovered": 0
+   },
+   {
+    "index": 3,
+    "tau_frames": 4,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 805,
+     "3": 2825
+    },
+    "max_dimension": 11,
+    "maximal": 178,
+    "uncovered": 0
+   },
+   {
+    "index": 4,
+    "tau_frames": 6,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 814,
+     "3": 3000
+    },
+    "max_dimension": 13,
+    "maximal": 132,
+    "uncovered": 0
+   },
+   {
+    "index": 5,
+    "tau_frames": 9,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3059
+    },
+    "max_dimension": 15,
+    "maximal": 65,
+    "uncovered": 0
+   },
+   {
+    "index": 6,
+    "tau_frames": 14,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3060
+    },
+    "max_dimension": 16,
+    "maximal": 19,
+    "uncovered": 0
+   },
+   {
+    "index": 7,
+    "tau_frames": 21,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3060
+    },
+    "max_dimension": 17,
+    "maximal": 1,
+    "uncovered": 0
+   },
+   {
+    "index": 8,
+    "tau_frames": 33,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3060
+    },
+    "max_dimension": 17,
+    "maximal": 1,
+    "uncovered": 0
+   },
+   {
+    "index": 9,
+    "tau_frames": 52,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3060
+    },
+    "max_dimension": 17,
+    "maximal": 1,
+    "uncovered": 0
+   },
+   {
+    "index": 10,
+    "tau_frames": 80,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3060
+    },
+    "max_dimension": 17,
+    "maximal": 1,
+    "uncovered": 0
+   },
+   {
+    "index": 11,
+    "tau_frames": 124,
+    "betti": [
+     1,
+     0,
+     0
+    ],
+    "simplices": {
+     "0": 18,
+     "1": 153,
+     "2": 816,
+     "3": 3060
+    },
+    "max_dimension": 17,
+    "maximal": 1,
+    "uncovered": 0
+   }
+  ],
+  "pairs": {
+   "0": [
+    [
+     0,
+     null
+    ]
+   ],
+   "1": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "2": []
+  },
+  "first_connected_tau": 0,
+  "persistence_summary": {
+   "0": {
+    "finite_classes": 0,
+    "essential": 1,
+    "total_lifetime_frames": 0
+   },
+   "1": {
+    "finite_classes": 2,
+    "essential": 0,
+    "total_lifetime_frames": 2
+   },
+   "2": {
+    "finite_classes": 0,
+    "essential": 0,
+    "total_lifetime_frames": 0
+   }
+  },
+  "meaning": "Nerve of the cover thickened by +-tau frames along each run. Monotone in tau. GF(2)."
+ },
+ "flooding": {
+  "levels": [
+   0.0,
+   0.20273232349475478,
+   0.40546464698950957,
+   0.6081969704842644,
+   0.8109292939790191,
+   1.0136616174737738,
+   1.2163939409685287,
+   1.4191262644632836,
+   1.6218585879580383,
+   1.824590911452793,
+   2.0273232349475476,
+   2.2300555584423027,
+   2.4327878819370574,
+   2.635520205431812,
+   2.838252528926567,
+   3.040984852421322,
+   3.2437171759160766,
+   3.4464494994108312,
+   3.649181822905586,
+   3.851914146400341,
+   4.054646469895095,
+   4.257378793389851,
+   4.4601111168846055,
+   4.66284344037936,
+   4.865575763874115,
+   5.0683080873688695,
+   5.271040410863624,
+   5.473772734358379,
+   5.676505057853134,
+   5.879237381347889,
+   6.081969704842644,
+   6.284702028337398,
+   6.487434351832153,
+   6.690166675326908,
+   6.8928989988216625,
+   7.095631322316417,
+   7.298363645811172,
+   7.501095969305927,
+   7.703828292800682,
+   7.906560616295437
+  ],
+  "rows": [
+   {
+    "level": 0.0,
+    "filled_fraction": 0.0011111111111111111,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 0.20273232349475478,
+    "filled_fraction": 0.0044444444444444444,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 0.40546464698950957,
+    "filled_fraction": 0.0077777777777777776,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 0.6081969704842644,
+    "filled_fraction": 0.008888888888888889,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 0.8109292939790191,
+    "filled_fraction": 0.011111111111111112,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 1.0136616174737738,
+    "filled_fraction": 0.013333333333333334,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 1.2163939409685287,
+    "filled_fraction": 0.015555555555555555,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 1.4191262644632836,
+    "filled_fraction": 0.017777777777777778,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 1.6218585879580383,
+    "filled_fraction": 0.01888888888888889,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 1.824590911452793,
+    "filled_fraction": 0.023333333333333334,
+    "betti": [
+     2,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 2.0273232349475476,
+    "filled_fraction": 0.08666666666666667,
+    "betti": [
+     2,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 2.2300555584423027,
+    "filled_fraction": 0.14444444444444443,
+    "betti": [
+     3,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 2.4327878819370574,
+    "filled_fraction": 0.23222222222222222,
+    "betti": [
+     3,
+     1,
+     0
+    ]
+   },
+   {
+    "level": 2.635520205431812,
+    "filled_fraction": 0.2866666666666667,
+    "betti": [
+     2,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 2.838252528926567,
+    "filled_fraction": 0.33666666666666667,
+    "betti": [
+     2,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 3.040984852421322,
+    "filled_fraction": 0.37777777777777777,
+    "betti": [
+     2,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 3.2437171759160766,
+    "filled_fraction": 0.4166666666666667,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 3.4464494994108312,
+    "filled_fraction": 0.45222222222222225,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 3.649181822905586,
+    "filled_fraction": 0.48444444444444446,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 3.851914146400341,
+    "filled_fraction": 0.5066666666666667,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 4.054646469895095,
+    "filled_fraction": 0.5322222222222223,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 4.257378793389851,
+    "filled_fraction": 0.5622222222222222,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 4.4601111168846055,
+    "filled_fraction": 0.5833333333333334,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 4.66284344037936,
+    "filled_fraction": 0.5933333333333334,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 4.865575763874115,
+    "filled_fraction": 0.6166666666666667,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 5.0683080873688695,
+    "filled_fraction": 0.6366666666666667,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 5.271040410863624,
+    "filled_fraction": 0.6511111111111111,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 5.473772734358379,
+    "filled_fraction": 0.6644444444444444,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 5.676505057853134,
+    "filled_fraction": 0.6822222222222222,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 5.879237381347889,
+    "filled_fraction": 0.6866666666666666,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 6.081969704842644,
+    "filled_fraction": 0.6988888888888889,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 6.284702028337398,
+    "filled_fraction": 0.7111111111111111,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 6.487434351832153,
+    "filled_fraction": 0.7144444444444444,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 6.690166675326908,
+    "filled_fraction": 0.7177777777777777,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 6.8928989988216625,
+    "filled_fraction": 0.7211111111111111,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 7.095631322316417,
+    "filled_fraction": 0.7255555555555555,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 7.298363645811172,
+    "filled_fraction": 0.7277777777777777,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 7.501095969305927,
+    "filled_fraction": 0.7288888888888889,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 7.703828292800682,
+    "filled_fraction": 0.7288888888888889,
+    "betti": [
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "level": 7.906560616295437,
+    "filled_fraction": 0.73,
+    "betti": [
+     2,
+     1,
+     0
+    ]
+   }
+  ],
+  "basin_pairs": [
+   [
+    -0.0,
+    null
+   ],
+   [
+    7.906560616295437,
+    null
+   ],
+   [
+    1.7239576937381453,
+    3.1360243911956722
+   ],
+   [
+    2.2174897711960857,
+    2.436676759187137
+   ],
+   [
+    1.905515861995069,
+    1.9260913268816025
+   ],
+   [
+    2.3479814614850207,
+    2.366534455175702
+   ],
+   [
+    1.8737732645898186,
+    1.8823454638381336
+   ],
+   [
+    2.357872519162991,
+    2.3646896111026443
+   ],
+   [
+    1.8984010058034357,
+    1.9022310126951587
+   ],
+   [
+    0.019915995836494383,
+    0.019915995836494383
+   ],
+   [
+    0.033777381992528006,
+    0.033777381992528006
+   ],
+   [
+    0.03485581347178914,
+    0.03485581347178914
+   ],
+   [
+    0.3184199624892894,
+    0.3184199624892894
+   ],
+   [
+    0.339676911657629,
+    0.339676911657629
+   ],
+   [
+    0.3819556294581968,
+    0.3819556294581968
+   ],
+   [
+    0.44721121545886233,
+    0.44721121545886233
+   ],
+   [
+    0.7517377747960803,
+    0.7517377747960803
+   ],
+   [
+    0.784133940085032,
+    0.784133940085032
+   ],
+   [
+    0.8698471778278384,
+    0.8698471778278384
+   ],
+   [
+    0.9122252919813407,
+    0.9122252919813407
+   ],
+   [
+    1.0694222357261178,
+    1.0694222357261178
+   ],
+   [
+    1.0990900859485937,
+    1.0990900859485937
+   ],
+   [
+    1.2384410212607888,
+    1.2384410212607888
+   ],
+   [
+    1.4051037879628674,
+    1.4051037879628674
+   ],
+   [
+    1.5934404954080537,
+    1.5934404954080537
+   ],
+   [
+    1.7341442754400251,
+    1.7341442754400251
+   ],
+   [
+    1.7750290788949215,
+    1.7750290788949215
+   ],
+   [
+    1.7915790827600253,
+    1.7915790827600253
+   ],
+   [
+    1.831707280807504,
+    1.831707280807504
+   ],
+   [
+    1.8351477603611996,
+    1.8351477603611996
+   ],
+   [
+    1.8542292964808762,
+    1.8542292964808762
+   ],
+   [
+    1.8711716242283343,
+    1.8711716242283343
+   ],
+   [
+    1.8766665695266427,
+    1.8766665695266427
+   ],
+   [
+    1.8783280233432407,
+    1.8783280233432407
+   ],
+   [
+    1.8823454638381336,
+    1.8823454638381336
+   ],
+   [
+    1.882601266750558,
+    1.882601266750558
+   ],
+   [
+    1.8854653217976463,
+    1.8854653217976463
+   ],
+   [
+    1.891900828220714,
+    1.891900828220714
+   ],
+   [
+    1.8965956049679917,
+    1.8965956049679917
+   ],
+   [
+    1.8999712031039047,
+    1.8999712031039047
+   ],
+   [
+    1.9002467548898874,
+    1.9002467548898874
+   ],
+   [
+    1.9022310126951587,
+    1.9022310126951587
+   ],
+   [
+    1.9091912743141566,
+    1.9091912743141566
+   ],
+   [
+    1.9093922208643217,
+    1.9093922208643217
+   ],
+   [
+    1.9143281009572324,
+    1.9143281009572324
+   ],
+   [
+    1.915948261647963,
+    1.915948261647963
+   ],
+   [
+    1.9174858696255368,
+    1.9174858696255368
+   ],
+   [
+    1.9180320062657374,
+    1.9180320062657374
+   ],
+   [
+    1.9204851969007128,
+    1.9204851969007128
+   ],
+   [
+    1.924035093262273,
+    1.924035093262273
+   ],
+   [
+    1.924648033818651,
+    1.924648033818651
+   ],
+   [
+    1.9253247811655314,
+    1.9253247811655314
+   ],
+   [
+    1.9260913268816025,
+    1.9260913268816025
+   ],
+   [
+    1.9292813924619883,
+    1.9292813924619883
+   ],
+   [
+    1.9302321804056615,
+    1.9302321804056615
+   ],
+   [
+    1.9314016191115206,
+    1.9314016191115206
+   ],
+   [
+    1.9416195246062793,
+    1.9416195246062793
+   ],
+   [
+    1.941646928283362,
+    1.941646928283362
+   ],
+   [
+    1.9432044325944535,
+    1.9432044325944535
+   ],
+   [
+    1.9481420655899384,
+    1.9481420655899384
+   ],
+   [
+    1.949632273654337,
+    1.949632273654337
+   ],
+   [
+    1.9508116000832056,
+    1.9508116000832056
+   ],
+   [
+    1.9567403926350995,
+    1.9567403926350995
+   ],
+   [
+    1.9582059985796563,
+    1.9582059985796563
+   ],
+   [
+    1.9592527989638935,
+    1.9592527989638935
+   ],
+   [
+    1.9636174146402792,
+    1.9636174146402792
+   ],
+   [
+    1.9664252961419073,
+    1.9664252961419073
+   ],
+   [
+    1.9668850187026454,
+    1.9668850187026454
+   ],
+   [
+    1.9679672083315858,
+    1.9679672083315858
+   ],
+   [
+    1.9701805020228176,
+    1.9701805020228176
+   ],
+   [
+    1.9702821074478118,
+    1.9702821074478118
+   ],
+   [
+    1.974757616198775,
+    1.974757616198775
+   ],
+   [
+    1.9753721746973165,
+    1.9753721746973165
+   ],
+   [
+    1.9807258860767571,
+    1.9807258860767571
+   ],
+   [
+    1.9849923757554886,
+    1.9849923757554886
+   ],
+   [
+    1.995766718973859,
+    1.995766718973859
+   ],
+   [
+    1.9966112011177954,
+    1.9966112011177954
+   ],
+   [
+    2.001782746324854,
+    2.001782746324854
+   ],
+   [
+    2.004006280807564,
+    2.004006280807564
+   ],
+   [
+    2.019091569705515,
+    2.019091569705515
+   ],
+   [
+    2.019394191042015,
+    2.019394191042015
+   ],
+   [
+    2.024546363922746,
+    2.024546363922746
+   ],
+   [
+    2.0285307616256567,
+    2.0285307616256567
+   ],
+   [
+    2.0333765908109123,
+    2.0333765908109123
+   ],
+   [
+    2.0375543991509053,
+    2.0375543991509053
+   ],
+   [
+    2.038002323178169,
+    2.038002323178169
+   ],
+   [
+    2.0417528281486663,
+    2.0417528281486663
+   ],
+   [
+    2.0451764944345783,
+    2.0451764944345783
+   ],
+   [
+    2.0482362112264068,
+    2.0482362112264068
+   ],
+   [
+    2.049020011414897,
+    2.049020011414897
+   ],
+   [
+    2.0578229920710718,
+    2.0578229920710718
+   ],
+   [
+    2.060057755221972,
+    2.060057755221972
+   ],
+   [
+    2.0652042232013397,
+    2.0652042232013397
+   ],
+   [
+    2.0682216914816407,
+    2.0682216914816407
+   ],
+   [
+    2.070945747375368,
+    2.070945747375368
+   ],
+   [
+    2.0771914782056147,
+    2.0771914782056147
+   ],
+   [
+    2.0820926767370826,
+    2.0820926767370826
+   ],
+   [
+    2.0836740342591744,
+    2.0836740342591744
+   ],
+   [
+    2.083800686474219,
+    2.083800686474219
+   ],
+   [
+    2.0856111868578555,
+    2.0856111868578555
+   ],
+   [
+    2.0981443025836573,
+    2.0981443025836573
+   ],
+   [
+    2.102521237177641,
+    2.102521237177641
+   ],
+   [
+    2.1069712739178565,
+    2.1069712739178565
+   ],
+   [
+    2.107648977415324,
+    2.107648977415324
+   ],
+   [
+    2.108426055260394,
+    2.108426055260394
+   ],
+   [
+    2.1141573284047954,
+    2.1141573284047954
+   ],
+   [
+    2.1252752485461226,
+    2.1252752485461226
+   ],
+   [
+    2.1263335545225686,
+    2.1263335545225686
+   ],
+   [
+    2.127846111919665,
+    2.127846111919665
+   ],
+   [
+    2.1313467451649744,
+    2.1313467451649744
+   ],
+   [
+    2.135465055992502,
+    2.135465055992502
+   ],
+   [
+    2.13658646997959,
+    2.13658646997959
+   ],
+   [
+    2.141473962056251,
+    2.141473962056251
+   ],
+   [
+    2.144910004130137,
+    2.144910004130137
+   ],
+   [
+    2.1544519626810366,
+    2.1544519626810366
+   ],
+   [
+    2.157971173045335,
+    2.157971173045335
+   ],
+   [
+    2.160650743341255,
+    2.160650743341255
+   ],
+   [
+    2.161887163609956,
+    2.161887163609956
+   ],
+   [
+    2.16323242868514,
+    2.16323242868514
+   ],
+   [
+    2.1636758618768273,
+    2.1636758618768273
+   ],
+   [
+    2.1652805816282465,
+    2.1652805816282465
+   ],
+   [
+    2.165340383155409,
+    2.165340383155409
+   ],
+   [
+    2.168706203113088,
+    2.168706203113088
+   ],
+   [
+    2.179439465928962,
+    2.179439465928962
+   ],
+   [
+    2.181196586810954,
+    2.181196586810954
+   ],
+   [
+    2.1824561624588856,
+    2.1824561624588856
+   ],
+   [
+    2.1987530907581947,
+    2.1987530907581947
+   ],
+   [
+    2.2031093903580174,
+    2.2031093903580174
+   ],
+   [
+    2.214130296676182,
+    2.214130296676182
+   ],
+   [
+    2.2197592226987752,
+    2.2197592226987752
+   ],
+   [
+    2.221839082356151,
+    2.221839082356151
+   ],
+   [
+    2.2277443422770493,
+    2.2277443422770493
+   ],
+   [
+    2.2280649314969128,
+    2.2280649314969128
+   ],
+   [
+    2.234431806644564,
+    2.234431806644564
+   ],
+   [
+    2.235122374362894,
+    2.235122374362894
+   ],
+   [
+    2.2445673750172173,
+    2.2445673750172173
+   ],
+   [
+    2.2464967540166416,
+    2.2464967540166416
+   ],
+   [
+    2.2496123123137965,
+    2.2496123123137965
+   ],
+   [
+    2.25375795187385,
+    2.25375795187385
+   ],
+   [
+    2.2549068633221503,
+    2.2549068633221503
+   ],
+   [
+    2.258720757372126,
+    2.258720757372126
+   ],
+   [
+    2.2600914066626356,
+    2.2600914066626356
+   ],
+   [
+    2.263206695286497,
+    2.263206695286497
+   ],
+   [
+    2.264486163454079,
+    2.264486163454079
+   ],
+   [
+    2.26668680662651,
+    2.26668680662651
+   ],
+   [
+    2.267499299516272,
+    2.267499299516272
+   ],
+   [
+    2.267539187462151,
+    2.267539187462151
+   ],
+   [
+    2.2683345468923664,
+    2.2683345468923664
+   ],
+   [
+    2.269373927134514,
+    2.269373927134514
+   ],
+   [
+    2.2736102689255318,
+    2.2736102689255318
+   ],
+   [
+    2.277155759381387,
+    2.277155759381387
+   ],
+   [
+    2.2778737974451686,
+    2.2778737974451686
+   ],
+   [
+    2.2783077831430214,
+    2.2783077831430214
+   ],
+   [
+    2.279569675543373,
+    2.279569675543373
+   ],
+   [
+    2.2845411617180127,
+    2.2845411617180127
+   ],
+   [
+    2.2853457629596483,
+    2.2853457629596483
+   ],
+   [
+    2.285521222658531,
+    2.285521222658531
+   ],
+   [
+    2.2963086832401767,
+    2.2963086832401767
+   ],
+   [
+    2.297150763873125,
+    2.297150763873125
+   ],
+   [
+    2.3000427743838485,
+    2.3000427743838485
+   ],
+   [
+    2.3007671612680727,
+    2.3007671612680727
+   ],
+   [
+    2.3083427615485985,
+    2.3083427615485985
+   ],
+   [
+    2.312323743027801,
+    2.312323743027801
+   ],
+   [
+    2.3146530998344144,
+    2.3146530998344144
+   ],
+   [
+    2.3175218357136957,
+    2.3175218357136957
+   ],
+   [
+    2.318343347599968,
+    2.318343347599968
+   ],
+   [
+    2.327974688233273,
+    2.327974688233273
+   ],
+   [
+    2.3529595315421914,
+    2.3529595315421914
+   ],
+   [
+    2.3543854348296187,
+    2.3543854348296187
+   ],
+   [
+    2.3553882172400726,
+    2.3553882172400726
+   ],
+   [
+    2.3557253422338698,
+    2.3557253422338698
+   ],
+   [
+    2.3567216708166767,
+    2.3567216708166767
+   ],
+   [
+    2.3570165033196173,
+    2.3570165033196173
+   ],
+   [
+    2.3646896111026443,
+    2.3646896111026443
+   ],
+   [
+    2.3656030526446514,
+    2.3656030526446514
+   ],
+   [
+    2.366534455175702,
+    2.366534455175702
+   ],
+   [
+    2.3669180080781724,
+    2.3669180080781724
+   ],
+   [
+    2.367697850622929,
+    2.367697850622929
+   ],
+   [
+    2.3683691377626435,
+    2.3683691377626435
+   ],
+   [
+    2.370597877642598,
+    2.370597877642598
+   ],
+   [
+    2.372781142039642,
+    2.372781142039642
+   ],
+   [
+    2.3739710767743025,
+    2.3739710767743025
+   ],
+   [
+    2.3746107453463363,
+    2.3746107453463363
+   ],
+   [
+    2.3756273817930498,
+    2.3756273817930498
+   ],
+   [
+    2.3786858782087448,
+    2.3786858782087448
+   ],
+   [
+    2.3798889801829457,
+    2.3798889801829457
+   ],
+   [
+    2.3851369020804243,
+    2.3851369020804243
+   ],
+   [
+    2.3895049075112684,
+    2.3895049075112684
+   ],
+   [
+    2.3910732662072265,
+    2.3910732662072265
+   ],
+   [
+    2.3932913847680877,
+    2.3932913847680877
+   ],
+   [
+    2.3941141098092977,
+    2.3941141098092977
+   ],
+   [
+    2.39862809494319,
+    2.39862809494319
+   ],
+   [
+    2.3995146255151663,
+    2.3995146255151663
+   ],
+   [
+    2.4013453144953028,
+    2.4013453144953028
+   ],
+   [
+    2.402193215467553,
+    2.402193215467553
+   ],
+   [
+    2.4098453935574926,
+    2.4098453935574926
+   ],
+   [
+    2.4136090984090868,
+    2.4136090984090868
+   ],
+   [
+    2.4152614298728032,
+    2.4152614298728032
+   ],
+   [
+    2.4163209784704924,
+    2.4163209784704924
+   ],
+   [
+    2.417400986192191,
+    2.417400986192191
+   ],
+   [
+    2.418395045259751,
+    2.418395045259751
+   ],
+   [
+    2.4196408636073783,
+    2.4196408636073783
+   ],
+   [
+    2.42241187262581,
+    2.42241187262581
+   ],
+   [
+    2.4234993791794253,
+    2.4234993791794253
+   ],
+   [
+    2.423669459867285,
+    2.423669459867285
+   ],
+   [
+    2.4259524898064098,
+    2.4259524898064098
+   ],
+   [
+    2.427718842349838,
+    2.427718842349838
+   ],
+   [
+    2.4292493869818643,
+    2.4292493869818643
+   ],
+   [
+    2.4296208699014725,
+    2.4296208699014725
+   ],
+   [
+    2.430761089979646,
+    2.430761089979646
+   ],
+   [
+    2.4327977660001205,
+    2.4327977660001205
+   ],
+   [
+    2.4365990218413267,
+    2.4365990218413267
+   ],
+   [
+    2.436676759187137,
+    2.436676759187137
+   ],
+   [
+    2.440824527916024,
+    2.440824527916024
+   ],
+   [
+    2.443672912256541,
+    2.443672912256541
+   ],
+   [
+    2.4446501049458225,
+    2.4446501049458225
+   ],
+   [
+    2.447510285967799,
+    2.447510285967799
+   ],
+   [
+    2.4486553412271195,
+    2.4486553412271195
+   ],
+   [
+    2.449359356346732,
+    2.449359356346732
+   ],
+   [
+    2.4652082375477433,
+    2.4652082375477433
+   ],
+   [
+    2.4662007008004982,
+    2.4662007008004982
+   ],
+   [
+    2.466256877127584,
+    2.466256877127584
+   ],
+   [
+    2.4671511099963497,
+    2.4671511099963497
+   ],
+   [
+    2.4685528121472804,
+    2.4685528121472804
+   ],
+   [
+    2.477006151221887,
+    2.477006151221887
+   ],
+   [
+    2.4775927705389176,
+    2.4775927705389176
+   ],
+   [
+    2.4851504364997687,
+    2.4851504364997687
+   ],
+   [
+    2.48768885408506,
+    2.48768885408506
+   ],
+   [
+    2.488241875464927,
+    2.488241875464927
+   ],
+   [
+    2.5023121732806506,
+    2.5023121732806506
+   ],
+   [
+    2.502457415554572,
+    2.502457415554572
+   ],
+   [
+    2.5054732237758848,
+    2.5054732237758848
+   ],
+   [
+    2.5129982653205873,
+    2.5129982653205873
+   ],
+   [
+    2.52051435065292,
+    2.52051435065292
+   ],
+   [
+    2.5258597694178753,
+    2.5258597694178753
+   ],
+   [
+    2.5269912561190275,
+    2.5269912561190275
+   ],
+   [
+    2.5287311822882943,
+    2.5287311822882943
+   ],
+   [
+    2.5306658278601133,
+    2.5306658278601133
+   ],
+   [
+    2.5343905482181412,
+    2.5343905482181412
+   ],
+   [
+    2.535651093128214,
+    2.535651093128214
+   ],
+   [
+    2.5398401035147686,
+    2.5398401035147686
+   ],
+   [
+    2.5418900770284245,
+    2.5418900770284245
+   ],
+   [
+    2.5450834104071616,
+    2.5450834104071616
+   ],
+   [
+    2.5573598243326154,
+    2.5573598243326154
+   ],
+   [
+    2.56194205717269,
+    2.56194205717269
+   ],
+   [
+    2.5678464663217704,
+    2.5678464663217704
+   ],
+   [
+    2.5801417479991993,
+    2.5801417479991993
+   ],
+   [
+    2.5940690446245367,
+    2.5940690446245367
+   ],
+   [
+    2.5971275871853945,
+    2.5971275871853945
+   ],
+   [
+    2.5987578954260626,
+    2.5987578954260626
+   ],
+   [
+    2.6090199833059042,
+    2.6090199833059042
+   ],
+   [
+    2.611490148130739,
+    2.611490148130739
+   ],
+   [
+    2.618381953135926,
+    2.618381953135926
+   ],
+   [
+    2.620474926883523,
+    2.620474926883523
+   ],
+   [
+    2.6257283096497908,
+    2.6257283096497908
+   ],
+   [
+    2.6290769651346877,
+    2.6290769651346877
+   ],
+   [
+    2.630208308919311,
+    2.630208308919311
+   ],
+   [
+    2.6339469884774833,
+    2.6339469884774833
+   ],
+   [
+    2.6354387855136525,
+    2.6354387855136525
+   ],
+   [
+    2.6369959111103265,
+    2.6369959111103265
+   ],
+   [
+    2.639299368529945,
+    2.639299368529945
+   ],
+   [
+    2.641807296972061,
+    2.641807296972061
+   ],
+   [
+    2.6428663001455917,
+    2.6428663001455917
+   ],
+   [
+    2.6468482253740238,
+    2.6468482253740238
+   ],
+   [
+    2.649349553836086,
+    2.649349553836086
+   ],
+   [
+    2.6498467135450077,
+    2.6498467135450077
+   ],
+   [
+    2.6555106246455344,
+    2.6555106246455344
+   ],
+   [
+    2.65718447658877,
+    2.65718447658877
+   ],
+   [
+    2.6613291587231833,
+    2.6613291587231833
+   ],
+   [
+    2.664448487964259,
+    2.664448487964259
+   ],
+   [
+    2.6661061140188087,
+    2.6661061140188087
+   ],
+   [
+    2.6697202113763923,
+    2.6697202113763923
+   ],
+   [
+    2.678225791147912,
+    2.678225791147912
+   ],
+   [
+    2.690992643304905,
+    2.690992643304905
+   ],
+   [
+    2.6975490856897055,
+    2.6975490856897055
+   ],
+   [
+    2.7009739729151425,
+    2.7009739729151425
+   ],
+   [
+    2.7012290332739277,
+    2.7012290332739277
+   ],
+   [
+    2.7059232041732106,
+    2.7059232041732106
+   ],
+   [
+    2.7091480598364157,
+    2.7091480598364157
+   ],
+   [
+    2.7236145176843944,
+    2.7236145176843944
+   ],
+   [
+    2.7244471642354964,
+    2.7244471642354964
+   ],
+   [
+    2.7245307402072054,
+    2.7245307402072054
+   ],
+   [
+    2.725548518078478,
+    2.725548518078478
+   ],
+   [
+    2.73776833520705,
+    2.73776833520705
+   ],
+   [
+    2.7452255615723655,
+    2.7452255615723655
+   ],
+   [
+    2.746711269556217,
+    2.746711269556217
+   ],
+   [
+    2.7504902441095664,
+    2.7504902441095664
+   ],
+   [
+    2.750613060644689,
+    2.750613060644689
+   ],
+   [
+    2.7657969765421466,
+    2.7657969765421466
+   ],
+   [
+    2.769373130943202,
+    2.769373130943202
+   ],
+   [
+    2.783648798514329,
+    2.783648798514329
+   ],
+   [
+    2.786658912610704,
+    2.786658912610704
+   ],
+   [
+    2.7908559623241107,
+    2.7908559623241107
+   ],
+   [
+    2.7959863660043296,
+    2.7959863660043296
+   ],
+   [
+    2.79644169831452,
+    2.79644169831452
+   ],
+   [
+    2.80190743421816,
+    2.80190743421816
+   ],
+   [
+    2.809369579366689,
+    2.809369579366689
+   ],
+   [
+    2.818709691841435,
+    2.818709691841435
+   ],
+   [
+    2.821004360872071,
+    2.821004360872071
+   ],
+   [
+    2.823880119667642,
+    2.823880119667642
+   ],
+   [
+    2.830088690205376,
+    2.830088690205376
+   ],
+   [
+    2.8316420051413997,
+    2.8316420051413997
+   ],
+   [
+    2.8320798588022953,
+    2.8320798588022953
+   ],
+   [
+    2.8381633309616845,
+    2.8381633309616845
+   ],
+   [
+    2.838309881259773,
+    2.838309881259773
+   ],
+   [
+    2.8554584234219744,
+    2.8554584234219744
+   ],
+   [
+    2.8578489551813964,
+    2.8578489551813964
+   ],
+   [
+    2.8587368624546823,
+    2.8587368624546823
+   ],
+   [
+    2.8715959397979973,
+    2.8715959397979973
+   ],
+   [
+    2.872165853271072,
+    2.872165853271072
+   ],
+   [
+    2.8756190122770007,
+    2.8756190122770007
+   ],
+   [
+    2.8785132807464278,
+    2.8785132807464278
+   ],
+   [
+    2.883704194183921,
+    2.883704194183921
+   ],
+   [
+    2.8904620978914717,
+    2.8904620978914717
+   ],
+   [
+    2.892913502671245,
+    2.892913502671245
+   ],
+   [
+    2.8983930542328795,
+    2.8983930542328795
+   ],
+   [
+    2.9003874637421325,
+    2.9003874637421325
+   ],
+   [
+    2.9065987967526854,
+    2.9065987967526854
+   ],
+   [
+    2.9075391010725173,
+    2.9075391010725173
+   ],
+   [
+    2.912230432540824,
+    2.912230432540824
+   ],
+   [
+    2.92395922299956,
+    2.92395922299956
+   ],
+   [
+    2.927022433826046,
+    2.927022433826046
+   ],
+   [
+    2.931482110716505,
+    2.931482110716505
+   ],
+   [
+    2.9429336872624527,
+    2.9429336872624527
+   ],
+   [
+    2.943367911649896,
+    2.943367911649896
+   ],
+   [
+    2.954423767367329,
+    2.954423767367329
+   ],
+   [
+    2.9626513203497065,
+    2.9626513203497065
+   ],
+   [
+    2.9638633876076605,
+    2.9638633876076605
+   ],
+   [
+    2.9655588589271766,
+    2.9655588589271766
+   ],
+   [
+    2.967903301264405,
+    2.967903301264405
+   ],
+   [
+    2.973871381745163,
+    2.973871381745163
+   ],
+   [
+    2.9893203181627044,
+    2.9893203181627044
+   ],
+   [
+    3.003769332771786,
+    3.003769332771786
+   ],
+   [
+    3.004416377987808,
+    3.004416377987808
+   ],
+   [
+    3.0049808914704603,
+    3.0049808914704603
+   ],
+   [
+    3.005165417839809,
+    3.005165417839809
+   ],
+   [
+    3.0064642739800247,
+    3.0064642739800247
+   ],
+   [
+    3.007135632450984,
+    3.007135632450984
+   ],
+   [
+    3.013987320430895,
+    3.013987320430895
+   ],
+   [
+    3.0162681538168337,
+    3.0162681538168337
+   ],
+   [
+    3.037556760141182,
+    3.037556760141182
+   ],
+   [
+    3.0492446752469005,
+    3.0492446752469005
+   ],
+   [
+    3.051375491005999,
+    3.051375491005999
+   ],
+   [
+    3.053338327812916,
+    3.053338327812916
+   ],
+   [
+    3.0533476049721116,
+    3.0533476049721116
+   ],
+   [
+    3.065016263824803,
+    3.065016263824803
+   ],
+   [
+    3.0748569911517194,
+    3.0748569911517194
+   ],
+   [
+    3.0862212981855905,
+    3.0862212981855905
+   ],
+   [
+    3.086362424988583,
+    3.086362424988583
+   ],
+   [
+    3.089767452128339,
+    3.089767452128339
+   ],
+   [
+    3.0984784483450345,
+    3.0984784483450345
+   ],
+   [
+    3.105867436806224,
+    3.105867436806224
+   ],
+   [
+    3.1150614819359768,
+    3.1150614819359768
+   ],
+   [
+    3.1194488143947,
+    3.1194488143947
+   ],
+   [
+    3.1254001578091803,
+    3.1254001578091803
+   ],
+   [
+    3.129634356931584,
+    3.129634356931584
+   ],
+   [
+    3.1360243911956722,
+    3.1360243911956722
+   ],
+   [
+    3.1427925641191363,
+    3.1427925641191363
+   ],
+   [
+    3.1430785628436237,
+    3.1430785628436237
+   ],
+   [
+    3.1444331184228806,
+    3.1444331184228806
+   ],
+   [
+    3.1468370423822383,
+    3.1468370423822383
+   ],
+   [
+    3.1498040531499316,
+    3.1498040531499316
+   ],
+   [
+    3.1547320251786384,
+    3.1547320251786384
+   ],
+   [
+    3.160786795167149,
+    3.160786795167149
+   ],
+   [
+    3.1632596589156634,
+    3.1632596589156634
+   ],
+   [
+    3.169233241682752,
+    3.169233241682752
+   ],
+   [
+    3.17099844993139,
+    3.17099844993139
+   ],
+   [
+    3.1787531573860535,
+    3.1787531573860535
+   ],
+   [
+    3.1793642217644598,
+    3.1793642217644598
+   ],
+   [
+    3.1869329464006753,
+    3.1869329464006753
+   ],
+   [
+    3.2022377201371275,
+    3.2022377201371275
+   ],
+   [
+    3.2113130107979524,
+    3.2113130107979524
+   ],
+   [
+    3.2131221321201924,
+    3.2131221321201924
+   ],
+   [
+    3.2181793173785773,
+    3.2181793173785773
+   ],
+   [
+    3.2203455863074124,
+    3.2203455863074124
+   ],
+   [
+    3.222935328011526,
+    3.222935328011526
+   ],
+   [
+    3.2448722661596383,
+    3.2448722661596383
+   ],
+   [
+    3.2541657071054204,
+    3.2541657071054204
+   ],
+   [
+    3.2564425667532593,
+    3.2564425667532593
+   ],
+   [
+    3.26247826534555,
+    3.26247826534555
+   ],
+   [
+    3.2697700299739245,
+    3.2697700299739245
+   ],
+   [
+    3.280916020187748,
+    3.280916020187748
+   ],
+   [
+    3.2930752824084077,
+    3.2930752824084077
+   ],
+   [
+    3.2964339091435177,
+    3.2964339091435177
+   ],
+   [
+    3.2998887428862105,
+    3.2998887428862105
+   ],
+   [
+    3.306687805168619,
+    3.306687805168619
+   ],
+   [
+    3.3095623336059004,
+    3.3095623336059004
+   ],
+   [
+    3.309699131126199,
+    3.309699131126199
+   ],
+   [
+    3.311404561188353,
+    3.311404561188353
+   ],
+   [
+    3.314842678815026,
+    3.314842678815026
+   ],
+   [
+    3.3180051884729544,
+    3.3180051884729544
+   ],
+   [
+    3.3265568839983826,
+    3.3265568839983826
+   ],
+   [
+    3.3346030128095876,
+    3.3346030128095876
+   ],
+   [
+    3.343376455759907,
+    3.343376455759907
+   ],
+   [
+    3.351567423323744,
+    3.351567423323744
+   ],
+   [
+    3.353166808359167,
+    3.353166808359167
+   ],
+   [
+    3.3698270645112247,
+    3.3698270645112247
+   ],
+   [
+    3.3749267423204055,
+    3.3749267423204055
+   ],
+   [
+    3.389240674752031,
+    3.389240674752031
+   ],
+   [
+    3.391458867151023,
+    3.391458867151023
+   ],
+   [
+    3.392272934195444,
+    3.392272934195444
+   ],
+   [
+    3.399128153407622,
+    3.399128153407622
+   ],
+   [
+    3.4073621661621822,
+    3.4073621661621822
+   ],
+   [
+    3.4084550995697174,
+    3.4084550995697174
+   ],
+   [
+    3.4119266129850803,
+    3.4119266129850803
+   ],
+   [
+    3.4266300841154824,
+    3.4266300841154824
+   ],
+   [
+    3.430378509916519,
+    3.430378509916519
+   ],
+   [
+    3.439691019115689,
+    3.439691019115689
+   ],
+   [
+    3.44824728674594,
+    3.44824728674594
+   ],
+   [
+    3.4571598138619226,
+    3.4571598138619226
+   ],
+   [
+    3.4594283106436454,
+    3.4594283106436454
+   ],
+   [
+    3.472057174942563,
+    3.472057174942563
+   ],
+   [
+    3.4840365605150145,
+    3.4840365605150145
+   ],
+   [
+    3.4874835608180015,
+    3.4874835608180015
+   ],
+   [
+    3.4918462259067464,
+    3.4918462259067464
+   ],
+   [
+    3.4996730657976927,
+    3.4996730657976927
+   ],
+   [
+    3.5269695005223025,
+    3.5269695005223025
+   ],
+   [
+    3.528037116273232,
+    3.528037116273232
+   ],
+   [
+    3.53662827705059,
+    3.53662827705059
+   ],
+   [
+    3.5387377076747355,
+    3.5387377076747355
+   ],
+   [
+    3.5428637751610252,
+    3.5428637751610252
+   ],
+   [
+    3.5443622413980833,
+    3.5443622413980833
+   ],
+   [
+    3.5507273982837897,
+    3.5507273982837897
+   ],
+   [
+    3.558166931252848,
+    3.558166931252848
+   ],
+   [
+    3.5626251412412167,
+    3.5626251412412167
+   ],
+   [
+    3.5689153174878934,
+    3.5689153174878934
+   ],
+   [
+    3.5705312061760144,
+    3.5705312061760144
+   ],
+   [
+    3.573419944880897,
+    3.573419944880897
+   ],
+   [
+    3.5841847117811545,
+    3.5841847117811545
+   ],
+   [
+    3.589983847252509,
+    3.589983847252509
+   ],
+   [
+    3.5972704581679706,
+    3.5972704581679706
+   ],
+   [
+    3.5985700238889287,
+    3.5985700238889287
+   ],
+   [
+    3.6002165692623347,
+    3.6002165692623347
+   ],
+   [
+    3.6036769383941456,
+    3.6036769383941456
+   ],
+   [
+    3.62329446184133,
+    3.62329446184133
+   ],
+   [
+    3.635325969538122,
+    3.635325969538122
+   ],
+   [
+    3.644636732399828,
+    3.644636732399828
+   ],
+   [
+    3.650526111248972,
+    3.650526111248972
+   ],
+   [
+    3.669408594455125,
+    3.669408594455125
+   ],
+   [
+    3.6697755090836526,
+    3.6697755090836526
+   ],
+   [
+    3.6930362930916343,
+    3.6930362930916343
+   ],
+   [
+    3.6996503553114968,
+    3.6996503553114968
+   ],
+   [
+    3.7058532806125597,
+    3.7058532806125597
+   ],
+   [
+    3.7111592208756554,
+    3.7111592208756554
+   ],
+   [
+    3.7273728737732736,
+    3.7273728737732736
+   ],
+   [
+    3.7291738979927573,
+    3.7291738979927573
+   ],
+   [
+    3.734035570248188,
+    3.734035570248188
+   ],
+   [
+    3.737477959569628,
+    3.737477959569628
+   ],
+   [
+    3.7877220624794803,
+    3.7877220624794803
+   ],
+   [
+    3.791083783995526,
+    3.791083783995526
+   ],
+   [
+    3.794139569865209,
+    3.794139569865209
+   ],
+   [
+    3.806574785543942,
+    3.806574785543942
+   ],
+   [
+    3.8220087686318043,
+    3.8220087686318043
+   ],
+   [
+    3.825391315901167,
+    3.825391315901167
+   ],
+   [
+    3.846233766046484,
+    3.846233766046484
+   ],
+   [
+    3.847684428522461,
+    3.847684428522461
+   ],
+   [
+    3.8514379552028872,
+    3.8514379552028872
+   ],
+   [
+    3.854918045065454,
+    3.854918045065454
+   ],
+   [
+    3.856322759766687,
+    3.856322759766687
+   ],
+   [
+    3.8669355066837676,
+    3.8669355066837676
+   ],
+   [
+    3.899687383372437,
+    3.899687383372437
+   ],
+   [
+    3.901105481912698,
+    3.901105481912698
+   ],
+   [
+    3.901507866676462,
+    3.901507866676462
+   ],
+   [
+    3.9070119015314955,
+    3.9070119015314955
+   ],
+   [
+    3.9081589016687635,
+    3.9081589016687635
+   ],
+   [
+    3.9145554631203234,
+    3.9145554631203234
+   ],
+   [
+    3.92478274749492,
+    3.92478274749492
+   ],
+   [
+    3.9280998762737456,
+    3.9280998762737456
+   ],
+   [
+    3.931171586307645,
+    3.931171586307645
+   ],
+   [
+    3.961434510977236,
+    3.961434510977236
+   ],
+   [
+    3.9694477529139496,
+    3.9694477529139496
+   ],
+   [
+    3.9733170164098337,
+    3.9733170164098337
+   ],
+   [
+    3.9895598640001433,
+    3.9895598640001433
+   ],
+   [
+    3.9964818070989163,
+    3.9964818070989163
+   ],
+   [
+    3.9982914779183334,
+    3.9982914779183334
+   ],
+   [
+    4.0056309876422,
+    4.0056309876422
+   ],
+   [
+    4.007179019800322,
+    4.007179019800322
+   ],
+   [
+    4.013698208444199,
+    4.013698208444199
+   ],
+   [
+    4.017135599413944,
+    4.017135599413944
+   ],
+   [
+    4.025827948940048,
+    4.025827948940048
+   ],
+   [
+    4.056111653653998,
+    4.056111653653998
+   ],
+   [
+    4.06356529313547,
+    4.06356529313547
+   ],
+   [
+    4.065903072940722,
+    4.065903072940722
+   ],
+   [
+    4.073193684718478,
+    4.073193684718478
+   ],
+   [
+    4.107450079289104,
+    4.107450079289104
+   ],
+   [
+    4.107485042422181,
+    4.107485042422181
+   ],
+   [
+    4.114196131001534,
+    4.114196131001534
+   ],
+   [
+    4.11580544925563,
+    4.11580544925563
+   ],
+   [
+    4.128419914782046,
+    4.128419914782046
+   ],
+   [
+    4.128925175997175,
+    4.128925175997175
+   ],
+   [
+    4.134100884109117,
+    4.134100884109117
+   ],
+   [
+    4.149819660311959,
+    4.149819660311959
+   ],
+   [
+    4.158291224648073,
+    4.158291224648073
+   ],
+   [
+    4.167053832069528,
+    4.167053832069528
+   ],
+   [
+    4.167782394934287,
+    4.167782394934287
+   ],
+   [
+    4.172826614004993,
+    4.172826614004993
+   ],
+   [
+    4.1780814024413715,
+    4.1780814024413715
+   ],
+   [
+    4.1803980181887885,
+    4.1803980181887885
+   ],
+   [
+    4.182249771859477,
+    4.182249771859477
+   ],
+   [
+    4.194690005041649,
+    4.194690005041649
+   ],
+   [
+    4.1948033337077275,
+    4.1948033337077275
+   ],
+   [
+    4.196350606905494,
+    4.196350606905494
+   ],
+   [
+    4.198997363888246,
+    4.198997363888246
+   ],
+   [
+    4.222168507529995,
+    4.222168507529995
+   ],
+   [
+    4.249905711439436,
+    4.249905711439436
+   ],
+   [
+    4.25082744201453,
+    4.25082744201453
+   ],
+   [
+    4.25159784086994,
+    4.25159784086994
+   ],
+   [
+    4.266506648459454,
+    4.266506648459454
+   ],
+   [
+    4.2981128928261665,
+    4.2981128928261665
+   ],
+   [
+    4.3159107742164915,
+    4.3159107742164915
+   ],
+   [
+    4.332849568044636,
+    4.332849568044636
+   ],
+   [
+    4.339401524724121,
+    4.339401524724121
+   ],
+   [
+    4.346166390613709,
+    4.346166390613709
+   ],
+   [
+    4.354941231828536,
+    4.354941231828536
+   ],
+   [
+    4.356563040353754,
+    4.356563040353754
+   ],
+   [
+    4.35762825866944,
+    4.35762825866944
+   ],
+   [
+    4.360248903358976,
+    4.360248903358976
+   ],
+   [
+    4.372915538037417,
+    4.372915538037417
+   ],
+   [
+    4.41087362887656,
+    4.41087362887656
+   ],
+   [
+    4.417090988470304,
+    4.417090988470304
+   ],
+   [
+    4.421020743228962,
+    4.421020743228962
+   ],
+   [
+    4.4295621100571925,
+    4.4295621100571925
+   ],
+   [
+    4.445155949485637,
+    4.445155949485637
+   ],
+   [
+    4.455496503794433,
+    4.455496503794433
+   ],
+   [
+    4.458755464741704,
+    4.458755464741704
+   ],
+   [
+    4.459171365897789,
+    4.459171365897789
+   ],
+   [
+    4.4904199956997,
+    4.4904199956997
+   ],
+   [
+    4.491769152173429,
+    4.491769152173429
+   ],
+   [
+    4.499255963531441,
+    4.499255963531441
+   ],
+   [
+    4.5136355542941144,
+    4.5136355542941144
+   ],
+   [
+    4.536398488018335,
+    4.536398488018335
+   ],
+   [
+    4.569360092664528,
+    4.569360092664528
+   ],
+   [
+    4.5728633694819605,
+    4.5728633694819605
+   ],
+   [
+    4.587556007335634,
+    4.587556007335634
+   ],
+   [
+    4.599026490208372,
+    4.599026490208372
+   ],
+   [
+    4.664969371150007,
+    4.664969371150007
+   ],
+   [
+    4.676443618568745,
+    4.676443618568745
+   ],
+   [
+    4.684963879703766,
+    4.684963879703766
+   ],
+   [
+    4.69865753314782,
+    4.69865753314782
+   ],
+   [
+    4.71033440982411,
+    4.71033440982411
+   ],
+   [
+    4.712801225756708,
+    4.712801225756708
+   ],
+   [
+    4.718987194935946,
+    4.718987194935946
+   ],
+   [
+    4.725724360028205,
+    4.725724360028205
+   ],
+   [
+    4.726718466120032,
+    4.726718466120032
+   ],
+   [
+    4.737654191628594,
+    4.737654191628594
+   ],
+   [
+    4.740350710251153,
+    4.740350710251153
+   ],
+   [
+    4.740945025625436,
+    4.740945025625436
+   ],
+   [
+    4.750616475832121,
+    4.750616475832121
+   ],
+   [
+    4.762404013257451,
+    4.762404013257451
+   ],
+   [
+    4.7670188703133585,
+    4.7670188703133585
+   ],
+   [
+    4.783778594976262,
+    4.783778594976262
+   ],
+   [
+    4.805767383476342,
+    4.805767383476342
+   ],
+   [
+    4.845543250495448,
+    4.845543250495448
+   ],
+   [
+    4.85573928648843,
+    4.85573928648843
+   ],
+   [
+    4.857201918597003,
+    4.857201918597003
+   ],
+   [
+    4.859872499363306,
+    4.859872499363306
+   ],
+   [
+    4.868233535994235,
+    4.868233535994235
+   ],
+   [
+    4.885020217049603,
+    4.885020217049603
+   ],
+   [
+    4.894578378287158,
+    4.894578378287158
+   ],
+   [
+    4.897461096107055,
+    4.897461096107055
+   ],
+   [
+    4.905764105073193,
+    4.905764105073193
+   ],
+   [
+    4.914349901027801,
+    4.914349901027801
+   ],
+   [
+    4.937237113191002,
+    4.937237113191002
+   ],
+   [
+    4.944542354323149,
+    4.944542354323149
+   ],
+   [
+    4.946701406682401,
+    4.946701406682401
+   ],
+   [
+    4.9601223226601245,
+    4.9601223226601245
+   ],
+   [
+    4.977101473930695,
+    4.977101473930695
+   ],
+   [
+    4.980758899544618,
+    4.980758899544618
+   ],
+   [
+    5.000606453858529,
+    5.000606453858529
+   ],
+   [
+    5.016344013363158,
+    5.016344013363158
+   ],
+   [
+    5.023255729010708,
+    5.023255729010708
+   ],
+   [
+    5.038289003074923,
+    5.038289003074923
+   ],
+   [
+    5.055553063297273,
+    5.055553063297273
+   ],
+   [
+    5.060272982377332,
+    5.060272982377332
+   ],
+   [
+    5.069583954206199,
+    5.069583954206199
+   ],
+   [
+    5.079583197032458,
+    5.079583197032458
+   ],
+   [
+    5.087896382972789,
+    5.087896382972789
+   ],
+   [
+    5.125637833495103,
+    5.125637833495103
+   ],
+   [
+    5.138871015830559,
+    5.138871015830559
+   ],
+   [
+    5.151055394313064,
+    5.151055394313064
+   ],
+   [
+    5.154440926035233,
+    5.154440926035233
+   ],
+   [
+    5.160180622611442,
+    5.160180622611442
+   ],
+   [
+    5.171436333520512,
+    5.171436333520512
+   ],
+   [
+    5.181675529911673,
+    5.181675529911673
+   ],
+   [
+    5.198061097491402,
+    5.198061097491402
+   ],
+   [
+    5.203240801680175,
+    5.203240801680175
+   ],
+   [
+    5.261367153275576,
+    5.261367153275576
+   ],
+   [
+    5.316048157360596,
+    5.316048157360596
+   ],
+   [
+    5.341361598915344,
+    5.341361598915344
+   ],
+   [
+    5.3541598953371405,
+    5.3541598953371405
+   ],
+   [
+    5.367553465894102,
+    5.367553465894102
+   ],
+   [
+    5.3955876408685945,
+    5.3955876408685945
+   ],
+   [
+    5.404933346381288,
+    5.404933346381288
+   ],
+   [
+    5.424537107680676,
+    5.424537107680676
+   ],
+   [
+    5.438151582771591,
+    5.438151582771591
+   ],
+   [
+    5.440051550336394,
+    5.440051550336394
+   ],
+   [
+    5.452952614421571,
+    5.452952614421571
+   ],
+   [
+    5.454461599929425,
+    5.454461599929425
+   ],
+   [
+    5.471988587537936,
+    5.471988587537936
+   ],
+   [
+    5.490729030071613,
+    5.490729030071613
+   ],
+   [
+    5.497257166250024,
+    5.497257166250024
+   ],
+   [
+    5.500458332261482,
+    5.500458332261482
+   ],
+   [
+    5.509212042069769,
+    5.509212042069769
+   ],
+   [
+    5.526530917274124,
+    5.526530917274124
+   ],
+   [
+    5.560732884445782,
+    5.560732884445782
+   ],
+   [
+    5.586682869613961,
+    5.586682869613961
+   ],
+   [
+    5.596591206569158,
+    5.596591206569158
+   ],
+   [
+    5.602722548950759,
+    5.602722548950759
+   ],
+   [
+    5.610788154751759,
+    5.610788154751759
+   ],
+   [
+    5.622365944128048,
+    5.622365944128048
+   ],
+   [
+    5.627058983526652,
+    5.627058983526652
+   ],
+   [
+    5.635686747141058,
+    5.635686747141058
+   ],
+   [
+    5.639789757518338,
+    5.639789757518338
+   ],
+   [
+    5.641940149815805,
+    5.641940149815805
+   ],
+   [
+    5.649544905871482,
+    5.649544905871482
+   ],
+   [
+    5.689452994705285,
+    5.689452994705285
+   ],
+   [
+    5.698261813621505,
+    5.698261813621505
+   ],
+   [
+    5.719492991012203,
+    5.719492991012203
+   ],
+   [
+    5.757432206364351,
+    5.757432206364351
+   ],
+   [
+    5.88465656971849,
+    5.88465656971849
+   ],
+   [
+    5.890845101877377,
+    5.890845101877377
+   ],
+   [
+    5.902094713026425,
+    5.902094713026425
+   ],
+   [
+    5.952076269400922,
+    5.952076269400922
+   ],
+   [
+    5.990829621588003,
+    5.990829621588003
+   ],
+   [
+    5.998583449099765,
+    5.998583449099765
+   ],
+   [
+    6.004368349423499,
+    6.004368349423499
+   ],
+   [
+    6.01101259460036,
+    6.01101259460036
+   ],
+   [
+    6.044477555979942,
+    6.044477555979942
+   ],
+   [
+    6.065466584304236,
+    6.065466584304236
+   ],
+   [
+    6.069977540069599,
+    6.069977540069599
+   ],
+   [
+    6.105793044284895,
+    6.105793044284895
+   ],
+   [
+    6.111027208214213,
+    6.111027208214213
+   ],
+   [
+    6.12031420466237,
+    6.12031420466237
+   ],
+   [
+    6.131421960033346,
+    6.131421960033346
+   ],
+   [
+    6.143755810897451,
+    6.143755810897451
+   ],
+   [
+    6.152740137976286,
+    6.152740137976286
+   ],
+   [
+    6.183796125706305,
+    6.183796125706305
+   ],
+   [
+    6.215820370335746,
+    6.215820370335746
+   ],
+   [
+    6.238131966488098,
+    6.238131966488098
+   ],
+   [
+    6.245071871190745,
+    6.245071871190745
+   ],
+   [
+    6.277686862947673,
+    6.277686862947673
+   ],
+   [
+    6.329088463060209,
+    6.329088463060209
+   ],
+   [
+    6.379272998776026,
+    6.379272998776026
+   ],
+   [
+    6.480585837413121,
+    6.480585837413121
+   ],
+   [
+    6.518751461697428,
+    6.518751461697428
+   ],
+   [
+    6.6067101131465575,
+    6.6067101131465575
+   ],
+   [
+    6.640314548380505,
+    6.640314548380505
+   ],
+   [
+    6.770867989647902,
+    6.770867989647902
+   ],
+   [
+    6.856787823251177,
+    6.856787823251177
+   ],
+   [
+    6.873788480641572,
+    6.873788480641572
+   ],
+   [
+    6.940251536580075,
+    6.940251536580075
+   ],
+   [
+    7.027367534546408,
+    7.027367534546408
+   ],
+   [
+    7.0426957136403106,
+    7.0426957136403106
+   ],
+   [
+    7.063586314718108,
+    7.063586314718108
+   ],
+   [
+    7.1708382193108715,
+    7.1708382193108715
+   ],
+   [
+    7.2837598368758085,
+    7.2837598368758085
+   ],
+   [
+    7.4894440871219405,
+    7.4894440871219405
+   ]
+  ],
+  "meaning": "Sublevel sets of smoothed -log occupancy on the chart grid; cubical GF(2) Betti numbers; 0-dim pairs are exact basin merge levels (elder rule). Not a free energy."
+ },
+ "temperature_ladder": null,
+ "seconds": 7.6
+}

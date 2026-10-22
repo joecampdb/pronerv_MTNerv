@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2xepa03-heavy",
+ "label": "CATH domain 2xepA03 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 41,
+   "triangles": 25,
+   "tetrahedra": 4,
+   "generators": 88,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2xepa03-heavy\\base.hom (136937 bytes); generators by dimension: [(0, 18), (1, 41), (2, 25), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 88,
+   "edges": 288,
+   "triangles": 294,
+   "tetrahedra": 96,
+   "generators": 766,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2xepa03-heavy\\poset.hom (2139825 bytes); generators by dimension: [(0, 88), (1, 288), (2, 294), (3, 96)]"
+  }
+ }
+}

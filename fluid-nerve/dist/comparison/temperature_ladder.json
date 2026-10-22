@@ -1,0 +1,2909 @@
+[
+ {
+  "id": "mdcath-1a92a00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     6,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 39,
+     "2": 18,
+     "3": 1
+    },
+    "median_h": 0.2321675173592883,
+    "drift_ratio": 0.11073628388091894,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 22,
+     "3": 2
+    },
+    "median_h": 0.23803261900074268,
+    "drift_ratio": 0.21112000602466258,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 23,
+     "3": 1
+    },
+    "median_h": 0.3725875833914393,
+    "drift_ratio": 0.2451975291559384,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 24,
+     "3": 2
+    },
+    "median_h": 0.6795405289240642,
+    "drift_ratio": 0.34176111462386594,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 42,
+     "2": 24,
+     "3": 2
+    },
+    "median_h": null,
+    "drift_ratio": null,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1b33n01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 5,
+     "1": 8,
+     "2": 5,
+     "3": 1
+    },
+    "median_h": 0.15145044449936726,
+    "drift_ratio": 0.18974277149174956,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 4,
+     "1": 4,
+     "2": 1
+    },
+    "median_h": 0.18332146630582202,
+    "drift_ratio": 0.3936344026370957,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 4,
+     "1": 4,
+     "2": 1
+    },
+    "median_h": 0.22821846957861053,
+    "drift_ratio": 0.6451374190389176,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     2,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 35,
+     "2": 19,
+     "3": 2
+    },
+    "median_h": 0.31131772870731417,
+    "drift_ratio": 0.31343990890852136,
+    "first_connected_tau": 1
+   },
+   {
+    "T": 450,
+    "beta": [
+     2,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 19,
+     "3": 2
+    },
+    "median_h": 0.4321882203689911,
+    "drift_ratio": 0.32614759215939326,
+    "first_connected_tau": 1
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1bdha01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 13,
+     "1": 22,
+     "2": 9
+    },
+    "median_h": 0.2944097760851184,
+    "drift_ratio": 0.5823729690618167,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 10,
+     "1": 15,
+     "2": 5
+    },
+    "median_h": 0.2650279125666653,
+    "drift_ratio": 0.5354379526944925,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     5,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 17,
+     "1": 30,
+     "2": 9
+    },
+    "median_h": 0.3414846296430728,
+    "drift_ratio": 0.28932173086972784,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 18
+    },
+    "median_h": 0.5635523847421678,
+    "drift_ratio": 0.3519984672266888,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 18
+    },
+    "median_h": 1.0326439010709778,
+    "drift_ratio": 0.5150539591654495,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1e5wa04-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 44,
+     "2": 30,
+     "3": 5
+    },
+    "median_h": 0.32470586282535663,
+    "drift_ratio": 0.18290112012093165,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 45,
+     "2": 32,
+     "3": 6
+    },
+    "median_h": 0.39624121921757854,
+    "drift_ratio": 0.271422946866361,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 44,
+     "2": 32,
+     "3": 6
+    },
+    "median_h": 0.6216858867141936,
+    "drift_ratio": 0.42431208243154983,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 44,
+     "2": 31,
+     "3": 5
+    },
+    "median_h": 0.9336729298891693,
+    "drift_ratio": 0.4952904085893053,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 45,
+     "2": 32,
+     "3": 6
+    },
+    "median_h": null,
+    "drift_ratio": null,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1ffsb00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 5,
+     "1": 10,
+     "2": 10,
+     "3": 5
+    },
+    "median_h": 0.08529507351117516,
+    "drift_ratio": 0.3234083436325463,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 5,
+     "1": 10,
+     "2": 10,
+     "3": 5
+    },
+    "median_h": 0.09967738177109825,
+    "drift_ratio": 0.3640676565411998,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 5,
+    "simplices": {
+     "0": 15,
+     "1": 39,
+     "2": 42,
+     "3": 23
+    },
+    "median_h": 0.12351353859772018,
+    "drift_ratio": 0.3808312607468008,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 16,
+     "1": 49,
+     "2": 56,
+     "3": 26
+    },
+    "median_h": 0.16305452865519376,
+    "drift_ratio": 0.23563964491497602,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     2,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 18,
+     "1": 54,
+     "2": 66,
+     "3": 34
+    },
+    "median_h": 0.267038791903151,
+    "drift_ratio": 0.38881975361407894,
+    "first_connected_tau": 1
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1gjsa00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 12,
+     "1": 19,
+     "2": 9,
+     "3": 1
+    },
+    "median_h": 0.2425644012876933,
+    "drift_ratio": 0.15596037666908494,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 25,
+     "3": 4
+    },
+    "median_h": 0.32588934617968895,
+    "drift_ratio": 0.1739344186572121,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 39,
+     "2": 26,
+     "3": 4
+    },
+    "median_h": 0.48237366551483,
+    "drift_ratio": 0.22735436001449782,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 26,
+     "3": 4
+    },
+    "median_h": 0.6930663137532332,
+    "drift_ratio": 0.35417630071601075,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 26,
+     "3": 4
+    },
+    "median_h": 0.9948137214051145,
+    "drift_ratio": 0.4842145695520961,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1ha8a00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 12,
+     "1": 22,
+     "2": 12,
+     "3": 1
+    },
+    "median_h": 0.13447045875870767,
+    "drift_ratio": 0.309237650668318,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 14,
+     "1": 26,
+     "2": 11
+    },
+    "median_h": 0.13087099218690718,
+    "drift_ratio": 0.32011978324412305,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 16,
+     "1": 33,
+     "2": 16
+    },
+    "median_h": 0.17067008452565335,
+    "drift_ratio": 0.23044348255772093,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 18,
+     "3": 1
+    },
+    "median_h": 0.2385921660695494,
+    "drift_ratio": 0.31200748589775185,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 21,
+     "3": 2
+    },
+    "median_h": 0.30405520099513933,
+    "drift_ratio": 0.2514495011852628,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1hcra00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 11,
+     "1": 18,
+     "2": 6
+    },
+    "median_h": 0.2794110980067593,
+    "drift_ratio": 0.3324824519633004,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 17,
+     "1": 30,
+     "2": 10
+    },
+    "median_h": 0.3898359700538325,
+    "drift_ratio": 0.2639134751863288,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 32,
+     "2": 11
+    },
+    "median_h": 0.3512835905723537,
+    "drift_ratio": 0.3617619623530419,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 32,
+     "2": 12
+    },
+    "median_h": 0.5604046674674017,
+    "drift_ratio": 0.26371529364753554,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     5,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 33,
+     "2": 11
+    },
+    "median_h": 0.866199357043852,
+    "drift_ratio": 0.30523426683265886,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1i5xa00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 39,
+     "2": 26,
+     "3": 5
+    },
+    "median_h": 0.26665497098754093,
+    "drift_ratio": 0.3593841824249445,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 45,
+     "2": 36,
+     "3": 8
+    },
+    "median_h": 0.41059516650489253,
+    "drift_ratio": 0.2100760053426778,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 48,
+     "2": 39,
+     "3": 8
+    },
+    "median_h": 0.5745659549106923,
+    "drift_ratio": 0.39684918881339937,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 48,
+     "2": 39,
+     "3": 8
+    },
+    "median_h": 0.761145816181694,
+    "drift_ratio": 0.4714368861588819,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 48,
+     "2": 40,
+     "3": 9
+    },
+    "median_h": 0.9289013986327067,
+    "drift_ratio": 0.35752177977974864,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1klil00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 34,
+     "2": 19,
+     "3": 2
+    },
+    "median_h": 0.287529005616341,
+    "drift_ratio": 0.3192746344132362,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 21,
+     "3": 2
+    },
+    "median_h": 0.33081842088824387,
+    "drift_ratio": 0.25019562701233994,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 23,
+     "3": 2
+    },
+    "median_h": 0.46974497417746325,
+    "drift_ratio": 0.22702619033122806,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 22,
+     "3": 2
+    },
+    "median_h": 0.5930044910776506,
+    "drift_ratio": 0.30658207047047653,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 23,
+     "3": 2
+    },
+    "median_h": 0.6880860529069243,
+    "drift_ratio": 0.43795912666241704,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1l6ha00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 34,
+     "2": 15
+    },
+    "median_h": 0.2135872475287089,
+    "drift_ratio": 0.21566479552973997,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 16,
+     "1": 34,
+     "2": 16
+    },
+    "median_h": 0.18199228825873898,
+    "drift_ratio": 0.16051560736744164,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 19
+    },
+    "median_h": 0.31219140525668043,
+    "drift_ratio": 0.21933779351176386,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 20
+    },
+    "median_h": 0.3646343112165152,
+    "drift_ratio": 0.25786236496693976,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 19
+    },
+    "median_h": null,
+    "drift_ratio": null,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1r8ob01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 33,
+     "2": 19,
+     "3": 2
+    },
+    "median_h": 0.34188776124872466,
+    "drift_ratio": 0.21710325563997984,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 27,
+     "3": 3
+    },
+    "median_h": 0.47748013069232303,
+    "drift_ratio": 0.1858813189444125,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 24,
+     "3": 2
+    },
+    "median_h": 0.6196629244326526,
+    "drift_ratio": 0.28123612183275615,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 26,
+     "3": 3
+    },
+    "median_h": 0.8339796385932529,
+    "drift_ratio": 0.53460000177874,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 22,
+     "3": 2
+    },
+    "median_h": 1.134978952375027,
+    "drift_ratio": 0.4557086868916764,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1s6la01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 14,
+     "1": 30,
+     "2": 21,
+     "3": 4
+    },
+    "median_h": 0.18260749097119355,
+    "drift_ratio": 0.12611942904590417,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 33,
+     "2": 18,
+     "3": 1
+    },
+    "median_h": 0.20148802916990238,
+    "drift_ratio": 0.07617555161863658,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 40,
+     "2": 27,
+     "3": 3
+    },
+    "median_h": 0.2602761319879466,
+    "drift_ratio": 0.2764167100058137,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 46,
+     "2": 36,
+     "3": 7
+    },
+    "median_h": 0.65641350823218,
+    "drift_ratio": 0.5061025453989225,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 44,
+     "2": 31,
+     "3": 5
+    },
+    "median_h": 0.9385559882682103,
+    "drift_ratio": 0.6874253462712858,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1wpbg01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 11,
+     "1": 25,
+     "2": 20,
+     "3": 6
+    },
+    "median_h": 0.18323052914514953,
+    "drift_ratio": 0.34067098248068284,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 13,
+     "1": 30,
+     "2": 23,
+     "3": 5
+    },
+    "median_h": 0.2299926580084656,
+    "drift_ratio": 0.4981029289440734,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 45,
+     "2": 34,
+     "3": 7
+    },
+    "median_h": 0.37162055109293407,
+    "drift_ratio": 0.3199105781998189,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 18,
+     "1": 46,
+     "2": 36,
+     "3": 9
+    },
+    "median_h": 0.6451456801834561,
+    "drift_ratio": 0.31680468309568743,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 46,
+     "2": 35,
+     "3": 7
+    },
+    "median_h": 0.9217993463788714,
+    "drift_ratio": 0.3943739711762817,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1x4pa00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 9,
+     "1": 15,
+     "2": 8,
+     "3": 1
+    },
+    "median_h": 0.3272751647424191,
+    "drift_ratio": 0.4820263295007489,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 14,
+     "1": 24,
+     "2": 10
+    },
+    "median_h": 0.39945583687926756,
+    "drift_ratio": 0.4732674621685793,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 32,
+     "2": 13,
+     "3": 1
+    },
+    "median_h": 0.4775111892967359,
+    "drift_ratio": 0.3880113120936281,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 20,
+     "3": 1
+    },
+    "median_h": 0.7776686701259925,
+    "drift_ratio": 0.4581660950986626,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 18,
+     "3": 1
+    },
+    "median_h": 1.0121679838214601,
+    "drift_ratio": 0.40399533584566055,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1zbqa02-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 8,
+     "1": 12,
+     "2": 5
+    },
+    "median_h": 0.2753150499126184,
+    "drift_ratio": 0.29754289306563453,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 35,
+     "2": 16,
+     "3": 1
+    },
+    "median_h": 0.3848758237977182,
+    "drift_ratio": 0.2010782732161286,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 21,
+     "3": 3
+    },
+    "median_h": 0.602676547462877,
+    "drift_ratio": 0.31403679504734183,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 19
+    },
+    "median_h": 0.8441190493617181,
+    "drift_ratio": 0.3702108088430728,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 40,
+     "2": 23,
+     "3": 3
+    },
+    "median_h": 0.993989856627207,
+    "drift_ratio": 0.38755783262535376,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2ckka02-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 6,
+     "1": 10,
+     "2": 6,
+     "3": 1
+    },
+    "median_h": 0.10852565961024187,
+    "drift_ratio": 0.3432588049437285,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 9,
+     "1": 18,
+     "2": 11,
+     "3": 1
+    },
+    "median_h": 0.12967687141122405,
+    "drift_ratio": 0.27292605123176944,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 12,
+     "1": 29,
+     "2": 25,
+     "3": 7
+    },
+    "median_h": 0.16673670660531736,
+    "drift_ratio": 0.4291623942239785,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 17,
+     "1": 46,
+     "2": 38,
+     "3": 11
+    },
+    "median_h": 0.22503075743416726,
+    "drift_ratio": 0.5465836014490624,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 18,
+     "1": 51,
+     "2": 45,
+     "3": 13
+    },
+    "median_h": 0.38193224071378895,
+    "drift_ratio": 0.28235305881947415,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2d46a00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 25,
+     "3": 3
+    },
+    "median_h": 0.4849814313925659,
+    "drift_ratio": 0.2521652807239791,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 27,
+     "3": 2
+    },
+    "median_h": 0.5310475700536361,
+    "drift_ratio": 0.3218859297775797,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 29,
+     "3": 3
+    },
+    "median_h": 0.8727600984978225,
+    "drift_ratio": 0.29388642154075517,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 28,
+     "3": 2
+    },
+    "median_h": 1.003356326105339,
+    "drift_ratio": 0.5789522546114136,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     0,
+     1
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 29,
+     "3": 2
+    },
+    "median_h": null,
+    "drift_ratio": null,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2dmpa01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 6,
+     "1": 8,
+     "2": 3
+    },
+    "median_h": 0.2476001224861273,
+    "drift_ratio": 0.3618403818533653,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 6,
+     "1": 9,
+     "2": 4
+    },
+    "median_h": 0.29574763874726306,
+    "drift_ratio": 0.3314825393136122,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 37,
+     "2": 20,
+     "3": 1
+    },
+    "median_h": 0.6763185866781183,
+    "drift_ratio": 0.3645403898291642,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 20,
+     "3": 1
+    },
+    "median_h": 0.8140030550238228,
+    "drift_ratio": 0.3476077845980332,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 20,
+     "3": 1
+    },
+    "median_h": 1.0145535611588021,
+    "drift_ratio": 0.39334964861710753,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2e3tb03-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 10,
+     "1": 19,
+     "2": 13,
+     "3": 3
+    },
+    "median_h": 0.19407420962847569,
+    "drift_ratio": 0.2681643491496679,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 9,
+     "1": 18,
+     "2": 13,
+     "3": 3
+    },
+    "median_h": 0.20942651803140383,
+    "drift_ratio": 0.2656282714360304,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 14,
+     "1": 38,
+     "2": 33,
+     "3": 9
+    },
+    "median_h": 0.39446509066977276,
+    "drift_ratio": 0.26669068118184724,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 47,
+     "2": 39,
+     "3": 9
+    },
+    "median_h": 0.46695501731700095,
+    "drift_ratio": 0.3110128889014454,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 49,
+     "2": 42,
+     "3": 11
+    },
+    "median_h": 0.7973493559301392,
+    "drift_ratio": 0.4453571258390045,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2j8ga03-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 4,
+     "1": 5,
+     "2": 2
+    },
+    "median_h": 0.1437133379322661,
+    "drift_ratio": 0.251666810379268,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 4,
+     "1": 4,
+     "2": 1
+    },
+    "median_h": 0.13879247104572465,
+    "drift_ratio": 0.38781620724613153,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 6,
+     "1": 9,
+     "2": 4
+    },
+    "median_h": 0.21531906369186582,
+    "drift_ratio": 0.3010343240991356,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 29,
+     "3": 4
+    },
+    "median_h": 0.37962506222303466,
+    "drift_ratio": 0.2997195326437884,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 43,
+     "2": 28,
+     "3": 3
+    },
+    "median_h": 0.8126027306627019,
+    "drift_ratio": 0.4743138446775782,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2jrra01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 11,
+     "1": 24,
+     "2": 18,
+     "3": 4
+    },
+    "median_h": 0.18963741579852497,
+    "drift_ratio": 0.7443939080402221,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 11,
+     "1": 24,
+     "2": 19,
+     "3": 5
+    },
+    "median_h": 0.20963292455858756,
+    "drift_ratio": 0.7502537691184278,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 11,
+     "1": 24,
+     "2": 19,
+     "3": 5
+    },
+    "median_h": 0.22218637945125191,
+    "drift_ratio": 0.6501962793690086,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 12,
+     "1": 26,
+     "2": 20,
+     "3": 5
+    },
+    "median_h": 0.29568146832859626,
+    "drift_ratio": 0.8651272309807619,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 42,
+     "2": 33,
+     "3": 8
+    },
+    "median_h": 0.34167500886997565,
+    "drift_ratio": 0.5057177767058931,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2lrda00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 12,
+     "1": 21,
+     "2": 8
+    },
+    "median_h": 0.1333699825655054,
+    "drift_ratio": 0.16990833506981134,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 14,
+     "1": 27,
+     "2": 13,
+     "3": 1
+    },
+    "median_h": 0.17840095811213055,
+    "drift_ratio": 0.29375137325583994,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     5,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 31,
+     "2": 12,
+     "3": 1
+    },
+    "median_h": 0.21962590567974918,
+    "drift_ratio": 0.12191494143793911,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 12,
+     "1": 23,
+     "2": 10
+    },
+    "median_h": 0.24378434561628048,
+    "drift_ratio": 0.30980043817972436,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 18,
+     "3": 1
+    },
+    "median_h": 0.32367506271825647,
+    "drift_ratio": 0.43284291541138303,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2xepa03-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 15,
+     "1": 29,
+     "2": 17,
+     "3": 2
+    },
+    "median_h": 0.2367341677346846,
+    "drift_ratio": 0.1979424681415065,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 15,
+     "1": 32,
+     "2": 19,
+     "3": 2
+    },
+    "median_h": 0.2965868156817224,
+    "drift_ratio": 0.20291670155545413,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 35,
+     "2": 19,
+     "3": 2
+    },
+    "median_h": 0.4955225094863399,
+    "drift_ratio": 0.32773592380548655,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 20,
+     "3": 2
+    },
+    "median_h": 0.7350120536983014,
+    "drift_ratio": 0.3843699155506363,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 20,
+     "3": 2
+    },
+    "median_h": null,
+    "drift_ratio": null,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2yila02-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 14,
+     "1": 36,
+     "2": 33,
+     "3": 12
+    },
+    "median_h": 0.1469951611187051,
+    "drift_ratio": 0.4290973460218295,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 14,
+     "1": 37,
+     "2": 33,
+     "3": 10
+    },
+    "median_h": 0.1773881752792292,
+    "drift_ratio": 0.5836921917956066,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 4,
+    "simplices": {
+     "0": 14,
+     "1": 38,
+     "2": 35,
+     "3": 12
+    },
+    "median_h": 0.21733540538417948,
+    "drift_ratio": 0.6062706308870839,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     2,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 38,
+     "2": 31,
+     "3": 7
+    },
+    "median_h": 0.2630192202312001,
+    "drift_ratio": 0.6207818312901398,
+    "first_connected_tau": 1
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 31,
+     "3": 7
+    },
+    "median_h": 0.2908768776640202,
+    "drift_ratio": 0.4726750578522331,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-3g5ca02-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 11,
+     "1": 21,
+     "2": 11,
+     "3": 1
+    },
+    "median_h": 0.2993351407512378,
+    "drift_ratio": 0.4148825951549022,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 38,
+     "2": 20,
+     "3": 1
+    },
+    "median_h": 0.3605994501160186,
+    "drift_ratio": 0.4093292912512695,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 33,
+     "2": 17,
+     "3": 1
+    },
+    "median_h": 0.4335041778586227,
+    "drift_ratio": 0.37484710206573413,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 40,
+     "2": 24,
+     "3": 2
+    },
+    "median_h": null,
+    "drift_ratio": null,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 23,
+     "3": 2
+    },
+    "median_h": 0.5509287265002137,
+    "drift_ratio": 0.427602580039247,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-3pmqa02-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     5,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 33,
+     "2": 12,
+     "3": 1
+    },
+    "median_h": 0.39601832827631855,
+    "drift_ratio": 0.2563813221458902,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 33,
+     "2": 13,
+     "3": 1
+    },
+    "median_h": 0.5328999446577193,
+    "drift_ratio": 0.3127789466643257,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 32,
+     "2": 13,
+     "3": 1
+    },
+    "median_h": 0.6893680242925357,
+    "drift_ratio": 0.45172188347735953,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 35,
+     "2": 15,
+     "3": 1
+    },
+    "median_h": 0.8949005108649336,
+    "drift_ratio": 0.5304523307793104,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 33,
+     "2": 13,
+     "3": 1
+    },
+    "median_h": 0.99079299488462,
+    "drift_ratio": 0.7774394228802463,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-4a0ta01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 11,
+     "1": 18,
+     "2": 8
+    },
+    "median_h": 0.21472372434998196,
+    "drift_ratio": 0.17109511468395475,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     2,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 30,
+     "2": 16,
+     "3": 1
+    },
+    "median_h": 0.38893659193933855,
+    "drift_ratio": 0.18016165290962535,
+    "first_connected_tau": 1
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 12,
+     "1": 22,
+     "2": 10
+    },
+    "median_h": 0.3253564041077606,
+    "drift_ratio": 0.45576109519165675,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 15
+    },
+    "median_h": 0.8196735652793843,
+    "drift_ratio": 0.38160623827850426,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 37,
+     "2": 18,
+     "3": 1
+    },
+    "median_h": 1.0268878888000141,
+    "drift_ratio": 0.5805636286462765,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-4dcza00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 5,
+     "1": 6,
+     "2": 2
+    },
+    "median_h": 0.15596053620380718,
+    "drift_ratio": 0.4835819476889689,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 34,
+     "2": 15,
+     "3": 1
+    },
+    "median_h": 0.28730380568737374,
+    "drift_ratio": 0.30917611436059955,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 37,
+     "2": 20,
+     "3": 1
+    },
+    "median_h": 0.40851209733797156,
+    "drift_ratio": 0.29585726817702435,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 39,
+     "2": 23,
+     "3": 1
+    },
+    "median_h": 0.5639291312409638,
+    "drift_ratio": 0.4140388858114481,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 40,
+     "2": 22,
+     "3": 1
+    },
+    "median_h": 0.9867816853488807,
+    "drift_ratio": 0.43859443314205593,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-5b1aj00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 37,
+     "2": 17,
+     "3": 1
+    },
+    "median_h": 0.31921248393107765,
+    "drift_ratio": 0.26452075974143774,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 18,
+     "3": 2
+    },
+    "median_h": 0.35142983670741257,
+    "drift_ratio": 0.23822491488796943,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 34,
+     "2": 14,
+     "3": 1
+    },
+    "median_h": 0.5429992968738868,
+    "drift_ratio": 0.4370052721983424,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 17,
+     "3": 1
+    },
+    "median_h": 0.7284629065378577,
+    "drift_ratio": 0.5145139136453178,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 37,
+     "2": 17,
+     "3": 1
+    },
+    "median_h": 0.8721335381269455,
+    "drift_ratio": 0.49276913151058804,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-5daea00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     2,
+     5,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 34,
+     "2": 13
+    },
+    "median_h": 0.1950901859597853,
+    "drift_ratio": 0.4860955426501888,
+    "first_connected_tau": 1
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 17,
+     "1": 34,
+     "2": 14
+    },
+    "median_h": 0.2288549850400339,
+    "drift_ratio": 0.5994888050606435,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 36,
+     "2": 15
+    },
+    "median_h": 0.25782764535384994,
+    "drift_ratio": 0.67237947147022,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     4,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 35,
+     "2": 14
+    },
+    "median_h": 0.2947450082521049,
+    "drift_ratio": 0.5106084954450171,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     6,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 37,
+     "2": 14
+    },
+    "median_h": 0.3906183669512922,
+    "drift_ratio": 0.5235978600028852,
+    "first_connected_tau": 0
+   }
+  ]
+ }
+]

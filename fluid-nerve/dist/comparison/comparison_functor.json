@@ -1,0 +1,922 @@
+{
+ "pairs": [
+  {
+   "heavy": "mdcath-1a92a00-heavy",
+   "ca": "mdcath-1a92a00-ca",
+   "frames": 10980,
+   "heavy_to_ca": {
+    "faces": 110,
+    "median_best_jaccard": 0.17424819183131815,
+    "fraction_jaccard_over_half": 0.06363636363636363,
+    "inclusions": 428,
+    "inclusion_preserved_lax": 0.6238317757009346,
+    "inclusion_preserved_strict": 0.35514018691588783,
+    "composable_pairs": 510,
+    "composition_preserved_lax": 0.4235294117647059,
+    "image_faces": 40
+   },
+   "ca_to_heavy": {
+    "faces": 91,
+    "median_best_jaccard": 0.2066957787481805,
+    "fraction_jaccard_over_half": 0.08791208791208792,
+    "inclusions": 282,
+    "inclusion_preserved_lax": 0.6914893617021277,
+    "inclusion_preserved_strict": 0.4645390070921986,
+    "composable_pairs": 240,
+    "composition_preserved_lax": 0.5166666666666667,
+    "image_faces": 41
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1b33n01-heavy",
+   "ca": "mdcath-1b33n01-ca",
+   "frames": 11090,
+   "heavy_to_ca": {
+    "faces": 69,
+    "median_best_jaccard": 0.09917355371900827,
+    "fraction_jaccard_over_half": 0.014492753623188406,
+    "inclusions": 170,
+    "inclusion_preserved_lax": 0.4411764705882353,
+    "inclusion_preserved_strict": 0.24705882352941178,
+    "composable_pairs": 120,
+    "composition_preserved_lax": 0.15833333333333333,
+    "image_faces": 32
+   },
+   "ca_to_heavy": {
+    "faces": 83,
+    "median_best_jaccard": 0.07453416149068323,
+    "fraction_jaccard_over_half": 0.012048192771084338,
+    "inclusions": 258,
+    "inclusion_preserved_lax": 0.4806201550387597,
+    "inclusion_preserved_strict": 0.24031007751937986,
+    "composable_pairs": 246,
+    "composition_preserved_lax": 0.24390243902439024,
+    "image_faces": 30
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1bdha01-heavy",
+   "ca": "mdcath-1bdha01-ca",
+   "frames": 11110,
+   "heavy_to_ca": {
+    "faces": 77,
+    "median_best_jaccard": 0.27645788336933047,
+    "fraction_jaccard_over_half": 0.2857142857142857,
+    "inclusions": 202,
+    "inclusion_preserved_lax": 0.7524752475247525,
+    "inclusion_preserved_strict": 0.5445544554455446,
+    "composable_pairs": 126,
+    "composition_preserved_lax": 0.5873015873015873,
+    "image_faces": 38
+   },
+   "ca_to_heavy": {
+    "faces": 76,
+    "median_best_jaccard": 0.2880559945811696,
+    "fraction_jaccard_over_half": 0.27631578947368424,
+    "inclusions": 196,
+    "inclusion_preserved_lax": 0.7193877551020408,
+    "inclusion_preserved_strict": 0.5612244897959183,
+    "composable_pairs": 120,
+    "composition_preserved_lax": 0.5583333333333333,
+    "image_faces": 47
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1e5wa04-heavy",
+   "ca": "mdcath-1e5wa04-ca",
+   "frames": 10910,
+   "heavy_to_ca": {
+    "faces": 101,
+    "median_best_jaccard": 0.2829845313921747,
+    "fraction_jaccard_over_half": 0.18811881188118812,
+    "inclusions": 358,
+    "inclusion_preserved_lax": 0.6284916201117319,
+    "inclusion_preserved_strict": 0.41899441340782123,
+    "composable_pairs": 378,
+    "composition_preserved_lax": 0.46296296296296297,
+    "image_faces": 42
+   },
+   "ca_to_heavy": {
+    "faces": 102,
+    "median_best_jaccard": 0.27946698749498705,
+    "fraction_jaccard_over_half": 0.19607843137254902,
+    "inclusions": 372,
+    "inclusion_preserved_lax": 0.6935483870967742,
+    "inclusion_preserved_strict": 0.4731182795698925,
+    "composable_pairs": 414,
+    "composition_preserved_lax": 0.5193236714975845,
+    "image_faces": 42
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1ffsb00-heavy",
+   "ca": "mdcath-1ffsb00-ca",
+   "frames": 11141,
+   "heavy_to_ca": {
+    "faces": 158,
+    "median_best_jaccard": 0.21344206974128233,
+    "fraction_jaccard_over_half": 0.17088607594936708,
+    "inclusions": 876,
+    "inclusion_preserved_lax": 0.5319634703196348,
+    "inclusion_preserved_strict": 0.3584474885844749,
+    "composable_pairs": 1434,
+    "composition_preserved_lax": 0.3117154811715481,
+    "image_faces": 55
+   },
+   "ca_to_heavy": {
+    "faces": 176,
+    "median_best_jaccard": 0.2587663733665023,
+    "fraction_jaccard_over_half": 0.21022727272727273,
+    "inclusions": 1028,
+    "inclusion_preserved_lax": 0.6303501945525292,
+    "inclusion_preserved_strict": 0.43093385214007784,
+    "composable_pairs": 1734,
+    "composition_preserved_lax": 0.41753171856978083,
+    "image_faces": 50
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1gjsa00-heavy",
+   "ca": "mdcath-1gjsa00-ca",
+   "frames": 10970,
+   "heavy_to_ca": {
+    "faces": 106,
+    "median_best_jaccard": 0.26036303630363034,
+    "fraction_jaccard_over_half": 0.14150943396226415,
+    "inclusions": 400,
+    "inclusion_preserved_lax": 0.725,
+    "inclusion_preserved_strict": 0.48,
+    "composable_pairs": 462,
+    "composition_preserved_lax": 0.5432900432900433,
+    "image_faces": 45
+   },
+   "ca_to_heavy": {
+    "faces": 90,
+    "median_best_jaccard": 0.2403846153846154,
+    "fraction_jaccard_over_half": 0.13333333333333333,
+    "inclusions": 300,
+    "inclusion_preserved_lax": 0.6033333333333334,
+    "inclusion_preserved_strict": 0.37666666666666665,
+    "composable_pairs": 306,
+    "composition_preserved_lax": 0.34967320261437906,
+    "image_faces": 41
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1ha8a00-heavy",
+   "ca": "mdcath-1ha8a00-ca",
+   "frames": 11150,
+   "heavy_to_ca": {
+    "faces": 80,
+    "median_best_jaccard": 0.19994381250112075,
+    "fraction_jaccard_over_half": 0.0875,
+    "inclusions": 232,
+    "inclusion_preserved_lax": 0.5905172413793104,
+    "inclusion_preserved_strict": 0.36637931034482757,
+    "composable_pairs": 198,
+    "composition_preserved_lax": 0.3333333333333333,
+    "image_faces": 35
+   },
+   "ca_to_heavy": {
+    "faces": 80,
+    "median_best_jaccard": 0.1643798460488042,
+    "fraction_jaccard_over_half": 0.075,
+    "inclusions": 236,
+    "inclusion_preserved_lax": 0.5889830508474576,
+    "inclusion_preserved_strict": 0.3516949152542373,
+    "composable_pairs": 204,
+    "composition_preserved_lax": 0.3627450980392157,
+    "image_faces": 33
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1hcra00-heavy",
+   "ca": "mdcath-1hcra00-ca",
+   "frames": 11160,
+   "heavy_to_ca": {
+    "faces": 77,
+    "median_best_jaccard": 0.21025260029717682,
+    "fraction_jaccard_over_half": 0.15584415584415584,
+    "inclusions": 218,
+    "inclusion_preserved_lax": 0.7431192660550459,
+    "inclusion_preserved_strict": 0.5137614678899083,
+    "composable_pairs": 186,
+    "composition_preserved_lax": 0.6397849462365591,
+    "image_faces": 37
+   },
+   "ca_to_heavy": {
+    "faces": 65,
+    "median_best_jaccard": 0.21875,
+    "fraction_jaccard_over_half": 0.15384615384615385,
+    "inclusions": 146,
+    "inclusion_preserved_lax": 0.6438356164383562,
+    "inclusion_preserved_strict": 0.4520547945205479,
+    "composable_pairs": 78,
+    "composition_preserved_lax": 0.4230769230769231,
+    "image_faces": 40
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1i5xa00-heavy",
+   "ca": "mdcath-1i5xa00-ca",
+   "frames": 11080,
+   "heavy_to_ca": {
+    "faces": 102,
+    "median_best_jaccard": 0.27858115519370785,
+    "fraction_jaccard_over_half": 0.1568627450980392,
+    "inclusions": 392,
+    "inclusion_preserved_lax": 0.6683673469387755,
+    "inclusion_preserved_strict": 0.5255102040816326,
+    "composable_pairs": 480,
+    "composition_preserved_lax": 0.43333333333333335,
+    "image_faces": 55
+   },
+   "ca_to_heavy": {
+    "faces": 115,
+    "median_best_jaccard": 0.23118279569892472,
+    "fraction_jaccard_over_half": 0.13043478260869565,
+    "inclusions": 462,
+    "inclusion_preserved_lax": 0.8051948051948052,
+    "inclusion_preserved_strict": 0.658008658008658,
+    "composable_pairs": 564,
+    "composition_preserved_lax": 0.6843971631205674,
+    "image_faces": 56
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1klil00-heavy",
+   "ca": "mdcath-1klil00-ca",
+   "frames": 11100,
+   "heavy_to_ca": {
+    "faces": 80,
+    "median_best_jaccard": 0.17353154961752795,
+    "fraction_jaccard_over_half": 0.0875,
+    "inclusions": 244,
+    "inclusion_preserved_lax": 0.6352459016393442,
+    "inclusion_preserved_strict": 0.38524590163934425,
+    "composable_pairs": 234,
+    "composition_preserved_lax": 0.4444444444444444,
+    "image_faces": 37
+   },
+   "ca_to_heavy": {
+    "faces": 82,
+    "median_best_jaccard": 0.18635480775981092,
+    "fraction_jaccard_over_half": 0.08536585365853659,
+    "inclusions": 244,
+    "inclusion_preserved_lax": 0.6434426229508197,
+    "inclusion_preserved_strict": 0.38934426229508196,
+    "composable_pairs": 210,
+    "composition_preserved_lax": 0.47619047619047616,
+    "image_faces": 35
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1l6ha00-heavy",
+   "ca": "mdcath-1l6ha00-ca",
+   "frames": 11090,
+   "heavy_to_ca": {
+    "faces": 100,
+    "median_best_jaccard": 0.21489802828297042,
+    "fraction_jaccard_over_half": 0.15,
+    "inclusions": 364,
+    "inclusion_preserved_lax": 0.7005494505494505,
+    "inclusion_preserved_strict": 0.45054945054945056,
+    "composable_pairs": 408,
+    "composition_preserved_lax": 0.5196078431372549,
+    "image_faces": 38
+   },
+   "ca_to_heavy": {
+    "faces": 77,
+    "median_best_jaccard": 0.2701908957415565,
+    "fraction_jaccard_over_half": 0.18181818181818182,
+    "inclusions": 198,
+    "inclusion_preserved_lax": 0.6717171717171717,
+    "inclusion_preserved_strict": 0.4898989898989899,
+    "composable_pairs": 120,
+    "composition_preserved_lax": 0.475,
+    "image_faces": 41
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1r8ob01-heavy",
+   "ca": "mdcath-1r8ob01-ca",
+   "frames": 11100,
+   "heavy_to_ca": {
+    "faces": 86,
+    "median_best_jaccard": 0.30424755843672247,
+    "fraction_jaccard_over_half": 0.20930232558139536,
+    "inclusions": 248,
+    "inclusion_preserved_lax": 0.7338709677419355,
+    "inclusion_preserved_strict": 0.5846774193548387,
+    "composable_pairs": 186,
+    "composition_preserved_lax": 0.5645161290322581,
+    "image_faces": 50
+   },
+   "ca_to_heavy": {
+    "faces": 90,
+    "median_best_jaccard": 0.34386437279996274,
+    "fraction_jaccard_over_half": 0.2,
+    "inclusions": 288,
+    "inclusion_preserved_lax": 0.6944444444444444,
+    "inclusion_preserved_strict": 0.5034722222222222,
+    "composable_pairs": 270,
+    "composition_preserved_lax": 0.5037037037037037,
+    "image_faces": 48
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1s6la01-heavy",
+   "ca": "mdcath-1s6la01-ca",
+   "frames": 11170,
+   "heavy_to_ca": {
+    "faces": 134,
+    "median_best_jaccard": 0.25529661016949157,
+    "fraction_jaccard_over_half": 0.1865671641791045,
+    "inclusions": 620,
+    "inclusion_preserved_lax": 0.617741935483871,
+    "inclusion_preserved_strict": 0.4338709677419355,
+    "composable_pairs": 870,
+    "composition_preserved_lax": 0.4011494252873563,
+    "image_faces": 58
+   },
+   "ca_to_heavy": {
+    "faces": 107,
+    "median_best_jaccard": 0.30739299610894943,
+    "fraction_jaccard_over_half": 0.2336448598130841,
+    "inclusions": 406,
+    "inclusion_preserved_lax": 0.7192118226600985,
+    "inclusion_preserved_strict": 0.5566502463054187,
+    "composable_pairs": 468,
+    "composition_preserved_lax": 0.5042735042735043,
+    "image_faces": 59
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1wpbg01-heavy",
+   "ca": "mdcath-1wpbg01-ca",
+   "frames": 10980,
+   "heavy_to_ca": {
+    "faces": 112,
+    "median_best_jaccard": 0.2721675967756223,
+    "fraction_jaccard_over_half": 0.16071428571428573,
+    "inclusions": 460,
+    "inclusion_preserved_lax": 0.7260869565217392,
+    "inclusion_preserved_strict": 0.5108695652173914,
+    "composable_pairs": 588,
+    "composition_preserved_lax": 0.532312925170068,
+    "image_faces": 46
+   },
+   "ca_to_heavy": {
+    "faces": 112,
+    "median_best_jaccard": 0.2556704260651629,
+    "fraction_jaccard_over_half": 0.14285714285714285,
+    "inclusions": 460,
+    "inclusion_preserved_lax": 0.6239130434782608,
+    "inclusion_preserved_strict": 0.45652173913043476,
+    "composable_pairs": 588,
+    "composition_preserved_lax": 0.3826530612244898,
+    "image_faces": 51
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1x4pa00-heavy",
+   "ca": "mdcath-1x4pa00-ca",
+   "frames": 11130,
+   "heavy_to_ca": {
+    "faces": 78,
+    "median_best_jaccard": 0.2003303130236182,
+    "fraction_jaccard_over_half": 0.10256410256410256,
+    "inclusions": 220,
+    "inclusion_preserved_lax": 0.6590909090909091,
+    "inclusion_preserved_strict": 0.4409090909090909,
+    "composable_pairs": 186,
+    "composition_preserved_lax": 0.40860215053763443,
+    "image_faces": 40
+   },
+   "ca_to_heavy": {
+    "faces": 77,
+    "median_best_jaccard": 0.2222222222222222,
+    "fraction_jaccard_over_half": 0.1038961038961039,
+    "inclusions": 210,
+    "inclusion_preserved_lax": 0.6714285714285714,
+    "inclusion_preserved_strict": 0.44285714285714284,
+    "composable_pairs": 156,
+    "composition_preserved_lax": 0.4807692307692308,
+    "image_faces": 40
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-1zbqa02-heavy",
+   "ca": "mdcath-1zbqa02-ca",
+   "frames": 11190,
+   "heavy_to_ca": {
+    "faces": 65,
+    "median_best_jaccard": 0.2079207920792079,
+    "fraction_jaccard_over_half": 0.09230769230769231,
+    "inclusions": 146,
+    "inclusion_preserved_lax": 0.7191780821917808,
+    "inclusion_preserved_strict": 0.4931506849315068,
+    "composable_pairs": 78,
+    "composition_preserved_lax": 0.5384615384615384,
+    "image_faces": 36
+   },
+   "ca_to_heavy": {
+    "faces": 84,
+    "median_best_jaccard": 0.18452783412215462,
+    "fraction_jaccard_over_half": 0.07142857142857142,
+    "inclusions": 260,
+    "inclusion_preserved_lax": 0.6923076923076923,
+    "inclusion_preserved_strict": 0.45,
+    "composable_pairs": 246,
+    "composition_preserved_lax": 0.4959349593495935,
+    "image_faces": 38
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2ckka02-heavy",
+   "ca": "mdcath-2ckka02-ca",
+   "frames": 12500,
+   "heavy_to_ca": {
+    "faces": 181,
+    "median_best_jaccard": 0.14285714285714285,
+    "fraction_jaccard_over_half": 0.07734806629834254,
+    "inclusions": 938,
+    "inclusion_preserved_lax": 0.6311300639658849,
+    "inclusion_preserved_strict": 0.40085287846481876,
+    "composable_pairs": 1404,
+    "composition_preserved_lax": 0.45726495726495725,
+    "image_faces": 52
+   },
+   "ca_to_heavy": {
+    "faces": 134,
+    "median_best_jaccard": 0.1772545835870374,
+    "fraction_jaccard_over_half": 0.14925373134328357,
+    "inclusions": 616,
+    "inclusion_preserved_lax": 0.5551948051948052,
+    "inclusion_preserved_strict": 0.37337662337662336,
+    "composable_pairs": 864,
+    "composition_preserved_lax": 0.32175925925925924,
+    "image_faces": 52
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2d46a00-heavy",
+   "ca": "mdcath-2d46a00-ca",
+   "frames": 11390,
+   "heavy_to_ca": {
+    "faces": 95,
+    "median_best_jaccard": 0.2896764252696456,
+    "fraction_jaccard_over_half": 0.2,
+    "inclusions": 310,
+    "inclusion_preserved_lax": 0.5645161290322581,
+    "inclusion_preserved_strict": 0.3709677419354839,
+    "composable_pairs": 288,
+    "composition_preserved_lax": 0.3020833333333333,
+    "image_faces": 43
+   },
+   "ca_to_heavy": {
+    "faces": 93,
+    "median_best_jaccard": 0.28426395939086296,
+    "fraction_jaccard_over_half": 0.1827956989247312,
+    "inclusions": 302,
+    "inclusion_preserved_lax": 0.6556291390728477,
+    "inclusion_preserved_strict": 0.45364238410596025,
+    "composable_pairs": 282,
+    "composition_preserved_lax": 0.4574468085106383,
+    "image_faces": 47
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2dmpa01-heavy",
+   "ca": "mdcath-2dmpa01-ca",
+   "frames": 12500,
+   "heavy_to_ca": {
+    "faces": 99,
+    "median_best_jaccard": 0.2558139534883721,
+    "fraction_jaccard_over_half": 0.1919191919191919,
+    "inclusions": 338,
+    "inclusion_preserved_lax": 0.6923076923076923,
+    "inclusion_preserved_strict": 0.4911242603550296,
+    "composable_pairs": 336,
+    "composition_preserved_lax": 0.48214285714285715,
+    "image_faces": 47
+   },
+   "ca_to_heavy": {
+    "faces": 77,
+    "median_best_jaccard": 0.3037037037037037,
+    "fraction_jaccard_over_half": 0.23376623376623376,
+    "inclusions": 210,
+    "inclusion_preserved_lax": 0.7476190476190476,
+    "inclusion_preserved_strict": 0.580952380952381,
+    "composable_pairs": 156,
+    "composition_preserved_lax": 0.5384615384615384,
+    "image_faces": 49
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2e3tb03-heavy",
+   "ca": "mdcath-2e3tb03-ca",
+   "frames": 11390,
+   "heavy_to_ca": {
+    "faces": 181,
+    "median_best_jaccard": 0.23236514522821577,
+    "fraction_jaccard_over_half": 0.1878453038674033,
+    "inclusions": 1058,
+    "inclusion_preserved_lax": 0.5718336483931947,
+    "inclusion_preserved_strict": 0.3553875236294896,
+    "composable_pairs": 1782,
+    "composition_preserved_lax": 0.3434343434343434,
+    "image_faces": 52
+   },
+   "ca_to_heavy": {
+    "faces": 129,
+    "median_best_jaccard": 0.2411764705882353,
+    "fraction_jaccard_over_half": 0.1937984496124031,
+    "inclusions": 566,
+    "inclusion_preserved_lax": 0.6166077738515902,
+    "inclusion_preserved_strict": 0.4098939929328622,
+    "composable_pairs": 750,
+    "composition_preserved_lax": 0.392,
+    "image_faces": 48
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2j8ga03-heavy",
+   "ca": "mdcath-2j8ga03-ca",
+   "frames": 12130,
+   "heavy_to_ca": {
+    "faces": 72,
+    "median_best_jaccard": 0.3009075722442467,
+    "fraction_jaccard_over_half": 0.125,
+    "inclusions": 200,
+    "inclusion_preserved_lax": 0.715,
+    "inclusion_preserved_strict": 0.465,
+    "composable_pairs": 174,
+    "composition_preserved_lax": 0.5747126436781609,
+    "image_faces": 35
+   },
+   "ca_to_heavy": {
+    "faces": 95,
+    "median_best_jaccard": 0.18803418803418803,
+    "fraction_jaccard_over_half": 0.09473684210526316,
+    "inclusions": 322,
+    "inclusion_preserved_lax": 0.6801242236024845,
+    "inclusion_preserved_strict": 0.4813664596273292,
+    "composable_pairs": 324,
+    "composition_preserved_lax": 0.4783950617283951,
+    "image_faces": 45
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2jrra01-heavy",
+   "ca": "mdcath-2jrra01-ca",
+   "frames": 12500,
+   "heavy_to_ca": {
+    "faces": 142,
+    "median_best_jaccard": 0.24598036055079692,
+    "fraction_jaccard_over_half": 0.22535211267605634,
+    "inclusions": 684,
+    "inclusion_preserved_lax": 0.6491228070175439,
+    "inclusion_preserved_strict": 0.4619883040935672,
+    "composable_pairs": 996,
+    "composition_preserved_lax": 0.4497991967871486,
+    "image_faces": 52
+   },
+   "ca_to_heavy": {
+    "faces": 101,
+    "median_best_jaccard": 0.29918032786885246,
+    "fraction_jaccard_over_half": 0.27722772277227725,
+    "inclusions": 394,
+    "inclusion_preserved_lax": 0.700507614213198,
+    "inclusion_preserved_strict": 0.5279187817258884,
+    "composable_pairs": 486,
+    "composition_preserved_lax": 0.5164609053497943,
+    "image_faces": 48
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2lrda00-heavy",
+   "ca": "mdcath-2lrda00-ca",
+   "frames": 12500,
+   "heavy_to_ca": {
+    "faces": 116,
+    "median_best_jaccard": 0.22392007547678416,
+    "fraction_jaccard_over_half": 0.12931034482758622,
+    "inclusions": 488,
+    "inclusion_preserved_lax": 0.6844262295081968,
+    "inclusion_preserved_strict": 0.4692622950819672,
+    "composable_pairs": 636,
+    "composition_preserved_lax": 0.48427672955974843,
+    "image_faces": 42
+   },
+   "ca_to_heavy": {
+    "faces": 75,
+    "median_best_jaccard": 0.2993103448275862,
+    "fraction_jaccard_over_half": 0.22666666666666666,
+    "inclusions": 202,
+    "inclusion_preserved_lax": 0.6485148514851485,
+    "inclusion_preserved_strict": 0.4900990099009901,
+    "composable_pairs": 150,
+    "composition_preserved_lax": 0.43333333333333335,
+    "image_faces": 44
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2xepa03-heavy",
+   "ca": "mdcath-2xepa03-ca",
+   "frames": 11390,
+   "heavy_to_ca": {
+    "faces": 88,
+    "median_best_jaccard": 0.11016949152542373,
+    "fraction_jaccard_over_half": 0.045454545454545456,
+    "inclusions": 288,
+    "inclusion_preserved_lax": 0.5625,
+    "inclusion_preserved_strict": 0.3888888888888889,
+    "composable_pairs": 294,
+    "composition_preserved_lax": 0.36054421768707484,
+    "image_faces": 42
+   },
+   "ca_to_heavy": {
+    "faces": 79,
+    "median_best_jaccard": 0.12371134020618557,
+    "fraction_jaccard_over_half": 0.05063291139240506,
+    "inclusions": 226,
+    "inclusion_preserved_lax": 0.6769911504424779,
+    "inclusion_preserved_strict": 0.4026548672566372,
+    "composable_pairs": 192,
+    "composition_preserved_lax": 0.5572916666666666,
+    "image_faces": 33
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-2yila02-heavy",
+   "ca": "mdcath-2yila02-ca",
+   "frames": 12500,
+   "heavy_to_ca": {
+    "faces": 75,
+    "median_best_jaccard": 0.22887323943661972,
+    "fraction_jaccard_over_half": 0.21333333333333335,
+    "inclusions": 218,
+    "inclusion_preserved_lax": 0.6376146788990825,
+    "inclusion_preserved_strict": 0.44495412844036697,
+    "composable_pairs": 192,
+    "composition_preserved_lax": 0.3697916666666667,
+    "image_faces": 38
+   },
+   "ca_to_heavy": {
+    "faces": 109,
+    "median_best_jaccard": 0.23597359735973597,
+    "fraction_jaccard_over_half": 0.14678899082568808,
+    "inclusions": 482,
+    "inclusion_preserved_lax": 0.7178423236514523,
+    "inclusion_preserved_strict": 0.46473029045643155,
+    "composable_pairs": 684,
+    "composition_preserved_lax": 0.5672514619883041,
+    "image_faces": 34
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-3g5ca02-heavy",
+   "ca": "mdcath-3g5ca02-ca",
+   "frames": 12500,
+   "heavy_to_ca": {
+    "faces": 79,
+    "median_best_jaccard": 0.2960092987214258,
+    "fraction_jaccard_over_half": 0.27848101265822783,
+    "inclusions": 218,
+    "inclusion_preserved_lax": 0.7247706422018348,
+    "inclusion_preserved_strict": 0.5642201834862385,
+    "composable_pairs": 162,
+    "composition_preserved_lax": 0.48148148148148145,
+    "image_faces": 48
+   },
+   "ca_to_heavy": {
+    "faces": 87,
+    "median_best_jaccard": 0.3096153846153846,
+    "fraction_jaccard_over_half": 0.27586206896551724,
+    "inclusions": 266,
+    "inclusion_preserved_lax": 0.7894736842105263,
+    "inclusion_preserved_strict": 0.5864661654135338,
+    "composable_pairs": 228,
+    "composition_preserved_lax": 0.6491228070175439,
+    "image_faces": 42
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-3pmqa02-heavy",
+   "ca": "mdcath-3pmqa02-ca",
+   "frames": 12130,
+   "heavy_to_ca": {
+    "faces": 73,
+    "median_best_jaccard": 0.21183206106870228,
+    "fraction_jaccard_over_half": 0.1780821917808219,
+    "inclusions": 190,
+    "inclusion_preserved_lax": 0.7578947368421053,
+    "inclusion_preserved_strict": 0.45789473684210524,
+    "composable_pairs": 138,
+    "composition_preserved_lax": 0.6376811594202898,
+    "image_faces": 39
+   },
+   "ca_to_heavy": {
+    "faces": 69,
+    "median_best_jaccard": 0.2630480167014614,
+    "fraction_jaccard_over_half": 0.18840579710144928,
+    "inclusions": 174,
+    "inclusion_preserved_lax": 0.6954022988505747,
+    "inclusion_preserved_strict": 0.47126436781609193,
+    "composable_pairs": 126,
+    "composition_preserved_lax": 0.5396825396825397,
+    "image_faces": 35
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-4a0ta01-heavy",
+   "ca": "mdcath-4a0ta01-ca",
+   "frames": 11390,
+   "heavy_to_ca": {
+    "faces": 96,
+    "median_best_jaccard": 0.374644134431648,
+    "fraction_jaccard_over_half": 0.3854166666666667,
+    "inclusions": 336,
+    "inclusion_preserved_lax": 0.7202380952380952,
+    "inclusion_preserved_strict": 0.5595238095238095,
+    "composable_pairs": 360,
+    "composition_preserved_lax": 0.5,
+    "image_faces": 51
+   },
+   "ca_to_heavy": {
+    "faces": 76,
+    "median_best_jaccard": 0.44566190876014555,
+    "fraction_jaccard_over_half": 0.47368421052631576,
+    "inclusions": 204,
+    "inclusion_preserved_lax": 0.7941176470588235,
+    "inclusion_preserved_strict": 0.6911764705882353,
+    "composable_pairs": 150,
+    "composition_preserved_lax": 0.5866666666666667,
+    "image_faces": 57
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-4dcza00-heavy",
+   "ca": "mdcath-4dcza00-ca",
+   "frames": 11020,
+   "heavy_to_ca": {
+    "faces": 87,
+    "median_best_jaccard": 0.2523809523809524,
+    "fraction_jaccard_over_half": 0.16091954022988506,
+    "inclusions": 278,
+    "inclusion_preserved_lax": 0.6438848920863309,
+    "inclusion_preserved_strict": 0.42805755395683454,
+    "composable_pairs": 264,
+    "composition_preserved_lax": 0.4318181818181818,
+    "image_faces": 37
+   },
+   "ca_to_heavy": {
+    "faces": 82,
+    "median_best_jaccard": 0.2484382729950227,
+    "fraction_jaccard_over_half": 0.15853658536585366,
+    "inclusions": 232,
+    "inclusion_preserved_lax": 0.7025862068965517,
+    "inclusion_preserved_strict": 0.5043103448275862,
+    "composable_pairs": 174,
+    "composition_preserved_lax": 0.4827586206896552,
+    "image_faces": 42
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-5b1aj00-heavy",
+   "ca": "mdcath-5b1aj00-ca",
+   "frames": 11950,
+   "heavy_to_ca": {
+    "faces": 90,
+    "median_best_jaccard": 0.06949648634502409,
+    "fraction_jaccard_over_half": 0.0,
+    "inclusions": 300,
+    "inclusion_preserved_lax": 0.4766666666666667,
+    "inclusion_preserved_strict": 0.29333333333333333,
+    "composable_pairs": 306,
+    "composition_preserved_lax": 0.25163398692810457,
+    "image_faces": 36
+   },
+   "ca_to_heavy": {
+    "faces": 78,
+    "median_best_jaccard": 0.07702110789976804,
+    "fraction_jaccard_over_half": 0.0,
+    "inclusions": 224,
+    "inclusion_preserved_lax": 0.5044642857142857,
+    "inclusion_preserved_strict": 0.24107142857142858,
+    "composable_pairs": 192,
+    "composition_preserved_lax": 0.23958333333333334,
+    "image_faces": 29
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  },
+  {
+   "heavy": "mdcath-5daea00-heavy",
+   "ca": "mdcath-5daea00-ca",
+   "frames": 11390,
+   "heavy_to_ca": {
+    "faces": 83,
+    "median_best_jaccard": 0.27672955974842767,
+    "fraction_jaccard_over_half": 0.12048192771084337,
+    "inclusions": 258,
+    "inclusion_preserved_lax": 0.7674418604651163,
+    "inclusion_preserved_strict": 0.4806201550387597,
+    "composable_pairs": 246,
+    "composition_preserved_lax": 0.6463414634146342,
+    "image_faces": 33
+   },
+   "ca_to_heavy": {
+    "faces": 72,
+    "median_best_jaccard": 0.22364287776136382,
+    "fraction_jaccard_over_half": 0.1527777777777778,
+    "inclusions": 172,
+    "inclusion_preserved_lax": 0.6976744186046512,
+    "inclusion_preserved_strict": 0.45930232558139533,
+    "composable_pairs": 96,
+    "composition_preserved_lax": 0.5208333333333334,
+    "image_faces": 39
+   },
+   "note": "f(\u03c3) = C-alpha face with maximal witness-set Jaccard. Lax preservation allows equal images (identities). This is an empirical comparison of two face posets on identical frames, not a proved functor."
+  }
+ ],
+ "summary": {
+  "heavy_to_ca.inclusion_preserved_lax": {
+   "median": 0.6590909090909091,
+   "min": 0.4411764705882353,
+   "max": 0.7674418604651163,
+   "n": 31
+  },
+  "heavy_to_ca.inclusion_preserved_strict": {
+   "median": 0.45054945054945056,
+   "min": 0.24705882352941178,
+   "max": 0.5846774193548387,
+   "n": 31
+  },
+  "heavy_to_ca.composition_preserved_lax": {
+   "median": 0.45726495726495725,
+   "min": 0.15833333333333333,
+   "max": 0.6463414634146342,
+   "n": 31
+  },
+  "heavy_to_ca.median_best_jaccard": {
+   "median": 0.23236514522821577,
+   "min": 0.06949648634502409,
+   "max": 0.374644134431648,
+   "n": 31
+  },
+  "ca_to_heavy.inclusion_preserved_lax": {
+   "median": 0.6801242236024845,
+   "min": 0.4806201550387597,
+   "max": 0.8051948051948052,
+   "n": 31
+  },
+  "ca_to_heavy.inclusion_preserved_strict": {
+   "median": 0.4645390070921986,
+   "min": 0.24031007751937986,
+   "max": 0.6911764705882353,
+   "n": 31
+  },
+  "ca_to_heavy.composition_preserved_lax": {
+   "median": 0.4827586206896552,
+   "min": 0.23958333333333334,
+   "max": 0.6843971631205674,
+   "n": 31
+  },
+  "ca_to_heavy.median_best_jaccard": {
+   "median": 0.2411764705882353,
+   "min": 0.07453416149068323,
+   "max": 0.44566190876014555,
+   "n": 31
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2lrda00-ca",
+ "label": "CATH domain 2lrdA00 (mdCATH), C-alpha",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 37,
+   "triangles": 19,
+   "tetrahedra": 1,
+   "generators": 75,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2lrda00-ca\\base.hom (81360 bytes); generators by dimension: [(0, 18), (1, 37), (2, 19), (3, 1)]"
+  },
+  "poset": {
+   "vertices": 75,
+   "edges": 202,
+   "triangles": 150,
+   "tetrahedra": 24,
+   "generators": 451,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2lrda00-ca\\poset.hom (798143 bytes); generators by dimension: [(0, 75), (1, 202), (2, 150), (3, 24)]"
+  }
+ }
+}

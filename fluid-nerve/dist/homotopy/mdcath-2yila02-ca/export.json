@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2yila02-ca",
+ "label": "CATH domain 2yilA02 (mdCATH), C-alpha",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 42,
+   "triangles": 36,
+   "tetrahedra": 13,
+   "generators": 109,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2yila02-ca\\base.hom (280889 bytes); generators by dimension: [(0, 18), (1, 42), (2, 36), (3, 13)]"
+  },
+  "poset": {
+   "vertices": 109,
+   "edges": 482,
+   "triangles": 684,
+   "tetrahedra": 312,
+   "generators": 1587,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2yila02-ca\\poset.hom (6026554 bytes); generators by dimension: [(0, 109), (1, 482), (2, 684), (3, 312)]"
+  }
+ }
+}

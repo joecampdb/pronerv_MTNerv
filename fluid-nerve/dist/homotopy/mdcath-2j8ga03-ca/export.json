@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2j8ga03-ca",
+ "label": "CATH domain 2j8gA03 (mdCATH), C-alpha",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 43,
+   "triangles": 30,
+   "tetrahedra": 4,
+   "generators": 95,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2j8ga03-ca\\base.hom (149730 bytes); generators by dimension: [(0, 18), (1, 43), (2, 30), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 95,
+   "edges": 322,
+   "triangles": 324,
+   "tetrahedra": 96,
+   "generators": 837,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2j8ga03-ca\\poset.hom (2231789 bytes); generators by dimension: [(0, 95), (1, 322), (2, 324), (3, 96)]"
+  }
+ }
+}

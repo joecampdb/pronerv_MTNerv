@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2xepa03-ca",
+ "label": "CATH domain 2xepA03 (mdCATH), C-alpha",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 39,
+   "triangles": 20,
+   "tetrahedra": 2,
+   "generators": 79,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2xepa03-ca\\base.hom (97828 bytes); generators by dimension: [(0, 18), (1, 39), (2, 20), (3, 2)]"
+  },
+  "poset": {
+   "vertices": 79,
+   "edges": 226,
+   "triangles": 192,
+   "tetrahedra": 48,
+   "generators": 545,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2xepa03-ca\\poset.hom (1228213 bytes); generators by dimension: [(0, 79), (1, 226), (2, 192), (3, 48)]"
+  }
+ }
+}

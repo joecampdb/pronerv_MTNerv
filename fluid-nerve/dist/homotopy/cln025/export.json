@@ -1,0 +1,24 @@
+{
+ "id": "cln025",
+ "label": "Chignolin CLN025 (128-run subset)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 42,
+   "triangles": 24,
+   "tetrahedra": 1,
+   "generators": 85,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\cln025\\base.hom (95818 bytes); generators by dimension: [(0, 18), (1, 42), (2, 24), (3, 1)]"
+  },
+  "poset": {
+   "vertices": 85,
+   "edges": 242,
+   "triangles": 180,
+   "tetrahedra": 24,
+   "generators": 531,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\cln025\\poset.hom (893893 bytes); generators by dimension: [(0, 85), (1, 242), (2, 180), (3, 24)]"
+  }
+ }
+}

@@ -1,0 +1,356 @@
+{
+ "objects": {
+  "label": "nerve objects",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 63.0,
+  "median_backbone": 82.5,
+  "iqr_atom": [
+   29.5,
+   75.0
+  ],
+  "iqr_backbone": [
+   76.0,
+   93.75
+  ],
+  "mannwhitney_U": 56.5,
+  "p_value": 0.0009180517407469959,
+  "cliffs_delta": -0.6789772727272727
+ },
+ "inclusions": {
+  "label": "inclusions",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 140.0,
+  "median_backbone": 223.0,
+  "iqr_atom": [
+   27.0,
+   199.0
+  ],
+  "iqr_backbone": [
+   196.0,
+   283.5
+  ],
+  "mannwhitney_U": 59.0,
+  "p_value": 0.001176040112913681,
+  "cliffs_delta": -0.6647727272727273
+ },
+ "triangles": {
+  "label": "triangles",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 72.0,
+  "median_backbone": 141.0,
+  "iqr_atom": [
+   6.0,
+   126.0
+  ],
+  "iqr_backbone": [
+   120.0,
+   198.0
+  ],
+  "mannwhitney_U": 65.5,
+  "p_value": 0.002128183952306585,
+  "cliffs_delta": -0.6278409090909091
+ },
+ "max_dimension": {
+  "label": "max simplex dim",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 2.0,
+  "median_backbone": 3.0,
+  "iqr_atom": [
+   1.5,
+   3.0
+  ],
+  "iqr_backbone": [
+   3.0,
+   3.0
+  ],
+  "mannwhitney_U": 101.5,
+  "p_value": 0.015146547050809905,
+  "cliffs_delta": -0.42329545454545453
+ },
+ "beta0": {
+  "label": "\u03b20 (cover)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 2.0,
+  "median_backbone": 1.0,
+  "iqr_atom": [
+   1.0,
+   8.5
+  ],
+  "iqr_backbone": [
+   1.0,
+   1.0
+  ],
+  "mannwhitney_U": 266.0,
+  "p_value": 0.0002417930167817751,
+  "cliffs_delta": 0.5113636363636364
+ },
+ "beta1": {
+  "label": "\u03b21 (cover)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 0.0,
+  "median_backbone": 1.0,
+  "iqr_atom": [
+   0.0,
+   1.0
+  ],
+  "iqr_backbone": [
+   0.0,
+   2.25
+  ],
+  "mannwhitney_U": 136.0,
+  "p_value": 0.25127464206307226,
+  "cliffs_delta": -0.22727272727272727
+ },
+ "beta2": {
+  "label": "\u03b22 (cover)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 0.0,
+  "median_backbone": 0.0,
+  "iqr_atom": [
+   0.0,
+   0.0
+  ],
+  "iqr_backbone": [
+   0.0,
+   0.0
+  ],
+  "mannwhitney_U": 176.0,
+  "p_value": 1.0,
+  "cliffs_delta": 0.0
+ },
+ "uncovered_fraction": {
+  "label": "uncovered fraction",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 0.004464862705471807,
+  "median_backbone": 0.020608668501063562,
+  "iqr_atom": [
+   9.496610980058135e-05,
+   0.3227787992664096
+  ],
+  "iqr_backbone": [
+   0.015889468562897975,
+   0.030311676909569797
+  ],
+  "mannwhitney_U": 163.0,
+  "p_value": 0.7278762167162922,
+  "cliffs_delta": -0.07386363636363637
+ },
+ "median_h_ref": {
+  "label": "median h at \u03c4_ref (nm)",
+  "n_atom": 10,
+  "n_backbone": 32,
+  "median_atom": 0.012236296943867447,
+  "median_backbone": 0.6018647350421051,
+  "iqr_atom": [
+   0.008311503108084964,
+   0.017936576388800668
+  ],
+  "iqr_backbone": [
+   0.3371186074358317,
+   0.7428806652378042
+  ],
+  "mannwhitney_U": 0.0,
+  "p_value": 2.4743767076224827e-06,
+  "cliffs_delta": -1.0
+ },
+ "drift_ratio_ref": {
+  "label": "drift/spread at \u03c4_ref",
+  "n_atom": 10,
+  "n_backbone": 32,
+  "median_atom": 0.9427485284877806,
+  "median_backbone": 0.4246647277311618,
+  "iqr_atom": [
+   0.46905796458364535,
+   2.9010353197007896
+  ],
+  "iqr_backbone": [
+   0.32960136743924473,
+   0.48221156571883017
+  ],
+  "mannwhitney_U": 261.0,
+  "p_value": 0.002998538355559587,
+  "cliffs_delta": 0.63125
+ },
+ "h_slope": {
+  "label": "mobility exponent",
+  "n_atom": 10,
+  "n_backbone": 32,
+  "median_atom": 0.35622313957631246,
+  "median_backbone": 0.20719559483095704,
+  "iqr_atom": [
+   0.3155564773411559,
+   0.3867676965284483
+  ],
+  "iqr_backbone": [
+   0.16048290299143259,
+   0.21968757244862214
+  ],
+  "mannwhitney_U": 290.0,
+  "p_value": 0.00013114780328289262,
+  "cliffs_delta": 0.8125
+ },
+ "h_slope_early": {
+  "label": "early mobility exponent",
+  "n_atom": 10,
+  "n_backbone": 32,
+  "median_atom": 0.7876956367355459,
+  "median_backbone": 0.24131679353173996,
+  "iqr_atom": [
+   0.7279409962641985,
+   0.8342639646392905
+  ],
+  "iqr_backbone": [
+   0.18875223235598126,
+   0.2588722998832297
+  ],
+  "mannwhitney_U": 289.0,
+  "p_value": 0.00014778519891427583,
+  "cliffs_delta": 0.80625
+ },
+ "first_connected_frames": {
+  "label": "\u03c4_connect (frames)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 1.0,
+  "median_backbone": 0.0,
+  "iqr_atom": [
+   0.0,
+   3.0
+  ],
+  "iqr_backbone": [
+   0.0,
+   0.0
+  ],
+  "mannwhitney_U": 265.0,
+  "p_value": 0.00028137554228329964,
+  "cliffs_delta": 0.5056818181818182
+ },
+ "beta1_total_lifetime_frames": {
+  "label": "\u03b21 total lifetime (frames)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 142.0,
+  "median_backbone": 1.5,
+  "iqr_atom": [
+   59.0,
+   426.0
+  ],
+  "iqr_backbone": [
+   0.75,
+   3.0
+  ],
+  "mannwhitney_U": 295.5,
+  "p_value": 0.0008031443932728899,
+  "cliffs_delta": 0.6789772727272727
+ },
+ "beta1_classes": {
+  "label": "\u03b21 classes born (fluid)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 6.0,
+  "median_backbone": 1.0,
+  "iqr_atom": [
+   2.0,
+   10.5
+  ],
+  "iqr_backbone": [
+   0.75,
+   3.0
+  ],
+  "mannwhitney_U": 265.5,
+  "p_value": 0.011896046401080346,
+  "cliffs_delta": 0.5085227272727273
+ },
+ "flood_basins": {
+  "label": "flooding basins (persistence \u2265 1)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 1.0,
+  "median_backbone": 18.0,
+  "iqr_atom": [
+   1.0,
+   4.0
+  ],
+  "iqr_backbone": [
+   13.5,
+   24.0
+  ],
+  "mannwhitney_U": 8.5,
+  "p_value": 3.1907023821737626e-06,
+  "cliffs_delta": -0.9517045454545454
+ },
+ "flood_connect_level": {
+  "label": "flooding connection level",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 0.0,
+  "median_backbone": 0.0,
+  "iqr_atom": [
+   0.0,
+   0.0
+  ],
+  "iqr_backbone": [
+   0.0,
+   0.0
+  ],
+  "mannwhitney_U": 176.0,
+  "p_value": 1.0,
+  "cliffs_delta": 0.0
+ },
+ "entropy_bits": {
+  "label": "occupancy entropy (bits)",
+  "n_atom": 11,
+  "n_backbone": 32,
+  "median_atom": 8.084035591519621,
+  "median_backbone": 7.493156112121257,
+  "iqr_atom": [
+   7.306762762662377,
+   8.301966374286312
+  ],
+  "iqr_backbone": [
+   7.1097666528387045,
+   7.964999292004805
+  ],
+  "mannwhitney_U": 230.0,
+  "p_value": 0.13644039101711275,
+  "cliffs_delta": 0.3068181818181818
+ },
+ "connect_radius_factor": {
+  "label": "cover-radius factor at which \u03b20 = 1",
+  "n_atom": 11,
+  "n_backbone": 30,
+  "median_atom": 1.25,
+  "median_backbone": 1.0,
+  "iqr_atom": [
+   0.75,
+   1.375
+  ],
+  "iqr_backbone": [
+   0.75,
+   1.0
+  ],
+  "mannwhitney_U": 217.5,
+  "p_value": 0.08977219638947473,
+  "cliffs_delta": 0.3181818181818182
+ },
+ "flip_rate_1": {
+  "label": "membership flip rate at \u03c4 = 1 frame",
+  "n_atom": 0,
+  "n_backbone": 11,
+  "median_atom": null,
+  "median_backbone": 0.5852900867976245,
+  "iqr_atom": null,
+  "iqr_backbone": [
+   0.5528846518377715,
+   0.6645905502244573
+  ]
+ }
+}

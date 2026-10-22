@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-2jrra01-heavy",
+ "label": "CATH domain 2jrrA01 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 53,
+   "triangles": 52,
+   "tetrahedra": 19,
+   "generators": 142,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2jrra01-heavy\\base.hom (403621 bytes); generators by dimension: [(0, 18), (1, 53), (2, 52), (3, 19)]"
+  },
+  "poset": {
+   "vertices": 142,
+   "edges": 684,
+   "triangles": 996,
+   "tetrahedra": 456,
+   "generators": 2278,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2jrra01-heavy\\poset.hom (8792381 bytes); generators by dimension: [(0, 142), (1, 684), (2, 996), (3, 456)]"
+  }
+ }
+}

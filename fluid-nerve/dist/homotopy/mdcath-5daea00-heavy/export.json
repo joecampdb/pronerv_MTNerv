@@ -1,0 +1,24 @@
+{
+ "id": "mdcath-5daea00-heavy",
+ "label": "CATH domain 5daeA00 (mdCATH), heavy atoms",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 39,
+   "triangles": 23,
+   "tetrahedra": 3,
+   "generators": 83,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-5daea00-heavy\\base.hom (118082 bytes); generators by dimension: [(0, 18), (1, 39), (2, 23), (3, 3)]"
+  },
+  "poset": {
+   "vertices": 83,
+   "edges": 258,
+   "triangles": 246,
+   "tetrahedra": 72,
+   "generators": 659,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-5daea00-heavy\\poset.hom (1691728 bytes); generators by dimension: [(0, 83), (1, 258), (2, 246), (3, 72)]"
+  }
+ }
+}
