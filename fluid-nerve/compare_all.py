@@ -274,21 +274,22 @@ def fig_invariants(inv, tests):
 
 
 def fig_betti_curves(rows):
-    fig, axes = plt.subplots(1, 2, figsize=(9.6, 3.9), sharey=False)
-    for ax, g in zip(axes, ("atom", "backbone")):
+    """Absolute Betti curves of the fluid filtration against ambient time (frames), one line per system."""
+    fig, axes = plt.subplots(2, 2, figsize=(9.6, 6.6))
+    for row, g in zip(axes, ("atom", "backbone")):
         for S in rows:
             if S["group"] != g:
                 continue
             fl = S["fluid_filtration"]["rows"]
-            t = np.array([r["tau_frames"] for r in fl], float)
-            tc = S["fluid_filtration"]["first_connected_tau"] or 1
-            b0 = np.array([r["betti"][0] for r in fl], float)
-            b0 = b0 / b0[0]
-            ax.step(np.maximum(t, 0.5) / max(tc, 1), b0, where="post", color=GROUP[g], lw=1.1, alpha=0.6)
-        ax.set_xscale("log"); ax.set_xlabel("ambient time τ / τ_connect")
-        ax.set_ylabel("β₀(τ) / β₀(0)")
-        ax.set_title(f"{g}-based: fluid filtration component curves", loc="left")
-        ax.grid(True, color=GRID, lw=0.5)
+            t = np.maximum(np.array([r["tau_frames"] for r in fl], float), 0.5)
+            for ax, k in zip(row, (0, 1)):
+                ax.step(t, [r["betti"][k] for r in fl], where="post", color=GROUP[g], lw=1.0, alpha=0.55)
+        for ax, k in zip(row, (0, 1)):
+            ax.set_xscale("log")
+            ax.set_xlabel("ambient time τ (frames; τ = 0 drawn at 0.5)")
+            ax.set_ylabel(f"β{'₀' if k == 0 else '₁'}(N_τ)")
+            ax.set_title(f"{g}-based: {'components' if k == 0 else 'loops'} of the τ-thickened cover nerve", loc="left", fontsize=9)
+            ax.grid(True, color=GRID, lw=0.5)
     fig.tight_layout(); fig.savefig(OUT / "fig_betti_curves.png", dpi=170); plt.close(fig)
 
 
@@ -311,19 +312,22 @@ def fig_functor(cf):
     pairs = cf["pairs"]
     if not pairs:
         return
-    fig, ax = plt.subplots(figsize=(max(5, 0.42 * len(pairs) + 2), 3.8))
-    x = np.arange(len(pairs))
-    for off, key, col, lab in ((-.2, "inclusion_preserved_lax", GROUP["atom"], "inclusions preserved (lax)"),
-                               (0.0, "composition_preserved_lax", GROUP["backbone"], "composable pairs preserved"),
-                               (.2, "median_best_jaccard", GROUP["paired"], "median witness Jaccard")):
-        vals = [p["heavy_to_ca"][key] or 0 for p in pairs]
-        ax.bar(x + off, vals, width=0.19, color=col, label=lab, edgecolor=SURFACE, linewidth=0.8)
-    ax.set_xticks(x); ax.set_xticklabels([p["ca"].split("-")[1] for p in pairs], rotation=60, ha="right", fontsize=7)
-    ax.set_ylim(0, 1.05); ax.set_ylabel("rate")
-    ax.set_title("Heavy-atom → C-alpha comparison on shared frames (mdCATH domains)", loc="left")
-    ax.legend(frameon=False, fontsize=7, ncol=3, loc="lower left")
-    ax.grid(True, axis="y", color=GRID, lw=0.5)
-    fig.tight_layout(); fig.savefig(OUT / "fig_functor.png", dpi=170); plt.close(fig)
+    fig, axes = plt.subplots(1, 3, figsize=(9.6, 3.6))
+    rng = np.random.default_rng(3)
+    panels = [("inclusion_preserved_lax", "inclusions preserved (lax)"), ("composition_preserved_lax", "composable pairs preserved (lax)"),
+              ("median_best_jaccard", "median witness-set Jaccard")]
+    for ax, (key, label) in zip(axes, panels):
+        for gi, (direction, col) in enumerate((("heavy_to_ca", GROUP["paired"]), ("ca_to_heavy", GROUP["backbone"]))):
+            vals = [p[direction][key] for p in pairs if p[direction][key] is not None]
+            x = gi + rng.uniform(-.16, .16, len(vals))
+            ax.scatter(x, vals, s=20, facecolor=col, edgecolor=SURFACE, linewidth=0.8, zorder=3)
+            if vals:
+                ax.hlines(np.median(vals), gi - .28, gi + .28, color=INK, lw=1.6, zorder=4)
+        ax.set_xticks([0, 1]); ax.set_xticklabels(["heavy → Cα", "Cα → heavy"])
+        ax.set_ylim(0, 1.02); ax.set_title(label, loc="left", fontsize=9)
+        ax.grid(True, axis="y", color=GRID, lw=0.5)
+    fig.suptitle(f"Face-poset comparison on shared frames, {len(pairs)} mdCATH domains (bars: medians)", x=0.02, ha="left", fontsize=9.5, color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.93)); fig.savefig(OUT / "fig_functor.png", dpi=170); plt.close(fig)
 
 
 def fig_temperature(tl):

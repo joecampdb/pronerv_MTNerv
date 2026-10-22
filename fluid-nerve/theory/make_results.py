@@ -143,13 +143,19 @@ def main():
     txt.append(" Ballistic systems: " + ", ".join(tex(x[0]) for x in ball) + "." if ball else "")
     (GEN / "rigidity.tex").write_text("".join(txt) + "\n", encoding="utf-8")
 
-    # homotopy table
-    rows = ["\\begin{table}[H]\\centering\\small\\begin{tabular}{lrrrr}\\toprule system & base generators (0/1/2/3-cells) & status & poset generators & status\\\\\\midrule"]
+    # homotopy table (longtable; one row per exported system)
+    rows = ["\\begin{small}\\begin{longtable}{lrlrl}",
+            "\\caption{homotopy.io exports (\\texttt{dist/homotopy/<system>/}): generator counts of the base encoding by dimension "
+            "and of the face-poset encoding; status after the tool's deep diagram check.}\\label{tab:homotopy}\\\\",
+            "\\toprule system & base (0/1/2/3-cells) & status & poset generators & status\\\\\\midrule\\endfirsthead",
+            "\\toprule system & base (0/1/2/3-cells) & status & poset generators & status\\\\\\midrule\\endhead"]
     for sid, enc in sorted(hom.items()):
-        b, p = enc.get("base", {}), enc.get("poset", {})
-        rows.append(f"{tex(sid)} & {b.get('vertices')}/{b.get('edges')}/{b.get('triangles')}/{b.get('tetrahedra')} & {tex(str(b.get('status', ''))[:7])} & "
-                    f"{p.get('generators')} & {tex(str(p.get('status', ''))[:7])}\\\\")
-    rows += ["\\bottomrule\\end{tabular}\\caption{homotopy.io exports (\\texttt{dist/homotopy/<system>/}).}\\label{tab:homotopy}\\end{table}"]
+        b, p_ = enc.get("base", {}), enc.get("poset", {})
+        rows.append(f"{tex(sid)} & {b.get('vertices')}/{b.get('edges')}/{b.get('triangles')}/{b.get('tetrahedra')} & "
+                    f"{tex(str(b.get('status', ''))[:7])} & {p_.get('generators')} & {tex(str(p_.get('status', ''))[:7])}\\\\")
+    n_ok = sum(1 for enc in hom.values() if enc.get("base", {}).get("status") == "ok" and enc.get("poset", {}).get("status") == "ok")
+    rows += ["\\midrule", f"\\multicolumn{{5}}{{l}}{{{len(hom)} systems exported; {n_ok} with both encodings accepted by the deep check.}}\\\\",
+             "\\bottomrule\\end{longtable}\\end{small}"]
     (GEN / "homotopy_table.tex").write_text("\n".join(rows) + "\n", encoding="utf-8")
 
     # exemplars: pick one per family if figure exists

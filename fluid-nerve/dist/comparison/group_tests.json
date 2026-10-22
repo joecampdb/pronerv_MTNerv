@@ -1,98 +1,98 @@
 {
  "objects": {
   "label": "nerve objects",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 63.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 75.0,
   "median_backbone": 82.5,
   "iqr_atom": [
-   29.5,
-   75.0
+   38.5,
+   95.5
   ],
   "iqr_backbone": [
    76.0,
    93.75
   ],
-  "mannwhitney_U": 56.5,
-  "p_value": 0.0009180517407469959,
-  "cliffs_delta": -0.6789772727272727
+  "mannwhitney_U": 215.0,
+  "p_value": 0.15039351862186776,
+  "cliffs_delta": -0.2534722222222222
  },
  "inclusions": {
   "label": "inclusions",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 140.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 199.0,
   "median_backbone": 223.0,
   "iqr_atom": [
-   27.0,
-   199.0
+   52.0,
+   289.0
   ],
   "iqr_backbone": [
    196.0,
    283.5
   ],
-  "mannwhitney_U": 59.0,
-  "p_value": 0.001176040112913681,
-  "cliffs_delta": -0.6647727272727273
+  "mannwhitney_U": 219.0,
+  "p_value": 0.17428451322072935,
+  "cliffs_delta": -0.23958333333333334
  },
  "triangles": {
   "label": "triangles",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 72.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 126.0,
   "median_backbone": 141.0,
   "iqr_atom": [
-   6.0,
-   126.0
+   16.5,
+   201.0
   ],
   "iqr_backbone": [
    120.0,
    198.0
   ],
-  "mannwhitney_U": 65.5,
-  "p_value": 0.002128183952306585,
-  "cliffs_delta": -0.6278409090909091
+  "mannwhitney_U": 225.0,
+  "p_value": 0.21434115919156316,
+  "cliffs_delta": -0.21875
  },
  "max_dimension": {
   "label": "max simplex dim",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 2.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 3.0,
   "median_backbone": 3.0,
   "iqr_atom": [
-   1.5,
-   3.0
+   2.0,
+   3.25
   ],
   "iqr_backbone": [
    3.0,
    3.0
   ],
-  "mannwhitney_U": 101.5,
-  "p_value": 0.015146547050809905,
-  "cliffs_delta": -0.42329545454545453
+  "mannwhitney_U": 258.5,
+  "p_value": 0.5038756667010686,
+  "cliffs_delta": -0.10243055555555555
  },
  "beta0": {
   "label": "\u03b20 (cover)",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 2.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 1.0,
   "median_backbone": 1.0,
   "iqr_atom": [
    1.0,
-   8.5
+   4.25
   ],
   "iqr_backbone": [
    1.0,
    1.0
   ],
-  "mannwhitney_U": 266.0,
-  "p_value": 0.0002417930167817751,
-  "cliffs_delta": 0.5113636363636364
+  "mannwhitney_U": 379.5,
+  "p_value": 0.006181965888060811,
+  "cliffs_delta": 0.3177083333333333
  },
  "beta1": {
   "label": "\u03b21 (cover)",
-  "n_atom": 11,
-  "n_backbone": 32,
+  "n_atom": 16,
+  "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 1.0,
   "iqr_atom": [
@@ -103,14 +103,14 @@
    0.0,
    2.25
   ],
-  "mannwhitney_U": 136.0,
-  "p_value": 0.25127464206307226,
-  "cliffs_delta": -0.22727272727272727
+  "mannwhitney_U": 202.0,
+  "p_value": 0.07568067389797137,
+  "cliffs_delta": -0.2986111111111111
  },
  "beta2": {
   "label": "\u03b22 (cover)",
-  "n_atom": 11,
-  "n_backbone": 32,
+  "n_atom": 16,
+  "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 0.0,
   "iqr_atom": [
@@ -121,176 +121,176 @@
    0.0,
    0.0
   ],
-  "mannwhitney_U": 176.0,
+  "mannwhitney_U": 288.0,
   "p_value": 1.0,
   "cliffs_delta": 0.0
  },
  "uncovered_fraction": {
   "label": "uncovered fraction",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 0.004464862705471807,
-  "median_backbone": 0.020608668501063562,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 0.0002453350333503335,
+  "median_backbone": 0.021386292531736108,
   "iqr_atom": [
-   9.496610980058135e-05,
-   0.3227787992664096
+   0.0,
+   0.21064025231161052
   ],
   "iqr_backbone": [
-   0.015889468562897975,
-   0.030311676909569797
+   0.01729278314310799,
+   0.031283143107989464
   ],
-  "mannwhitney_U": 163.0,
-  "p_value": 0.7278762167162922,
-  "cliffs_delta": -0.07386363636363637
+  "mannwhitney_U": 185.0,
+  "p_value": 0.04198038847232059,
+  "cliffs_delta": -0.3576388888888889
  },
  "median_h_ref": {
   "label": "median h at \u03c4_ref (nm)",
-  "n_atom": 10,
-  "n_backbone": 32,
-  "median_atom": 0.012236296943867447,
+  "n_atom": 13,
+  "n_backbone": 36,
+  "median_atom": 0.014906736614273818,
   "median_backbone": 0.6018647350421051,
   "iqr_atom": [
-   0.008311503108084964,
-   0.017936576388800668
+   0.008519050525163935,
+   0.027607601391916446
   ],
   "iqr_backbone": [
-   0.3371186074358317,
-   0.7428806652378042
+   0.3465073064512727,
+   0.7670029538520624
   ],
   "mannwhitney_U": 0.0,
-  "p_value": 2.4743767076224827e-06,
+  "p_value": 1.2384105631885927e-07,
   "cliffs_delta": -1.0
  },
  "drift_ratio_ref": {
   "label": "drift/spread at \u03c4_ref",
-  "n_atom": 10,
-  "n_backbone": 32,
-  "median_atom": 0.9427485284877806,
+  "n_atom": 13,
+  "n_backbone": 36,
+  "median_atom": 0.4976468705262286,
   "median_backbone": 0.4246647277311618,
   "iqr_atom": [
-   0.46905796458364535,
-   2.9010353197007896
+   0.39004397620302106,
+   1.8133295238403362
   ],
   "iqr_backbone": [
    0.32960136743924473,
    0.48221156571883017
   ],
-  "mannwhitney_U": 261.0,
-  "p_value": 0.002998538355559587,
-  "cliffs_delta": 0.63125
+  "mannwhitney_U": 323.0,
+  "p_value": 0.0450560990200837,
+  "cliffs_delta": 0.3803418803418803
  },
  "h_slope": {
   "label": "mobility exponent",
-  "n_atom": 10,
-  "n_backbone": 32,
-  "median_atom": 0.35622313957631246,
-  "median_backbone": 0.20719559483095704,
+  "n_atom": 14,
+  "n_backbone": 36,
+  "median_atom": 0.3629235338522581,
+  "median_backbone": 0.20645606205245665,
   "iqr_atom": [
    0.3155564773411559,
-   0.3867676965284483
+   0.5327132795841285
   ],
   "iqr_backbone": [
-   0.16048290299143259,
-   0.21968757244862214
+   0.1494027745777333,
+   0.21936493585373912
   ],
-  "mannwhitney_U": 290.0,
-  "p_value": 0.00013114780328289262,
-  "cliffs_delta": 0.8125
+  "mannwhitney_U": 442.0,
+  "p_value": 4.231044184278442e-05,
+  "cliffs_delta": 0.753968253968254
  },
  "h_slope_early": {
   "label": "early mobility exponent",
-  "n_atom": 10,
-  "n_backbone": 32,
-  "median_atom": 0.7876956367355459,
+  "n_atom": 14,
+  "n_backbone": 36,
+  "median_atom": 0.8214683996780594,
   "median_backbone": 0.24131679353173996,
   "iqr_atom": [
    0.7279409962641985,
-   0.8342639646392905
+   0.8547311639872628
   ],
   "iqr_backbone": [
    0.18875223235598126,
-   0.2588722998832297
+   0.25935329038447025
   ],
-  "mannwhitney_U": 289.0,
-  "p_value": 0.00014778519891427583,
-  "cliffs_delta": 0.80625
+  "mannwhitney_U": 442.0,
+  "p_value": 4.231044184278442e-05,
+  "cliffs_delta": 0.753968253968254
  },
  "first_connected_frames": {
   "label": "\u03c4_connect (frames)",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 1.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 0.0,
   "median_backbone": 0.0,
   "iqr_atom": [
    0.0,
-   3.0
+   1.5
   ],
   "iqr_backbone": [
    0.0,
    0.0
   ],
-  "mannwhitney_U": 265.0,
-  "p_value": 0.00028137554228329964,
-  "cliffs_delta": 0.5056818181818182
+  "mannwhitney_U": 378.0,
+  "p_value": 0.0070537466045258535,
+  "cliffs_delta": 0.3125
  },
  "beta1_total_lifetime_frames": {
   "label": "\u03b21 total lifetime (frames)",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 142.0,
-  "median_backbone": 1.5,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 107.0,
+  "median_backbone": 2.0,
   "iqr_atom": [
-   59.0,
-   426.0
+   0.0,
+   260.75
   ],
   "iqr_backbone": [
    0.75,
    3.0
   ],
-  "mannwhitney_U": 295.5,
-  "p_value": 0.0008031443932728899,
-  "cliffs_delta": 0.6789772727272727
+  "mannwhitney_U": 386.5,
+  "p_value": 0.04830533159184671,
+  "cliffs_delta": 0.3420138888888889
  },
  "beta1_classes": {
   "label": "\u03b21 classes born (fluid)",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 6.0,
-  "median_backbone": 1.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 3.0,
+  "median_backbone": 1.5,
   "iqr_atom": [
-   2.0,
-   10.5
+   0.0,
+   7.75
   ],
   "iqr_backbone": [
    0.75,
    3.0
   ],
-  "mannwhitney_U": 265.5,
-  "p_value": 0.011896046401080346,
-  "cliffs_delta": 0.5085227272727273
+  "mannwhitney_U": 341.5,
+  "p_value": 0.28405859321019356,
+  "cliffs_delta": 0.1857638888888889
  },
  "flood_basins": {
   "label": "flooding basins (persistence \u2265 1)",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 1.0,
-  "median_backbone": 18.0,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 2.5,
+  "median_backbone": 18.5,
   "iqr_atom": [
    1.0,
    4.0
   ],
   "iqr_backbone": [
-   13.5,
-   24.0
+   14.75,
+   25.5
   ],
-  "mannwhitney_U": 8.5,
-  "p_value": 3.1907023821737626e-06,
-  "cliffs_delta": -0.9517045454545454
+  "mannwhitney_U": 17.5,
+  "p_value": 8.281544187978607e-08,
+  "cliffs_delta": -0.9392361111111112
  },
  "flood_connect_level": {
   "label": "flooding connection level",
-  "n_atom": 11,
-  "n_backbone": 32,
+  "n_atom": 16,
+  "n_backbone": 36,
   "median_atom": 0.0,
   "median_backbone": 0.0,
   "iqr_atom": [
@@ -301,56 +301,62 @@
    0.0,
    0.0
   ],
-  "mannwhitney_U": 176.0,
+  "mannwhitney_U": 288.0,
   "p_value": 1.0,
   "cliffs_delta": 0.0
  },
  "entropy_bits": {
   "label": "occupancy entropy (bits)",
-  "n_atom": 11,
-  "n_backbone": 32,
-  "median_atom": 8.084035591519621,
-  "median_backbone": 7.493156112121257,
+  "n_atom": 16,
+  "n_backbone": 36,
+  "median_atom": 7.8688410407018266,
+  "median_backbone": 7.453847965930465,
   "iqr_atom": [
-   7.306762762662377,
-   8.301966374286312
+   7.013795774841874,
+   8.231926187545271
   ],
   "iqr_backbone": [
-   7.1097666528387045,
-   7.964999292004805
+   6.687636409134684,
+   7.916122850983217
   ],
-  "mannwhitney_U": 230.0,
-  "p_value": 0.13644039101711275,
-  "cliffs_delta": 0.3068181818181818
+  "mannwhitney_U": 361.0,
+  "p_value": 0.15060266518241652,
+  "cliffs_delta": 0.2534722222222222
  },
  "connect_radius_factor": {
   "label": "cover-radius factor at which \u03b20 = 1",
-  "n_atom": 11,
-  "n_backbone": 30,
-  "median_atom": 1.25,
+  "n_atom": 16,
+  "n_backbone": 34,
+  "median_atom": 1.0,
   "median_backbone": 1.0,
   "iqr_atom": [
    0.75,
-   1.375
+   1.25
   ],
   "iqr_backbone": [
    0.75,
    1.0
   ],
-  "mannwhitney_U": 217.5,
-  "p_value": 0.08977219638947473,
-  "cliffs_delta": 0.3181818181818182
+  "mannwhitney_U": 307.0,
+  "p_value": 0.4303807662483423,
+  "cliffs_delta": 0.12867647058823528
  },
  "flip_rate_1": {
   "label": "membership flip rate at \u03c4 = 1 frame",
-  "n_atom": 0,
-  "n_backbone": 11,
-  "median_atom": null,
+  "n_atom": 5,
+  "n_backbone": 15,
+  "median_atom": 0.004510285651424591,
   "median_backbone": 0.5852900867976245,
-  "iqr_atom": null,
+  "iqr_atom": [
+   0.00447299002179149,
+   0.006866231270158339
+  ],
   "iqr_backbone": [
-   0.5528846518377715,
-   0.6645905502244573
-  ]
+   0.4891569573115284,
+   0.6844755388869577
+  ],
+  "mannwhitney_U": 15.0,
+  "p_value": 0.05263157894736842,
+  "cliffs_delta": -0.6
  }
 }

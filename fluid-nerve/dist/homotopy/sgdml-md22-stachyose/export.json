@@ -1,0 +1,23 @@
+{
+ "id": "sgdml-md22-stachyose",
+ "label": "stachyose (MD22 ab initio MD)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 55,
+   "triangles": 71,
+   "tetrahedra": 46,
+   "generators": 190,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-stachyose\\base.hom (803399 bytes); generators by dimension: [(0, 18), (1, 55), (2, 71), (3, 46)]"
+  },
+  "poset": {
+   "vertices": 190,
+   "edges": 1180,
+   "triangles": 2082,
+   "tetrahedra": 1104,
+   "generators": 4556,
+   "status": "skipped: 4556 generators exceed --max-generators 4000"
+  }
+ }
+}

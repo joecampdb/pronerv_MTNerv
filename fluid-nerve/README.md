@@ -13,6 +13,8 @@ three constructions to the witnessed cover nerve of the measured revision:
 | homotopy.io export | oriental encoding of each nerve as 0/1/2/3-cells, replayed through homotopy.io's proof model into `.hom` files | `dist/homotopy/<id>/`, `docs/homotopy-io-instructions.md` |
 | comparison | within/between-group invariants, tests, embedding, atomistic→C-alpha comparison functor, temperature ladder | `dist/comparison/` |
 | theory | *Fluid nerve theory* PDF: constructions, synthetic differential geometry (Kock–Lawvere), rigidity theorem, results | `dist/fluid-nerve-theory.pdf`, `theory/` |
+| atlas PDF | legend in categorical terms, catalog of all systems, overview figures, one plate per system (3D biophysical object with the deformation field on the molecule, chart + annotated nerve, field, filtrations, categorical reading) | `dist/fluid-nerve-atlas.pdf`, `render_plate.py`, `make_atlas_pdf.py`, `make_legend.py` |
+| video | pedagogical animation: how the nerve plate rises out of alanine dipeptide (molecule → chart → cover → deformation field → nerve → ambient time) | `dist/video/nerve-plate-alanine.mp4` (+ GIF preview), `make_video.py` |
 
 > Descriptive constructions only. No equilibrium free energy, validated kinetics, calibrated uncertainty
 > or configuration-space nerve theorem is claimed. See the paper's limitations section.
@@ -47,7 +49,11 @@ python render.py                        # per-system figures
 python export_homotopy.py               # .hom files (needs the nerve_hom binary, see docs/)
 python compare_all.py                   # comparative analysis + figures
 python theory/make_results.py && tectonic theory/fluid-nerve-theory.tex --outdir dist
+python render_plate.py                  # per-system atlas plates (needs representatives.npz from the build)
+python make_legend.py && python make_atlas_pdf.py   # dist/fluid-nerve-atlas.pdf
+python make_video.py                    # dist/video/nerve-plate-alanine.mp4 (needs ffmpeg)
 python make_gallery.py                  # dist/index.html
+bash pipeline.sh [--force]              # everything above after acquisition, in order
 python -m unittest discover -s tests    # synthetic-data tests
 ```
 

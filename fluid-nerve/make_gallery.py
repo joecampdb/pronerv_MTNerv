@@ -33,7 +33,8 @@ def main():
                 links.append(f'<a href="homotopy/{S["id"]}/poset.hom">poset.hom</a>')
             if (hom / "README.md").exists():
                 links.append(f'<a href="homotopy/{S["id"]}/README.md">click script</a>')
-            fig = f'<img src="systems/{S["id"]}/figure.png" loading="lazy" alt="">' if (p := DIST / "systems" / S["id"] / "figure.png").exists() else ""
+            img = "plate.png" if (DIST / "systems" / S["id"] / "plate.png").exists() else "figure.png"
+            fig = f'<img src="systems/{S["id"]}/{img}" loading="lazy" alt="">' if (DIST / "systems" / S["id"] / img).exists() else ""
             cards.append(f"""<section class="card {g}"><h3>{S['label']} <code>{S['id']}</code></h3>
 <p class="meta">{g} group · {S['representation']} ({S['sites']} sites) · {S['frames']:,} frames / {S['runs']} runs · nerve {nd['objects']}/{nd['inclusions']}/{nd['triangles']} · β {S['nerve']['betti_0_1_2']} · median h {fs.get('median_h') if fs else None} nm · τ_connect {fc} frames</p>
 {fig}<p>{' · '.join(links)}</p></section>""")
@@ -44,7 +45,7 @@ h1{{font-size:1.4rem}} .meta{{color:#52514e;font-size:.85rem}} .card{{background
 .card img{{max-width:100%;height:auto}} code{{font-size:.8rem;color:#52514e}} a{{color:#2a78d6}}
 .atom h3{{border-left:4px solid #2a78d6;padding-left:8px}} .backbone h3{{border-left:4px solid #eb6834;padding-left:8px}} .paired h3{{border-left:4px solid #1baf7a;padding-left:8px}}</style></head>
 <body><h1>Fluid nerve atlas: {len(groups.get('atom', []))} atom-based, {len(groups.get('backbone', []))} backbone-based, {len(groups.get('paired', []))} paired systems</h1>
-<p class="meta">Descriptive constructions; see <a href="fluid-nerve-theory.pdf">the theory PDF</a>, <a href="comparison/overview.json">comparison overview</a> and the <a href="../README.md">README</a>. Blue = atom-based, orange = backbone-based, aqua = paired heavy-atom representation.</p>
+<p class="meta">Descriptive constructions; see <a href="fluid-nerve-theory.pdf">the theory PDF</a>, <a href="fluid-nerve-atlas.pdf">the atlas PDF</a> (legend, catalog, one plate per system), <a href="video/nerve-plate-alanine.mp4">the pedagogical video</a> (<a href="video/nerve-plate-alanine-preview.gif">GIF preview</a>), <a href="comparison/overview.json">comparison overview</a> and the <a href="../README.md">README</a>. Blue = atom-based, orange = backbone-based, aqua = paired heavy-atom representation.</p>
 {''.join(cards)}</body></html>"""
     (DIST / "index.html").write_text(html, encoding="utf-8")
     print("wrote", DIST / "index.html", len(cards), "cards")

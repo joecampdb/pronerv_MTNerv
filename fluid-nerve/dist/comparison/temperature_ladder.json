@@ -841,6 +841,95 @@
   ]
  },
  {
+  "id": "mdcath-1ib8a02-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 1,
+    "simplices": {
+     "0": 3,
+     "1": 2
+    },
+    "median_h": 0.09929317461138361,
+    "drift_ratio": 0.02098858861541858,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 1,
+    "simplices": {
+     "0": 3,
+     "1": 2
+    },
+    "median_h": 0.11913353690744662,
+    "drift_ratio": 0.015586992544236856,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 5,
+     "1": 6,
+     "2": 2
+    },
+    "median_h": 0.14061643008169067,
+    "drift_ratio": 0.06193983627569407,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 6,
+     "1": 7,
+     "2": 2
+    },
+    "median_h": 0.24654794817702302,
+    "drift_ratio": 0.2859828673501334,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 41,
+     "2": 27,
+     "3": 5
+    },
+    "median_h": 0.47357835887476457,
+    "drift_ratio": 0.25570769055872583,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
   "id": "mdcath-1klil00-ca",
   "ladder": [
    {
@@ -1211,6 +1300,196 @@
     },
     "median_h": 0.9385559882682103,
     "drift_ratio": 0.6874253462712858,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1v1hf01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 42,
+     "2": 28,
+     "3": 4
+    },
+    "median_h": 0.3860571190714836,
+    "drift_ratio": 0.16427891999842995,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 44,
+     "2": 31,
+     "3": 5
+    },
+    "median_h": 0.5865317278395172,
+    "drift_ratio": 0.30163970655587524,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 44,
+     "2": 33,
+     "3": 6
+    },
+    "median_h": 0.7158109916292512,
+    "drift_ratio": 0.29871534169604524,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 45,
+     "2": 33,
+     "3": 6
+    },
+    "median_h": 0.896378270588642,
+    "drift_ratio": 0.48094140291076465,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 45,
+     "2": 33,
+     "3": 6
+    },
+    "median_h": 1.0754850830061962,
+    "drift_ratio": 0.5070674571274286,
+    "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-1wfwa00-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 13,
+     "1": 26,
+     "2": 14,
+     "3": 1
+    },
+    "median_h": 0.2644756459579501,
+    "drift_ratio": 0.5142946270356034,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     2,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 17,
+     "1": 32,
+     "2": 15,
+     "3": 1
+    },
+    "median_h": 0.3159145196943089,
+    "drift_ratio": 0.5427602030813643,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 16,
+     "1": 29,
+     "2": 14,
+     "3": 1
+    },
+    "median_h": 0.3223150261018398,
+    "drift_ratio": 0.5812561157406064,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 33,
+     "2": 16,
+     "3": 1
+    },
+    "median_h": 0.3496613219148754,
+    "drift_ratio": 0.5891674832355053,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 450,
+    "beta": [
+     1,
+     3,
+     0
+    ],
+    "max_dimension": 3,
+    "simplices": {
+     "0": 18,
+     "1": 35,
+     "2": 16,
+     "3": 1
+    },
+    "median_h": 0.4125625264950288,
+    "drift_ratio": 0.6367824697071722,
     "first_connected_tau": 0
    }
   ]
@@ -2059,6 +2338,93 @@
     "median_h": 0.34167500886997565,
     "drift_ratio": 0.5057177767058931,
     "first_connected_tau": 0
+   }
+  ]
+ },
+ {
+  "id": "mdcath-2kssa01-ca",
+  "ladder": [
+   {
+    "T": 320,
+    "beta": [
+     1,
+     0,
+     0
+    ],
+    "max_dimension": 1,
+    "simplices": {
+     "0": 4,
+     "1": 3
+    },
+    "median_h": 0.1910038655325246,
+    "drift_ratio": 0.31208895083149396,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 348,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 1,
+    "simplices": {
+     "0": 4,
+     "1": 4
+    },
+    "median_h": 0.22410726254144947,
+    "drift_ratio": 0.28531541272907146,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 379,
+    "beta": [
+     1,
+     1,
+     0
+    ],
+    "max_dimension": 1,
+    "simplices": {
+     "0": 5,
+     "1": 5
+    },
+    "median_h": 0.27790501683103197,
+    "drift_ratio": 0.47757826337866793,
+    "first_connected_tau": 0
+   },
+   {
+    "T": 413,
+    "beta": [
+     2,
+     2,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 25,
+     "2": 7
+    },
+    "median_h": 0.39293142287504107,
+    "drift_ratio": 0.4196805848696528,
+    "first_connected_tau": 1
+   },
+   {
+    "T": 450,
+    "beta": [
+     2,
+     3,
+     0
+    ],
+    "max_dimension": 2,
+    "simplices": {
+     "0": 18,
+     "1": 25,
+     "2": 6
+    },
+    "median_h": 0.8559977935197262,
+    "drift_ratio": 0.5127026835378012,
+    "first_connected_tau": 1
    }
   ]
  },

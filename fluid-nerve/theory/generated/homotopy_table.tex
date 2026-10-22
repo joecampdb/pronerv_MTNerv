@@ -1,6 +1,10 @@
-\begin{table}[H]\centering\small\begin{tabular}{lrrrr}\toprule system & base generators (0/1/2/3-cells) & status & poset generators & status\\\midrule
+\begin{small}\begin{longtable}{lrlrl}
+\caption{homotopy.io exports (\texttt{dist/homotopy/<system>/}): generator counts of the base encoding by dimension and of the face-poset encoding; status after the tool's deep diagram check.}\label{tab:homotopy}\\
+\toprule system & base (0/1/2/3-cells) & status & poset generators & status\\\midrule\endfirsthead
+\toprule system & base (0/1/2/3-cells) & status & poset generators & status\\\midrule\endhead
 ala2 & 18/37/23/4 & ok & 728 & ok\\
 cln025 & 18/42/24/1 & ok & 531 & ok\\
+dipeptide-gly & 18/38/25/4 & ok & 757 & ok\\
 mdcath-1a92a00-ca & 18/43/28/2 & ok & 661 & ok\\
 mdcath-1a92a00-heavy & 18/47/37/8 & ok & 1240 & ok\\
 mdcath-1b33n01-ca & 18/39/23/3 & ok & 659 & ok\\
@@ -19,6 +23,8 @@ mdcath-1hcra00-ca & 18/34/13/0 & ok & 289 & ok\\
 mdcath-1hcra00-heavy & 18/38/19/2 & ok & 529 & ok\\
 mdcath-1i5xa00-ca & 18/48/40/9 & ok & 1357 & ok\\
 mdcath-1i5xa00-heavy & 18/44/32/8 & ok & 1166 & ok\\
+mdcath-1ib8a02-ca & 18/41/27/5 & ok & 867 & ok\\
+mdcath-1ib8a02-heavy & 18/43/35/10 & ok & 1352 & ok\\
 mdcath-1klil00-ca & 18/39/23/2 & ok & 584 & ok\\
 mdcath-1klil00-heavy & 18/38/21/3 & ok & 630 & ok\\
 mdcath-1l6ha00-ca & 18/39/20/0 & ok & 395 & ok\\
@@ -27,6 +33,10 @@ mdcath-1r8ob01-ca & 18/42/27/3 & ok & 720 & ok\\
 mdcath-1r8ob01-heavy & 18/42/25/1 & ok & 544 & ok\\
 mdcath-1s6la01-ca & 18/46/36/7 & ok & 1149 & ok\\
 mdcath-1s6la01-heavy & 18/51/49/16 & ok & 2008 & ok\\
+mdcath-1v1hf01-ca & 18/45/36/8 & ok & 1221 & ok\\
+mdcath-1v1hf01-heavy & 18/43/29/4 & ok & 824 & ok\\
+mdcath-1wfwa00-ca & 18/37/17/1 & ok & 425 & ok\\
+mdcath-1wfwa00-heavy & 18/39/23/2 & ok & 584 & ok\\
 mdcath-1wpbg01-ca & 18/46/38/10 & ok & 1400 & ok\\
 mdcath-1wpbg01-heavy & 18/46/38/10 & ok & 1400 & ok\\
 mdcath-1x4pa00-ca & 18/38/20/1 & ok & 467 & ok\\
@@ -45,6 +55,8 @@ mdcath-2j8ga03-ca & 18/43/30/4 & ok & 837 & ok\\
 mdcath-2j8ga03-heavy & 18/35/17/2 & ok & 494 & ok\\
 mdcath-2jrra01-ca & 18/42/33/8 & ok & 1173 & ok\\
 mdcath-2jrra01-heavy & 18/53/52/19 & ok & 2278 & ok\\
+mdcath-2kssa01-ca & 18/25/7/0 & ok & 184 & ok\\
+mdcath-2kssa01-heavy & 18/31/14/1 & ok & 368 & ok\\
 mdcath-2lrda00-ca & 18/37/19/1 & ok & 451 & ok\\
 mdcath-2lrda00-heavy & 18/47/40/11 & ok & 1504 & ok\\
 mdcath-2xepa03-ca & 18/39/20/2 & ok & 545 & ok\\
@@ -63,6 +75,7 @@ mdcath-5b1aj00-ca & 18/38/20/2 & ok & 542 & ok\\
 mdcath-5b1aj00-heavy & 18/41/27/4 & ok & 792 & ok\\
 mdcath-5daea00-ca & 18/38/16/0 & ok & 340 & ok\\
 mdcath-5daea00-heavy & 18/39/23/3 & ok & 659 & ok\\
+sgdml-md17-aspirin & 18/62/78/40 & ok & 4218 & skipped\\
 sgdml-md17-azobenzene & 18/31/14/1 & ok & 368 & ok\\
 sgdml-md17-ethanol & 18/6/0/0 & ok & 36 & ok\\
 sgdml-md17-malonaldehyde & 18/39/22/0 & ok & 421 & ok\\
@@ -73,4 +86,9 @@ sgdml-md17-toluene & 18/10/0/0 & ok & 48 & ok\\
 sgdml-md17-uracil & 18/11/2/0 & ok & 77 & ok\\
 sgdml-md22-ac-ala3-nhme & 18/34/12/1 & ok & 351 & ok\\
 sgdml-md22-at-at & 18/47/53/31 & ok & 3173 & ok\\
-\bottomrule\end{tabular}\caption{homotopy.io exports (\texttt{dist/homotopy/<system>/}).}\label{tab:homotopy}\end{table}
+sgdml-md22-at-at-cg-cg & 18/53/64/37 & ok & 3784 & ok\\
+sgdml-md22-dha & 18/43/27/4 & ok & 798 & ok\\
+sgdml-md22-stachyose & 18/55/71/46 & ok & 4556 & skipped\\
+\midrule
+\multicolumn{5}{l}{87 systems exported; 85 with both encodings accepted by the deep check.}\\
+\bottomrule\end{longtable}\end{small}

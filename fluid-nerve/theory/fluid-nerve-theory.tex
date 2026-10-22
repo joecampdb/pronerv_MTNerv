@@ -166,7 +166,7 @@ For each mdCATH domain the heavy-atom and C$\alpha$ covers are built on identica
 
 \input{generated/functor_table}
 \begin{figure}[H]\centering\includegraphics[width=.9\linewidth]{figures/fig_functor.png}
-\caption{Heavy-atom $\to$ C$\alpha$ comparison per domain.}\label{fig:functor}\end{figure}
+\caption{Face-poset comparison between the heavy-atom and C$\alpha$ representations of each mdCATH domain, in both directions.}\label{fig:functor}\end{figure}
 
 \subsection{Temperature ladder}
 \input{generated/temperature}
@@ -177,7 +177,7 @@ For each mdCATH domain the heavy-atom and C$\alpha$ covers are built on identica
 \input{generated/exemplars}
 
 \section{Limitations}
-Charts are two-dimensional projections (PCA or two dihedrals); the fibre over a chart bin is averaged, and nothing about the full configuration space is asserted. Covers use a single declared radius with a sensitivity ladder, not an optimised scale. Homology is over GF(2). The MD17/MD22 systems are single ab initio trajectories at elevated temperature with nominal time steps taken from the dataset papers; the dipeptide family comes from short new implicit-solvent simulations; mdCATH frames are 1\,ns apart, which makes every per-frame quantity saturated; CLN025 has no physical clock. Support thresholds leave bins empty rather than filling them. The comparison functor is an empirical best-match map, not a proved functor. The SDG results concern an idealisation (formally open covers, smooth flows) and are used to interpret, not to validate, the measurements. The flooding filtration is a geometric analogue of metadynamics computed from occupancy; no biased simulation was run. None of the constructions is a kinetic model, and the pooled occupancy is not an equilibrium free energy.
+Charts are two-dimensional projections (PCA or two dihedrals); the fibre over a chart bin is averaged, and nothing about the full configuration space is asserted. Covers use a single declared radius with a sensitivity ladder, not an optimised scale. Homology is over GF(2). The MD17/MD22 systems are single ab initio trajectories at elevated temperature with nominal time steps taken from the dataset papers; the dipeptide family comes from short new implicit-solvent simulations; mdCATH frames are 1\,ns apart, which makes every per-frame quantity saturated; CLN025 has no physical clock. Support thresholds leave bins empty rather than filling them; three single-trajectory MD22 systems (AT-AT, AT-AT-CG-CG, stachyose) revisit chart bins in fewer than five blocks and therefore have no supported mobility at the reference lag. The comparison functor is an empirical best-match map, not a proved functor. The SDG results concern an idealisation (formally open covers, smooth flows) and are used to interpret, not to validate, the measurements. The flooding filtration is a geometric analogue of metadynamics computed from occupancy; no biased simulation was run. None of the constructions is a kinetic model, and the pooled occupancy is not an equilibrium free energy.
 
 \section{Reproduction}
 From \texttt{fluid-nerve/}: \texttt{python acquire\_sgdml.py}, \texttt{python acquire\_mdcath.py}, \texttt{python generate\_dipeptides.py}, \texttt{python build\_all.py}, \texttt{python render.py}, \texttt{python export\_homotopy.py}, \texttt{python compare\_all.py}, \texttt{python theory/make\_results.py}, \texttt{tectonic theory/fluid-nerve-theory.tex}. Unit tests on synthetic data: \texttt{python -m unittest discover -s tests}. Raw data are not committed; manifests with SHA-256 hashes are.

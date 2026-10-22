@@ -1,0 +1,24 @@
+{
+ "id": "sgdml-md22-dha",
+ "label": "DHA (MD22 ab initio MD)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 43,
+   "triangles": 27,
+   "tetrahedra": 4,
+   "generators": 92,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-dha\\base.hom (142705 bytes); generators by dimension: [(0, 18), (1, 43), (2, 27), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 92,
+   "edges": 304,
+   "triangles": 306,
+   "tetrahedra": 96,
+   "generators": 798,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-dha\\poset.hom (2178077 bytes); generators by dimension: [(0, 92), (1, 304), (2, 306), (3, 96)]"
+  }
+ }
+}

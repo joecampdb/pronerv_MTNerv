@@ -110,8 +110,10 @@ nerve to [homotopy.io](https://homotopy.io) as a 3-dimensional categorical compl
 including an empirical atomistic-to-C-alpha comparison functor. The accompanying paper,
 *Fluid nerve theory* (`fluid-nerve/dist/fluid-nerve-theory.pdf`), recruits synthetic differential geometry
 to state what a deformation field is at an infinitesimal scale and proves that nerves of formally open
-covers are rigid under infinitesimal transformations. The alanine build reproduces the measured atlas of
-this repository exactly. All constructions remain descriptive.
+covers are rigid under infinitesimal transformations. An atlas PDF (`fluid-nerve/dist/fluid-nerve-atlas.pdf`) gives a legend in categorical terms, a catalog
+of all systems and one plate per system; a short video (`fluid-nerve/dist/video/`) shows the nerve plate
+rising out of alanine dipeptide. The alanine build reproduces the measured atlas of this repository
+exactly. All constructions remain descriptive.
 
 ## Independent polyethylene workflow
 

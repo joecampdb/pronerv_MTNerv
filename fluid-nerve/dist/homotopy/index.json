@@ -39,6 +39,26 @@
    "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\cln025\\poset.hom (893893 bytes); generators by dimension: [(0, 85), (1, 242), (2, 180), (3, 24)]"
   }
  },
+ "dipeptide-gly": {
+  "base": {
+   "vertices": 18,
+   "edges": 38,
+   "triangles": 25,
+   "tetrahedra": 4,
+   "generators": 85,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\base.hom (135390 bytes); generators by dimension: [(0, 18), (1, 38), (2, 25), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 85,
+   "edges": 282,
+   "triangles": 294,
+   "tetrahedra": 96,
+   "generators": 757,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\poset.hom (2135491 bytes); generators by dimension: [(0, 85), (1, 282), (2, 294), (3, 96)]"
+  }
+ },
  "mdcath-1a92a00-ca": {
   "base": {
    "vertices": 18,
@@ -399,6 +419,46 @@
    "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1i5xa00-heavy\\poset.hom (3907959 bytes); generators by dimension: [(0, 102), (1, 392), (2, 480), (3, 192)]"
   }
  },
+ "mdcath-1ib8a02-ca": {
+  "base": {
+   "vertices": 18,
+   "edges": 41,
+   "triangles": 27,
+   "tetrahedra": 5,
+   "generators": 91,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1ib8a02-ca\\base.hom (154613 bytes); generators by dimension: [(0, 18), (1, 41), (2, 27), (3, 5)]"
+  },
+  "poset": {
+   "vertices": 91,
+   "edges": 314,
+   "triangles": 342,
+   "tetrahedra": 120,
+   "generators": 867,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1ib8a02-ca\\poset.hom (2585105 bytes); generators by dimension: [(0, 91), (1, 314), (2, 342), (3, 120)]"
+  }
+ },
+ "mdcath-1ib8a02-heavy": {
+  "base": {
+   "vertices": 18,
+   "edges": 43,
+   "triangles": 35,
+   "tetrahedra": 10,
+   "generators": 106,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1ib8a02-heavy\\base.hom (239967 bytes); generators by dimension: [(0, 18), (1, 43), (2, 35), (3, 10)]"
+  },
+  "poset": {
+   "vertices": 106,
+   "edges": 436,
+   "triangles": 570,
+   "tetrahedra": 240,
+   "generators": 1352,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1ib8a02-heavy\\poset.hom (4780823 bytes); generators by dimension: [(0, 106), (1, 436), (2, 570), (3, 240)]"
+  }
+ },
  "mdcath-1klil00-ca": {
   "base": {
    "vertices": 18,
@@ -557,6 +617,86 @@
    "generators": 2008,
    "status": "ok",
    "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1s6la01-heavy\\poset.hom (7503490 bytes); generators by dimension: [(0, 134), (1, 620), (2, 870), (3, 384)]"
+  }
+ },
+ "mdcath-1v1hf01-ca": {
+  "base": {
+   "vertices": 18,
+   "edges": 45,
+   "triangles": 36,
+   "tetrahedra": 8,
+   "generators": 107,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1v1hf01-ca\\base.hom (217341 bytes); generators by dimension: [(0, 18), (1, 45), (2, 36), (3, 8)]"
+  },
+  "poset": {
+   "vertices": 107,
+   "edges": 418,
+   "triangles": 504,
+   "tetrahedra": 192,
+   "generators": 1221,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1v1hf01-ca\\poset.hom (3980994 bytes); generators by dimension: [(0, 107), (1, 418), (2, 504), (3, 192)]"
+  }
+ },
+ "mdcath-1v1hf01-heavy": {
+  "base": {
+   "vertices": 18,
+   "edges": 43,
+   "triangles": 29,
+   "tetrahedra": 4,
+   "generators": 94,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1v1hf01-heavy\\base.hom (147491 bytes); generators by dimension: [(0, 18), (1, 43), (2, 29), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 94,
+   "edges": 316,
+   "triangles": 318,
+   "tetrahedra": 96,
+   "generators": 824,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1v1hf01-heavy\\poset.hom (2213669 bytes); generators by dimension: [(0, 94), (1, 316), (2, 318), (3, 96)]"
+  }
+ },
+ "mdcath-1wfwa00-ca": {
+  "base": {
+   "vertices": 18,
+   "edges": 37,
+   "triangles": 17,
+   "tetrahedra": 1,
+   "generators": 73,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1wfwa00-ca\\base.hom (76582 bytes); generators by dimension: [(0, 18), (1, 37), (2, 17), (3, 1)]"
+  },
+  "poset": {
+   "vertices": 73,
+   "edges": 190,
+   "triangles": 138,
+   "tetrahedra": 24,
+   "generators": 425,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1wfwa00-ca\\poset.hom (762387 bytes); generators by dimension: [(0, 73), (1, 190), (2, 138), (3, 24)]"
+  }
+ },
+ "mdcath-1wfwa00-heavy": {
+  "base": {
+   "vertices": 18,
+   "edges": 39,
+   "triangles": 23,
+   "tetrahedra": 2,
+   "generators": 82,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1wfwa00-heavy\\base.hom (105017 bytes); generators by dimension: [(0, 18), (1, 39), (2, 23), (3, 2)]"
+  },
+  "poset": {
+   "vertices": 82,
+   "edges": 244,
+   "triangles": 210,
+   "tetrahedra": 48,
+   "generators": 584,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-1wfwa00-heavy\\poset.hom (1282037 bytes); generators by dimension: [(0, 82), (1, 244), (2, 210), (3, 48)]"
   }
  },
  "mdcath-1wpbg01-ca": {
@@ -919,6 +1059,46 @@
    "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2jrra01-heavy\\poset.hom (8792381 bytes); generators by dimension: [(0, 142), (1, 684), (2, 996), (3, 456)]"
   }
  },
+ "mdcath-2kssa01-ca": {
+  "base": {
+   "vertices": 18,
+   "edges": 25,
+   "triangles": 7,
+   "tetrahedra": 0,
+   "generators": 50,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2kssa01-ca\\base.hom (33582 bytes); generators by dimension: [(0, 18), (1, 25), (2, 7)]"
+  },
+  "poset": {
+   "vertices": 50,
+   "edges": 92,
+   "triangles": 42,
+   "tetrahedra": 0,
+   "generators": 184,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2kssa01-ca\\poset.hom (159234 bytes); generators by dimension: [(0, 50), (1, 92), (2, 42)]"
+  }
+ },
+ "mdcath-2kssa01-heavy": {
+  "base": {
+   "vertices": 18,
+   "edges": 31,
+   "triangles": 14,
+   "tetrahedra": 1,
+   "generators": 64,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2kssa01-heavy\\base.hom (66404 bytes); generators by dimension: [(0, 18), (1, 31), (2, 14), (3, 1)]"
+  },
+  "poset": {
+   "vertices": 64,
+   "edges": 160,
+   "triangles": 120,
+   "tetrahedra": 24,
+   "generators": 368,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-2kssa01-heavy\\poset.hom (700889 bytes); generators by dimension: [(0, 64), (1, 160), (2, 120), (3, 24)]"
+  }
+ },
  "mdcath-2lrda00-ca": {
   "base": {
    "vertices": 18,
@@ -1279,6 +1459,25 @@
    "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\mdcath-5daea00-heavy\\poset.hom (1691728 bytes); generators by dimension: [(0, 83), (1, 258), (2, 246), (3, 72)]"
   }
  },
+ "sgdml-md17-aspirin": {
+  "base": {
+   "vertices": 18,
+   "edges": 62,
+   "triangles": 78,
+   "tetrahedra": 40,
+   "generators": 198,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md17-aspirin\\base.hom (745584 bytes); generators by dimension: [(0, 18), (1, 62), (2, 78), (3, 40)]"
+  },
+  "poset": {
+   "vertices": 198,
+   "edges": 1152,
+   "triangles": 1908,
+   "tetrahedra": 960,
+   "generators": 4218,
+   "status": "skipped: 4218 generators exceed --max-generators 4000"
+  }
+ },
  "sgdml-md17-azobenzene": {
   "base": {
    "vertices": 18,
@@ -1477,6 +1676,65 @@
    "generators": 3173,
    "status": "ok",
    "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-at-at\\poset.hom (13724896 bytes); generators by dimension: [(0, 149), (1, 846), (2, 1434), (3, 744)]"
+  }
+ },
+ "sgdml-md22-at-at-cg-cg": {
+  "base": {
+   "vertices": 18,
+   "edges": 53,
+   "triangles": 64,
+   "tetrahedra": 37,
+   "generators": 172,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-at-at-cg-cg\\base.hom (667428 bytes); generators by dimension: [(0, 18), (1, 53), (2, 64), (3, 37)]"
+  },
+  "poset": {
+   "vertices": 172,
+   "edges": 1008,
+   "triangles": 1716,
+   "tetrahedra": 888,
+   "generators": 3784,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-at-at-cg-cg\\poset.hom (16396476 bytes); generators by dimension: [(0, 172), (1, 1008), (2, 1716), (3, 888)]"
+  }
+ },
+ "sgdml-md22-dha": {
+  "base": {
+   "vertices": 18,
+   "edges": 43,
+   "triangles": 27,
+   "tetrahedra": 4,
+   "generators": 92,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-dha\\base.hom (142705 bytes); generators by dimension: [(0, 18), (1, 43), (2, 27), (3, 4)]"
+  },
+  "poset": {
+   "vertices": 92,
+   "edges": 304,
+   "triangles": 306,
+   "tetrahedra": 96,
+   "generators": 798,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-dha\\poset.hom (2178077 bytes); generators by dimension: [(0, 92), (1, 304), (2, 306), (3, 96)]"
+  }
+ },
+ "sgdml-md22-stachyose": {
+  "base": {
+   "vertices": 18,
+   "edges": 55,
+   "triangles": 71,
+   "tetrahedra": 46,
+   "generators": 190,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-stachyose\\base.hom (803399 bytes); generators by dimension: [(0, 18), (1, 55), (2, 71), (3, 46)]"
+  },
+  "poset": {
+   "vertices": 190,
+   "edges": 1180,
+   "triangles": 2082,
+   "tetrahedra": 1104,
+   "generators": 4556,
+   "status": "skipped: 4556 generators exceed --max-generators 4000"
   }
  }
 }

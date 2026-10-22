@@ -1,0 +1,23 @@
+{
+ "id": "sgdml-md17-aspirin",
+ "label": "aspirin (MD17 ab initio MD)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 62,
+   "triangles": 78,
+   "tetrahedra": 40,
+   "generators": 198,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md17-aspirin\\base.hom (745584 bytes); generators by dimension: [(0, 18), (1, 62), (2, 78), (3, 40)]"
+  },
+  "poset": {
+   "vertices": 198,
+   "edges": 1152,
+   "triangles": 1908,
+   "tetrahedra": 960,
+   "generators": 4218,
+   "status": "skipped: 4218 generators exceed --max-generators 4000"
+  }
+ }
+}

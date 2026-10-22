@@ -1,0 +1,24 @@
+{
+ "id": "sgdml-md22-at-at-cg-cg",
+ "label": "AT-AT-CG-CG (MD22 ab initio MD)",
+ "encodings": {
+  "base": {
+   "vertices": 18,
+   "edges": 53,
+   "triangles": 64,
+   "tetrahedra": 37,
+   "generators": 172,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-at-at-cg-cg\\base.hom (667428 bytes); generators by dimension: [(0, 18), (1, 53), (2, 64), (3, 37)]"
+  },
+  "poset": {
+   "vertices": 172,
+   "edges": 1008,
+   "triangles": 1716,
+   "tetrahedra": 888,
+   "generators": 3784,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\sgdml-md22-at-at-cg-cg\\poset.hom (16396476 bytes); generators by dimension: [(0, 172), (1, 1008), (2, 1716), (3, 888)]"
+  }
+ }
+}

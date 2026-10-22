@@ -174,6 +174,21 @@ def build(spec, quick=False, out_root=DIST):
                         reference_structure=ref.astype(np.float32))
     np.savez_compressed(out / "membership.npz", bits=bits.astype(np.int64), lengths=np.array(lengths),
                         centers=np.array(nerve["centers"]), radius=nerve["radius"])
+    # Representative recorded conformations: nearest frame to each cover centre and to the occupancy peak.
+    centers = np.array(nerve["centers"])
+    scale = np.array(nerve["metric_scale"])
+    rep_idx = []
+    for c in centers:
+        rep_idx.append(int(np.argmin(N.chart_distance(q_all, c, scale, period))))
+    peak = np.unravel_index(np.argmax(hist), hist.shape)
+    peak_pos = lo + (np.array(peak) + .5) / BINS * (hi - lo)
+    rep_idx.append(int(np.argmin(N.chart_distance(q_all, peak_pos, scale, period))))
+    rep_idx = np.array(rep_idx)
+    rep_bins = np.clip(np.floor((q_all[rep_idx] - lo) / (hi - lo) * field_bins).astype(int), 0, field_bins - 1)
+    np.savez_compressed(out / "representatives.npz", frame=rep_idx, coords=aligned[rep_idx].astype(np.float32),
+                        chart=q_all[rep_idx].astype(np.float32), field_bin=rep_bins,
+                        labels=np.array([f"U{i}" for i in range(len(centers))] + ["peak"]),
+                        site_labels=np.array(loaded["sites"]))
     stride = max(1, len(q_all) // 60000)
     np.savez_compressed(out / "chart.npz", q=q_all[::stride].astype(np.float32), stride=stride,
                         run_id=np.repeat(np.arange(len(runs)), lengths)[::stride].astype(np.int16))
