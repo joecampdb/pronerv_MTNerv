@@ -24,7 +24,7 @@ three constructions to the witnessed cover nerve of the measured revision:
 `python -m fluidnerve.catalog` writes `catalog/systems.json` from whatever data is present:
 
 - **atom group**: mdshare alanine dipeptide; twenty Ace-X-NMe capped dipeptides generated with OpenMM
-  (`generate_dipeptides.py`: amber14/GBn2, 300 K, 3 × 25 ns, 1 ps frames); MD22 ab initio trajectories
+  (`generate_dipeptides.py`: amber14/GBn2, 300 K, 3 × 10 ns, 1 ps frames); MD22 ab initio trajectories
   (Ac-Ala3-NHMe, DHA, stachyose, AT-AT, AT-AT-CG-CG) and MD17 trajectories (ethanol, malonaldehyde,
   aspirin, uracil, salicylic acid, toluene, naphthalene, paracetamol, azobenzene) from quantum-machine.org.
 - **backbone group**: CLN025 (the 128-run subset in `../alanine-nerve/data/chignolin`); mdCATH CATH
