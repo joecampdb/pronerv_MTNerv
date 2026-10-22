@@ -41,7 +41,7 @@ def main():
             continue
         done = (DIST / s["id"] / "summary.json").exists()
         lock = DIST / s["id"] / "build.log"
-        building = lock.exists() and not done and (time.time() - lock.stat().st_mtime) < 6 * 3600
+        building = lock.exists() and not done and (time.time() - lock.stat().st_mtime) < 1800 and not args.force
         if (done and not args.force) or building:
             continue
         todo.append(s["id"])

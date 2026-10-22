@@ -1,8 +1,8 @@
 {
  "groups": {
-  "atom": 15,
-  "backbone": 32,
-  "paired": 31
+  "atom": 16,
+  "backbone": 36,
+  "paired": 35
  },
  "systems": [
   {
@@ -15,6 +15,20 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "mdshare"
+  },
+  {
+   "id": "dipeptide-gly",
+   "group": "atom",
+   "label": "Ace-GLY-NMe dipeptide (OpenMM)",
+   "loader": "dipeptide",
+   "args": {
+    "aa": "GLY"
+   },
+   "representation": "heavy atoms",
+   "chart": "phi/psi",
+   "tau_ref": 100,
+   "family": "dipeptide",
+   "runs_available": 1
   },
   {
    "id": "sgdml-md22-ac-ala3-nhme",
@@ -1107,6 +1121,122 @@
    "tau_ref": 10,
    "family": "mdcath",
    "paired_with": "mdcath-1a92a00-ca"
+  },
+  {
+   "id": "mdcath-1wfwa00-ca",
+   "group": "backbone",
+   "label": "CATH domain 1wfwA00 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1wfwA00",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1wfwa00-heavy",
+   "group": "paired",
+   "label": "CATH domain 1wfwA00 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1wfwA00",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1wfwa00-ca"
+  },
+  {
+   "id": "mdcath-1v1hf01-ca",
+   "group": "backbone",
+   "label": "CATH domain 1v1hF01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1v1hF01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1v1hf01-heavy",
+   "group": "paired",
+   "label": "CATH domain 1v1hF01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1v1hF01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1v1hf01-ca"
+  },
+  {
+   "id": "mdcath-1ib8a02-ca",
+   "group": "backbone",
+   "label": "CATH domain 1ib8A02 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1ib8A02",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-1ib8a02-heavy",
+   "group": "paired",
+   "label": "CATH domain 1ib8A02 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "1ib8A02",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-1ib8a02-ca"
+  },
+  {
+   "id": "mdcath-2kssa01-ca",
+   "group": "backbone",
+   "label": "CATH domain 2kssA01 (mdCATH), C-alpha",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2kssA01",
+    "representation": "ca"
+   },
+   "representation": "C-alpha",
+   "chart": "PCA-2 (aligned C-alpha)",
+   "tau_ref": 10,
+   "family": "mdcath"
+  },
+  {
+   "id": "mdcath-2kssa01-heavy",
+   "group": "paired",
+   "label": "CATH domain 2kssA01 (mdCATH), heavy atoms",
+   "loader": "mdcath",
+   "args": {
+    "domain": "2kssA01",
+    "representation": "heavy"
+   },
+   "representation": "heavy atoms",
+   "chart": "PCA-2 (aligned heavy atoms)",
+   "tau_ref": 10,
+   "family": "mdcath",
+   "paired_with": "mdcath-2kssa01-ca"
   }
  ]
 }

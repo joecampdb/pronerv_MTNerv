@@ -12,8 +12,15 @@ GEN.mkdir(exist_ok=True)
 FIG.mkdir(exist_ok=True)
 
 
+GREEK = {"\u03b2": "$\\beta$", "\u03c4": "$\\tau$", "\u03b4": "$\\delta$", "\u03b1": "$\\alpha$",
+         "\u2265": "$\\ge$", "\u2192": "$\\to$", "\u00b7": "$\\cdot$", "\u00b5": "$\\mu$"}
+
+
 def tex(s):
-    return str(s).replace("_", "\\_").replace("%", "\\%").replace("&", "\\&")
+    s = str(s).replace("_", "\\_").replace("%", "\\%").replace("&", "\\&")
+    for k, v in GREEK.items():
+        s = s.replace(k, v)
+    return s
 
 
 def f(x, spec=".3g"):

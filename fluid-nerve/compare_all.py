@@ -264,8 +264,10 @@ def fig_invariants(inv, tests):
         p = t.get("p_value")
         ax.set_title(label + ("" if p is None else f"\nMann–Whitney p = {p:.3f}, Cliff's δ = {t['cliffs_delta']:+.2f}"), loc="left", fontsize=8.5)
         ax.set_xticks([0, 1]); ax.set_xticklabels(["atom-based", "backbone-based"])
-        if key in ("objects", "median_h_ref", "first_connected_frames"):
+        if key in ("objects", "median_h_ref"):
             ax.set_yscale("log")
+        elif key == "first_connected_frames":
+            ax.set_yscale("symlog", linthresh=1.0)
         ax.grid(True, axis="y", color=GRID, lw=0.5)
     fig.suptitle("Invariant distributions by group (bars: medians; descriptive, systems are not independent samples)", x=0.02, ha="left", fontsize=9.5, color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.95)); fig.savefig(OUT / "fig_invariants.png", dpi=170); plt.close(fig)
