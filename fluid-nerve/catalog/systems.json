@@ -28,7 +28,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-arg",
@@ -42,7 +42,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-asn",
@@ -56,7 +56,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-asp",
@@ -70,7 +70,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-cys",
@@ -84,7 +84,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-gln",
@@ -98,7 +98,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-glu",
@@ -112,7 +112,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-gly",
@@ -126,7 +126,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 2
+   "runs_available": 3
   },
   {
    "id": "dipeptide-his",
@@ -140,7 +140,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-ile",
@@ -154,7 +154,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-leu",
@@ -168,7 +168,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-lys",
@@ -182,7 +182,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-met",
@@ -196,7 +196,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-phe",
@@ -210,7 +210,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-pro",
@@ -224,7 +224,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-ser",
@@ -238,7 +238,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-thr",
@@ -252,7 +252,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-trp",
@@ -266,7 +266,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-tyr",
@@ -280,7 +280,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "dipeptide-val",
@@ -294,7 +294,7 @@
    "chart": "phi/psi",
    "tau_ref": 100,
    "family": "dipeptide",
-   "runs_available": 1
+   "runs_available": 3
   },
   {
    "id": "sgdml-md22-ac-ala3-nhme",

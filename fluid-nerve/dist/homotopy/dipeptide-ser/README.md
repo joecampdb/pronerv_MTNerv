@@ -7,38 +7,38 @@ Import a `.hom` file through the project panel (top-left button) in https://beta
 
 ### Click script (homotopy.io, https://beta.homotopy.io)
 
-Signature size: 18 0-cells, 70 1-cells, 121 2-cells, 113 3-cells.
+Signature size: 18 0-cells, 67 1-cells, 100 2-cells, 68 3-cells.
 
 **0-cells.** Press `A` (Add) once per vertex and rename: U0, U1, U2, U3, U4, U5, U6, U7, U8, U9, U10, U11 …
 
 **1-cells.** For each edge i→j: click i, press `S` (Source); click j, press `T` (Target). Edges:
-- U0 → U3
 - U0 → U4
-- U0 → U6
-- U0 → U9
+- U0 → U7
+- U0 → U8
 - U0 → U10
+- U0 → U11
 - U0 → U14
-- U0 → U15
 - U0 → U16
-- U1 → U3
 - U1 → U5
-- U1 → U7
-- U1 → U11
+- U1 → U6
+- U1 → U12
+- U1 → U13
+- U2 → U5
 - …
 
 **2-cells.** For each triangle [i,j,k]: click the 1-cell i→j; click just above its top end and choose j→k (the tool offers only cells whose source matches); press `S`; click the 1-cell i→k; press `T`.
-- [0,3,6]: (U0→U3 ; U3→U6) ⇒ U0→U6
-- [0,3,10]: (U0→U3 ; U3→U10) ⇒ U0→U10
-- [0,3,16]: (U0→U3 ; U3→U16) ⇒ U0→U16
-- [0,4,6]: (U0→U4 ; U4→U6) ⇒ U0→U6
-- [0,4,9]: (U0→U4 ; U4→U9) ⇒ U0→U9
+- [0,4,7]: (U0→U4 ; U4→U7) ⇒ U0→U7
+- [0,4,8]: (U0→U4 ; U4→U8) ⇒ U0→U8
+- [0,4,11]: (U0→U4 ; U4→U11) ⇒ U0→U11
 - [0,4,14]: (U0→U4 ; U4→U14) ⇒ U0→U14
-- [0,4,15]: (U0→U4 ; U4→U15) ⇒ U0→U15
-- [0,6,9]: (U0→U6 ; U6→U9) ⇒ U0→U9
-- [0,6,10]: (U0→U6 ; U6→U10) ⇒ U0→U10
-- [0,6,14]: (U0→U6 ; U6→U14) ⇒ U0→U14
-- [0,6,15]: (U0→U6 ; U6→U15) ⇒ U0→U15
-- [0,6,16]: (U0→U6 ; U6→U16) ⇒ U0→U16
+- [0,4,16]: (U0→U4 ; U4→U16) ⇒ U0→U16
+- [0,7,10]: (U0→U7 ; U7→U10) ⇒ U0→U10
+- [0,7,11]: (U0→U7 ; U7→U11) ⇒ U0→U11
+- [0,7,14]: (U0→U7 ; U7→U14) ⇒ U0→U14
+- [0,7,16]: (U0→U7 ; U7→U16) ⇒ U0→U16
+- [0,8,10]: (U0→U8 ; U8→U10) ⇒ U0→U10
+- [0,8,11]: (U0→U8 ; U8→U11) ⇒ U0→U11
+- [0,8,16]: (U0→U8 ; U8→U16) ⇒ U0→U16
 - …
 
 **3-cells.** For each tetrahedron [i,j,k,l]:
@@ -46,20 +46,20 @@ Signature size: 18 0-cells, 70 1-cells, 121 2-cells, 113 3-cells.
      click the top edge above the two strands and choose [i,k,l]; press `S`.
   2. click the 2-cell [j,k,l]; click the left edge and choose i→j; click the top edge and choose [i,j,l]; press `T`.
   The globularity check passes because both pastings run from i→j→k→l to i→l.
-- [0,3,6,10]
-- [0,3,6,16]
-- [0,3,10,16]
-- [0,4,6,9]
-- [0,4,6,14]
-- [0,4,6,15]
-- [0,4,9,14]
-- [0,4,9,15]
-- [0,4,14,15]
-- [0,6,9,10]
-- [0,6,9,14]
-- [0,6,9,15]
+- [0,4,7,11]
+- [0,4,7,14]
+- [0,4,7,16]
+- [0,4,8,11]
+- [0,4,8,16]
+- [0,4,11,14]
+- [0,4,11,16]
+- [0,4,14,16]
+- [0,7,10,11]
+- [0,7,10,16]
+- [0,7,11,14]
+- [0,7,11,16]
 - …
 
 To see a 3-cell as a 3D geometry: select it in the signature, then use the view controls (top-right) to raise the view dimension to 3 and orbit the rendering; `Image Export` (left toolbar) saves 2D slices as SVG/TikZ.
 
-## poset: skipped: 10276 generators exceed --max-generators 4000
+## poset: skipped: 6619 generators exceed --max-generators 4000

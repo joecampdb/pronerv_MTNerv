@@ -3,73 +3,73 @@
   "label": "nerve objects",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 171.0,
+  "median_atom": 179.0,
   "median_backbone": 82.5,
   "iqr_atom": [
    78.5,
-   257.0
+   235.5
   ],
   "iqr_backbone": [
    76.0,
    93.75
   ],
-  "mannwhitney_U": 903.0,
-  "p_value": 0.0017204253046392102,
-  "cliffs_delta": 0.43333333333333335
+  "mannwhitney_U": 903.5,
+  "p_value": 0.0016873022250957432,
+  "cliffs_delta": 0.43412698412698414
  },
  "inclusions": {
   "label": "inclusions",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 682.0,
+  "median_atom": 722.0,
   "median_backbone": 223.0,
   "iqr_atom": [
    211.0,
-   1130.0
+   997.0
   ],
   "iqr_backbone": [
    196.0,
    283.5
   ],
-  "mannwhitney_U": 906.0,
-  "p_value": 0.0015293499766823536,
-  "cliffs_delta": 0.4380952380952381
+  "mannwhitney_U": 906.5,
+  "p_value": 0.0014994978001174927,
+  "cliffs_delta": 0.4388888888888889
  },
  "triangles": {
   "label": "triangles",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 564.0,
+  "median_atom": 600.0,
   "median_backbone": 141.0,
   "iqr_atom": [
    135.0,
-   978.0
+   843.0
   ],
   "iqr_backbone": [
    120.0,
    198.0
   ],
-  "mannwhitney_U": 911.5,
-  "p_value": 0.0012176632518600314,
-  "cliffs_delta": 0.44682539682539685
+  "mannwhitney_U": 910.5,
+  "p_value": 0.0012674366406738588,
+  "cliffs_delta": 0.4452380952380952
  },
  "max_dimension": {
   "label": "max simplex dim",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 6.0,
+  "median_atom": 5.0,
   "median_backbone": 3.0,
   "iqr_atom": [
    3.0,
-   7.0
+   6.0
   ],
   "iqr_backbone": [
    3.0,
    3.0
   ],
-  "mannwhitney_U": 942.0,
-  "p_value": 0.00015397483309217706,
-  "cliffs_delta": 0.49523809523809526
+  "mannwhitney_U": 938.5,
+  "p_value": 0.00017809176090455894,
+  "cliffs_delta": 0.48968253968253966
  },
  "beta0": {
   "label": "\u03b20 (cover)",
@@ -103,9 +103,9 @@
    0.0,
    2.25
   ],
-  "mannwhitney_U": 326.0,
-  "p_value": 0.00011015996256655477,
-  "cliffs_delta": -0.48253968253968255
+  "mannwhitney_U": 343.0,
+  "p_value": 0.00026393775997505804,
+  "cliffs_delta": -0.45555555555555555
  },
  "beta2": {
   "label": "\u03b22 (cover)",
@@ -129,29 +129,29 @@
   "label": "uncovered fraction",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 0.00015,
+  "median_atom": 3.3333333333333335e-05,
   "median_backbone": 0.021386292531736108,
   "iqr_atom": [
    0.0,
-   0.00295
+   0.0007866683666836669
   ],
   "iqr_backbone": [
    0.01729278314310799,
    0.031283143107989464
   ],
-  "mannwhitney_U": 194.0,
-  "p_value": 5.056254838795098e-07,
-  "cliffs_delta": -0.692063492063492
+  "mannwhitney_U": 191.0,
+  "p_value": 4.1988473798288597e-07,
+  "cliffs_delta": -0.6968253968253968
  },
  "median_h_ref": {
   "label": "median h at \u03c4_ref (nm)",
   "n_atom": 32,
   "n_backbone": 36,
-  "median_atom": 0.03928273139594086,
+  "median_atom": 0.03953996341077992,
   "median_backbone": 0.6018647350421051,
   "iqr_atom": [
-   0.019556801941169207,
-   0.05006172026746411
+   0.018885910968169897,
+   0.0493757044055049
   ],
   "iqr_backbone": [
    0.3465073064512727,
@@ -165,55 +165,55 @@
   "label": "drift/spread at \u03c4_ref",
   "n_atom": 32,
   "n_backbone": 36,
-  "median_atom": 0.520175485759105,
+  "median_atom": 0.49903641419223493,
   "median_backbone": 0.4246647277311618,
   "iqr_atom": [
-   0.4579701898351999,
-   0.5658743104018186
+   0.458178614818187,
+   0.6030350431492588
   ],
   "iqr_backbone": [
    0.32960136743924473,
    0.48221156571883017
   ],
-  "mannwhitney_U": 849.0,
-  "p_value": 0.0008134971157809113,
-  "cliffs_delta": 0.4739583333333333
+  "mannwhitney_U": 867.0,
+  "p_value": 0.00035790353778731264,
+  "cliffs_delta": 0.5052083333333334
  },
  "h_slope": {
   "label": "mobility exponent",
   "n_atom": 33,
   "n_backbone": 36,
-  "median_atom": 0.1288821634441522,
+  "median_atom": 0.11606305793600583,
   "median_backbone": 0.20645606205245665,
   "iqr_atom": [
-   0.10067873890069504,
+   0.09249665313463593,
    0.3561682706210117
   ],
   "iqr_backbone": [
    0.1494027745777333,
    0.21936493585373912
   ],
-  "mannwhitney_U": 523.0,
-  "p_value": 0.3970613340067476,
-  "cliffs_delta": -0.11952861952861953
+  "mannwhitney_U": 509.0,
+  "p_value": 0.3100790348925988,
+  "cliffs_delta": -0.14309764309764308
  },
  "h_slope_early": {
   "label": "early mobility exponent",
   "n_atom": 33,
   "n_backbone": 36,
-  "median_atom": 0.14115918696073598,
+  "median_atom": 0.12529329201762363,
   "median_backbone": 0.24131679353173996,
   "iqr_atom": [
-   0.10990454236481832,
+   0.09006583445486431,
    0.7655321689172829
   ],
   "iqr_backbone": [
    0.18875223235598126,
    0.25935329038447025
   ],
-  "mannwhitney_U": 484.0,
-  "p_value": 0.18838602104430702,
-  "cliffs_delta": -0.18518518518518517
+  "mannwhitney_U": 465.0,
+  "p_value": 0.12268376550006152,
+  "cliffs_delta": -0.21717171717171718
  },
  "first_connected_frames": {
   "label": "\u03c4_connect (frames)",
@@ -247,9 +247,9 @@
    0.75,
    3.0
   ],
-  "mannwhitney_U": 489.0,
-  "p_value": 0.08922485605808536,
-  "cliffs_delta": -0.22380952380952382
+  "mannwhitney_U": 508.0,
+  "p_value": 0.14177900566364493,
+  "cliffs_delta": -0.19365079365079366
  },
  "beta1_classes": {
   "label": "\u03b21 classes born (fluid)",
@@ -259,15 +259,15 @@
   "median_backbone": 1.5,
   "iqr_atom": [
    0.0,
-   2.0
+   3.0
   ],
   "iqr_backbone": [
    0.75,
    3.0
   ],
-  "mannwhitney_U": 445.0,
-  "p_value": 0.02538693588017678,
-  "cliffs_delta": -0.29365079365079366
+  "mannwhitney_U": 463.5,
+  "p_value": 0.04439335780703762,
+  "cliffs_delta": -0.2642857142857143
  },
  "flood_basins": {
   "label": "flooding basins (persistence \u2265 1)",
@@ -277,15 +277,15 @@
   "median_backbone": 18.5,
   "iqr_atom": [
    3.0,
-   6.0
+   5.0
   ],
   "iqr_backbone": [
    14.75,
    25.5
   ],
-  "mannwhitney_U": 56.0,
-  "p_value": 3.927231861980032e-11,
-  "cliffs_delta": -0.9111111111111111
+  "mannwhitney_U": 48.5,
+  "p_value": 2.1294433853227585e-11,
+  "cliffs_delta": -0.9230158730158731
  },
  "flood_connect_level": {
   "label": "flooding connection level",
@@ -309,19 +309,19 @@
   "label": "occupancy entropy (bits)",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 6.640140393877558,
+  "median_atom": 6.68315902159113,
   "median_backbone": 7.453847965930465,
   "iqr_atom": [
-   6.453392142578556,
+   6.495990226251454,
    7.680954700609231
   ],
   "iqr_backbone": [
    6.687636409134684,
    7.916122850983217
   ],
-  "mannwhitney_U": 524.0,
-  "p_value": 0.22499019644628437,
-  "cliffs_delta": -0.16825396825396827
+  "mannwhitney_U": 525.0,
+  "p_value": 0.22941615355636757,
+  "cliffs_delta": -0.16666666666666666
  },
  "connect_radius_factor": {
   "label": "cover-radius factor at which \u03b20 = 1",
@@ -337,26 +337,26 @@
    0.75,
    1.0
   ],
-  "mannwhitney_U": 478.5,
-  "p_value": 0.18237259470407652,
-  "cliffs_delta": -0.17214532871972318
+  "mannwhitney_U": 462.0,
+  "p_value": 0.11876566089304842,
+  "cliffs_delta": -0.20069204152249134
  },
  "flip_rate_1": {
   "label": "membership flip rate at \u03c4 = 1 frame",
   "n_atom": 35,
   "n_backbone": 36,
-  "median_atom": 0.8250825082508251,
+  "median_atom": 0.8321498816548322,
   "median_backbone": 0.6412469398586379,
   "iqr_atom": [
    0.02130221719176962,
-   0.8644614461446145
+   0.8710871087108711
   ],
   "iqr_backbone": [
    0.5764007639102656,
    0.6930667700297278
   ],
-  "mannwhitney_U": 725.0,
-  "p_value": 0.2771016672693848,
-  "cliffs_delta": 0.15079365079365079
+  "mannwhitney_U": 746.0,
+  "p_value": 0.18405385732510526,
+  "cliffs_delta": 0.18412698412698414
  }
 }

@@ -4,20 +4,20 @@
  "encodings": {
   "base": {
    "vertices": 18,
-   "edges": 78,
-   "triangles": 148,
-   "tetrahedra": 143,
-   "generators": 387,
+   "edges": 73,
+   "triangles": 122,
+   "tetrahedra": 96,
+   "generators": 309,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asp\\base.hom (2272075 bytes); generators by dimension: [(0, 18), (1, 78), (2, 148), (3, 143)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asp\\base.hom (1590320 bytes); generators by dimension: [(0, 18), (1, 73), (2, 122), (3, 96)]"
   },
   "poset": {
-   "vertices": 387,
-   "edges": 3046,
-   "triangles": 6036,
-   "tetrahedra": 3432,
-   "generators": 12901,
-   "status": "skipped: 12901 generators exceed --max-generators 4000"
+   "vertices": 309,
+   "edges": 2222,
+   "triangles": 4188,
+   "tetrahedra": 2304,
+   "generators": 9023,
+   "status": "skipped: 9023 generators exceed --max-generators 4000"
   }
  }
 }

@@ -42,268 +42,269 @@
  "dipeptide-ala": {
   "base": {
    "vertices": 18,
-   "edges": 73,
-   "triangles": 130,
-   "tetrahedra": 120,
-   "generators": 341,
+   "edges": 69,
+   "triangles": 109,
+   "tetrahedra": 86,
+   "generators": 282,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ala\\base.hom (1923137 bytes); generators by dimension: [(0, 18), (1, 73), (2, 130), (3, 120)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ala\\base.hom (1424783 bytes); generators by dimension: [(0, 18), (1, 69), (2, 109), (3, 86)]"
   },
   "poset": {
-   "vertices": 341,
-   "edges": 2606,
-   "triangles": 5100,
-   "tetrahedra": 2880,
-   "generators": 10927,
-   "status": "skipped: 10927 generators exceed --max-generators 4000"
+   "vertices": 282,
+   "edges": 1996,
+   "triangles": 3750,
+   "tetrahedra": 2064,
+   "generators": 8092,
+   "status": "skipped: 8092 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-arg": {
   "base": {
    "vertices": 18,
-   "edges": 59,
-   "triangles": 94,
-   "tetrahedra": 81,
-   "generators": 252,
+   "edges": 51,
+   "triangles": 64,
+   "tetrahedra": 38,
+   "generators": 171,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-arg\\base.hom (1316493 bytes); generators by dimension: [(0, 18), (1, 59), (2, 94), (3, 81)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-arg\\base.hom (679993 bytes); generators by dimension: [(0, 18), (1, 51), (2, 64), (3, 38)]"
   },
   "poset": {
-   "vertices": 252,
-   "edges": 1816,
-   "triangles": 3480,
-   "tetrahedra": 1944,
-   "generators": 7492,
-   "status": "skipped: 7492 generators exceed --max-generators 4000"
+   "vertices": 171,
+   "edges": 1018,
+   "triangles": 1752,
+   "tetrahedra": 912,
+   "generators": 3853,
+   "status": "ok",
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-arg\\poset.hom (16804094 bytes); generators by dimension: [(0, 171), (1, 1018), (2, 1752), (3, 912)]"
   }
  },
  "dipeptide-asn": {
   "base": {
    "vertices": 18,
-   "edges": 80,
-   "triangles": 158,
-   "tetrahedra": 170,
-   "generators": 426,
+   "edges": 87,
+   "triangles": 184,
+   "tetrahedra": 197,
+   "generators": 486,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asn\\base.hom (2650598 bytes); generators by dimension: [(0, 18), (1, 80), (2, 158), (3, 170)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asn\\base.hom (3070787 bytes); generators by dimension: [(0, 18), (1, 87), (2, 184), (3, 197)]"
   },
   "poset": {
-   "vertices": 426,
-   "edges": 3488,
-   "triangles": 7068,
-   "tetrahedra": 4080,
-   "generators": 15062,
-   "status": "skipped: 15062 generators exceed --max-generators 4000"
+   "vertices": 486,
+   "edges": 4036,
+   "triangles": 8196,
+   "tetrahedra": 4728,
+   "generators": 17446,
+   "status": "skipped: 17446 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-asp": {
   "base": {
    "vertices": 18,
-   "edges": 78,
-   "triangles": 148,
-   "tetrahedra": 143,
-   "generators": 387,
+   "edges": 73,
+   "triangles": 122,
+   "tetrahedra": 96,
+   "generators": 309,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asp\\base.hom (2272075 bytes); generators by dimension: [(0, 18), (1, 78), (2, 148), (3, 143)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-asp\\base.hom (1590320 bytes); generators by dimension: [(0, 18), (1, 73), (2, 122), (3, 96)]"
   },
   "poset": {
-   "vertices": 387,
-   "edges": 3046,
-   "triangles": 6036,
-   "tetrahedra": 3432,
-   "generators": 12901,
-   "status": "skipped: 12901 generators exceed --max-generators 4000"
+   "vertices": 309,
+   "edges": 2222,
+   "triangles": 4188,
+   "tetrahedra": 2304,
+   "generators": 9023,
+   "status": "skipped: 9023 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-cys": {
   "base": {
    "vertices": 18,
-   "edges": 75,
-   "triangles": 138,
-   "tetrahedra": 129,
-   "generators": 360,
+   "edges": 79,
+   "triangles": 158,
+   "tetrahedra": 168,
+   "generators": 423,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-cys\\base.hom (2062494 bytes); generators by dimension: [(0, 18), (1, 75), (2, 138), (3, 129)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-cys\\base.hom (2623414 bytes); generators by dimension: [(0, 18), (1, 79), (2, 158), (3, 168)]"
   },
   "poset": {
-   "vertices": 360,
-   "edges": 2784,
-   "triangles": 5472,
-   "tetrahedra": 3096,
-   "generators": 11712,
-   "status": "skipped: 11712 generators exceed --max-generators 4000"
+   "vertices": 423,
+   "edges": 3458,
+   "triangles": 6996,
+   "tetrahedra": 4032,
+   "generators": 14909,
+   "status": "skipped: 14909 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-gln": {
   "base": {
    "vertices": 18,
    "edges": 77,
-   "triangles": 144,
-   "tetrahedra": 138,
-   "generators": 377,
+   "triangles": 141,
+   "tetrahedra": 137,
+   "generators": 373,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gln\\base.hom (2195577 bytes); generators by dimension: [(0, 18), (1, 77), (2, 144), (3, 138)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gln\\base.hom (2173840 bytes); generators by dimension: [(0, 18), (1, 77), (2, 141), (3, 137)]"
   },
   "poset": {
-   "vertices": 377,
-   "edges": 2950,
-   "triangles": 5832,
-   "tetrahedra": 3312,
-   "generators": 12471,
-   "status": "skipped: 12471 generators exceed --max-generators 4000"
+   "vertices": 373,
+   "edges": 2918,
+   "triangles": 5778,
+   "tetrahedra": 3288,
+   "generators": 12357,
+   "status": "skipped: 12357 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-glu": {
   "base": {
    "vertices": 18,
-   "edges": 71,
-   "triangles": 119,
-   "tetrahedra": 100,
-   "generators": 308,
+   "edges": 77,
+   "triangles": 140,
+   "tetrahedra": 128,
+   "generators": 363,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-glu\\base.hom (1634206 bytes); generators by dimension: [(0, 18), (1, 71), (2, 119), (3, 100)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-glu\\base.hom (2056043 bytes); generators by dimension: [(0, 18), (1, 77), (2, 140), (3, 128)]"
   },
   "poset": {
-   "vertices": 308,
-   "edges": 2256,
-   "triangles": 4314,
-   "tetrahedra": 2400,
-   "generators": 9278,
-   "status": "skipped: 9278 generators exceed --max-generators 4000"
+   "vertices": 363,
+   "edges": 2786,
+   "triangles": 5448,
+   "tetrahedra": 3072,
+   "generators": 11669,
+   "status": "skipped: 11669 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-gly": {
   "base": {
    "vertices": 18,
-   "edges": 41,
+   "edges": 42,
    "triangles": 27,
-   "tetrahedra": 4,
-   "generators": 90,
+   "tetrahedra": 6,
+   "generators": 93,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\base.hom (141703 bytes); generators by dimension: [(0, 18), (1, 41), (2, 27), (3, 4)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\base.hom (168344 bytes); generators by dimension: [(0, 18), (1, 42), (2, 27), (3, 6)]"
   },
   "poset": {
-   "vertices": 90,
-   "edges": 300,
-   "triangles": 306,
-   "tetrahedra": 96,
-   "generators": 792,
+   "vertices": 93,
+   "edges": 330,
+   "triangles": 378,
+   "tetrahedra": 144,
+   "generators": 945,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\poset.hom (2175397 bytes); generators by dimension: [(0, 90), (1, 300), (2, 306), (3, 96)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-gly\\poset.hom (2996327 bytes); generators by dimension: [(0, 93), (1, 330), (2, 378), (3, 144)]"
   }
  },
  "dipeptide-his": {
   "base": {
    "vertices": 18,
-   "edges": 80,
-   "triangles": 177,
-   "tetrahedra": 237,
-   "generators": 512,
+   "edges": 75,
+   "triangles": 137,
+   "tetrahedra": 130,
+   "generators": 360,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-his\\base.hom (3572370 bytes); generators by dimension: [(0, 18), (1, 80), (2, 177), (3, 237)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-his\\base.hom (2072304 bytes); generators by dimension: [(0, 18), (1, 75), (2, 137), (3, 130)]"
   },
   "poset": {
-   "vertices": 512,
-   "edges": 4540,
-   "triangles": 9594,
-   "tetrahedra": 5688,
-   "generators": 20334,
-   "status": "skipped: 20334 generators exceed --max-generators 4000"
+   "vertices": 360,
+   "edges": 2792,
+   "triangles": 5502,
+   "tetrahedra": 3120,
+   "generators": 11774,
+   "status": "skipped: 11774 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-ile": {
   "base": {
    "vertices": 18,
-   "edges": 84,
-   "triangles": 247,
-   "tetrahedra": 503,
-   "generators": 852,
+   "edges": 79,
+   "triangles": 165,
+   "tetrahedra": 197,
+   "generators": 459,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ile\\base.hom (7218667 bytes); generators by dimension: [(0, 18), (1, 84), (2, 247), (3, 503)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ile\\base.hom (3020634 bytes); generators by dimension: [(0, 18), (1, 79), (2, 165), (3, 197)]"
   },
   "poset": {
-   "vertices": 852,
-   "edges": 8692,
-   "triangles": 19590,
-   "tetrahedra": 12072,
-   "generators": 41206,
-   "status": "skipped: 41206 generators exceed --max-generators 4000"
+   "vertices": 459,
+   "edges": 3906,
+   "triangles": 8082,
+   "tetrahedra": 4728,
+   "generators": 17175,
+   "status": "skipped: 17175 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-leu": {
   "base": {
    "vertices": 18,
-   "edges": 82,
-   "triangles": 185,
-   "tetrahedra": 252,
-   "generators": 537,
+   "edges": 83,
+   "triangles": 169,
+   "tetrahedra": 182,
+   "generators": 452,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-leu\\base.hom (3789868 bytes); generators by dimension: [(0, 18), (1, 82), (2, 185), (3, 252)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-leu\\base.hom (2836491 bytes); generators by dimension: [(0, 18), (1, 83), (2, 169), (3, 182)]"
   },
   "poset": {
-   "vertices": 537,
-   "edges": 4802,
-   "triangles": 10182,
-   "tetrahedra": 6048,
-   "generators": 21569,
-   "status": "skipped: 21569 generators exceed --max-generators 4000"
+   "vertices": 452,
+   "edges": 3728,
+   "triangles": 7566,
+   "tetrahedra": 4368,
+   "generators": 16114,
+   "status": "skipped: 16114 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-lys": {
   "base": {
    "vertices": 18,
-   "edges": 53,
-   "triangles": 77,
-   "tetrahedra": 63,
-   "generators": 211,
+   "edges": 61,
+   "triangles": 100,
+   "tetrahedra": 87,
+   "generators": 266,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-lys\\base.hom (1038141 bytes); generators by dimension: [(0, 18), (1, 53), (2, 77), (3, 63)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-lys\\base.hom (1411520 bytes); generators by dimension: [(0, 18), (1, 61), (2, 100), (3, 87)]"
   },
   "poset": {
-   "vertices": 211,
-   "edges": 1450,
-   "triangles": 2730,
-   "tetrahedra": 1512,
-   "generators": 5903,
-   "status": "skipped: 5903 generators exceed --max-generators 4000"
+   "vertices": 266,
+   "edges": 1940,
+   "triangles": 3732,
+   "tetrahedra": 2088,
+   "generators": 8026,
+   "status": "skipped: 8026 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-met": {
   "base": {
    "vertices": 18,
-   "edges": 75,
-   "triangles": 143,
-   "tetrahedra": 151,
-   "generators": 387,
+   "edges": 78,
+   "triangles": 136,
+   "tetrahedra": 112,
+   "generators": 344,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-met\\base.hom (2363233 bytes); generators by dimension: [(0, 18), (1, 75), (2, 143), (3, 151)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-met\\base.hom (1836286 bytes); generators by dimension: [(0, 18), (1, 78), (2, 136), (3, 112)]"
   },
   "poset": {
-   "vertices": 387,
-   "edges": 3122,
-   "triangles": 6294,
-   "tetrahedra": 3624,
-   "generators": 13427,
-   "status": "skipped: 13427 generators exceed --max-generators 4000"
+   "vertices": 344,
+   "edges": 2540,
+   "triangles": 4848,
+   "tetrahedra": 2688,
+   "generators": 10420,
+   "status": "skipped: 10420 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-phe": {
   "base": {
    "vertices": 18,
-   "edges": 83,
-   "triangles": 193,
-   "tetrahedra": 290,
-   "generators": 584,
+   "edges": 80,
+   "triangles": 163,
+   "tetrahedra": 178,
+   "generators": 439,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-phe\\base.hom (4305468 bytes); generators by dimension: [(0, 18), (1, 83), (2, 193), (3, 290)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-phe\\base.hom (2767556 bytes); generators by dimension: [(0, 18), (1, 80), (2, 163), (3, 178)]"
   },
   "poset": {
-   "vertices": 584,
-   "edges": 5384,
-   "triangles": 11598,
-   "tetrahedra": 6960,
-   "generators": 24526,
-   "status": "skipped: 24526 generators exceed --max-generators 4000"
+   "vertices": 439,
+   "edges": 3630,
+   "triangles": 7386,
+   "tetrahedra": 4272,
+   "generators": 15727,
+   "status": "skipped: 15727 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-pro": {
@@ -328,96 +329,96 @@
  "dipeptide-ser": {
   "base": {
    "vertices": 18,
-   "edges": 70,
-   "triangles": 121,
-   "tetrahedra": 113,
-   "generators": 322,
+   "edges": 67,
+   "triangles": 100,
+   "tetrahedra": 68,
+   "generators": 253,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ser\\base.hom (1808530 bytes); generators by dimension: [(0, 18), (1, 70), (2, 121), (3, 113)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-ser\\base.hom (1166471 bytes); generators by dimension: [(0, 18), (1, 67), (2, 100), (3, 68)]"
   },
   "poset": {
-   "vertices": 322,
-   "edges": 2448,
-   "triangles": 4794,
-   "tetrahedra": 2712,
-   "generators": 10276,
-   "status": "skipped: 10276 generators exceed --max-generators 4000"
+   "vertices": 253,
+   "edges": 1686,
+   "triangles": 3048,
+   "tetrahedra": 1632,
+   "generators": 6619,
+   "status": "skipped: 6619 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-thr": {
   "base": {
    "vertices": 18,
-   "edges": 90,
-   "triangles": 214,
-   "tetrahedra": 287,
-   "generators": 609,
+   "edges": 72,
+   "triangles": 124,
+   "tetrahedra": 108,
+   "generators": 322,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-thr\\base.hom (4320187 bytes); generators by dimension: [(0, 18), (1, 90), (2, 214), (3, 287)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-thr\\base.hom (1751938 bytes); generators by dimension: [(0, 18), (1, 72), (2, 124), (3, 108)]"
   },
   "poset": {
-   "vertices": 609,
-   "edges": 5482,
-   "triangles": 11616,
-   "tetrahedra": 6888,
-   "generators": 24595,
-   "status": "skipped: 24595 generators exceed --max-generators 4000"
+   "vertices": 322,
+   "edges": 2400,
+   "triangles": 4632,
+   "tetrahedra": 2592,
+   "generators": 9946,
+   "status": "skipped: 9946 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-trp": {
   "base": {
    "vertices": 18,
-   "edges": 81,
-   "triangles": 183,
-   "tetrahedra": 250,
-   "generators": 532,
+   "edges": 77,
+   "triangles": 154,
+   "tetrahedra": 178,
+   "generators": 427,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-trp\\base.hom (3756629 bytes); generators by dimension: [(0, 18), (1, 81), (2, 183), (3, 250)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-trp\\base.hom (2741276 bytes); generators by dimension: [(0, 18), (1, 77), (2, 154), (3, 178)]"
   },
   "poset": {
-   "vertices": 532,
-   "edges": 4760,
-   "triangles": 10098,
-   "tetrahedra": 6000,
-   "generators": 21390,
-   "status": "skipped: 21390 generators exceed --max-generators 4000"
+   "vertices": 427,
+   "edges": 3570,
+   "triangles": 7332,
+   "tetrahedra": 4272,
+   "generators": 15601,
+   "status": "skipped: 15601 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-tyr": {
   "base": {
    "vertices": 18,
-   "edges": 93,
-   "triangles": 282,
-   "tetrahedra": 578,
-   "generators": 971,
+   "edges": 82,
+   "triangles": 172,
+   "tetrahedra": 195,
+   "generators": 467,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-tyr\\base.hom (8287685 bytes); generators by dimension: [(0, 18), (1, 93), (2, 282), (3, 578)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-tyr\\base.hom (3011894 bytes); generators by dimension: [(0, 18), (1, 82), (2, 172), (3, 195)]"
   },
   "poset": {
-   "vertices": 971,
-   "edges": 9970,
-   "triangles": 22500,
-   "tetrahedra": 13872,
-   "generators": 47313,
-   "status": "skipped: 47313 generators exceed --max-generators 4000"
+   "vertices": 467,
+   "edges": 3926,
+   "triangles": 8052,
+   "tetrahedra": 4680,
+   "generators": 17125,
+   "status": "skipped: 17125 generators exceed --max-generators 4000"
   }
  },
  "dipeptide-val": {
   "base": {
    "vertices": 18,
-   "edges": 80,
-   "triangles": 182,
-   "tetrahedra": 266,
-   "generators": 546,
+   "edges": 75,
+   "triangles": 130,
+   "tetrahedra": 112,
+   "generators": 335,
    "status": "ok",
-   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-val\\base.hom (3963267 bytes); generators by dimension: [(0, 18), (1, 80), (2, 182), (3, 266)]"
+   "nerve_hom_output": "wrote D:\\pronerv_MTNerv\\fluid-nerve\\dist\\homotopy\\dipeptide-val\\base.hom (1819224 bytes); generators by dimension: [(0, 18), (1, 75), (2, 130), (3, 112)]"
   },
   "poset": {
-   "vertices": 546,
-   "edges": 4976,
-   "triangles": 10668,
-   "tetrahedra": 6384,
-   "generators": 22574,
-   "status": "skipped: 22574 generators exceed --max-generators 4000"
+   "vertices": 335,
+   "edges": 2498,
+   "triangles": 4812,
+   "tetrahedra": 2688,
+   "generators": 10333,
+   "status": "skipped: 10333 generators exceed --max-generators 4000"
   }
  },
  "mdcath-1a92a00-ca": {
